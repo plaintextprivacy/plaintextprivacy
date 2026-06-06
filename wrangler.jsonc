@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "plaintext-privacy",
+  "name": "plaintextprivacy",
   // Set this to today's date and update when you make breaking changes
   "compatibility_date": "2026-05-05",
   "assets": {
