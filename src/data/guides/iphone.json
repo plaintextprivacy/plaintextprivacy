@@ -297,9 +297,6 @@
             },
             {
               "text": "Toggle off `Allow Apps to Request to Track`"
-            },
-            {
-              "text": "Any apps listed below will automatically be denied - review and confirm all are denied"
             }
           ]
         }
@@ -416,18 +413,18 @@
         {
           "id": "security-key",
           "name": "Enable security keys for 2FA",
-          "path": "Settings → Privacy & Security → Tracking",
+          "path": "Settings → [your name] → Sign-In & Security",
           "risk": "high",
-          "why": "When Allow Apps to Request to Track is on, apps can ask you to let them track your activity across other apps - feeding your data to ad networks. Turning this off means apps can't even prompt you, and any existing permissions are automatically revoked.",
+          "why": "Security keys are a physical device like YubiKey that act as an additional form of authentication. When configured, your iCloud account cannot be accessed without the physical security key. Note that Apple requires you to configure at least 2 keys in case one is lost.",
           "steps": [
             {
-              "text": "Open `Settings` → `Privacy & Security` → `Tracking`"
+              "text": "Open `Settings` → `[your name]` → `Sign-In & Security` → `Two-Factor Authentication` → `Security Keys`"
             },
             {
-              "text": "Toggle off `Allow Apps to Request to Track`"
+              "text": "Tap `Add Security Keys`"
             },
             {
-              "text": "Any apps listed below will automatically be denied - review and confirm all are denied"
+              "text": "Follow the prompts"
             }
           ],
           "sources": [
