@@ -5,7 +5,7 @@ import { useTopbarSearch } from './useTopbarSearch'
 import type { TopbarSearchResult } from './useTopbarSearch'
 import { getIcon } from '@/lib/iconMap'
 
-// ─── Nav links ────────────────────────────────────────────────────────────────
+// nav links
 
 const navLinks = [
   { label: 'Guides', href: '/guides' },
@@ -15,7 +15,7 @@ const navLinks = [
   { label: 'About', href: '/about' }
 ] as const
 
-// ─── Single search result row ─────────────────────────────────────────────────
+// single search result row
 
 interface ResultRowProps {
   result: TopbarSearchResult
@@ -45,7 +45,7 @@ const ResultRow = ({ result, isActive, id, onClick }: ResultRowProps) => (
   </Link>
 )
 
-// ─── Search bar + dropdown ────────────────────────────────────────────────────
+// search bar + dropdown
 
 interface TopbarSearchProps {
   fullWidth?: boolean
@@ -197,7 +197,7 @@ const TopbarSearch = ({ fullWidth = false }: TopbarSearchProps) => {
   )
 }
 
-// ─── Topbar ───────────────────────────────────────────────────────────────────
+// Topbar
 
 export const Topbar = () => {
   const { pathname } = useLocation()
@@ -206,16 +206,12 @@ export const Topbar = () => {
   return (
     <header className='sticky top-0 z-50 border-b border-default bg-[#09090b]'>
       <div className='mx-auto flex h-12 max-w-7xl items-center gap-3 px-6'>
-        {/* logo */}
         <Link to='/' aria-label='Plaintext Privacy — home' className='flex items-center gap-2'>
-          {/*<div className="flex h-6 w-6 items-center justify-center rounded-md bg-accent" aria-hidden="true">*/}
-          {/*  <Shield size={13} className="text-white" strokeWidth={2.5} />*/}
-          {/*</div>*/}
           <span className='text-label text-title-sm font-medium text-text-primary'>Plaintext</span>
           <span className='text-label text-title-sm font-medium text-text-elevated'>Privacy</span>
         </Link>
 
-        {/* Desktop nav + search */}
+        {/* desktop nav + search */}
         <nav className='ml-auto hidden sm:flex items-center gap-5' aria-label='Main navigation'>
           {navLinks.map(({ label, href }) => (
             <Link

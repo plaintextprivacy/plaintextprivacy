@@ -48,10 +48,10 @@ const ThreatModelingBlurb = () => {
         <div className='border-t border-default px-5 pb-5 pt-4'>
           <div className='flex flex-col gap-4 text-body leading-relaxed text-text-secondary'>
             <p>
-              A lot of privacy advice is given without considering a person&rsquo;s individual
+              A lot of privacy advice is given without considering a person's individual
               situation. You hear 'use a VPN,' 'use Signal,' 'delete your social media'. Threat
               modeling is the practice of answering those questions before reaching for tools.
-              It&rsquo;s a guide to thinking clearly about your situation so that the changes you
+              It's a guide to thinking clearly about your situation so that the changes you
               make are the ones that actually matter for <em>you</em>.
             </p>
 
@@ -86,10 +86,9 @@ const ThreatModelingBlurb = () => {
             </div>
 
             <p>
-              The assessment below uses your answers to these questions to suggest a starting point
-              - which guides to prioritize and which risk levels to focus on. It's not a substitute
-              for a full threat model, but it&rsquo;s a practical first step. If your situation is
-              complex or high-stakes, consider working through a more detailed assessment - the{' '}
+              The assessment below uses your answers to suggest which guides to prioritize and which risk levels to focus
+              on. It's not a substitute for a full threat model, but it's a practical first step. If your situation is
+              complex or high-stakes, consider working through a more detailed assessment. The{' '}
               <a
                 href='https://ssd.eff.org/module/your-security-plan'
                 target='_blank'

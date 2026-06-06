@@ -1,3 +1,5 @@
+// TODO no guides use this layout
+
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { ChecklistTabbedGuide, ChecklistTab } from '@/types/guide'
@@ -11,7 +13,7 @@ interface ChecklistTabbedLayoutProps {
   guide: ChecklistTabbedGuide
 }
 
-// Per-tab checked state: tabId → Set of item ids
+// per-tab checked state: tabId → set of item ids
 const sectionRiskColor: Record<string, string> = {
   critical: 'text-risk-critical',
   high: 'text-risk-high',
@@ -119,7 +121,7 @@ export const ChecklistTabbedLayout = ({ guide }: ChecklistTabbedLayoutProps) => 
             ← All guides
           </Link>
 
-          {/* Tab bar */}
+          {/* tab bar */}
           <div className='flex gap-0 overflow-x-auto'>
             {guide.tabs.map((tab) => {
               const done = getCheckedIds(tab.id).size
@@ -152,7 +154,7 @@ export const ChecklistTabbedLayout = ({ guide }: ChecklistTabbedLayoutProps) => 
         </div>
       </div>
 
-      {/* Active tab content */}
+      {/* active tab content */}
       {activeTab && (
         <TabPanel
           tab={activeTab}
