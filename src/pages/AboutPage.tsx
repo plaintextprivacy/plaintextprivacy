@@ -139,7 +139,7 @@ export const AboutPage = () => (
           outdated, incomplete, or wrong. If you've noticed something that needs fixing, please
           email us or submit a pull request on our{' '}
           <a
-            href='https://github.com/plaintextprivacy/digitalprivacyguides'
+            href='https://github.com/plaintextprivacy/plaintextprivacy'
             target='_blank'
             rel='noopener noreferrer'
             className='text-accent hover:underline'

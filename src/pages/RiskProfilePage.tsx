@@ -48,11 +48,11 @@ const ThreatModelingBlurb = () => {
         <div className='border-t border-default px-5 pb-5 pt-4'>
           <div className='flex flex-col gap-4 text-body leading-relaxed text-text-secondary'>
             <p>
-              Most privacy advice is generic - 'use a VPN,' 'use encrypted apps,' 'just delete your
-              social media' - without asking what you're actually trying to protect, or from whom.
-              Threat modeling is the practice of answering those questions before reaching for
-              tools. It means thinking clearly about your situation so that the changes you make are
-              the ones that actually matter for <em>you</em>.
+              A lot of privacy advice is given without considering a person&rsquo;s individual
+              situation. You hear 'use a VPN,' 'use Signal,' 'delete your social media'. Threat
+              modeling is the practice of answering those questions before reaching for tools.
+              It&rsquo;s a guide to thinking clearly about your situation so that the changes you
+              make are the ones that actually matter for <em>you</em>.
             </p>
 
             <p>
@@ -63,15 +63,15 @@ const ThreatModelingBlurb = () => {
               {[
                 {
                   q: 'What do I want to protect?',
-                  a: 'Your personal communications, location history, financial records, identity, relationships, professional work - anything that would cause harm if exposed or accessed by someone without your consent.'
+                  a: 'Your personal communications, location history, financial records, identity, relationships, or professional work. Anything that would cause harm if exposed or accessed by someone without your consent.'
                 },
                 {
                   q: 'Who might want access to it?',
-                  a: 'This could be a corporation building an advertising profile, a stalker or abusive ex-partner, an employer, a government agency, or a opportunistic criminal. The answer changes everything about which protections are actually worth your time.'
+                  a: 'This could be a corporation building an advertising profile, a stalker or abusive ex-partner, an employer, a government agency, or a opportunistic criminal.'
                 },
                 {
                   q: 'How likely is that threat, really?',
-                  a: 'A journalist covering organized crime has a different threat landscape than someone who just wants to stop Google from tracking their searches. Overpreparing for unlikely threats wastes effort you could spend on the ones that matter.'
+                  a: 'A journalist covering organized crime has a different threat level than someone who just wants to stop Google from tracking their searches.'
                 },
                 {
                   q: 'What happens if I fail?',
@@ -88,8 +88,8 @@ const ThreatModelingBlurb = () => {
             <p>
               The assessment below uses your answers to these questions to suggest a starting point
               - which guides to prioritize and which risk levels to focus on. It's not a substitute
-              for a full threat model, but it's a practical first step. If your situation is complex
-              or high-stakes, consider working through a more detailed assessment - the{' '}
+              for a full threat model, but it&rsquo;s a practical first step. If your situation is
+              complex or high-stakes, consider working through a more detailed assessment - the{' '}
               <a
                 href='https://ssd.eff.org/module/your-security-plan'
                 target='_blank'
@@ -98,7 +98,7 @@ const ThreatModelingBlurb = () => {
               >
                 EFF's Security Self-Defense guide
               </a>{' '}
-              is a thorough free resource.
+              is an excellent free resource.
             </p>
           </div>
         </div>
@@ -207,7 +207,7 @@ const QuestionStep = ({
           className={[
             'rounded-lg px-5 py-2 text-body font-medium transition-all',
             selected
-              ? 'bg-accent text-white hover:opacity-90'
+              ? 'bg-accent text-black hover:opacity-90'
               : 'cursor-not-allowed bg-bg-tertiary text-text-tertiary'
           ].join(' ')}
         >

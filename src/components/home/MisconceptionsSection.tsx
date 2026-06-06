@@ -43,7 +43,7 @@ export const MisconceptionsSection = () => (
           Who this is for
         </h2>
         <p className='text-body text-text-secondary'>
-          Privacy isn&rsquo;t one-size-fits-all. Your situation shapes what actually matters.
+          Privacy isn&rsquo;t one-size-fits-all. Your situation determines what matters.
         </p>
       </div>
 
