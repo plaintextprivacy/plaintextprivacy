@@ -94,7 +94,7 @@ export const Footer = () => (
       <div className='border-t border-default pt-6 flex flex-wrap items-start justify-between gap-4'>
         <p className='text-label leading-relaxed text-text-tertiary'>
           We provide information and resources, not legal advice. Be sure to research any privacy or
-          security measures you implement - don&rsquo;t just take an internet stranger&rsquo;s word
+          security measures you implement. Don&rsquo;t just take an internet stranger&rsquo;s word
           for it!
         </p>
         <Link

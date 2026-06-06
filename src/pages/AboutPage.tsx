@@ -84,7 +84,7 @@ export const AboutPage = () => (
           </InfoCard>
           <InfoCard
             icon={Shield}
-            title='Risk-rated, not fear-driven'
+            title='Risk-rated for relevance'
             accentColor='var(--color-teal)'
           >
             Every setting is rated Critical, High, Medium, or Low based on real-world impact. This
@@ -92,11 +92,11 @@ export const AboutPage = () => (
           </InfoCard>
           <InfoCard
             icon={Heart}
-            title='Harm reduction, not perfection'
+            title="Meet you where you're at"
             accentColor='var(--color-risk-high)'
           >
-            Start where you are and do what you can. Even completing one or two setting
-            recommendations is meaningfully better than doing nothing.
+            Start where you are and do what you can. Even completing one or two recommendations can
+            make a huge difference in protecting your data privacy.
           </InfoCard>
           <InfoCard
             icon={AlertCircle}
@@ -104,8 +104,8 @@ export const AboutPage = () => (
             accentColor='var(--color-info)'
           >
             No guide is perfect, and no privacy measure is absolute. Privacy and security often come
-            with trade-offs on convenience, which can make them difficult to commit to in practice.
-            Choosing convenience where you need to will ensure the actions you do take will stick in
+            with trade-offs on convenience, which makes them difficult to commit to in practice.
+            Choosing convenience where you need to will ensure the actions you do take stick in
             the long run.
           </InfoCard>
         </div>
@@ -135,9 +135,9 @@ export const AboutPage = () => (
       <section className='mb-12'>
         <SectionHeader title='How to contribute' />
         <p className='mb-5 text-body leading-relaxed text-text-secondary'>
-          Because this site is maintained by one person, which means things will occasionally be
-          outdated, incomplete, or wrong. If you've noticed something that needs fixing, please
-          email us or submit a pull request on our{' '}
+          Because this site is maintained by one person, things will occasionally be outdated,
+          incomplete, or wrong. If you've noticed something that needs fixing, please email us or
+          submit a pull request on our{' '}
           <a
             href='https://github.com/plaintextprivacy/plaintextprivacy'
             target='_blank'
@@ -173,8 +173,8 @@ export const AboutPage = () => (
           <div>
             <p className='mb-1 text-body font-medium text-text-primary'>Contribute via GitHub</p>
             <p className='text-body leading-relaxed text-text-secondary'>
-              The content for this site lives in JSON files that are easy to edit - no coding
-              knowledge required to fix a typo or update a settings path. Pull requests and issues
+              The content for this site lives in JSON files that are easy to edit. No coding
+              knowledge is required to fix a typo or update a settings path. Pull requests and issues
               are welcome.
             </p>
           </div>
@@ -186,8 +186,8 @@ export const AboutPage = () => (
         <div className='rounded-xl border border-default bg-bg-secondary p-6'>
           <p className='mb-3 text-body leading-relaxed text-text-secondary'>
             The information on this site is provided for educational purposes only and does not
-            constitute legal, security, or professional advice. Every situation is different -
-            what's appropriate for one person's threat model may not be appropriate for another's.
+            constitute legal, security, or professional advice. What's appropriate for one person's
+            threat model may not be appropriate for another's.
           </p>
           <p className='mb-3 text-body leading-relaxed text-text-secondary'>
             We have no financial relationship with any product, service, or organization mentioned
