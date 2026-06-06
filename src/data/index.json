@@ -1,0 +1,277 @@
+{
+  "categories": [
+    {
+      "id": "phones",
+      "label": "Phones",
+      "icon": "mobile-screen",
+      "guides": [
+        {
+          "slug": "iphone",
+          "title": "iPhone",
+          "description": "Settings for biometrics, iCloud, location services, AirDrop, and more",
+          "icon": "apple",
+          "risk": "critical",
+          "status": "published",
+          "tags": ["iphone", "ios", "apple"]
+        },
+        {
+          "slug": "android",
+          "title": "Android",
+          "description": "Settings for biometrics, app permissions, location services, 2FA, and more",
+          "icon": "robot",
+          "risk": "critical",
+          "status": "published",
+          "tags": ["android", "google", "pixel", "samsung", "galaxy"]
+        },
+        {
+          "slug": "signal",
+          "title": "Signal set up",
+          "description": "Settings for the Signal messaging app to enhance secure communication",
+          "icon": "signal",
+          "risk": "critical",
+          "status": "published",
+          "tags": ["signal", "messaging", "e2ee", "notifications", "disappearing messages"]
+        },
+        {
+          "slug": "app-alternatives",
+          "title": "Apps",
+          "description": "Best app alternatives for messaging, email, file transfer, and more",
+          "icon": "mobile-screen-button",
+          "risk": "high",
+          "status": "published",
+          "tags": [
+            "apps",
+            "signal",
+            "briar",
+            "session",
+            "protonmail",
+            "wormhole",
+            "file transfer",
+            "period tracker"
+          ]
+        },
+        {
+          "slug": "phone-relay",
+          "title": "Phone relay",
+          "description": "Use relay numbers and VoIP to keep your real number private when signing up for services",
+          "icon": "phone",
+          "risk": "medium",
+          "status": "coming-soon",
+          "tags": [
+            "phone number",
+            "voip",
+            "relay",
+            "firefox relay",
+            "google voice",
+            "mysudo",
+            "hushed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "computers",
+      "label": "Computers",
+      "icon": "laptop",
+      "guides": [
+        {
+          "slug": "macos",
+          "title": "MacOS",
+          "description": "Full-disk encryption, telemetry controls, firewall setup, and secure cloud storage",
+          "icon": "apple",
+          "risk": "critical",
+          "status": "published",
+          "tags": ["macos", "apple", "icloud", "filevault", "bitlocker", "encryption", "antivirus"]
+        },
+        {
+          "slug": "windows",
+          "title": "Windows",
+          "description": "Full-disk encryption, telemetry controls, firewall setup, and secure cloud storage",
+          "icon": "microsoft",
+          "risk": "critical",
+          "status": "published",
+          "tags": ["windows", "microsoft", "bitlocker", "encryption", "antivirus"]
+        },
+        {
+          "slug": "linux",
+          "title": "Linux",
+          "description": "Full-disk encryption, telemetry controls, firewall setup, and secure cloud storage",
+          "icon": "linux",
+          "risk": "critical",
+          "status": "published",
+          "tags": ["linux", "encryption", "antivirus"]
+        }
+      ]
+    },
+    {
+      "id": "browsing",
+      "label": "Web browsing",
+      "icon": "globe",
+      "guides": [
+        {
+          "slug": "browsers",
+          "title": "Browsers",
+          "description": "Privacy-focused browsers and search engines to meet your privacy and security needs",
+          "icon": "globe",
+          "risk": "critical",
+          "status": "published",
+          "tags": [
+            "browser",
+            "chrome",
+            "firefox",
+            "brave",
+            "search engine",
+            "vpn",
+            "cookies",
+            "extensions",
+            "fingerprinting"
+          ]
+        },
+        {
+          "slug": "passwords-mfa",
+          "title": "Passwords",
+          "description": "Recommendations for password managers, passkeys, hardware security keys, and MFA setup",
+          "icon": "lock",
+          "risk": "critical",
+          "status": "published",
+          "tags": [
+            "passwords",
+            "mfa",
+            "2fa",
+            "authenticator",
+            "yubikey",
+            "passkeys",
+            "bitwarden"
+          ]
+        },
+        {
+          "slug": "vpns",
+          "title": "VPNs",
+          "description": "Understand when to use a VPN and how to choose the right provider for you",
+          "icon": "lock",
+          "risk": "critical",
+          "status": "published",
+          "tags": [
+            "proton",
+            "mullvad",
+            "nordvpn"
+          ]
+        },
+        {
+          "slug": "email-privacy",
+          "title": "Email privacy",
+          "description": "Privacy-focused email providers, masking addresses, and keeping sensitive documents out of your inbox",
+          "icon": "envelope",
+          "risk": "high",
+          "status": "published",
+          "tags": [
+            "email",
+            "proton",
+            "masking",
+            "relay",
+            "temporary email"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digital footprint",
+      "label": "Digital footprint",
+      "icon": "key",
+      "guides": [
+        {
+          "slug": "social-media",
+          "title": "Social media",
+          "description": "Lock down Facebook, Instagram, and other platforms or leave them entirely",
+          "icon": "facebook",
+          "risk": "high",
+          "status": "published",
+          "tags": [
+            "social media",
+            "facebook",
+            "meta",
+            "instagram",
+            "privacy",
+            "footprint"
+          ]
+        },
+        {
+          "slug": "data-brokers",
+          "title": "Data brokers",
+          "description": "Find and remove your profiles from data broker databases. Manual and paid approaches covered",
+          "icon": "folder-open",
+          "risk": "high",
+          "status": "published",
+          "tags": [
+            "data broker",
+            "spokeo",
+            "whitepages",
+            "opt out",
+            "people finder",
+            "deletion",
+            "privacy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "label": "Advanced",
+      "icon": "gear",
+      "guides": [
+        {
+          "slug": "de-google",
+          "title": "De-Googling",
+          "description": "Ditch Google's tools and services for privacy-minded alternatives",
+          "icon": "google",
+          "risk": "critical",
+          "status": "coming-soon",
+          "tags": ["google", "gemini", "chrome", "opt out"]
+        },
+        {
+          "slug": "ai-privacy",
+          "title": "AI & your data",
+          "description": "Opt out of AI training, avoid LLMs, protect sensitive conversations, and run local LLMs to keep your data off corporate servers",
+          "icon": "robot",
+          "risk": "high",
+          "status": "coming-soon",
+          "tags": ["ai", "chatgpt", "llm", "gemini", "training data", "opt out", "local llm"]
+        },
+        {
+          "slug": "smart-devices",
+          "title": "Smart devices",
+          "description": "Smart TVs, voice assistants, fitness trackers, and security cameras all collect personal information about you to sell to data brokers",
+          "icon": "tv",
+          "risk": "medium",
+          "status": "coming-soon",
+          "tags": ["smart tv", "iot", "fitbit", "voice assistant", "alexa", "homepod", "privacy"]
+        },
+        {
+          "slug": "travel",
+          "title": "Travel",
+          "description": "Prepare your devices for border crossings, know your rights with CBP, protect sensitive data in transit, and run a security check when you return",
+          "icon": "plane",
+          "risk": "high",
+          "status": "coming-soon",
+          "tags": ["travel", "border", "tsa", "phone", "laptop", "customs", "privacy"]
+        },
+        {
+          "slug": "software-alternatives",
+          "title": "Software",
+          "description": "Replacements for commonly used software that prioritize privacy and security",
+          "icon": "toolbox",
+          "risk": "medium",
+          "status": "coming-soon",
+          "tags": [
+            "proton",
+            "cryptpad",
+            "libreoffice",
+            "google docs",
+            "dropbox",
+            "e2ee"
+          ]
+        }
+      ]
+    }
+  ]
+}

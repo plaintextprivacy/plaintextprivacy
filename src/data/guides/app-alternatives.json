@@ -1,0 +1,203 @@
+{
+  "slug": "app-alternatives",
+  "layout": "checklist",
+  "category": "phones",
+  "title": "Apps",
+  "subtitle": "The apps on your phone are one of the biggest sources of data collection in your life. This guide covers the popular privacy-respecting alternatives for messaging, email, file transfer, and finance.",
+  "meta": {
+    "platforms": ["iOS", "Android"]
+  },
+  "context": {
+    "title": "What to look for in an app",
+    "body": "Before installing any app, ask yourself: Does it use end-to-end encryption (e2ee)? Does it have a clear privacy policy? Does it have a business model that doesn't rely on selling user data?",
+    "body2": "A free app with no obvious revenue source is almost certainly monetizing you. As they say, if something's free, then you're the product."
+  },
+  "sections": [
+    {
+      "id": "messaging",
+      "label": "Messaging",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "switch-messenger",
+          "name": "Switch to an end-to-end encrypted (e2ee) messaging",
+          "path": "Replaces SMS, iMessage, WhatsApp",
+          "risk": "critical",
+          "why": "SMS messages pass through your phone carrier's servers in plain text, meaning they aren't encrypted (this is not the case for iMessage or RCS messaging). WhatsApp uses e2ee for message content but its metadata (who you talk to, when, how often) is still shared with Meta.",
+          "steps": [
+            {
+              "text": "`Signal` - the gold standard for e2ee messaging. Open source, independently audited, zero metadata retention. Best choice for most people. Download from `signal.org/download` only"
+            },
+            {
+              "text": "`Threema` - doesn't require a phone number. Sign up anonymously with a randomly generated ID. Swiss-based, audited. ~$5 one-time purchase"
+            },
+            {
+              "text": "`Session` - decentralized, no phone number or email required. Routes messages through a distributed network - no central server to subpoena"
+            },
+            {
+              "text": "`Briar` - designed for high-risk scenarios. Works over Tor, Bluetooth, or Wi-Fi without internet. Best for activists. Android only"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "email",
+      "label": "Email",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "private-email",
+          "name": "Switch to a privacy-focused email provider",
+          "path": "Replaces Gmail, Yahoo, Outlook for sensitive use",
+          "risk": "critical",
+          "why": "Google scans Gmail content to serve targeted ads and complies with law enforcement data requests. Your inbox likely contains years of sensitive documents - account statements, medical correspondence, legal notices. A zero-knowledge email provider means even the provider cannot read your messages.",
+          "steps": [
+            {
+              "text": "`ProtonMail` - Swiss-based, e2ee, free tier available. Most popular privacy email. Sign up at `mail.proton.me`"
+            },
+            {
+              "text": "`Startmail` - Netherlands-based, PGP encryption, supports custom domains. Focused exclusively on email privacy"
+            },
+            {
+              "text": "`Firefox Relay` - email masking service. Generates disposable relay addresses that forward to your real inbox. Real address never exposed to senders. Free tier available at `relay.firefox.com`"
+            },
+            {
+              "text": "`Apple Hide My Email` (iCloud+) - creates random relay addresses on the fly when signing up for services. Seamless on Apple devices"
+            },
+            {
+              "text": "Use `Emailnator` or `10minutemail.com` for throwaway inboxes when you just need a one-time confirmation email"
+            },
+            {
+              "text": "Delete sensitive documents from your inbox after downloading. Google was found to be scanning the content of users' Gmail accounts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "financial",
+      "label": "Financial privacy",
+      "risk": "high",
+      "items": [
+        {
+          "id": "virtual-cards",
+          "name": "Use virtual cards for online purchases",
+          "path": "privacy.com - replaces real card number for online spending",
+          "risk": "high",
+          "why": "When you use your real credit or debit card online, you're handing that card number to every merchant you buy from. A single breach at any merchant exposes your real financial details. Virtual card services generate a unique card number per merchant - if that number is leaked, only that card is compromised, not your real account.",
+          "steps": [
+            {
+              "text": "Sign up at `privacy.com` and link your bank account or debit card. The free tier gives you up to 12 virtual cards per month"
+            },
+            {
+              "text": "When making an online purchase, generate a new virtual card in the Privacy.com app or browser extension"
+            },
+            {
+              "text": "Set a spending limit on each card - e.g. a $15/month cap on a streaming subscription prevents unexpected charges"
+            },
+            {
+              "text": "For subscription services you want to try, create a single-use card - it works once then automatically closes, making it impossible for the merchant to charge you again"
+            },
+            {
+              "text": "Also audit your Venmo privacy settings - Venmo transactions are public by default. Go to `Settings → Privacy` and set all transactions to `Private`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "file-transfer",
+      "label": "File transfer",
+      "risk": "high",
+      "items": [
+        {
+          "id": "secure-file-transfer",
+          "name": "Use secure file transfer for sensitive documents",
+          "path": "Replaces Google Drive links, email attachments, Dropbox",
+          "risk": "high",
+          "why": "When you share a file via Google Drive or Dropbox, a copy lives on their servers potentially indefinitely and is subject to subpoena. Secure transfer tools send files directly between sender and recipient, encrypted in transit, with no persistent server-side copy.",
+          "steps": [
+            {
+              "text": "`Wormhole` (wormhole.app) - encrypted file transfer up to 10GB. Files are available for 24 hours then automatically deleted. No account required"
+            },
+            {
+              "text": "`OnionShare` - routes file transfers over the Tor network. Ideal for journalists and activists sharing sensitive documents anonymously. Can also host anonymous websites"
+            },
+            {
+              "text": "How to use Wormhole: go to `wormhole.app`, drag your file onto the page, send the generated link via Signal or another E2EE messenger"
+            },
+            {
+              "text": "Send the link via Signal or another E2EE messenger - not email or SMS"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "period-trackers",
+      "label": "Period tracker apps",
+      "risk": "high",
+      "items": [
+        {
+          "id": "period-tracker-safety",
+          "name": "Use a period tracker that stores data locally only",
+          "path": "Replaces Flo, Clue, Stardust, and most mainstream trackers",
+          "risk": "high",
+          "why": "Period tracking data can reveal pregnancy, miscarriage, and reproductive health information. In the post-Roe legal landscape, there is documented concern that this data could be subpoenaed or purchased by state prosecutors. Most mainstream period apps - including Flo and Stardust - have been found to share data with third parties despite privacy claims.",
+          "steps": [
+            {
+              "text": "`Euki` - designed specifically for reproductive health privacy. All data stored locally on your device. Open source. Free. iOS and Android"
+            },
+            {
+              "text": "`Drip` - open source cycle tracker with no cloud sync. Includes a duress password feature to hide data if your phone is searched. iOS and Android"
+            },
+            {
+              "text": "Avoid `Flo` - agreed to FTC settlement after sharing health data with Facebook and Google despite privacy promises"
+            },
+            {
+              "text": "Avoid `Stardust` - claimed end-to-end encryption but was found to share user phone numbers with third parties"
+            },
+            {
+              "text": "Disable health app integrations with Apple Health or Google Fit for any period tracker - this prevents data from being shared with those platforms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "apps-to-avoid",
+      "label": "Apps to avoid",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "dangerous-apps",
+          "name": "High-risk apps",
+          "path": "App Library → swipe or long press to delete",
+          "risk": "critical",
+          "why": "These apps go beyond typical data collection. They've been documented requesting permissions far beyond what their stated function requires, sending data to servers in jurisdictions with poor user protections, or exhibiting behavior that security researchers have described as malware-adjacent.",
+          "steps": [
+            {
+              "text": "`Temu` - a lawsuit described it as 'dangerous malware.' Requests access to camera, microphone, location, contacts, and file storage. Sends data to servers in China"
+            },
+            {
+              "text": "`DeepSeek` - stores conversation data on servers in China subject to Chinese national security laws. Security researchers found hardcoded encryption keys and poor security practices"
+            },
+            {
+              "text": "`TikTok` - ByteDance (parent company) is subject to Chinese national security laws requiring data cooperation with authorities"
+            },
+            {
+              "text": "`mental health apps` - Mozilla's Privacy Not Included project found the majority failed basic security and privacy standards, sharing therapy session data with third parties"
+            },
+            {
+              "text": "`free VPN apps` (except Proton VPN's free tier) - many free VPNs monetize by selling your browsing data. Facebook's Onavo VPN was used to wiretap competitor app usage"
+            },
+            {
+              "text": "Audit any unused apps: on iPhone go to `Settings → Privacy & Security` and review camera, microphone, and location permissions"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "slug": "vpns",
+  "layout": "checklist",
+  "category": "browsing",
+  "title": "VPNs",
+  "subtitle": "You've likely seen an ad for 500 for a VPN service. They're a useful tool that can supplement a private and secure web browsing experience if they're used appropriately. This guide will cover what to do and what to look for when choosing one.",
+  "meta": {
+    "reviewed": "May 2026",
+    "timeMinutes": 30
+  },
+  "context": {
+    "title": "Do you actually need a VPN?",
+    "body": "A VPN is a virtual private network that can encrypt your internet traffic and mask your IP address. They are useful when you wish to mask your IP address while on the web. Most internet users don't really need to use a VPN in their day to day life as they won't necessarily provide you enhanced privacy or security.",
+    "body2": "If you choose to use a VPN: select a provider that does not log identifying information along with your activity. Confirm they don’t save user logs by checking if they’ve been independently audited. Avoid using free VPNs (except for Proton) or you might end up with spyware on your phone"
+  },
+  "warning": {
+    "body": "A VPN does not keep your online activity completely anonymous.\n\nConsider this: You post from an anonymous account on a forum, but you’re on a VPN, so your IP address is masked. However, you then place an online order for pizza delivery while still logged into the VPN. That IP address is now directly tied to your address and forum post.\n\nTakeaway: A VPN masks your IP address but can still be linked to you based on your online activity, fingerprinting, and other data. This is why disabling things like tracking and third party cookies is useful. To keep your accounts from being linked to each other, be sure to log out of your VPN or refresh the session before logging into each account."
+  },
+  "sections": [
+    {
+      "id": "vpn-providers",
+      "label": "A list of popular providers",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "what-to-look-for",
+          "name": "What to look for",
+          "path": "Determine if the service suits your needs",
+          "risk": "critical",
+          "why": "Chances are, most VPN providers will be sufficient for your needs, so the next step is to consider these factors when choosing a provider",
+          "steps": [
+            {
+              "text": "`No logging policy` → a no logging policy means the VPN service doesn't collect identifying information about their users"
+            },
+            {
+              "text": "`Based overseas` → many countries outside of the United States have stronger privacy laws that allow companies to shield their users' data even if subpoenaed"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Best Anonymous VPNs in 2026 - CyberNews",
+              "url": "https://cybernews.com/vpn/anonymous-no-log-vpns/"
+            }
+          ]
+        },
+        {
+          "id": "providers",
+          "name": "Popular VPN providers",
+          "path": "These offer both mobile and desktop apps",
+          "risk": "critical",
+          "why": "There are many VPN providers out there who are not on this list, but each of these have been third-party verified to not log identifying user activity",
+          "steps": [
+            {
+              "text": "`Proton` → `https://protonvpn.com/` → well-known for their email service, they also provide a solid VPN"
+            },
+            {
+              "text": "`Mullvad` → `https://mullvad.net/en` → based in Sweden, they have a real-world tested track record of not storing identifying user logs"
+            },
+            {
+              "text": "`NordVPN` → `https://nordvpn.com/` → a provider that offers a suite of tools that include cloud storage, a password manager, and virus protection"
+            },
+            {
+              "text": "`Surfshark` → `https://surfshark.com/` → another provider that offers a suite of tools for their subscribers"
+            },
+            {
+              "text": "`ExpressVPN` → `https://www.expressvpn.com/` → has a long history of quality service"
+            },
+            {
+              "text": "`PIA` → `https://www.privateinternetaccess.com/` → a highly rated VPN that also offers antivirus services"
+            }
+          ],
+          "sources": [
+            {
+              "label": "I Looked Into VPN Sponsors - Reject Convenience",
+              "url": "https://www.youtube.com/watch?v=mIwfNw5UaHA"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

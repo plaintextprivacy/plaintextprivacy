@@ -1,0 +1,221 @@
+{
+  "slug": "signal",
+  "layout": "checklist",
+  "category": "phones",
+  "title": "Signal",
+  "subtitle": "Signal is the gold standard for private messaging, but its default settings leave some privacy gaps. This guide walks through every setting you should configure to make your Signal account as private as possible.",
+  "meta": {
+    "timeMinutes": 10,
+    "platforms": ["iOS", "Android"]
+  },
+  "context": {
+    "title": "Before you start",
+    "body": "Messages between Signal users are end-to-end encrypted and the protocol is widely considered the best for individuals. However, Signal is also built for usability, which means some default settings prioritize convenience over privacy.",
+    "body2": "By default, Signal displays your real phone number to contacts, shows message previews in notifications, and doesn't set disappearing messages."
+  },
+  "warning": {
+    "body": "Keep in mind that people can still take screenshots of conversations, and others may not adhere to the same security practices as you."
+  },
+  "sections": [
+    {
+      "id": "identity",
+      "label": "Identity & profile",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "display-name",
+          "name": "Use an alias as your display name",
+          "path": "Signal → Profile icon → Settings",
+          "risk": "critical",
+          "why": "Your display name is visible to anyone you message. Using your real name directly links your Signal account to your identity.",
+          "steps": [
+            {
+              "text": "Open `Signal` → `Profile icon` → `Settings` → `[your name]` → tap your display name"
+            },
+            {
+              "text": "Replace your first and last name with an alias"
+            },
+            {
+              "text": "Tap the checkmark to confirm"
+            }
+          ]
+        },
+        {
+          "id": "username",
+          "name": "Create a unique username",
+          "path": "Signal → Profile icon → Settings",
+          "risk": "critical",
+          "why": "A username lets people find and message you without knowing your phone number. This is especially important if you communicate with new contacts, journalists, activists, or anyone you don't want to give your number to.",
+          "steps": [
+            {
+              "text": "Open `Signal` → `Profile icon` → `Settings` → `[your name]` → `@ username`"
+            },
+            {
+              "text": "Enter a username and number (the number is required)"
+            },
+            {
+              "text": "Tap the checkmark to confirm"
+            }
+          ]
+        },
+        {
+          "id": "profile-picture",
+          "name": "Use a non-identifying profile picture",
+          "path": "Signal → Profile icon → Settings",
+          "risk": "high",
+          "why": "If you've taken the time to use an alias and hide your phone number, using a real photo of yourself undermines that effort - it makes your account immediately identifiable to anyone you message. A random image, abstract art, an illustration, or no photo at all is significantly safer.",
+          "steps": [
+            {
+              "text": "Open `Signal` → `Profile icon` → `Settings` → `[your name]` → Edit Photo`"
+            },
+            {
+              "text": "Choose an image that doesn't identify you or use one of the icons provided by Signal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phone-number",
+      "label": "Phone number privacy",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "hide-number",
+          "name": "Hide your phone number",
+          "path": "Signal → Profile icon → Settings → Privacy",
+          "risk": "critical",
+          "why": "Your phone number is one of the most linkable pieces of personal information you have. Most services and websites require your phone number for identification, so it's easy to tie your identity to your phone number. Once you have a unique username set up, you can hide your phone number and other Signal users will be able to search for you via your username..",
+          "steps": [
+            {
+              "text": "Open `Signal` → `Profile icon` → `Settings` → `Privacy` → `Phone Number`"
+            },
+            {
+              "text": "Set `Who Can See My Number` to `Nobody`"
+            },
+            {
+              "text": "Set `Who Can Find Me By Number` to `Nobody`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "retention",
+      "label": "Message retention",
+      "risk": "high",
+      "items": [
+        {
+          "id": "disappearing-messages",
+          "name": "Enable disappearing messages in a specific chat",
+          "path": "Signal → Tap on chats",
+          "risk": "high",
+          "why": "Messages stored on your device are readable by anyone with physical access to it. Disappearing messages automatically delete after a set time on everyone's device, leaving no persistent record. For group chats, consider setting the time to something shorter, like 3 days.",
+          "steps": [
+            {
+              "text": "Open `Signal` → tap a chat you wish to turn on disappearing messages for"
+            },
+            {
+              "text": "Tap chat name at the top of the screen"
+            },
+            {
+              "text": "Choose `Disappearing Messages` → select length of time"
+            },
+            {
+              "text": "Tap checkmark to confirm"
+            },
+            {
+              "text": "Disappearing messages do not retroactively apply to existing chats"
+            }
+          ]
+        },
+        {
+          "id": "global-disappearing-messages",
+          "name": "Enable disappearing messages by default",
+          "path": "Signal → Profile icon → Settings",
+          "risk": "high",
+          "why": "Messages stored on your device are readable by anyone with physical access to it. Disappearing messages automatically delete after a set time on everyone's device, leaving no persistent record. Signal lets you set this as the default for all new chats. One week is a good default time for most users. Please note that ths setting does not retroactively apply to existing chats.",
+          "steps": [
+            {
+              "text": "Open `Signal` → `Profile icon` → `Settings` → `Privacy` → `Disappearing Messages`"
+            },
+            {
+              "text": "Select a length of time that works for you"
+            },
+            {
+              "text": "Tap the checkmark to confirm"
+            },
+            {
+              "text": "Disappearing messages do not retroactively apply to existing chats"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "app-security",
+      "label": "Security",
+      "risk": "high",
+      "items": [
+        {
+          "id": "screen-lock",
+          "name": "Enable Signal screen lock",
+          "path": "Signal → Profile icon → Settings",
+          "risk": "high",
+          "why": "Signal screen lock requires biometric or passcode authentication before the app opens. This helps your messages stay private even if your phone is unlocked.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy` → `Screen Lock`"
+            },
+            {
+              "text": "Toggle on `Screen Lock`"
+            },
+            {
+              "text": "Set the `Screen Lock Timeout` to `Immediately` or `After 1 minute`"
+            },
+            {
+              "text": "On Android, you can also enable `Screen Security` in the same menu. This prevents Signal from appearing in the app switcher"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Screen Lock - Signal Support",
+              "url": "https://support.signal.org/hc/en-us/articles/360007059572-Screen-Lock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notifications",
+      "label": "Notifications",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "notification-content",
+          "name": "Hide notification content",
+          "path": "Signal → Profile icon → Settings",
+          "risk": "medium",
+          "why": "Setting notification content to No Name or Content means the only thing transmitted is that a Signal notification exists, which can prevent unwanted snooping..",
+          "steps": [
+            {
+              "text": "Open `Signal` → `Profile icon` → `Settings` → `Notifications` → `Notification Content`"
+            },
+            {
+              "text": "Select `No Name or Content` for maximum obscurity"
+            },
+            {
+              "text": "Select `Name Only` for a slightly more convenient experience"
+            }
+          ],
+          "sources": [
+            {
+              "label": "In-App Notification Options",
+              "url": "https://support.signal.org/hc/en-us/articles/360043273491-In-App-Notification-Options"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

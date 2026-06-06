@@ -1,0 +1,156 @@
+{
+  "categories": [
+    {
+      "id": "advocacy",
+      "label": "Advocacy & legal",
+      "description": "Organizations that fight for your digital rights through litigation, legislation, education, and public pressure",
+      "accentColor": "var(--color-accent)",
+      "resources": [
+        {
+          "id": "eff",
+          "name": "Electronic Frontier Foundation",
+          "url": "https://eff.org",
+          "displayUrl": "eff.org",
+          "blurb": "The EFF is the leading nonprofit defending digital civil liberties. They litigate against mass surveillance programs, lobby for strong encryption laws, and provide resources for people to improve their digital privacy.",
+          "tags": ["Advocacy", "Legal", "Free guides", "News"]
+        },
+        {
+          "id": "privacy-rights",
+          "name": "Privacy Rights Clearinghouse",
+          "url": "https://privacyrights.org",
+          "displayUrl": "privacyrights.org",
+          "blurb": "A nonprofit dedicated to consumer privacy education and advocacy. They publish guides on data rights, breach notifications, and how to respond when your information is compromised.",
+          "tags": ["Advocacy", "Consumer rights", "Education", "Breach response"]
+        },
+        {
+          "id": "epic",
+          "name": "Electronic Privacy Information Center",
+          "url": "https://epic.org",
+          "displayUrl": "epic.org",
+          "blurb": "EPIC is a public interest research center focused on emerging privacy and civil liberties issues. They file amicus briefs, submit regulatory comments, and publish in-depth reports on surveillance technology, AI, and data protection law. Particularly strong on policy and legal analysis.",
+          "tags": ["Advocacy", "Policy", "Research"]
+        },
+        {
+          "id": "stop",
+          "name": "Surveillance Technology Oversight Project",
+          "url": "https://www.stopspying.org",
+          "displayUrl": "stopspying.org",
+          "blurb": "STOP litigates and advocates against government surveillance at the state and local level - particularly the use of facial recognition, location tracking, and predictive policing tools by law enforcement. Focused on communities most impacted by surveillance overreach.",
+          "tags": ["Advocacy", "Surveillance", "Local government"]
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "label": "News & blogs",
+      "description": "Sources of privacy / security news, guides, ",
+      "accentColor": "var(--color-purple)",
+      "resources": [
+        {
+          "id": "404media",
+          "name": "404 Media",
+          "url": "https://www.404media.co/",
+          "displayUrl": "404media.co",
+          "blurb": "404 Media is an independent, journalist-owned media company that primarily focuses on tech and privacy news. They're staffed by award-winning journalists and recently launched a weekly podcast",
+          "tags": ["Tech news", "Independent journalism", "Podcast"]
+        },
+        {
+          "id": "indicator",
+          "name": "Indicator Media",
+          "url": "https://indicator.media/",
+          "displayUrl": "indicator.media",
+          "blurb": "Indicator offers in-depth investigative reporting on stories related to cybersecurity, tech, and privacy. They also offer tips and tools that empower their readers to critically engage with the digital world.",
+          "tags": ["Reference", "Tools", "Newsletter"]
+        }
+      ]
+    },
+    {
+      "id": "reference",
+      "label": "Reference & tools",
+      "description": "Trusted resources for privacy tools, guides, and finding software alternatives",
+      "accentColor": "var(--color-teal)",
+      "resources": [
+        {
+          "id": "privacy-guides",
+          "name": "Privacy Guides",
+          "url": "https://www.privacyguides.org",
+          "displayUrl": "privacyguides.org",
+          "blurb": "A community-maintained, open source reference covering privacy-respecting software alternatives, threat modeling frameworks, and in-depth tool reviews. One of the most thorough and regularly updated independent resources available. If you're looking for a recommendation on any type of software - email, VPN, browser, messaging - start here.",
+          "tags": ["Reference", "Tools", "Open source"]
+        },
+        {
+          "id": "hibp",
+          "name": "Have I Been Pwned",
+          "url": "https://haveibeenpwned.com",
+          "displayUrl": "haveibeenpwned.com",
+          "blurb": "Enter your email address or phone number to instantly see every known data breach it has appeared in. Built and maintained by security researcher Troy Hunt. Essential for understanding your current exposure and knowing which passwords need to be updated immediately.",
+          "tags": ["Tool", "Breach checking", "Free"]
+        },
+        {
+          "id": "inteltechniques",
+          "name": "IntelTechniques",
+          "url": "https://inteltechniques.com",
+          "displayUrl": "inteltechniques.com",
+          "blurb": "Run by former FBI agent Michael Bazzell, IntelTechniques publishes one of the most comprehensive data broker removal workbooks available. It's a free PDF that walks through opt-out procedures for hundreds of data brokers. IntelTechniques also produces the 'Privacy, Security, & OSINT Show' podcast.",
+          "tags": ["Data removal", "Podcast", "Workbook"]
+        },
+        {
+          "id": "eff-cover",
+          "name": "Cover Your Tracks (EFF)",
+          "url": "https://coveryourtracks.eff.org",
+          "displayUrl": "coveryourtracks.eff.org",
+          "blurb": "A free tool from the EFF that analyzes your browser and shows exactly how unique and trackable your fingerprint is to advertisers. Run it before and after making browser privacy changes to see how much your fingerprint has improved. Eye-opening if you've never checked.",
+          "tags": ["Tool", "Fingerprinting", "Free"]
+        },
+        {
+          "id": "digital-standard",
+          "name": "The Digital Standard",
+          "url": "https://thedigitalstandard.org",
+          "displayUrl": "thedigitalstandard.org",
+          "blurb": "An open source framework for evaluating the privacy, security, and ethical practices of consumer products and services. Used by researchers and journalists to score apps and devices. Useful if you want to understand how a particular product handles your data before you commit to using it.",
+          "tags": ["Reference", "Research", "Open source"]
+        }
+      ]
+    },
+    {
+      "id": "learning",
+      "label": "Guides & deep dives",
+      "description": "For those who want to go deeper - comprehensive guides, research, and investigative tools.",
+      "accentColor": "var(--color-warn)",
+      "resources": [
+        {
+          "id": "ssd",
+          "name": "Surveillance Self-Defense (EFF)",
+          "url": "https://ssd.eff.org",
+          "displayUrl": "ssd.eff.org",
+          "blurb": "The EFF's flagship practical security guide, written for people at different risk levels - from curious beginners to journalists operating in hostile environments. Structured around threat modeling: understanding who might want your data, what they can do with it, and how to protect yourself accordingly. Free, regularly updated, and available in multiple languages.",
+          "tags": ["Guide", "Threat modeling", "Multi-level", "Free"]
+        },
+        {
+          "id": "hitchhikers",
+          "name": "Hitchhiker's Guide to Online Anonymity",
+          "url": "https://anonymousplanet.org/guide/",
+          "displayUrl": "anonymousplanet.org",
+          "blurb": "An exhaustive, community-maintained guide to online anonymity for high-risk users. Covers operational security (opsec), Tor, Tails, anonymous payment methods, and advanced threat modeling in extraordinary depth. More technical than most resources, but unmatched in comprehensiveness. Best suited for users who need strong anonymity guarantees, not just privacy.",
+          "tags": ["Advanced", "Anonymity", "Opsec", "Free"]
+        },
+        {
+          "id": "mozilla-pni",
+          "name": "Privacy Not Included",
+          "url": "https://foundation.mozilla.org/en/privacynotincluded/",
+          "displayUrl": "foundation.mozilla.org",
+          "blurb": "Mozilla's consumer guide that researches and rates the privacy and security practices of popular apps, smart devices, and connected products. Particularly useful around holiday gift-giving season when they publish their notorious 'creepy' product rankings. Before buying any connected device, check here first.",
+          "tags": ["Tool reviews", "Consumer", "Research"]
+        },
+        {
+          "id": "data-broker-list",
+          "name": "Big Ass Data Broker Opt-Out List",
+          "url": "https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List",
+          "displayUrl": "github.com/yaelwrites",
+          "blurb": "A community-maintained GitHub repository with direct links to the opt-out pages of 200+ data brokers, people-finder sites, and background check services. The most comprehensive free resource for manually removing your data. Updated regularly by privacy researchers and journalists.",
+          "tags": ["Data removal", "Free", "Community"]
+        }
+      ]
+    }
+  ]
+}

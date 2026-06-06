@@ -1,0 +1,278 @@
+{
+  "slug": "data-brokers",
+  "layout": "checklist",
+  "category": "digital footprint",
+  "title": "Data brokers",
+  "subtitle": "Data brokers collect, buy, and sell detailed profiles on you to sell to anyone with a few bucks to spare. This guide walks through how to find and remove your data, and how to stop new data from accumulating.",
+  "meta": {
+    "reviewed": "June 2026",
+    "timeMinutes": 20
+  },
+  "context": {
+    "title": "The impact on your privacy",
+    "body": "Data brokers build profiles containing hundreds of data points on all of us, sourced from public records, social media, loyalty programs, app usage, and location data. They sell this data to advertisers, insurers, employers, landlords, and government agencies.",
+    "body2": "US government agencies including ICE have been documented purchasing location data directly from brokers to track individuals - bypassing the need for a warrant. Stalkers, doxxers, and scammers also use people-finder sites to locate targets."
+  },
+  "warning": {
+    "body": "Realistic expectations: Data broker removal is not a one-time fix. New data gets added continuously and you'll need to repeat opt-outs periodically - roughly every 3-6 months. Even thorough manual removal won't reach every broker. The goal is meaningful reduction, not perfection."
+  },
+  "sections": [
+    {
+      "id": "what-brokers-know",
+      "label": "What data brokers know about you",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "broker-types",
+          "name": "Types of data brokers and what they collect",
+          "path": "Background knowledge - no action required yet",
+          "risk": "critical",
+          "why": "Data broker profiles can include your full name, current and past addresses, phone numbers, email addresses, relatives' names, estimated income, property records, voting registration, criminal records, social media profiles, browsing history, purchase history, and precise location data.",
+          "steps": [
+            {
+              "text": "`People-finder sites` (Spokeo, BeenVerified, Whitepages) - sell your address, relatives, and phone number to anyone"
+            },
+            {
+              "text": "`Marketing brokers` (Acxiom, Experian Marketing) - sell demographic and behavioral profiles to advertisers"
+            },
+            {
+              "text": "`Location data brokers` (Gravy Analytics, Venntel) - sell precise GPS movement data collected from apps"
+            },
+            {
+              "text": "`Background check sites` (Instant Checkmate, TruthFinder) - sell criminal, employment, and address history"
+            },
+            {
+              "text": "`Health data brokers` (IMS Health, IQVIA) - aggregate prescription and health app data, often without clear consent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stop-feeding",
+      "label": "Stop feeding new data to brokers",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "reduce-data-generation",
+          "name": "Reduce the data you generate going forward",
+          "path": "Applies across devices, apps, and accounts",
+          "risk": "critical",
+          "why": "Data brokers continuously refresh their databases. If you opt out of Spokeo today but don't change what data you're generating, your profile will repopulate within months. Reducing your data footprint upstream means fewer opt-outs to repeat.",
+          "steps": [
+            {
+              "text": "Disable location tracking on apps that don't need it - location data from apps is one of the primary sources brokers use"
+            },
+            {
+              "text": "Opt out of third-party data sharing on every social media account and website - look in privacy settings for 'personalization,' 'data sharing,' or 'ad preferences'"
+            },
+            {
+              "text": "Delete accounts on websites you no longer use - before deleting, request your data be removed from their database"
+            },
+            {
+              "text": "Avoid using 'Sign in with Google / Facebook' on websites - these connections let the platform track which services you use"
+            },
+            {
+              "text": "Use a pseudonym where possible when creating accounts on non-critical websites"
+            },
+            {
+              "text": "Remove personal details from social media profiles - employer, hometown, phone number, relatives, relationship status"
+            },
+            {
+              "text": "Opt out of prescreen credit offers at `optoutprescreen.com` - these generate a paper trail that brokers use"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "manual-removal",
+      "label": "Manual data removal (free)",
+      "risk": "high",
+      "items": [
+        {
+          "id": "manual-optout",
+          "name": "Manually opt out of data broker databases",
+          "path": "Individual broker websites",
+          "risk": "high",
+          "why": "Manual removal is free, thorough, and gives you direct control over what's removed. The downside is that it requires significant initial time and regular follow-up - brokers repopulate their databases continuously.",
+          "steps": [
+            {
+              "text": "Create a dedicated email address (ProtonMail recommended) solely for data broker opt-out communications - keep it separate from your primary inbox"
+            },
+            {
+              "text": "Search your full name + city on Spokeo, BeenVerified, Whitepages, Intelius, PeopleFinder, TruthFinder, and Instant Checkmate. Screenshot what you find"
+            },
+            {
+              "text": "Submit opt-out requests one by one. The Big Ass Data Broker Opt-Out List on GitHub has direct links to every broker's opt-out page"
+            },
+            {
+              "text": "Keep a spreadsheet of which brokers you've submitted to, the date, and whether you received confirmation - many brokers take 30–45 days to process removals"
+            },
+            {
+              "text": "Set a calendar reminder to repeat this process every 3–6 months - opt-outs are not permanent"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paid-services",
+      "label": "Paid removal services",
+      "risk": "high",
+      "items": [
+        {
+          "id": "paid-removal",
+          "name": "Consider a paid data removal service",
+          "path": "Subscription service - ongoing",
+          "risk": "high",
+          "why": "Paid services handle re-submissions automatically and provide regular reporting. The tradeoff is an ongoing subscription cost and they typically won't cover every broker. Best for people who want meaningful reduction without significant ongoing effort.",
+          "steps": [
+            {
+              "text": "`DeleteMe` (~$129/year) - one of the most established services, covers 750+ brokers with quarterly reports"
+            },
+            {
+              "text": "`Incogni` (~$78/year, from Surfshark) - covers 180+ brokers with automated re-removal and a real-time dashboard"
+            },
+            {
+              "text": "`EasyOptOuts` (~$20/year) - budget-friendly, more DIY but walks you through opt-outs systematically"
+            },
+            {
+              "text": "`Optery` - free tier shows your exposure score; paid tiers handle automated removals across 200+ brokers"
+            },
+            {
+              "text": "`Kanary` (~$99/year) - monitors and removes across 500+ sites, sends alerts when your data reappears"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "people-finders",
+      "label": "People-finder sites: highest priority",
+      "risk": "high",
+      "items": [
+        {
+          "id": "people-finder-optout",
+          "name": "Opt out of people-finder and background check sites",
+          "path": "Individual broker opt-out pages",
+          "risk": "high",
+          "why": "People-finder sites expose your information to anyone willing to pay a few dollars - or sometimes for free. Anyone can look up your home address, previous addresses, phone number, email, and relatives. This data is used by stalkers, doxxers, scammers, and law enforcement agencies.",
+          "steps": [
+            {
+              "text": "`whitepages.com/suppression_requests` - Whitepages is one of the most widely used and feeds many other sites"
+            },
+            {
+              "text": "`spokeo.com/optout` - search your name first, copy the URL of your profile, then paste it into the opt-out form"
+            },
+            {
+              "text": "`beenverified.com/opt-out` - requires email verification to complete the opt-out"
+            },
+            {
+              "text": "`intelius.com/opt-out` - part of the PeopleConnect family, which also includes Truthfinder and Instant Checkmate"
+            },
+            {
+              "text": "`peoplefinder.com/optout.php` - straightforward form-based opt-out"
+            },
+            {
+              "text": "For a comprehensive list of 200+ broker opt-out links, use the Big Ass Data Broker Opt-Out List on GitHub"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "google-yourself",
+      "label": "Google yourself",
+      "risk": "high",
+      "items": [
+        {
+          "id": "self-search",
+          "name": "Audit your public search footprint",
+          "path": "Search engines + Google's removal tools",
+          "risk": "high",
+          "why": "Even if a broker removes your profile from their site, it may remain indexed in Google search results for months. Google has a removal tool for personal information that lets you request deindexing of pages containing your home address, phone number, or other sensitive data.",
+          "steps": [
+            {
+              "text": "Search `\"[your full name]\" \"[your city]\"` in quotes on Google, DuckDuckGo, and Bing. Note every site that surfaces your address or phone number"
+            },
+            {
+              "text": "Also search `\"[your full name]\" \"[your street address]\"` to find specific address exposures"
+            },
+            {
+              "text": "For each result that exposes personal information, visit `google.com/remove` and submit a removal request under 'Personal info in Google Search'"
+            },
+            {
+              "text": "Google's removal tool covers: home addresses, phone numbers, email addresses, login credentials, and bank account numbers appearing in search results"
+            },
+            {
+              "text": "Repeat this search every 3 months - broker sites get re-indexed even after removal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maintenance",
+      "label": "Ongoing maintenance",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "removal-schedule",
+          "name": "Build a removal maintenance schedule",
+          "path": "Calendar reminders + tracking spreadsheet",
+          "risk": "medium",
+          "why": "Brokers source data from public records, credit bureaus, social media, and data purchases on a continuous basis. A profile you removed in January may reappear by July. The frequency at which your data reappears depends on how actively you're generating new data.",
+          "steps": [
+            {
+              "text": "Month 1: complete your first full round of opt-outs using the Big Ass Data Broker Opt-Out List. Set up your tracking spreadsheet and create your dedicated opt-out email"
+            },
+            {
+              "text": "Month 2: confirm removals have been processed. Re-submit to any brokers that didn't respond or didn't remove your data"
+            },
+            {
+              "text": "Every 3–6 months: repeat the Google self-search and re-submit opt-outs to the highest-priority people-finder sites"
+            },
+            {
+              "text": "Annually: do a complete pass through your tracking spreadsheet, add any new brokers that have appeared, and delete any accounts you're no longer using"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resources",
+      "label": "Resources & tools",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "removal-resources",
+          "name": "Essential removal resources",
+          "path": "External links",
+          "risk": "medium",
+          "why": "Using established community-maintained resources saves significant time during your initial opt-out sweep and ensures you're working from up-to-date information.",
+          "steps": [
+            {
+              "text": "`github.com/yaelwrites` - Big Ass Data Broker Opt-Out List. The most comprehensive community-maintained list of broker opt-out links (200+)"
+            },
+            {
+              "text": "`inteltechniques.com` - IntelTechniques Data Removal Workbook. Free PDF walking through removal for major brokers"
+            },
+            {
+              "text": "`privacyguides.org` - community-reviewed guides covering removal strategies and services"
+            },
+            {
+              "text": "`google.com/remove` - request removal of your personal info from Google Search results"
+            },
+            {
+              "text": "`optoutprescreen.com` - official FTC-backed tool to opt out of prescreen credit and insurance offers"
+            },
+            {
+              "text": "`haveibeenpwned.com` - check if your email address has appeared in known data breaches"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

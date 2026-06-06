@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "plaintext-privacy",
+  // Set this to today's date and update when you make breaking changes
+  "compatibility_date": "2026-05-05",
+  "assets": {
+    // Serve index.html for any path that doesn't match a static asset
+    // Required for React SPA client-side routing to work correctly
+    "not_found_handling": "single-page-application"
+  }
+}

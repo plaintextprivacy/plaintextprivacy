@@ -1,0 +1,353 @@
+{
+  "slug": "android",
+  "layout": "checklist",
+  "category": "phones",
+  "title": "Android",
+  "subtitle": "Android's open ecosystem gives you more control than iOS, but it also creates more opportunities for data collection, particularly from Google. This guide walks through settings to lock down your device.",
+  "meta": {
+    "reviewed": "June 2026",
+    "timeMinutes": 20,
+    "platforms": ["Android 13+"]
+  },
+  "context": {
+    "title": "Before you start",
+    "body": "Default settings are often set to collect as much data about you as possible. For each section, ask yourself what you're trying to protect, who might want to gain (unauthorized) access to it, how likely it is that someone will try to access that data, and what would happen if they gain access."
+  },
+  "warning": {
+    "body": "Some courts have ruled that using your fingerprint or Face ID to unlock your phone is a nontestimonial act, which means law enforcement could lawfully compel you to unlock your phone using those methods without a subpoena. Your password is a testimonial act, which is protected by the 5th amendment, so you cannot be *legally* be compelled to divulge it. Consider this when configuring fingerpint and PIN settings."
+  },
+  "sections": [
+    {
+      "id": "general",
+      "label": "General",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "automatic-updates",
+          "name": "Automatic updates",
+          "path": "Settings → General → Software Update",
+          "risk": "critical",
+          "why": "An up to date operating system is key to maintaining your phone's security as it ensures security updates are installed right away. The latest versions may block tools like Cellebrite and GrayKey.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `General` → `Software Update` → `Automatic Updates`"
+            },
+            {
+              "text": "Toggle on `Automatically Install`"
+            },
+            {
+              "text": "Next, open `Settings` → `Privacy & Security` → `Background Security Improvements`"
+            },
+            {
+              "text": "Toggle on `Automatically Install`"
+            }
+          ]
+        },
+        {
+          "id": "public-activity",
+          "name": "Turn off public activity",
+          "path": "Venmo → Me → Settings → Privacy",
+          "risk": "high",
+          "why": "Turn off your public activity on apps like Venmo. Transactions are public by default. Public activity can be used to tie you to others, like friends and family.",
+          "steps": [
+            {
+              "text": "Open `Venmo` → `Me` → `Settings` → `Privacy`"
+            },
+            {
+              "text": "Under `Default Privacy Settings` → change to `Private`"
+            },
+            {
+              "text": "Under `More` → `Past Transactions` → `Change All to Private`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Who Can See What You Do On Venmo? - Consumer Reports",
+              "url": "https://www.consumerreports.org/money/digital-payments/who-can-see-what-you-do-on-venmo-a6906448606/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "screen-lock",
+      "label": "Screen lock",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "alphanumeric-passcode",
+          "name": "Use an alphanumeric passcode",
+          "path": "Settings → Security & privacy → Device lock",
+          "risk": "critical",
+          "why": "An alphanumeric password (meaning numbers, letters, and special characters) that's 8 or more characters is more secure than a 4 or 6 digit PIN. If possible, aim for a password that's 12 or more characters..",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Security & privacy` → `Device lock` → `Screen lock`"
+            },
+            {
+              "text": "Choose `PIN` (use 8+ digits) or `Password` for an alphanumeric option"
+            },
+            {
+              "text": "Avoid `Pattern` - it's the weakest option and leaves visible smudge traces"
+            },
+            {
+              "text": "After setting your lock, go to `Lock screen preferences` and disable `Show sensitive content` while the device is locked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "google",
+      "label": "Google account activity",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "web-app-activity",
+          "name": "Disable Web & App Activity tracking",
+          "path": "myaccount.google.com → Data & privacy → Web & App Activity",
+          "risk": "critical",
+          "why": "Web & App Activity allows Google to record nearly everything you do on your phone - every search, every app you open, every website you visit in Chrome. This data feeds Google's ad targeting and is stored indefinitely unless you turn it off. It can also be subpoenaed.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Google` → `Manage your Google Account`"
+            },
+            {
+              "text": "Tap `Data & privacy` → `Web & App Activity` → turn it off"
+            },
+            {
+              "text": "While there, also disable `Location History`, `YouTube History`, and `YouTube search history`"
+            },
+            {
+              "text": "Scroll down to `Delete activity` and clear any previously stored activity data"
+            },
+            {
+              "text": "Also disable `Search personalization` at `google.com/search-personalization`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "location",
+      "label": "Location services",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "location-permissions",
+          "name": "Audit and restrict app location permissions",
+          "path": "Settings → Privacy → Permission manager → Location",
+          "risk": "critical",
+          "why": "Location data is sold to data brokers and purchased by federal agencies including ICE to locate individuals. Android allows apps to request precise vs approximate location - most apps only need approximate at best. Background location access enables continuous tracking even when you're not using the app.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy` → `Permission manager` → `Location`"
+            },
+            {
+              "text": "Review every app under `Allowed all the time` - move all but essential apps (e.g. navigation) to `Only while using` or `Denied`"
+            },
+            {
+              "text": "For apps set to `Only while using`, tap the app and switch `Use precise location` off unless the app genuinely needs it"
+            },
+            {
+              "text": "Go back to `Settings` → `Location` → `Google Location Accuracy` and consider turning it off - this prevents sending Wi-Fi and Bluetooth scan data to Google"
+            },
+            {
+              "text": "Under `Location → Location services`, review what system-level services have location access"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "permissions",
+      "label": "Permission manager",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "app-permissions",
+          "name": "Audit all sensitive app permissions",
+          "path": "Settings → Privacy → Permission manager",
+          "risk": "critical",
+          "why": "Apps with microphone or camera access can record you if the app is compromised or malicious. Contacts access lets apps scrape your entire social network. Calendar access reveals where you are and who you're meeting. Regularly auditing permissions is one of the most effective privacy habits you can build.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy` → `Permission manager`"
+            },
+            {
+              "text": "Tap each sensitive category: `Microphone`, `Camera`, `Contacts`, `Body sensors`, `Call logs`"
+            },
+            {
+              "text": "For each app, ask: does this app actually need this permission? If not, tap the app and select `Don't allow`"
+            },
+            {
+              "text": "Repeat this audit every few months - app updates can silently request new permissions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notifications",
+      "label": "Notifications",
+      "risk": "high",
+      "items": [
+        {
+          "id": "notification-content",
+          "name": "Hide sensitive notification content on lock screen",
+          "path": "Settings → Notifications → Notifications on lock screen",
+          "risk": "high",
+          "why": "Notification content on your lock screen can expose private messages, MFA codes (defeating the purpose of 2FA), and banking alerts to anyone who picks up your phone. Push notification metadata is also routed through Google's servers and can be tied to your identity.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Notifications`"
+            },
+            {
+              "text": "Tap `Notifications on lock screen` and select `Hide silent conversations and notifications` or `Don't show any notifications`"
+            },
+            {
+              "text": "For individual high-risk apps (Signal, banking, authenticator), tap the app → disable `Show on lock screen`"
+            },
+            {
+              "text": "Also disable `Sensitive notifications` toggle if present"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ads",
+      "label": "Personalized ads",
+      "risk": "high",
+      "items": [
+        {
+          "id": "advertising-id",
+          "name": "Delete your advertising ID",
+          "path": "Settings → Privacy → Ads",
+          "risk": "high",
+          "why": "Your advertising ID (GAID) is a persistent identifier that ad networks use to link your app activity, purchases, and location patterns into a single profile. Deleting the ID entirely removes the identifier advertisers use to track you - replacing it with a string of zeros.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy` → `Ads`"
+            },
+            {
+              "text": "Tap `Delete advertising ID` - this is more effective than just opting out of personalized ads"
+            },
+            {
+              "text": "Confirm the deletion on the next screen"
+            },
+            {
+              "text": "Also go to `myaccount.google.com → Data & privacy → Ad settings` and turn off personalization"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mfa",
+      "label": "2FA on Google",
+      "risk": "high",
+      "items": [
+        {
+          "id": "google-2fa",
+          "name": "Enable 2-step verification on Google",
+          "path": "myaccount.google.com → Security → 2-Step Verification",
+          "risk": "high",
+          "why": "Your Google account is the master key to your Android device - it controls your app purchases, backups, contacts, email, and the ability to remotely wipe your phone. If someone gains access to it, they can lock you out. MFA makes this dramatically harder even if your password is compromised.",
+          "steps": [
+            {
+              "text": "Go to `myaccount.google.com` → `Security` → `2-Step Verification` → click `Get started`"
+            },
+            {
+              "text": "Add an authenticator app (Proton Authenticator, Aegis) as your primary second factor"
+            },
+            {
+              "text": "If you have a hardware security key, add it under `Security keys` for the strongest protection"
+            },
+            {
+              "text": "Remove your phone number as a recovery method if possible - SMS is vulnerable to SIM swapping. Use backup codes stored in your password manager instead"
+            },
+            {
+              "text": "Consider enrolling in Google's `Advanced Protection Program` if you face elevated risks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "admin",
+      "label": "App admin privileges",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "device-admin",
+          "name": "Revoke unnecessary device admin access",
+          "path": "Settings → Security → Device admin apps",
+          "risk": "medium",
+          "why": "Device admin apps have elevated privileges - they can remotely lock or wipe your phone and in some cases monitor your activity. Only apps that genuinely need this level of access should have it. Malicious apps sometimes request device admin access to make themselves harder to uninstall.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Security & privacy` → `More security settings` → `Device admin apps`"
+            },
+            {
+              "text": "Review every app listed - you should only see apps you recognize (typically Find My Device and any work/MDM apps)"
+            },
+            {
+              "text": "Tap any unfamiliar app and deactivate its admin privileges, then uninstall it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developer",
+      "label": "Developer options",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "usb-debugging",
+          "name": "Disable USB debugging if you don't use it",
+          "path": "Settings → System → Developer options",
+          "risk": "medium",
+          "why": "USB debugging (ADB) allows a connected computer to execute commands on your phone - including extracting data, installing apps, and bypassing certain security measures. Forensic tools used by law enforcement also exploit ADB access. If you're not a developer, there's no reason to have it on.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `System` → `Developer options`"
+            },
+            {
+              "text": "If Developer options is enabled and you're not actively using it, toggle the entire section off at the top"
+            },
+            {
+              "text": "If you need Developer options for other reasons, at minimum toggle off `USB debugging` and `Wireless debugging`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "label": "Advanced",
+      "risk": "low",
+      "items": [
+        {
+          "id": "grapheneos",
+          "name": "GrapheneOS - Android without Google",
+          "path": "grapheneos.org (Google Pixel devices only)",
+          "risk": "low",
+          "why": "GrapheneOS is a privacy-focused Android fork that removes all Google services and data collection from the operating system. It runs on Google Pixel hardware and provides a hardened, Google-free Android experience. It still supports running sandboxed Google Play apps if you need them - but without giving Google system-level access.",
+          "steps": [
+            {
+              "text": "GrapheneOS only supports Google Pixel devices (5a and newer) - check compatibility at `grapheneos.org/faq`"
+            },
+            {
+              "text": "Installation requires unlocking your bootloader and following a multi-step flashing process - the official guide at `grapheneos.org/install` is thorough"
+            },
+            {
+              "text": "For most people, completing the settings in this guide will get you most of the benefit with far less effort"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

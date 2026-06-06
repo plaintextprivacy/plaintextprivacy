@@ -1,0 +1,214 @@
+{
+  "slug": "macos",
+  "layout": "checklist",
+  "category": "computers",
+  "title": "MacOS",
+  "subtitle": "MacOS is reasonably private out of the box but has several high-impact settings that are off or misconfigured by default. Check off each setting as you complete it.",
+  "meta": {
+    "reviewed": "June 2026",
+    "timeMinutes": 20,
+    "platforms": ["macOS 13 Ventura+"]
+  },
+  "context": {
+    "title": "Before you start",
+    "body": "Most of these settings require your admin password. Go through them in order - FileVault in particular needs a restart to take effect and you'll want to save your recovery key somewhere secure before you begin."
+  },
+  "sections": [
+    {
+      "id": "file",
+      "label": "Critical",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "filevault",
+          "name": "Enable FileVault full-disk encryption",
+          "path": "System Settings → Privacy & Security → FileVault",
+          "risk": "critical",
+          "why": "FileVault encrypts your entire drive. Without it, anyone with physical access to your Mac - including law enforcement with a warrant - can extract your files by booting from an external drive, bypassing your login password entirely.",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `Privacy & Security` → scroll to `FileVault` → click `Turn On`"
+            },
+            {
+              "text": "Choose to create a local recovery key - do NOT use your iCloud account as the only recovery option"
+            },
+            {
+              "text": "Save the recovery key in your password manager and somewhere physically secure (not on the computer itself)"
+            },
+            {
+              "text": "Restart your Mac - encryption runs in the background and may take an hour or more on first run"
+            }
+          ]
+        },
+        {
+          "id": "macos-updates",
+          "name": "Enable automatic software updates",
+          "path": "System Settings → General → Software Update → Automatic Updates",
+          "risk": "critical",
+          "why": "Software updates patch known security vulnerabilities. Attackers actively exploit unpatched systems - running an outdated OS is one of the most common entry points for malware and intrusion.",
+          "steps": [
+            { "text": "Open `System Settings` → `General` → `Software Update`" },
+            {
+              "text": "Click the info icon next to `Automatic Updates` and enable all options: Check for updates, Download, Install macOS updates, Install app updates, and Install security responses"
+            },
+            {
+              "text": "Restart your Mac daily to ensure updates are applied promptly"
+            }
+          ]
+        },
+        {
+          "id": "firewall",
+          "name": "Enable Firewall",
+          "path": "System Settings → Network → Firewall",
+          "risk": "critical",
+          "why": "macOS's built-in firewall blocks unsolicited incoming network connections. It's off by default - a strange choice - but takes one click to enable. Particularly important on public Wi-Fi.",
+          "steps": [
+            { "text": "Go to `System Settings` → `Network` → `Firewall`" },
+            { "text": "Toggle `Firewall` on" },
+            {
+              "text": "Click `Options` and enable `Enable stealth mode` - this prevents your Mac from responding to network probe requests"
+            }
+          ]
+        },
+        {
+          "id": "macos-permissions",
+          "name": "Audit app permissions (camera, mic, location)",
+          "path": "System Settings → Privacy & Security",
+          "risk": "critical",
+          "why": "macOS apps request access to your camera, microphone, location, contacts, and calendar. Many accumulate permissions over time that they no longer need. Auditing these periodically removes unnecessary access.",
+          "steps": [
+            { "text": "Open `System Settings` → `Privacy & Security`" },
+            {
+              "text": "Work through each category: `Location Services`, `Microphone`, `Camera`, `Contacts`, `Calendars`"
+            },
+            {
+              "text": "Remove access for any app that doesn't have a clear reason to need it. When in doubt, revoke and see if anything breaks"
+            },
+            {
+              "text": "Under `Location Services` → `System Services`, disable `Location-Based Suggestions` and `Significant Locations`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "macos-high",
+      "label": "High",
+      "risk": "high",
+      "items": [
+        {
+          "id": "siri-spotlight",
+          "name": "Disable Siri & Spotlight data sharing",
+          "path": "System Settings → Siri & Spotlight",
+          "risk": "high",
+          "why": "Siri sends your queries and Spotlight search terms to Apple servers by default to improve suggestions. This includes things you type into Spotlight - file names, app names, search terms - which can reveal a lot about your activity and habits.",
+          "steps": [
+            { "text": "Open `System Settings` → `Siri & Spotlight`" },
+            { "text": "Toggle off `Ask Siri` if you don't use it" },
+            {
+              "text": "Under `Siri Suggestions`, disable `Suggestions in Search`, `Suggestions in Look Up`, and `Suggestions on Lock Screen`"
+            },
+            {
+              "text": "Open `System Settings` → `Privacy & Security` → `Analytics & Improvements` and uncheck `Improve Siri & Dictation` and `Share Mac Analytics`"
+            }
+          ]
+        },
+        {
+          "id": "macos-ads",
+          "name": "Disable advertising identifier & personalized ads",
+          "path": "System Settings → Privacy & Security → Apple Advertising",
+          "risk": "high",
+          "why": "Apple assigns your Mac an advertising identifier used to target ads across Apple's platforms. Disabling personalized ads limits how Apple and third-party developers can use your activity data for ad targeting.",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `Privacy & Security` → `Apple Advertising`"
+            },
+            { "text": "Toggle off `Personalized Ads`" }
+          ]
+        },
+        {
+          "id": "macos-lockscreen",
+          "name": "Lock screen - require password immediately",
+          "path": "System Settings → Lock Screen",
+          "risk": "high",
+          "why": "A Mac that doesn't require a password after sleep is physically unprotected. Anyone who walks up to your laptop when the screen wakes has full access to everything on it.",
+          "steps": [
+            { "text": "Open `System Settings` → `Lock Screen`" },
+            {
+              "text": "Set `Require password after screen saver begins or display is turned off` to `Immediately`"
+            },
+            {
+              "text": "Set `Start screen saver when inactive` to 5 minutes or less"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "macos-antivirus",
+          "name": "Install antivirus / threat protection",
+          "path": "Third-party app - see recommendations",
+          "risk": "medium",
+          "why": "macOS has built-in malware protection (XProtect, Gatekeeper) that handles the most common threats. For most users this is sufficient. If you download files from unofficial sources, an antivirus adds an extra layer.",
+          "steps": [
+            {
+              "text": "`Malwarebytes` - free version scans on demand, paid version adds real-time protection"
+            },
+            {
+              "text": "`Bitdefender` - strong detection rates, lightweight performance impact"
+            },
+            {
+              "text": "`NordVPN Threat Protection Pro` - blocks malicious URLs and ads in addition to malware scanning"
+            }
+          ]
+        },
+        {
+          "id": "macos-sharing",
+          "name": "Disable sharing services you don't use",
+          "path": "System Settings → General → Sharing",
+          "risk": "medium",
+          "why": "macOS enables several network sharing services that expose your Mac to local network discovery. Unless you actively use them, they represent unnecessary attack surface - especially on public or shared networks.",
+          "steps": [
+            { "text": "Go to `System Settings` → `General` → `Sharing`" },
+            {
+              "text": "Turn off everything you don't actively use: `File Sharing`, `Screen Sharing`, `Remote Login`, `Remote Management`, `Bluetooth Sharing`"
+            },
+            {
+              "text": "Check your computer name at the top - avoid using your real name in it"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "label": "Advanced",
+      "risk": "high",
+      "items": [
+        {
+          "id": "file-encryption",
+          "name": "Encrypt individual folders",
+          "path": "Third-party app - see recommendations",
+          "risk": "high",
+          "why": "macOS has built-in malware protection (XProtect, Gatekeeper) that handles the most common threats. For most users this is sufficient. If you download files from unofficial sources, an antivirus adds an extra layer.",
+          "steps": [
+            {
+              "text": "`Malwarebytes` - free version scans on demand, paid version adds real-time protection"
+            },
+            {
+              "text": "`Bitdefender` - strong detection rates, lightweight performance impact"
+            },
+            {
+              "text": "`NordVPN Threat Protection Pro` - blocks malicious URLs and ads in addition to malware scanning"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "slug": "social-media",
+  "layout": "checklist",
+  "category": "digital footprint",
+  "title": "Social media",
+  "subtitle": "Social media platforms collect your data to sell to advertisers and other data brokers. Best practice would be to delete your social media accounts, but that's not possible for people for a variety of reasons. This comprehensive guide covers nearly every privacy and security-related setting to help you lock down your accounts.",
+  "meta": {
+    "timeMinutes": 120,
+    "platforms": ["Facebook", "Instagram", "X", "TikTok", "LinkedIn"]
+  },
+  "context": {
+    "title": "What social media platforms actually collect",
+    "body": "Social media companies collect more than just what you post. They track your location, what you look at even when you don't interact with it, who you're connected to, your device hardware, as well as your activity all across the web",
+    "body2": "Completing the Critical items will significantly reduce your exposure even if you keep your accounts"
+  },
+  "warning": {
+    "body": "Changing your social media settings isn't going to 100% protect your information from being tracked, sold to data brokers, or used in advertising. These steps aren't a replacement for deleting your social media"
+  },
+  "sections": [
+    {
+      "id": "meta",
+      "label": "Meta",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "password-security",
+          "name": "Password and security",
+          "path": "Meta Accounts Center → Password and security",
+          "risk": "critical",
+          "why": "This section helps you enhance your account security",
+          "steps": [
+            { "text": "Open `Meta Accounts Center` → `Password and security`" },
+            { "text": "Create a strong password: `Change password`" },
+            { "text": "Enable 2FA: `Two-factor authentication`" },
+            { "text": "Create a passkey: `Passkey`" },
+            {
+              "text": "If eligible, turn on Advanced Protection: `Advanced Protection`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Meta Accounts Center → Password and security",
+              "url": "https://accountscenter.facebook.com/password_and_security"
+            }
+          ]
+        },
+        {
+          "id": "connected-experiences",
+          "name": "Connected experiences",
+          "path": "Meta Accounts Center → Connected experiences",
+          "risk": "critical",
+          "why": "Controls what information is shared between your Meta accounts",
+          "steps": [
+            { "text": "Open `Meta Accounts Center` → `Connected experiences`" },
+            { "text": "`Sharing across profiles` → disconnect your accounts" },
+            { "text": "FINISH" }
+          ],
+          "sources": [
+            {
+              "label": "Meta Accounts Center → Ad preferences",
+              "url": "https://accountscenter.facebook.com/ads"
+            }
+          ]
+        },
+        {
+          "id": "permissions",
+          "name": "Your information and permissions",
+          "path": "Meta Accounts Center → Your information and permissions",
+          "risk": "critical",
+          "why": "This section covers information Meta has about you that it shares with third parties, and what third parties have shared with it",
+          "steps": [
+            { "text": "Open `Meta Accounts Center`" },
+            {
+              "text": "Go to `Your information and permissions` → `Your activity off Meta technologies`"
+            },
+            { "text": "Follow the steps for `Disconnect specific activity`" },
+            { "text": "Next, follow the steps for `Clear previous activity`" },
+            {
+              "text": "Then `Manage future activity` → `Disconnect future activity`"
+            },
+            { "text": "Go back to `App connections` → disconnect all apps" },
+            {
+              "text": "Go back to `Specific ad partners` → disconnect all ad partners"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Meta Accounts Center → Your information and permissions",
+              "url": "https://accountscenter.facebook.com/info_and_permissions"
+            }
+          ]
+        },
+        {
+          "id": "ad-preferences",
+          "name": "Ad preferences",
+          "path": "Meta Accounts Center → Ad preferences → Manage info",
+          "risk": "critical",
+          "why": "Controls what information Meta can use to serve personalized ads to you",
+          "steps": [
+            {
+              "text": "Open `Meta Accounts Center` → `Ad preferences` → `Manage info`"
+            },
+            {
+              "text": "Delete and remove items in `Categories used to reach you`"
+            },
+            {
+              "text": "Then `Activity information from ad partners` → `Review Settings` → choose `No, don't make my ads more relevant by using this information`"
+            },
+            {
+              "text": "Delete and remove all sections in `Categories used to reach you`"
+            },
+            {
+              "text": "Next, `Ads in other apps` → choose `Don't allow us to show you ads in other apps`"
+            },
+            {
+              "text": "Next, `Ads about Meta` → choose `Don't use my activity to show me ads about Meta`"
+            },
+            {
+              "text": "Finally, `Social interactions` → select your account(s) → `Who can see your social interactions alongside ads for this account?` → choose `Only Me`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Meta Accounts Center → Ad preferences",
+              "url": "https://accountscenter.facebook.com/ads"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "facebook",
+      "label": "Facebook",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "private-profile",
+          "name": "Make your profile private",
+          "path": "Facebook Profile → Settings & privacy → Privacy Center",
+          "risk": "high",
+          "why": "Making your profile private stops strangers from looking for personal details about you",
+          "steps": [
+            {
+              "text": "Open `Profile` → `Settings & privacy` → `Privacy Center` → `Common privacy settings` → `Manage audience settings` → `Profile information`"
+            },
+            {
+              "text": "Delete personal information such as your family members, relationship, and current city"
+            },
+            { "text": "Set everything else to `Only me` or `Friends`" }
+          ],
+          "sources": [
+            {
+              "label": "Facebook Profile → Settings & privacy → Privacy Center",
+              "url": "https://www.facebook.com/privacy/center/"
+            }
+          ]
+        },
+        {
+          "id": "private-posts",
+          "name": "Make past and future posts private",
+          "path": "Facebook Profile → Settings & privacy → Privacy Center",
+          "risk": "high",
+          "why": "Making your account private doesn't retroactively make previous posts private",
+          "steps": [
+            {
+              "text": "Open `Settings & privacy` → `Privacy Center` → `Common privacy settings` → `Manage audience settings` → `Posts and stories`"
+            },
+            { "text": "Change `Who can see future posts` → `Friends`" },
+            { "text": "Next choose `Limit past posts`" },
+            { "text": "Turn off `Allow comment summaries on your posts`" },
+            { "text": "Turn off `Allow visual search on your posts`" },
+            { "text": "Set `Who can see your stories` → `Friends`" }
+          ],
+          "sources": [
+            {
+              "label": "Facebook Profile → Settings & privacy → Privacy Center",
+              "url": "https://www.facebook.com/privacy/center/"
+            }
+          ]
+        },
+        {
+          "id": "search-discovery",
+          "name": "Restrict who can find and contact you",
+          "path": "Facebook Profile → Settings & privacy → Settings → How people find and contact you",
+          "risk": "high",
+          "why": "By default, anyone can search for your Facebook profile using your phone number or email address. This is one way stalkers and scammers find targets.",
+          "steps": [
+            {
+              "text": "Open `Settings & privacy` → `Settings` → `How people find and contact you`"
+            },
+            {
+              "text": "Set `Who can send you friend requests` → `Friends of friends`"
+            },
+            { "text": "Set `Who can see your friends list` → `Friends`" },
+            {
+              "text": "Set `Who can Facebook suggest your profile to based on your phone number or email address` → `People with your email address` → `No one`"
+            },
+            {
+              "text": "Set `Who can Facebook suggest your profile to based on your phone number or email address` → `People with your phone number` → `No one`"
+            },
+            {
+              "text": "Turn off `Do you want search engines outside of Facebook to link to your profile?`"
+            },
+            {
+              "text": "Set `For people with your phone number, deliver requests to` → `Message requests` or `Don't receive requests`"
+            },
+            {
+              "text": "Set `For friends of friends on Facebook, deliver requests to` → `Message requests` or `Don't receive requests`"
+            },
+            {
+              "text": "Set `Deliver requests from people in your Facebook groups to` → `Message requests` or `Don't receive requests`"
+            },
+            {
+              "text": "Set `For others on Messenger or Facebook, deliver requests to` → `Message requests` or `Don't receive requests`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Facebook Profile → Settings & privacy → Settings → How people find and contact you",
+              "url": "https://www.facebook.com/settings/?tab=how_people_find_and_contact_you"
+            }
+          ]
+        },
+        {
+          "id": "apps-websites",
+          "name": "Disable off-Facebook activity",
+          "path": "Facebook Profile → Settings & privacy → Settings → Apps and websites",
+          "risk": "critical",
+          "why": "Disconnect connections with other apps and websites and disable using Facebook to log into other websites",
+          "steps": [
+            {
+              "text": "Open `Settings & privacy` → `Settings` → `Apps and websites`"
+            },
+            {
+              "text": "Remove connected apps and websites; be sure to change your login info first"
+            },
+            { "text": "Set `Apps, websites and games` → `Turn off`" },
+            { "text": "Set `Game and app notifications` → `Turn off`" }
+          ],
+          "sources": [
+            {
+              "label": "Facebook Profile → Settings & privacy → Settings → Apps and websites",
+              "url": "https://www.facebook.com/settings/?tab=applications"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "instagram",
+      "label": "Instagram",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "private-account",
+          "name": "Switch to a private account",
+          "path": "Instagram → Settings → Account privacy → Private account",
+          "risk": "critical",
+          "why": "A public Instagram account means your photos, location tags, tagged people, comments, and following list are visible to anyone on the internet - and indexed by search engines. Private accounts require approval before someone can follow you and see your content.",
+          "steps": [
+            {
+              "text": "Open Instagram → tap your profile icon → tap the hamburger menu → `Settings and privacy`"
+            },
+            { "text": "Tap `Account privacy`" },
+            { "text": "Toggle on `Private account`" },
+            {
+              "text": "Review your existing followers and remove any you don't recognize: go to your profile → `Followers` → tap the three dots next to a follower → `Remove`"
+            }
+          ]
+        },
+        {
+          "id": "activity-status",
+          "name": "Hide activity status and read receipts",
+          "path": "Instagram → Settings → Messages and story replies → Show activity status",
+          "risk": "high",
+          "why": "Instagram shows other users when you were last active and whether you've read their messages. This gives stalkers, abusers, and anyone monitoring you a real-time signal of when you're using your phone.",
+          "steps": [
+            {
+              "text": "Go to `Settings and privacy` → `Messages and story replies`"
+            },
+            { "text": "Turn off `Show activity status`" },
+            {
+              "text": "Note: turning this off also means you won't see others' activity status"
+            }
+          ]
+        },
+        {
+          "id": "data-sharing",
+          "name": "Opt out of data sharing with Meta partners",
+          "path": "Instagram → Settings → Ads → Ad preferences",
+          "risk": "high",
+          "why": "Instagram shares your activity with Meta's broader ad ecosystem, including information about posts you view, products you browse, and how long you spend on content. This feeds the same profile as Facebook's ad targeting.",
+          "steps": [
+            {
+              "text": "Go to `Settings and privacy` → `Ads` → `Ad preferences`"
+            },
+            {
+              "text": "Under `Ad settings`, turn off `Ads based on data from partners`"
+            },
+            {
+              "text": "Turn off `Ads based on your activity on Meta Products`"
+            },
+            {
+              "text": "Also go to `accountscenter.facebook.com` → `Ad preferences` and apply the same settings - the accounts center manages both Facebook and Instagram together"
+            }
+          ]
+        },
+        {
+          "id": "location",
+          "name": "Remove location data from posts and disable location access",
+          "path": "Phone Settings → Instagram → Location",
+          "risk": "high",
+          "why": "Location tags on photos reveal your home, workplace, and daily patterns over time. A history of tagged posts is a detailed map of your life. Photos also contain GPS metadata in the image file itself unless stripped.",
+          "steps": [
+            {
+              "text": "On iPhone: `Settings` → `Apps` → `Instagram` → `Location` → set to `Never` or `While using`"
+            },
+            {
+              "text": "On Android: `Settings` → `Apps` → `Instagram` → `Permissions` → `Location` → set to `Denied` or `Only while using`"
+            },
+            {
+              "text": "Before posting photos, don't add location tags - tap the location field and leave it blank"
+            },
+            {
+              "text": "To remove location from past posts: go to the post → tap the three dots → `Edit` → tap the location tag → `Remove location`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "x-twitter",
+      "label": "X (Twitter)",
+      "risk": "high",
+      "items": [
+        {
+          "id": "private-account",
+          "name": "Protect your posts (private account)",
+          "path": "X → Settings → Privacy and safety → Audience and tagging",
+          "risk": "high",
+          "why": "Public X/Twitter accounts are fully indexed by search engines. Every post, like, and reply is permanently public and searchable. Protected accounts limit your posts to approved followers only.",
+          "steps": [
+            {
+              "text": "Go to `Settings and support` → `Settings and privacy` → `Privacy and safety`"
+            },
+            {
+              "text": "Under `Audience and tagging`, toggle on `Protect your posts`"
+            },
+            {
+              "text": "Existing followers keep access - review your follower list and remove anyone you don't want reading your posts: `Profile` → `Followers` → three-dot menu next to any follower → `Remove follower`"
+            }
+          ]
+        },
+        {
+          "id": "discoverability",
+          "name": "Turn off discoverability by email and phone",
+          "path": "X → Settings → Privacy and safety → Discoverability and contacts",
+          "risk": "high",
+          "why": "By default, X allows anyone who has your phone number or email address to find your account. This lets people you've never connected with on X identify your account from a phone contact.",
+          "steps": [
+            {
+              "text": "Go to `Settings` → `Privacy and safety` → `Discoverability and contacts`"
+            },
+            {
+              "text": "Turn off `Let people who have your email address find you on X`"
+            },
+            {
+              "text": "Turn off `Let people who have your phone number find you on X`"
+            },
+            {
+              "text": "Under `Contacts`, tap `Remove all contacts` to delete any previously synced phone contacts"
+            }
+          ]
+        },
+        {
+          "id": "data-sharing",
+          "name": "Opt out of data sharing and personalization",
+          "path": "X → Settings → Privacy and safety → Data sharing and personalization",
+          "risk": "high",
+          "why": "X shares data with advertising partners and uses your activity - including off-platform browsing on sites with X buttons - to build an ad profile. Opting out limits how this data is used.",
+          "steps": [
+            {
+              "text": "Go to `Settings` → `Privacy and safety` → `Data sharing and personalization`"
+            },
+            {
+              "text": "Turn off `Allow additional information sharing with business partners`"
+            },
+            { "text": "Under `Ads preferences`, turn off `Personalized ads`" },
+            {
+              "text": "Under `Off-X activity`, turn off `Allow use of where you see X content across the web`"
+            },
+            {
+              "text": "Tap `See your X data` → `Interests and ads data` → review and remove interest categories X has assigned to you"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tiktok",
+      "label": "TikTok",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "consider-deleting",
+          "name": "Consider deleting TikTok entirely",
+          "path": "TikTok → Profile → Settings → Manage account → Delete account",
+          "risk": "critical",
+          "why": "TikTok is owned by ByteDance, a Chinese company legally required to comply with Chinese national security laws that can compel data sharing with the Chinese government. Security researchers have documented that TikTok collects an extraordinary amount of device data - clipboard content, keystroke patterns, network information, and more - far beyond what its stated functionality requires.",
+          "steps": [
+            {
+              "text": "If you decide to keep TikTok, complete the settings below to reduce your exposure. Understand that core data collection happens at the platform level regardless of these settings"
+            },
+            {
+              "text": "To delete: `Profile` → hamburger menu → `Settings and privacy` → `Manage account` → `Delete account`"
+            },
+            {
+              "text": "Before deleting, request your data download: `Settings` → `Account` → `Download your data`"
+            }
+          ]
+        },
+        {
+          "id": "private-account",
+          "name": "Set account to private",
+          "path": "TikTok → Settings → Privacy → Private account",
+          "risk": "critical",
+          "why": "A public TikTok account means your videos, likes, following list, and profile are visible to anyone. Private accounts limit your content to approved followers.",
+          "steps": [
+            {
+              "text": "Go to `Profile` → hamburger menu → `Settings and privacy` → `Privacy`"
+            },
+            { "text": "Toggle on `Private account`" },
+            {
+              "text": "Under `Discoverability`, turn off `Suggest your account to others`"
+            }
+          ]
+        },
+        {
+          "id": "tiktok-permissions",
+          "name": "Revoke unnecessary device permissions",
+          "path": "Phone Settings → TikTok → Permissions",
+          "risk": "critical",
+          "why": "TikTok requests access to contacts, location, microphone, camera, and other sensors. Most of this access is not needed for watching or creating videos. Revoking it limits how much the app can collect about your device and physical environment.",
+          "steps": [
+            {
+              "text": "On iPhone: `Settings` → `Apps` → `TikTok` → review each permission"
+            },
+            {
+              "text": "On Android: `Settings` → `Apps` → `TikTok` → `Permissions`"
+            },
+            {
+              "text": "Revoke: `Contacts`, `Location` (set to Never), `Microphone` (allow only while using if you make videos), `Calendar`, `Body sensors`"
+            },
+            {
+              "text": "Leave Camera on only if you create content - set to Allow only while using"
+            }
+          ]
+        },
+        {
+          "id": "ads-data",
+          "name": "Opt out of targeted ads and personalization",
+          "path": "TikTok → Settings → Privacy → Ads",
+          "risk": "high",
+          "why": "TikTok uses your in-app behavior and off-platform data to serve targeted ads and build a behavioral profile. Opting out limits how this data is used for advertising.",
+          "steps": [
+            { "text": "Go to `Settings and privacy` → `Privacy` → `Ads`" },
+            { "text": "Turn off `Ad personalization`" },
+            {
+              "text": "Under `Data from partners`, turn off `Use of off-TikTok activity for ad targeting`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "profile-visibility",
+          "name": "Control who can see your profile and activity",
+          "path": "LinkedIn → Settings → Visibility → Visibility of your profile and network",
+          "risk": "medium",
+          "why": "LinkedIn profiles are public by default and indexed by search engines, meaning your full employment history, education, connections, and email address are visible to anyone. LinkedIn data is a primary source for targeted phishing attacks and social engineering.",
+          "steps": [
+            {
+              "text": "Go to `Settings & Privacy` → `Visibility` → `Visibility of your profile and network`"
+            },
+            {
+              "text": "Set `Profile viewing options` to `Private mode` if you're browsing profiles and don't want to be seen"
+            },
+            {
+              "text": "Set `Who can see or download your email address` to `1st-degree connections` or `Only you`"
+            },
+            {
+              "text": "Turn off `Representing your organization and interests` to stop LinkedIn using your profile in ads"
+            },
+            { "text": "Set `Who can see your connections` to `Only you`" }
+          ]
+        },
+        {
+          "id": "data-sharing",
+          "name": "Opt out of data sharing with third parties",
+          "path": "LinkedIn → Settings → Data privacy",
+          "risk": "medium",
+          "why": "LinkedIn shares profile data and activity with third-party partners including Microsoft's ad ecosystem. It also uses your profile for salary research, audience insight products sold to employers, and recruiter tools.",
+          "steps": [
+            { "text": "Go to `Settings & Privacy` → `Data privacy`" },
+            {
+              "text": "Turn off `Data sharing with LinkedIn corporate affiliates` (Microsoft, Bing)"
+            },
+            {
+              "text": "Under `Research invitations`, turn off `LinkedIn research`"
+            },
+            {
+              "text": "Under `Salary data`, turn off `Contribute salary data`"
+            },
+            {
+              "text": "Under `Social, economic, and workplace research`, turn off participation"
+            }
+          ]
+        },
+        {
+          "id": "ai-training",
+          "name": "Opt out of AI training on your content",
+          "path": "LinkedIn → Settings → Data privacy → Data for AI improvement",
+          "risk": "medium",
+          "why": "LinkedIn uses your posts, comments, profile data, and activity to train Microsoft's AI models. This opt-out was added quietly in 2024 - most users are opted in by default.",
+          "steps": [
+            {
+              "text": "Go to `Settings & Privacy` → `Data privacy` → `Data for Generative AI Improvement`"
+            },
+            {
+              "text": "Toggle off `Use my data for training content creation AI models`"
+            },
+            {
+              "text": "Toggle off `Use my data for improving the relevance of ads`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general",
+      "label": "General guidance",
+      "risk": "high",
+      "items": [
+        {
+          "id": "social-mfa",
+          "name": "Enable MFA on every social media account",
+          "path": "Each platform → Settings → Security → Two-factor authentication",
+          "risk": "critical",
+          "why": "Social media account takeover is common and destructive - attackers use compromised accounts to spread misinformation, scam your followers, or publicly post content to damage your reputation. MFA makes this dramatically harder even if your password is leaked.",
+          "steps": [
+            {
+              "text": "Facebook: `Settings` → `Security and login` → `Two-factor authentication` → use an authenticator app"
+            },
+            {
+              "text": "Instagram: `Settings` → `Accounts center` → `Password and Security` → `Two-factor authentication`"
+            },
+            {
+              "text": "X: `Settings` → `Security and account access` → `Security` → `Two-factor authentication`"
+            },
+            {
+              "text": "TikTok: `Profile` → `Settings` → `Security` → `2-step verification`"
+            },
+            {
+              "text": "LinkedIn: `Settings` → `Sign in & security` → `Two-step verification`"
+            },
+            {
+              "text": "On all platforms: choose authenticator app over SMS wherever possible - see the Passwords & MFA guide for setup instructions"
+            }
+          ]
+        },
+        {
+          "id": "stop-sso",
+          "name": "Stop using social logins on other websites",
+          "path": "Each platform → Settings → Apps and websites",
+          "risk": "high",
+          "why": "Every time you use 'Continue with Facebook' or 'Sign in with Google' on a third-party website, you're connecting your social account to that service and telling the platform which services you use. Revoking old connections limits how your data flows between platforms.",
+          "steps": [
+            {
+              "text": "Facebook: `Settings` → `Security and login` → `Apps and websites` - remove any you no longer use"
+            },
+            {
+              "text": "Instagram: `accountscenter.facebook.com` → `Your information and permissions` → `Apps and websites`"
+            },
+            {
+              "text": "X: `Settings` → `Security and account access` → `Apps and sessions` → `Connected apps`"
+            },
+            {
+              "text": "LinkedIn: `Settings` → `Data privacy` → `Other applications`"
+            },
+            {
+              "text": "Going forward: create standalone accounts using a masked email rather than social login - see the phone masking guide for email relay options"
+            }
+          ]
+        },
+        {
+          "id": "audit-tagged-photos",
+          "name": "Audit and remove tagged photos",
+          "path": "Each platform → Profile → Photos",
+          "risk": "high",
+          "why": "Photos others have tagged you in reveal your appearance, location, social connections, and activities - often without your knowledge or consent. Platforms use face recognition on tagged photos to build biometric profiles.",
+          "steps": [
+            {
+              "text": "Facebook: `Profile` → `Photos` → `Photos of you` - remove tags from any photos you don't want associated with your profile"
+            },
+            {
+              "text": "Facebook: `Settings` → `Profile and tagging` → Turn off `Review posts you're tagged in before the post appears on your profile`... actually turn ON tag review so you approve tags before they appear"
+            },
+            {
+              "text": "Instagram: `Profile` → hamburger menu → `Your activity` → `Photos and videos` → `Tagged posts` - remove unwanted tags"
+            },
+            {
+              "text": "Instagram: `Settings` → `Privacy` → `Tags` → set `Allow tags from` to `People you follow`"
+            }
+          ]
+        },
+        {
+          "id": "unused-accounts",
+          "name": "Delete unused accounts",
+          "path": "Account settings → Delete or deactivate account",
+          "risk": "medium",
+          "why": "Dormant accounts are liabilities. They contain years of data, are more likely to be forgotten and left unprotected, and continue to accumulate data even when you're not using them",
+          "steps": [
+            {
+              "text": "Before deleting: download your data archive from each platform - Facebook, Instagram, X, and TikTok all offer this in settings under 'Your information' or 'Download your data'"
+            },
+            {
+              "text": "Facebook: `Settings` → `Your Facebook information` → `Deactivation and deletion`"
+            },
+            {
+              "text": "Instagram: `accountscenter.facebook.com` → `Personal details` → `Account ownership and control` → `Deactivation or deletion`"
+            },
+            {
+              "text": "X: `Settings` → `Your account` → `Deactivate account` (becomes permanent after 30 days)"
+            },
+            {
+              "text": "TikTok: `Profile` → `Settings` → `Manage account` → `Delete account`"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

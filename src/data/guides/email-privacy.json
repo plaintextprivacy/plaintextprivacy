@@ -1,0 +1,374 @@
+{
+  "slug": "email-privacy",
+  "layout": "checklist",
+  "category": "browsing",
+  "title": "Email privacy",
+  "subtitle": "Your email inbox is one of the most sensitive data stores in your digital life - it contains years of financial records, medical correspondence, account confirmations, and private conversations. This guide covers switching to a private provider, masking your address, and keeping your inbox clean.",
+  "meta": {
+    "timeMinutes": 25,
+    "platforms": ["Gmail", "Outlook", "ProtonMail", "iOS", "Android"]
+  },
+  "context": {
+    "title": "Why email is a high-value target",
+    "body": "Your primary email address is the master key to your digital life. Most websites use it for account recovery - which means whoever controls your inbox can reset passwords and take over nearly every account you own. It's also a permanent archive that major providers can be compelled to hand over in response to legal requests.",
+    "body2": "Google scans Gmail content to serve targeted ads and build behavioral profiles. Microsoft's Outlook does similar. Moving to a privacy-focused provider is the highest-impact change you can make, but this guide also covers practical improvements you can make without switching providers."
+  },
+  "warning": {
+    "body": "Before switching email providers: update your most important accounts first - banking, insurance, Apple/Google, and your password manager. Losing access to your recovery email before you've updated these accounts can lock you out permanently. Go slowly and methodically."
+  },
+  "sections": [
+    {
+      "id": "provider",
+      "label": "Choose a private email provider",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "switch-protonmail",
+          "name": "Switch to ProtonMail for sensitive communications",
+          "path": "mail.proton.me",
+          "risk": "critical",
+          "why": "ProtonMail uses end-to-end encryption for emails between ProtonMail users - even Proton cannot read them. It's based in Switzerland under strong privacy laws, has never complied with a request to hand over message content (only metadata under court order), and is open source with published independent audits. The free tier is generous enough for most people.",
+          "steps": [
+            {
+              "text": "Create a free account at `mail.proton.me` - choose a username that doesn't identify you"
+            },
+            {
+              "text": "Set a strong passphrase for your account and store it in your password manager"
+            },
+            {
+              "text": "Enable two-factor authentication immediately: `Settings` → `Account and password` → `Two-factor authentication`"
+            },
+            {
+              "text": "Set up an account recovery method - either a recovery email address (can be another ProtonMail) or a recovery phrase. Store the recovery phrase in your password manager"
+            },
+            {
+              "text": "Download the ProtonMail app on your phone for mobile access"
+            }
+          ]
+        },
+        {
+          "id": "provider-alternatives",
+          "name": "Evaluate other private email providers",
+          "path": "Various - see options",
+          "risk": "critical",
+          "why": "ProtonMail is the best-known option but not the only strong choice. Different providers offer different tradeoffs around price, features, and jurisdiction - the right choice depends on your threat model.",
+          "steps": [
+            {
+              "text": "`Tutanota` (now Tuta) - German-based, end-to-end encrypted, open source, free tier available. More aggressive on encryption than Proton (encrypts subject lines too). Good Proton alternative at `tuta.com`"
+            },
+            {
+              "text": "`Startmail` - Netherlands-based, PGP encryption, supports custom domains and aliases. Focused purely on email privacy at `startmail.com`"
+            },
+            {
+              "text": "`Fastmail` - Australian-based, strong privacy practices but not E2EE by default. Best if you need maximum compatibility and custom domains over zero-knowledge encryption"
+            },
+            {
+              "text": "Avoid: Gmail, Yahoo Mail, Outlook/Hotmail for sensitive communications - all scan email content and comply with US law enforcement requests with no end-to-end encryption"
+            }
+          ]
+        },
+        {
+          "id": "custom-domain",
+          "name": "Set up a custom domain for long-term email independence",
+          "path": "Your email provider → Settings → Custom domains",
+          "risk": "high",
+          "why": "If you use a @proton.me or @gmail.com address and ever want to switch providers, you have to update every account you've signed up to. A custom domain (e.g. yourname.com) means you own the address permanently - switch providers freely without breaking any logins.",
+          "steps": [
+            {
+              "text": "Purchase a domain from a privacy-respecting registrar - `Porkbun` and `Njalla` are good options. Avoid GoDaddy"
+            },
+            {
+              "text": "In ProtonMail: `Settings` → `Identity and addresses` → `Add address` → `Add domain`"
+            },
+            {
+              "text": "Follow the DNS verification steps - your domain registrar will have a DNS settings panel where you add the records Proton provides"
+            },
+            {
+              "text": "Once set up, use `you@yourdomain.com` as your primary address going forward"
+            },
+            {
+              "text": "Note: Proton's custom domain feature requires a paid plan (~$4/month)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "migration",
+      "label": "Migrate away from Gmail or Outlook",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "migrate-plan",
+          "name": "Plan your migration before you start",
+          "path": "Applies before switching providers",
+          "risk": "critical",
+          "why": "Switching email providers without a plan can lock you out of critical accounts. Approaching it methodically - high-priority accounts first, then bulk updates - makes the transition smooth and safe.",
+          "steps": [
+            {
+              "text": "Search your current inbox for `verify`, `confirm your email`, and `welcome` to inventory every account tied to your old address"
+            },
+            {
+              "text": "Categorize accounts into three tiers - Critical (banking, insurance, Apple/Google, password manager, government), Important (shopping, subscriptions, services), Everything else"
+            },
+            {
+              "text": "Update Critical accounts first over 1–2 days before doing anything else"
+            },
+            {
+              "text": "Set up email forwarding from your old address to your new one: in Gmail go to `Settings → See all settings → Forwarding and POP/IMAP → Add a forwarding address`"
+            },
+            {
+              "text": "Keep forwarding active for at least 6 months - you'll catch accounts you missed"
+            }
+          ]
+        },
+        {
+          "id": "download-gmail-data",
+          "name": "Download and archive your Gmail data before leaving",
+          "path": "takeout.google.com",
+          "risk": "high",
+          "why": "Before closing your Gmail account, download everything - emails, contacts, calendar data. Your archive may contain important documents, receipts, legal notices, and other records you'll want to keep even if you don't actively use Gmail anymore.",
+          "steps": [
+            {
+              "text": "Go to `takeout.google.com` and sign in to your Google account"
+            },
+            {
+              "text": "Select `Mail` and `Contacts` (and `Calendar` if you use Google Calendar)"
+            },
+            {
+              "text": "Choose `.mbox` format for email - it's importable into most email clients"
+            },
+            {
+              "text": "Click `Next step` → `Create export`. Google will email you when the download is ready - this can take hours to days for large inboxes"
+            },
+            {
+              "text": "Store the archive in a secure location - encrypted external drive or ProtonDrive"
+            }
+          ]
+        },
+        {
+          "id": "delete-sensitive-emails",
+          "name": "Delete sensitive emails and attachments from your old inbox",
+          "path": "Gmail → Search → Delete",
+          "risk": "high",
+          "why": "Even if you stop using Gmail, your data remains on Google's servers unless you delete it. Sensitive documents in your inbox - tax returns, medical records, legal correspondence, financial statements - can be subpoenaed from Google for years after you stopped reading them.",
+          "steps": [
+            {
+              "text": "Search for sensitive keywords: `tax`, `invoice`, `medical`, `insurance`, `passport`, `social security`, `bank statement`, `court`"
+            },
+            {
+              "text": "Download any important attachments locally before deleting"
+            },
+            {
+              "text": "Delete the emails, then go to `Trash` and `Empty trash` - deleted emails stay in trash for 30 days before permanent deletion"
+            },
+            {
+              "text": "Repeat this audit every few months while you're still transitioning"
+            },
+            {
+              "text": "When ready to fully leave: `Google Account` → `Data & privacy` → `Delete your Google Account`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "masking",
+      "label": "Email address masking",
+      "risk": "high",
+      "items": [
+        {
+          "id": "use-relay",
+          "name": "Use relay addresses for website signups",
+          "path": "Firefox Relay, Apple Hide My Email, or SimpleLogin",
+          "risk": "high",
+          "why": "Every website you give your real email address to becomes a potential breach vector. A relay address forwards email to your real inbox while keeping your actual address private. If you start receiving spam on a relay, you can disable it with one click - without changing your real address or updating any accounts.",
+          "steps": [
+            {
+              "text": "`Firefox Relay` (relay.firefox.com) - free tier gives 5 relay addresses. Premium ($5/month) gives unlimited aliases and phone number masking"
+            },
+            {
+              "text": "`Apple Hide My Email` - included with iCloud+ ($1/month). Creates random relay addresses on the fly directly from Safari's autofill. Best option for iPhone users signing up for apps"
+            },
+            {
+              "text": "`SimpleLogin` - open source, free tier with 15 aliases. Integrates natively with ProtonMail. Unlimited aliases on paid tier. Available at `simplelogin.io`"
+            },
+            {
+              "text": "`Addy.io` (formerly AnonAddy) - open source, generous free tier, self-hostable. Good for high-volume alias usage at `addy.io`"
+            },
+            {
+              "text": "Going forward: use a relay address for every website signup that isn't banking or government. Reserve your real address for people you know personally"
+            }
+          ]
+        },
+        {
+          "id": "throwaway-addresses",
+          "name": "Use disposable addresses for one-time verifications",
+          "path": "temp-mail.org or similar",
+          "risk": "medium",
+          "why": "Some websites require email verification just to view content or download a file. A disposable inbox receives the verification email without you giving up any real contact information - the inbox is temporary and you never have to check it again.",
+          "steps": [
+            {
+              "text": "`temp-mail.org` - generates a random temporary inbox. No signup required. Inbox expires after a short time"
+            },
+            {
+              "text": "`10minutemail.com` - gives you a 10-minute inbox for quick verifications"
+            },
+            {
+              "text": "`Mailinator.com` - creates public inboxes by name (e.g. anything@mailinator.com). Note these are public - don't use for anything sensitive, only for single-use confirmations"
+            },
+            {
+              "text": "Use these only for truly throwaway signups - for anything you might want to access again, use a persistent relay like SimpleLogin instead"
+            }
+          ]
+        },
+        {
+          "id": "audit-existing-addresses",
+          "name": "Audit where your email address has been exposed",
+          "path": "haveibeenpwned.com",
+          "risk": "high",
+          "why": "Your email address has almost certainly appeared in at least one data breach. Knowing which breaches it appeared in helps you identify which accounts to update first and which passwords to rotate immediately.",
+          "steps": [
+            {
+              "text": "Go to `haveibeenpwned.com` and enter each email address you use"
+            },
+            {
+              "text": "For every breach listed, check whether you still use that service - if so, update the password immediately using your password manager"
+            },
+            {
+              "text": "If your email appears in many breaches, it's widely distributed to spam lists - consider this a strong argument for moving to a new private address for important communications"
+            },
+            {
+              "text": "Enable breach notifications - HIBP can email you if your address appears in future breaches"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "label": "Email account security",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "email-mfa",
+          "name": "Enable MFA on your email account - this is non-negotiable",
+          "path": "Your email provider → Settings → Security → Two-factor authentication",
+          "risk": "critical",
+          "why": "Your email account is the most important account to protect because it controls access to every other account via password reset. If an attacker gets into your email, they can take over your bank, your Apple or Google account, and everything else within minutes. MFA is the single most important thing you can do.",
+          "steps": [
+            {
+              "text": "ProtonMail: `Settings` → `Account and password` → `Two-factor authentication` → enable with an authenticator app"
+            },
+            {
+              "text": "Gmail: `myaccount.google.com` → `Security` → `2-Step Verification` → add an authenticator app"
+            },
+            {
+              "text": "Outlook: `account.microsoft.com` → `Security` → `Advanced security options` → enable authenticator app"
+            },
+            {
+              "text": "Use an authenticator app (Proton Authenticator, Aegis, or Raivo) - not SMS. SMS is vulnerable to SIM swapping"
+            },
+            {
+              "text": "Save your backup codes in your password manager vault immediately after enabling MFA"
+            }
+          ]
+        },
+        {
+          "id": "strong-password",
+          "name": "Use a strong unique password for your email account",
+          "path": "Your email provider → Settings → Account → Change password",
+          "risk": "critical",
+          "why": "Your email password should be the strongest password you have - at least 16 random characters. Because you should only ever need to type it into your password manager's autofill, there's no reason to compromise on complexity.",
+          "steps": [
+            {
+              "text": "Open your password manager and generate a new password - 20+ characters, mixed case, numbers, and symbols"
+            },
+            {
+              "text": "Update your email account password and save the new one in your password manager"
+            },
+            {
+              "text": "Verify MFA is still active after changing the password"
+            },
+            {
+              "text": "If you have recovery codes or a recovery email set, review those now too and make sure they're current"
+            }
+          ]
+        },
+        {
+          "id": "connected-apps",
+          "name": "Revoke access for apps connected to your email",
+          "path": "Your email provider → Settings → Security → Connected apps or Third-party access",
+          "risk": "high",
+          "why": "Many apps request permission to read your email - productivity tools, calendar apps, email clients, and services that claimed to 'import your contacts.' Each of these connections is a potential breach vector. Apps you no longer use retain read access indefinitely unless you revoke it.",
+          "steps": [
+            {
+              "text": "Gmail: `myaccount.google.com` → `Security` → `Third-party apps with account access` → review and remove any app you don't actively use or recognize"
+            },
+            {
+              "text": "Outlook: `account.microsoft.com` → `Privacy` → `Apps and services` → revoke unused apps"
+            },
+            {
+              "text": "ProtonMail: `Settings` → `Security and privacy` → `OAuth` → review connected apps"
+            },
+            {
+              "text": "Be especially cautious about anything with 'read all email' or 'send email on your behalf' permissions - these are extremely broad"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hygiene",
+      "label": "Inbox hygiene",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "unsubscribe",
+          "name": "Unsubscribe from marketing emails and newsletters",
+          "path": "Email client → Unsubscribe link",
+          "risk": "medium",
+          "why": "Marketing emails contain tracking pixels - invisible 1x1 images that, when loaded, tell the sender your email address is active, your IP address, your device type, and when you opened the email. Unsubscribing eliminates the ongoing tracking and reduces your inbox's exposure surface.",
+          "steps": [
+            {
+              "text": "For legitimate companies (brands you've bought from, newsletters you signed up for): use the unsubscribe link at the bottom of the email"
+            },
+            {
+              "text": "For spam or companies you don't recognize: do NOT click unsubscribe - it confirms your address is active. Mark as spam instead"
+            },
+            {
+              "text": "`unroll.me` and `cleanfox.io` offer bulk unsubscribe - but read their privacy policies, as they analyze your inbox content to function"
+            },
+            {
+              "text": "Consider disabling automatic image loading in your email client to block tracking pixels: in Gmail go to `Settings → See all settings → Images → Ask before displaying external images`"
+            }
+          ]
+        },
+        {
+          "id": "email-client-settings",
+          "name": "Disable tracking pixels in your email client",
+          "path": "Email client → Settings → Images",
+          "risk": "medium",
+          "why": "Email tracking pixels are used by marketers to know exactly when you opened an email, how many times, on what device, and from what location. This data feeds advertising profiles and is sold to data brokers. Blocking remote image loading completely eliminates this tracking vector.",
+          "steps": [
+            {
+              "text": "Gmail (web): `Settings` → `See all settings` → `General` → `Images` → select `Ask before displaying external images`"
+            },
+            {
+              "text": "Apple Mail (iPhone): `Settings` → `Apps` → `Mail` → turn off `Load Remote Images`"
+            },
+            {
+              "text": "Apple Mail (Mac): `Mail` → `Settings` → `Privacy` → enable `Protect Mail Activity` - this routes remote images through Apple's proxy to hide your IP"
+            },
+            {
+              "text": "Outlook: `File` → `Options` → `Trust Center` → `Trust Center Settings` → `Automatic Download` → check `Don't download pictures automatically`"
+            },
+            {
+              "text": "ProtonMail: blocks remote content by default - no action needed"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

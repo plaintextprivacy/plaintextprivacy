@@ -1,0 +1,467 @@
+{
+  "slug": "iphone",
+  "layout": "checklist",
+  "category": "phones",
+  "title": "iPhone",
+  "subtitle": "Your iPhone collects a lot of data by default, including your location, app activity, personal relationships, and advertising identifiers. This guide provides settings and features to help you improve your privacy and security. You don't need to do everything to get some benefit. Focus on the things that make sense for your situation.",
+  "meta": {
+    "reviewed": "May 2026",
+    "timeMinutes": 45,
+    "platforms": ["iOS 26+"]
+  },
+  "context": {
+    "title": "Before you start",
+    "body": "For each section, ask yourself what you're trying to protect, who might want to gain (unauthorized) access to it, how likely it is that someone will try to access that data, and what would happen if they gain access. For example, you might consider turning on Advanced Data Protection because you have sensitive information backed up to your iCloud account.",
+    "body2": "If you can't find a setting on your phone, check the iPhone User Guide that's linked at the bottom of most accordions and search for your iOS version."
+  },
+  "warning": {
+    "body": "Some courts have ruled that using your fingerprint or Face ID to unlock your phone is a nontestimonial act, which means law enforcement could lawfully compel you to unlock your phone using those methods without a subpoena. Your password is a testimonial act, which is protected by the 5th amendment, so you cannot be *legally* be compelled to divulge it. Consider this when configuring Face ID & Passcode settings."
+  },
+  "sections": [
+    {
+      "id": "general",
+      "label": "General",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "automatic-updates",
+          "name": "Automatic updates",
+          "path": "Settings → General → Software Update",
+          "risk": "critical",
+          "why": "An up to date operating system is key to maintaining your phone's security as it ensures security updates are installed right away. The latest versions may block tools like Cellebrite and GrayKey.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `General` → `Software Update` → `Automatic Updates`"
+            },
+            {
+              "text": "Toggle on `Automatically Install`"
+            },
+            {
+              "text": "Next, open `Settings` → `Privacy & Security` → `Background Security Improvements`"
+            },
+            {
+              "text": "Toggle on `Automatically Install`"
+            }
+          ]
+        },
+        {
+          "id": "public-activity",
+          "name": "Turn off public activity",
+          "path": "Venmo → Me → Settings → Privacy",
+          "risk": "high",
+          "why": "Turn off your public activity on apps like Venmo. Transactions are public by default. Public activity can be used to tie you to others, like friends and family.",
+          "steps": [
+            {
+              "text": "Open `Venmo` → `Me` → `Settings` → `Privacy`"
+            },
+            {
+              "text": "Under `Default Privacy Settings` → change to `Private`"
+            },
+            {
+              "text": "Under `More` → `Past Transactions` → `Change All to Private`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Who Can See What You Do On Venmo? - Consumer Reports",
+              "url": "https://www.consumerreports.org/money/digital-payments/who-can-see-what-you-do-on-venmo-a6906448606/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "biometrics",
+      "label": "Biometrics & passcode",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "alphanumeric-passcode",
+          "name": "Use an alphanumeric passcode",
+          "path": "Settings → Face ID & Passcode → Change Passcode",
+          "risk": "critical",
+          "why": "An alphanumeric password (meaning numbers, letters, and special characters) that's 8 or more characters is more secure than a 4 or 6 digit PIN. If possible, aim for a password that's 12 or more characters.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Face ID & Passcode`"
+            },
+            {
+              "text": "Tap `Change Passcode` and enter your current passcode"
+            },
+            {
+              "text": "Tap `Passcode Options`"
+            },
+            {
+              "text": "Select `Custom Alphanumeric Code`"
+            },
+            {
+              "text": "Choose a passphrase you can memorize. Aim for 8+ characters"
+            }
+          ],
+          "sources": [
+            {
+              "label": "iPhone User Guide - Apple",
+              "url": "https://support.apple.com/guide/iphone/set-a-passcode-iph14a867ae/ios"
+            }
+          ]
+        },
+        {
+          "id": "biometrics",
+          "name": "Restrict biometrics",
+          "path": "Settings → Face ID & Passcode",
+          "risk": "critical",
+          "why": "Best practice is to turn off biometrics completely, however, that advice is not accessible for everyone. Additionally, Advanced Data Protection is unavailable if you do not have biometrics enabled.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Face ID & Passcode`"
+            },
+            {
+              "text": "Scroll to `Face ID Attention` → turn on `Require Attention for Face ID`"
+            },
+            {
+              "text": "You can temporarily disable biometrics in an emergency by triggering the power-off screen (hold the power + volume button or rapidly press the power button 5 times)"
+            }
+          ],
+          "sources": [
+            {
+              "label": "iPhone User Guide - Apple",
+              "url": "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/26/ios/26"
+            }
+          ]
+        },
+        {
+          "id": "control-center",
+          "name": "Disable Control Center on lock screen",
+          "path": "Settings → Face ID & Passcode",
+          "risk": "high",
+          "why": "This setting makes your Control Center inaccessible while your phone is locked. This can prevent someone from putting your phone in airplane mode or disabling cellular data without your consent. They can still turn your phone off, but that's ok.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Face ID & Passcode`"
+            },
+            {
+              "text": "Under `Allow access when locked` → toggle off `Control Center`"
+            }
+          ]
+        },
+        {
+          "id": "passcode-changes",
+          "name": "Disable changes to Face ID & Passcode",
+          "path": "Settings → Screen Time → Content & Privacy Restrictions",
+          "risk": "high",
+          "why": "This disables the ability to make changes to your Face ID or Passcode and hides the option from your settings. To increase the effectiveness of this setting, you should set a Screen Time passcode and make sure it’s different from your iPhone passcode. Note: to make future changes to Face ID & Passcode, you must turn this setting back on.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Screen Time` → `Content & Privacy Restrictions`"
+            },
+            {
+              "text": "Under `Allow Changes to` → change `Passcode & Face ID` to `Don't Allow`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icloud",
+      "label": "iCloud protection",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "2fa",
+          "name": "Enable 2FA",
+          "path": "Settings → [Your Name] → Sign-In & Security → Two-Factor Authentication",
+          "risk": "critical",
+          "why": "Two-factor authentication can prevent someone from accessing your iCloud account even if they have your password.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `[Your Name]` → `Sign-In & Security` → `Two-Factor Authentication`"
+            },
+            {
+              "text": "Follow the prompts"
+            }
+          ]
+        },
+        {
+          "id": "recovery-key",
+          "name": "Enable Recovery Key",
+          "path": "Settings → [Your Name] → Sign-In & Security → Recovery Key",
+          "risk": "critical",
+          "why": "Allows you to regain access to your account if you lose your login credentials or if your account is taken over. Be sure to save your recovery key somewhere safe like a password manager, and not on your phone or computer.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `[Your Name]` → `Sign-In & Security` → `Recovery Key`"
+            },
+            {
+              "text": "Follow the prompts"
+            }
+          ]
+        },
+        {
+          "id": "advanced-data-protection",
+          "name": "Enable Advanced Data Protection",
+          "path": "Settings → [Your Name] → iCloud → Advanced Data Protection",
+          "risk": "critical",
+          "why": "Advanced Data Protection enables end-to-end encryption for iCloud backups, photos, notes, messages, and more. Only your devices can decrypt the data. Not even Apple can access it. Note that you must have biometrics enabled to turn it on.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `[your name]` → `iCloud`"
+            },
+            {
+              "text": "Open `Advanced Data Protection`"
+            },
+            {
+              "text": "Choose `Turn On Advanced Data Protection` and follow the prompts"
+            },
+            {
+              "text": "Set up an `Account Recovery Contact` or save your `Recovery Key` so you don't lose access to your iCloud"
+            }
+          ]
+        },
+        {
+          "id": "find-my",
+          "name": "Enable Find My",
+          "path": "Settings → [Your Name] → Find My",
+          "risk": "high",
+          "why": "You can set up Find My to be tracked even if your phone is dead or has been turned off. It will ping the last known location.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `[your name]` → `Find My` → `Find My iPhone`"
+            },
+            {
+              "text": "Toggle on `Find My network`"
+            },
+            {
+              "text": "Toggle on `Send Last Location`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "location",
+      "label": "Location services",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "location-services",
+          "name": "Restrict location services",
+          "path": "Settings → Privacy & Security → Location Services",
+          "risk": "critical",
+          "why": "Location data is actively sold to data brokers and has been purchased by federal agencies including ICE to locate individuals. Most apps have no legitimate need for your location - especially in the background.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `Location Services`"
+            },
+            {
+              "text": "For apps that don't need your location (social media, shopping, games), set to `Never`"
+            },
+            {
+              "text": "For apps that occasionally need location (maps, rideshare, food delivery), set to `While Using the App`"
+            },
+            {
+              "text": "Scroll to `System Services` and disable `Location-Based Ads`, `Location-Based Apple Suggestions`, and `Significant Locations`"
+            },
+            {
+              "text": "Also disable `iPhone Analytics` and `Routing & Traffic` if you don't use Apple Maps"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tracking",
+      "label": "App tracking",
+      "risk": "high",
+      "items": [
+        {
+          "id": "cross-app-tracking",
+          "name": "Disable cross-app tracking requests",
+          "path": "Settings → Privacy & Security → Tracking",
+          "risk": "high",
+          "why": "When Allow Apps to Request to Track is on, apps can ask you to let them track your activity across other apps - feeding your data to ad networks. Turning this off means apps can't even prompt you, and any existing permissions are automatically revoked.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `Tracking`"
+            },
+            {
+              "text": "Toggle off `Allow Apps to Request to Track`"
+            },
+            {
+              "text": "Any apps listed below will automatically be denied - review and confirm all are denied"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "notifications",
+      "label": "Notifications",
+      "risk": "high",
+      "items": [
+        {
+          "id": "notification-previews",
+          "name": "Hide notification previews",
+          "path": "Settings → Notifications → Show Previews",
+          "risk": "high",
+          "why": "Push notifications can be tied to your identity. The FBI has been documented requesting push notification records from Apple and push notification data was recently extracted from an iPhone",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Notifications`"
+            },
+            {
+              "text": "Tap `Show Previews` at the top and set to `When Unlocked` or `Never`"
+            },
+            {
+              "text": "For high-risk apps (Signal, banking, email), open each app in the notifications list and set `Show Previews` to `Never` individually"
+            }
+          ],
+          "sources": [
+            {
+              "label": "FBI has requested push notification records from Apple and Google - Washington Post",
+              "url": "https://www.washingtonpost.com/technology/2024/02/29/push-notification-surveillance-fbi/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airdrop",
+      "label": "AirDrop",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "airdrop-contacts-only",
+          "name": "Restrict AirDrop to contacts only",
+          "path": "Settings → General → AirDrop",
+          "risk": "medium",
+          "why": "Having AirDrop set to Everyone allows any nearby person to attempt to send you files. While mostly a nuisance risk, it can also be used by bad actors to push malicious content to your device.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `General` → `AirDrop`"
+            },
+            {
+              "text": "Select `Contacts Only` for everyday use, or `Receiving Off` when in crowded public spaces"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ads",
+      "label": "Advertising ID",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "personalized-ads",
+          "name": "Reset and disable personalized ads",
+          "path": "Settings → Privacy & Security → Apple Advertising",
+          "risk": "medium",
+          "why": "Your Advertising Identifier (IDFA) is a unique ID tied to your device that ad networks use to track your behavior across apps and build a detailed profile. Disabling personalized ads limits that profiling.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `Apple Advertising`"
+            },
+            {
+              "text": "Toggle off `Personalized Ads`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "theft",
+      "label": "Stolen device protection",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "stolen-device-protection",
+          "name": "Enable Stolen Device Protection",
+          "path": "Settings → Face ID & Passcode → Stolen Device Protection",
+          "risk": "medium",
+          "why": "Stolen Device Protection adds biometric authentication and a one-hour security delay for sensitive actions when away from familiar locations - preventing a thief who observed your passcode from locking you out of your account.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Face ID & Passcode`"
+            },
+            {
+              "text": "Scroll down and tap `Stolen Device Protection`"
+            },
+            {
+              "text": "Toggle on `Stolen Device Protection`"
+            },
+            {
+              "text": "Under Require Security Delay, consider selecting `Always` for maximum protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "label": "Advanced",
+      "risk": "high",
+      "items": [
+        {
+          "id": "security-key",
+          "name": "Enable security keys for 2FA",
+          "path": "Settings → Privacy & Security → Tracking",
+          "risk": "high",
+          "why": "When Allow Apps to Request to Track is on, apps can ask you to let them track your activity across other apps - feeding your data to ad networks. Turning this off means apps can't even prompt you, and any existing permissions are automatically revoked.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `Tracking`"
+            },
+            {
+              "text": "Toggle off `Allow Apps to Request to Track`"
+            },
+            {
+              "text": "Any apps listed below will automatically be denied - review and confirm all are denied"
+            }
+          ]
+        },
+        {
+          "id": "lockdown-mode",
+          "name": "Lockdown Mode",
+          "path": "Settings → Privacy & Security → Lockdown Mode",
+          "risk": "high",
+          "why": "Lockdown Mode is a restrictive setting that can be used in an emergency or when you have reasonable belief that your phone is at risk of being taken. It blocks USB-C connections, prevents biometrics from being used (only after initial reboot), and many other features. You will likely only need this turned on some of the time as it's very restrictive for day-to-day use.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `Lockdown Mode` → `Turn On Lockdown Mode`"
+            },
+            {
+              "text": "Follow the prompts"
+            }
+          ]
+        },
+        {
+          "id": "lockdown-shortcut",
+          "name": "Lockdown Mode shortcut",
+          "path": "Shortcuts → New Shortcut",
+          "risk": "high",
+          "why": "Unlike Android, there isn't a built-in shortcut to access Lockdown Mode on iOS. However, it's possible to create one using the iOS Shortcuts feature that's avalable on most iPhones.",
+          "steps": [
+            {
+              "text": "Open `Shortcuts` → `+ (plus sign)`"
+            },
+            {
+              "text": "Search for `Open URLs`"
+            },
+            {
+              "text": "Tap on `URL` to edit"
+            },
+            {
+              "text": "Paste the following: `prefs:root=Privacy&path=LOCKDOWN_MODE` then rename as 'Lockdown'"
+            },
+            {
+              "text": "Next, add to your Control Center → swipe down to open Control Center → tap and hold down on the screen until you can edit the widgets"
+            },
+            {
+              "text": "Tap `Add a Control` → search for `Shortcuts` → `Run Shortcut` → `Choose` → select the shortcut you created → then exit the prompts"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

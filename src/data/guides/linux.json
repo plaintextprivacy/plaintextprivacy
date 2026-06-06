@@ -1,0 +1,104 @@
+{
+  "slug": "linux",
+  "layout": "checklist",
+  "category": "computers",
+  "title": "Linux",
+  "subtitle": "Linux is the most privacy-respecting desktop OS available. This guide helps you choose the right distro and covers the most important post-install steps.",
+  "meta": { "platforms": ["Ubuntu", "Linux Mint", "Zorin OS"] },
+  "context": {
+    "title": "Why Linux?",
+    "body": "Unlike Windows or macOS, Linux doesn't have a corporation with an advertising business model behind it. Most distros collect zero telemetry by default, ship with no bloatware, and give you full control over what runs on your system. The learning curve is real but manageable - especially with beginner-friendly distros."
+  },
+  "sections": [
+    {
+      "id": "linux-start",
+      "label": "Start here",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "choose-distro",
+          "name": "Choose the right distro for your experience level",
+          "path": "Download from official distro website",
+          "risk": "critical",
+          "why": "The right distro makes the difference between a smooth transition and a frustrating one. Beginner-friendly distros like Linux Mint and Zorin OS are designed to feel familiar to Windows users while offering full Linux privacy benefits.",
+          "steps": [
+            {
+              "text": "`Linux Mint` - looks and feels like older Windows. Best choice for complete beginners switching from Windows. Download at `linuxmint.com`"
+            },
+            {
+              "text": "`Zorin OS` - polished UI with Windows-like layout. Supports many Windows apps via compatibility layer. Download at `zorin.com`"
+            },
+            {
+              "text": "`Ubuntu` - most widely used desktop Linux. Massive community support and documentation. Download at `ubuntu.com`"
+            },
+            {
+              "text": "To try Linux without replacing your OS: use `Balena Etcher` to flash the ISO to a USB drive, then boot from the USB (hold F12 or Del on startup)"
+            },
+            {
+              "text": "Note: Linux Mint and Zorin don't officially support Apple Silicon Macs - best on Intel hardware or as a Windows replacement"
+            }
+          ]
+        },
+        {
+          "id": "disk-encryption",
+          "name": "Enable full-disk encryption during installation",
+          "path": "Available in the installer for all recommended distros",
+          "risk": "critical",
+          "why": "Linux is only as secure as its encryption. Enable LUKS full-disk encryption during the installation wizard - it's a checkbox in the installer. This is much harder to add after the fact.",
+          "steps": [
+            {
+              "text": "During the installation wizard, look for `Encrypt the new Linux installation for security` or `Use LVM with encryption` - check it"
+            },
+            {
+              "text": "Set a strong encryption passphrase - this is entered at boot before anything else loads"
+            },
+            {
+              "text": "Store this passphrase somewhere physically secure - if you forget it, your data is unrecoverable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "linux-high",
+      "label": "High",
+      "risk": "high",
+      "items": [
+        {
+          "id": "linux-updates",
+          "name": "Keep packages updated",
+          "path": "Terminal: sudo apt update && sudo apt upgrade",
+          "risk": "high",
+          "why": "Linux security depends on keeping your kernel and packages up to date. Unlike Windows, updates rarely require a restart and are fast to apply.",
+          "steps": [
+            {
+              "text": "Open Terminal and run: `sudo apt update && sudo apt upgrade`"
+            },
+            {
+              "text": "Or use the graphical Update Manager (comes with Mint and Ubuntu) - it shows available updates and lets you apply them with one click"
+            },
+            {
+              "text": "Enable automatic security updates: `sudo apt install unattended-upgrades` then `sudo dpkg-reconfigure unattended-upgrades`"
+            }
+          ]
+        },
+        {
+          "id": "ufw-firewall",
+          "name": "Enable UFW firewall",
+          "path": "Terminal: sudo ufw enable",
+          "risk": "high",
+          "why": "UFW (Uncomplicated Firewall) is Linux's built-in firewall. It's installed on most Ubuntu-based distros but not enabled by default. One command turns it on and blocks unsolicited incoming connections.",
+          "steps": [
+            { "text": "Open Terminal and run: `sudo ufw enable`" },
+            {
+              "text": "Verify it's active: `sudo ufw status` - you should see `Status: active`"
+            },
+            {
+              "text": "UFW blocks all incoming connections by default while allowing outgoing - this is the right default for a personal computer"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

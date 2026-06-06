@@ -1,0 +1,190 @@
+{
+  "slug": "windows",
+  "layout": "checklist",
+  "category": "computers",
+  "title": "Windows",
+  "subtitle": "Windows 11 collects extensive user activity data by default. Check off each security and privacy setting to protect your data.",
+  "meta": {
+    "reviewed": "May 2026",
+    "timeMinutes": 30,
+    "platforms": ["Windows 11 Pro"]
+  },
+  "context": {
+    "title": "Before you start",
+    "body": "Windows Home and Windows Pro have different features. Most of the setting recommendations are based on Windows 11 Pro feature availability. If you must use Windows, it's our recommendation to purchase Windows Pro as it supports Bitlocker, which offers a more robust disk encryption than Windows Home.",
+    "body2": "Since Microsoft has officially sunset Windows 10, this guide does not cover Windows 10 specific settings, however, many of the settings mentioned below are available on Windows 10. We recommended upgrading to Windows 11 so you continue receiving vulnerability patches."
+  },
+  "sections": [
+    {
+      "id": "windows-critical",
+      "label": "Critical",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "bitlocker",
+          "name": "Enable BitLocker drive encryption",
+          "path": "Settings → Privacy & Security → Device Encryption",
+          "risk": "critical",
+          "why": "Without encryption, anyone with physical access to your computer can pull the hard drive and read all your files; bypassing your Windows login entirely. BitLocker encrypts the hard drive, making access more difficult without the recovery key.",
+          "steps": [
+            {
+              "text": "On Windows Home: open `Settings` → `Privacy & Security` → `Device Encryption`"
+            },
+            {
+              "text": "Follow the prompts"
+            },
+            {
+              "text": "On Windows Pro/Enterprise: search for `BitLocker` in the Start menu and click `Turn on BitLocker` for your C: drive"
+            },
+            {
+              "text": "Follow the prompts"
+            },
+            {
+              "text": "Save your recovery key to a password manager; choose 'Save to a file' then upload the file to your password manager"
+            },
+            {
+              "text": "Be sure to delete the downloaded file from your computer afterwards"
+            }
+          ],
+          "sources:": [
+            {
+              "label": "Bitlocker Encryption - Microsoft Support",
+              "url": "https://support.microsoft.com/en-us/windows/bitlocker-drive-encryption-76b92ac9-1040-48d6-9f5f-d14b3c5fa178"
+            }
+          ]
+        },
+        {
+          "id": "diagnostic-data",
+          "name": "Set diagnostic data to required only",
+          "path": "Settings → Privacy & Security → Diagnostics & Feedback",
+          "risk": "critical",
+          "why": "'Optional' diagnostic data sends app activity, browsing history, and usage patterns back to Microsoft. Required-only limits this to basic crash and reliability data needed to keep the OS running.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `Diagnostics & Feedback`"
+            },
+            { "text": "Set `Diagnostic data` to `Required only`" },
+            {
+              "text": "Disable `Improve inking and typing`, `Tailored experiences`, and `View diagnostic data`"
+            },
+            {
+              "text": "Scroll down and click `Delete diagnostic data` to clear previously collected data"
+            }
+          ]
+        },
+        {
+          "id": "activity-history",
+          "name": "Disable activity history & timeline",
+          "path": "Settings → Privacy & Security → Activity History",
+          "risk": "critical",
+          "why": "Windows logs your activity - files opened, apps used, websites visited - and optionally sends it to Microsoft to sync across devices. This creates a detailed record of everything you do on your computer.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `Activity History`"
+            },
+            { "text": "Uncheck `Store my activity history on this device`" },
+            {
+              "text": "Click `Clear History` to delete previously stored activity"
+            }
+          ]
+        },
+        {
+          "id": "windows-updates",
+          "name": "Enable automatic updates",
+          "path": "Settings → Windows Update",
+          "risk": "critical",
+          "why": "Unpatched Windows systems are the most commonly exploited machines. Security updates close vulnerabilities that malware and ransomware actively exploit - many major attacks specifically target users running outdated Windows versions.",
+          "steps": [
+            { "text": "Open `Settings` → `Windows Update`" },
+            {
+              "text": "Click `Check for updates` and install any pending updates immediately"
+            },
+            {
+              "text": "Under `Advanced Options`, enable `Receive updates for other Microsoft products`"
+            },
+            {
+              "text": "Restart your PC daily - Windows often installs updates only on restart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "windows-high",
+      "label": "High",
+      "risk": "high",
+      "items": [
+        {
+          "id": "windows-ads",
+          "name": "Turn off advertising ID & tailored experiences",
+          "path": "Settings → Privacy & Security → General",
+          "risk": "high",
+          "why": "Windows assigns an advertising ID to track your app usage and browsing for targeted ads. Tailored experiences use your diagnostic data to serve you Microsoft promotions. Both can be disabled without affecting functionality.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `General`"
+            },
+            {
+              "text": "Turn off `Let apps show me personalized ads by using my advertising ID`"
+            },
+            {
+              "text": "Turn off `Show me suggested content in the Settings app` and `Let Windows improve Start and search results`"
+            }
+          ]
+        },
+        {
+          "id": "windows-permissions",
+          "name": "Audit app permissions",
+          "path": "Settings → Privacy & Security → App Permissions",
+          "risk": "high",
+          "why": "Apps on Windows can request access to your location, microphone, camera, contacts, and calendar. Many maintain permissions they no longer need.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` and scroll to `App Permissions`"
+            },
+            {
+              "text": "Review each category: `Location`, `Camera`, `Microphone`, `Contacts`"
+            },
+            {
+              "text": "Disable access for any app that doesn't have a clear reason to need it"
+            }
+          ]
+        },
+        {
+          "id": "local-account",
+          "name": "Use a local account instead of a Microsoft account",
+          "path": "Settings → Accounts → Your Info",
+          "risk": "high",
+          "why": "Signing into Windows with a Microsoft account syncs your activity, settings, browsing history, and file history to Microsoft's servers. A local account keeps everything on your device only.",
+          "steps": [
+            { "text": "Open `Settings` → `Accounts` → `Your Info`" },
+            {
+              "text": "Click `Sign in with a local account instead` and follow the prompts"
+            },
+            {
+              "text": "Note: some Microsoft apps (Office, OneDrive) require a Microsoft account to function. You can still sign into individual apps without using a Microsoft account for your OS login"
+            }
+          ]
+        },
+        {
+          "id": "windows-defender",
+          "name": "Enable Windows Defender & configure antivirus",
+          "path": "Settings → Privacy & Security → Windows Security",
+          "risk": "high",
+          "why": "Windows Defender is built-in and sufficient for most users - it covers real-time malware protection, ransomware protection, and firewall management. Make sure it's active and not disabled by a third-party AV that may have lapsed.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `Windows Security` → `Open Windows Security`"
+            },
+            {
+              "text": "Verify all protection areas show green checkmarks: `Virus & threat protection`, `Firewall`, `App & browser control`"
+            },
+            {
+              "text": "Under `Virus & threat protection → Ransomware protection`, enable `Controlled folder access`"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
