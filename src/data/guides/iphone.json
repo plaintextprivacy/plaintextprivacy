@@ -42,6 +42,12 @@
             {
               "text": "Toggle on `Automatically Install`"
             }
+          ],
+          "sources": [
+            {
+              "label": "Update iOS on iPhone - Apple",
+              "url": "https://support.apple.com/guide/iphone/update-ios-iph3e504502/ios"
+            }
           ]
         },
         {
