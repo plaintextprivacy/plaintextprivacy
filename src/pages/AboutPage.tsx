@@ -82,11 +82,7 @@ export const AboutPage = () => (
             Every guide is written for a non-technical audience. We explain what to do and why so
             you can make informed decisions.
           </InfoCard>
-          <InfoCard
-            icon={Shield}
-            title='Risk-rated for relevance'
-            accentColor='var(--color-teal)'
-          >
+          <InfoCard icon={Shield} title='Risk-rated for relevance' accentColor='var(--color-teal)'>
             Every setting is rated Critical, High, Medium, or Low based on real-world impact. This
             is to help you prioritize what to address first.
           </InfoCard>
@@ -105,8 +101,8 @@ export const AboutPage = () => (
           >
             No guide is perfect, and no privacy measure is absolute. Privacy and security often come
             with trade-offs on convenience, which makes them difficult to commit to in practice.
-            Choosing convenience where you need to will ensure the actions you do take stick in
-            the long run.
+            Choosing convenience where you need to will ensure the actions you do take stick in the
+            long run.
           </InfoCard>
         </div>
       </section>
@@ -174,8 +170,8 @@ export const AboutPage = () => (
             <p className='mb-1 text-body font-medium text-text-primary'>Contribute via GitHub</p>
             <p className='text-body leading-relaxed text-text-secondary'>
               The content for this site lives in JSON files that are easy to edit. No coding
-              knowledge is required to fix a typo or update a settings path. Pull requests and issues
-              are welcome.
+              knowledge is required to fix a typo or update a settings path. Pull requests and
+              issues are welcome.
             </p>
           </div>
         </div>

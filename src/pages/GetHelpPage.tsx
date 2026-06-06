@@ -175,8 +175,7 @@ export const GetHelpPage = () => (
           <p className='text-body leading-relaxed text-text-secondary'>
             I built this site because I kept seeing people overwhelmed by privacy advice that was
             either too generic or too technical to act on. I've spent hundreds of hours researching
-            all of these topics to develop guides and training materials designed for non-technical
-            audiences.
+            all of these topics to develop approachable guides and training materials.
           </p>
         </div>
       </div>

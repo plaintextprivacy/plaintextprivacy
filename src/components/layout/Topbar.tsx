@@ -5,7 +5,7 @@ import { useTopbarSearch } from './useTopbarSearch'
 import type { TopbarSearchResult } from './useTopbarSearch'
 import { getIcon } from '@/lib/iconMap'
 
-// ─── Nav links ────────────────────────────────────────────────────────────────
+// nav links
 
 const navLinks = [
   { label: 'Guides', href: '/guides' },
@@ -15,7 +15,7 @@ const navLinks = [
   { label: 'About', href: '/about' }
 ] as const
 
-// ─── Single search result row ─────────────────────────────────────────────────
+// single search result row
 
 interface ResultRowProps {
   result: TopbarSearchResult
@@ -45,7 +45,7 @@ const ResultRow = ({ result, isActive, id, onClick }: ResultRowProps) => (
   </Link>
 )
 
-// ─── Search bar + dropdown ────────────────────────────────────────────────────
+// search bar + dropdown
 
 interface TopbarSearchProps {
   fullWidth?: boolean
@@ -197,7 +197,7 @@ const TopbarSearch = ({ fullWidth = false }: TopbarSearchProps) => {
   )
 }
 
-// ─── Topbar ───────────────────────────────────────────────────────────────────
+// Topbar
 
 export const Topbar = () => {
   const { pathname } = useLocation()
@@ -211,7 +211,7 @@ export const Topbar = () => {
           <span className='text-label text-title-sm font-medium text-text-elevated'>Privacy</span>
         </Link>
 
-        {/* Desktop nav + search */}
+        {/* desktop nav + search */}
         <nav className='ml-auto hidden sm:flex items-center gap-5' aria-label='Main navigation'>
           {navLinks.map(({ label, href }) => (
             <Link
