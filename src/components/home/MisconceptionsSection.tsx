@@ -10,7 +10,7 @@ const profiles: Profile[] = [
     description:
       'You work with sensitive sources or organize communities. Your digital footprint can expose not just you, but the people around you.',
     detail:
-      'Start with Signal, email privacy, and the travel guide if you cross borders. The risk profile assessment will help you prioritise.'
+      'Start with Signal, email privacy, and the travel guide if you cross borders. The risk profile assessment will help you prioritize.'
   },
   {
     label: 'Survivors & people at risk',
@@ -43,7 +43,7 @@ export const MisconceptionsSection = () => (
           Who this is for
         </h2>
         <p className='text-body text-text-secondary'>
-          Privacy isn&rsquo;t one-size-fits-all. Your situation determines what matters.
+          Privacy isn't one-size-fits-all. Your situation will determine what to prioritize.
         </p>
       </div>
 
