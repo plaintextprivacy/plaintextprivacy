@@ -134,15 +134,7 @@
           "icon": "lock",
           "risk": "critical",
           "status": "published",
-          "tags": [
-            "passwords",
-            "mfa",
-            "2fa",
-            "authenticator",
-            "yubikey",
-            "passkeys",
-            "bitwarden"
-          ]
+          "tags": ["passwords", "mfa", "2fa", "authenticator", "yubikey", "passkeys", "bitwarden"]
         },
         {
           "slug": "vpns",
@@ -151,11 +143,7 @@
           "icon": "lock",
           "risk": "critical",
           "status": "published",
-          "tags": [
-            "proton",
-            "mullvad",
-            "nordvpn"
-          ]
+          "tags": ["proton", "mullvad", "nordvpn"]
         },
         {
           "slug": "email-privacy",
@@ -164,13 +152,7 @@
           "icon": "envelope",
           "risk": "high",
           "status": "published",
-          "tags": [
-            "email",
-            "proton",
-            "masking",
-            "relay",
-            "temporary email"
-          ]
+          "tags": ["email", "proton", "masking", "relay", "temporary email"]
         }
       ]
     },
@@ -186,14 +168,7 @@
           "icon": "facebook",
           "risk": "high",
           "status": "published",
-          "tags": [
-            "social media",
-            "facebook",
-            "meta",
-            "instagram",
-            "privacy",
-            "footprint"
-          ]
+          "tags": ["social media", "facebook", "meta", "instagram", "privacy", "footprint"]
         },
         {
           "slug": "data-brokers",
@@ -262,14 +237,7 @@
           "icon": "toolbox",
           "risk": "medium",
           "status": "coming-soon",
-          "tags": [
-            "proton",
-            "cryptpad",
-            "libreoffice",
-            "google docs",
-            "dropbox",
-            "e2ee"
-          ]
+          "tags": ["proton", "cryptpad", "libreoffice", "google docs", "dropbox", "e2ee"]
         }
       ]
     }

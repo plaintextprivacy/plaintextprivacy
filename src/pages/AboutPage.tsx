@@ -136,8 +136,8 @@ export const AboutPage = () => (
         <SectionHeader title='How to contribute' />
         <p className='mb-5 text-body leading-relaxed text-text-secondary'>
           Because this site is maintained by one person, which means things will occasionally be
-          outdated, incomplete, or wrong. If you've noticed something that needs fixing, please email
-          us or submit a pull request on our{' '}
+          outdated, incomplete, or wrong. If you've noticed something that needs fixing, please
+          email us or submit a pull request on our{' '}
           <a
             href='https://github.com/plaintextprivacy/digitalprivacyguides'
             target='_blank'
