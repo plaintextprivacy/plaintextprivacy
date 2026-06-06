@@ -10,11 +10,11 @@
   },
   "context": {
     "title": "The impact on your privacy",
-    "body": "Data brokers build profiles containing hundreds of data points on all of us, sourced from public records, social media, loyalty programs, app usage, and location data. They sell this data to advertisers, insurers, employers, landlords, and government agencies.",
-    "body2": "US government agencies including ICE have been documented purchasing location data directly from brokers to track individuals - bypassing the need for a warrant. Stalkers, doxxers, and scammers also use people-finder sites to locate targets."
+    "body": "Data brokers build profiles on you sourcing data from public records, social media, loyalty programs, app usage, and location data. They sell this data to advertisers, insurers, employers, landlords, and government agencies.",
+    "body2": "US government agencies, including ICE, have been documented purchasing location data directly from brokers to track people. This is often done in lieu of obtaining a search warrant, and is considered by many a violation of a person's fourth amendment rights. Stalkers, doxxers, and scammers also use people-finder sites to locate targets."
   },
   "warning": {
-    "body": "Realistic expectations: Data broker removal is not a one-time fix. New data gets added continuously and you'll need to repeat opt-outs periodically - roughly every 3-6 months. Even thorough manual removal won't reach every broker. The goal is meaningful reduction, not perfection."
+    "body": "Removing your information from these websites is not a one time-fix. New data gets added continuously so you'll need to repeat opt-outs periodically. Restricting how much information you share online / with corporations is the other half of this process that will significantly reduce how much of your information gets sent to data brokers. Actions like removing yourself from social media, leaving Google, disabling location services, and limiting app tracking will make a massive difference."
   },
   "sections": [
     {
