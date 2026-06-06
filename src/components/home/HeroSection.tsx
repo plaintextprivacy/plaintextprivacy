@@ -14,7 +14,7 @@ export const HeroSection = () => (
     <div className='relative mx-auto max-w-2xl'>
       <div className='mb-5 inline-flex items-center gap-2 rounded-full border border-[#3a2a10] bg-accent-muted px-3.5 py-1.5'>
         <Shield size={12} className='text-accent' />
-        <span className='text-caption font-medium text-accent'>Digital security for everyone</span>
+        <span className='text-caption font-medium text-accent'>Your guide to digital privacy</span>
       </div>
 
       <h1 className='mb-4 text-display-sm font-medium leading-tight tracking-tight text-text-primary sm:text-[48px]'>

@@ -20,7 +20,7 @@ const navColumns = [
       { label: 'About', href: '/about' },
       {
         label: 'Github',
-        href: 'https://github.com/plaintextprivacy/digitalprivacyguides'
+        href: 'https://github.com/plaintextprivacy/plaintextprivacy'
       }
     ]
   },
