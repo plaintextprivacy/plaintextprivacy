@@ -63,7 +63,7 @@
           ]
         },
         {
-          "id": "permissions",
+          "id": "meta-permissions",
           "name": "Your information and permissions",
           "path": "Meta Accounts Center → Your information and permissions",
           "risk": "critical",
@@ -134,7 +134,7 @@
       "risk": "critical",
       "items": [
         {
-          "id": "private-profile",
+          "id": "fb-private-profile",
           "name": "Make your profile private",
           "path": "Facebook Profile → Settings & privacy → Privacy Center",
           "risk": "high",
@@ -252,7 +252,7 @@
       "risk": "critical",
       "items": [
         {
-          "id": "private-account",
+          "id": "ig-private-account",
           "name": "Switch to a private account",
           "path": "Instagram → Settings → Account privacy → Private account",
           "risk": "critical",
@@ -285,7 +285,7 @@
           ]
         },
         {
-          "id": "data-sharing",
+          "id": "ig-data-sharing",
           "name": "Opt out of data sharing with Meta partners",
           "path": "Instagram → Settings → Ads → Ad preferences",
           "risk": "high",
@@ -334,7 +334,7 @@
       "risk": "high",
       "items": [
         {
-          "id": "private-account",
+          "id": "x-private-account",
           "name": "Protect your posts (private account)",
           "path": "X → Settings → Privacy and safety → Audience and tagging",
           "risk": "high",
@@ -373,7 +373,7 @@
           ]
         },
         {
-          "id": "data-sharing",
+          "id": "x-data-sharing",
           "name": "Opt out of data sharing and personalization",
           "path": "X → Settings → Privacy and safety → Data sharing and personalization",
           "risk": "high",
@@ -420,7 +420,7 @@
           ]
         },
         {
-          "id": "private-account",
+          "id": "tt-private-account",
           "name": "Set account to private",
           "path": "TikTok → Settings → Privacy → Private account",
           "risk": "critical",
@@ -436,7 +436,7 @@
           ]
         },
         {
-          "id": "tiktok-permissions",
+          "id": "tt-permissions",
           "name": "Revoke unnecessary device permissions",
           "path": "Phone Settings → TikTok → Permissions",
           "risk": "critical",
@@ -500,7 +500,7 @@
           ]
         },
         {
-          "id": "data-sharing",
+          "id": "li-data-sharing",
           "name": "Opt out of data sharing with third parties",
           "path": "LinkedIn → Settings → Data privacy",
           "risk": "medium",

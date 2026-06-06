@@ -60,5 +60,4 @@ const buildDurationMap = (): Record<string, number> => {
 export const guideDurations: Record<string, number> = buildDurationMap()
 
 /** Returns the timeMinutes for a given slug, or undefined if not set */
-export const getDuration = (slug: string): number | undefined =>
-  guideDurations[slug]
+export const getDuration = (slug: string): number | undefined => guideDurations[slug]
