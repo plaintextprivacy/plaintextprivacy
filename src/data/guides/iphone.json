@@ -228,7 +228,7 @@
           "name": "Enable Find My",
           "path": "Settings → [Your Name] → Find My",
           "risk": "high",
-          "why": "You can set up Find My to be tracked even if your phone is dead or has been turned off. It will ping the last known location.",
+          "why": "You can set up Find My to be tracked even if your phone is dead or has been turned off. It will ping the last known location. Setting up Find My also allows you to remotely wipe your iPhone from another device on your account. Note that remote wipe only works if your phone is turned on and connected to cellular or wifi.",
           "steps": [
             {
               "text": "Open `Settings` → `[your name]` → `Find My` → `Find My iPhone`"
@@ -238,6 +238,12 @@
             },
             {
               "text": "Toggle on `Send Last Location`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Add your iPhone to Find My - Apple",
+              "url": "https://support.apple.com/guide/iphone/add-your-iphone-iph9a847efc7/26/ios/26"
             }
           ]
         }
