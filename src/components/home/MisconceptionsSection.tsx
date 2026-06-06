@@ -8,7 +8,7 @@ const profiles: Profile[] = [
   {
     label: 'Journalists & activists',
     description:
-      'You work with sensitive sources or organise communities. Your digital footprint can expose not just you, but the people around you.',
+      'You work with sensitive sources or organize communities. Your digital footprint can expose not just you, but the people around you.',
     detail:
       'Start with Signal, email privacy, and the travel guide if you cross borders. The risk profile assessment will help you prioritise.'
   },
@@ -17,12 +17,12 @@ const profiles: Profile[] = [
     description:
       'You need to put distance between yourself and someone who may be monitoring your location, accounts, or communications.',
     detail:
-      'Start with your phone guide and social media settings. Consider booking a one-on-one session — some situations need a tailored approach.'
+      'Start with your phone guide and social media settings. Consider booking a one-on-one session as some situations need a tailored approach.'
   },
   {
     label: 'Professionals',
     description:
-      'You handle privileged information — client files, medical records, legal documents — and need to protect it without a dedicated IT team.',
+      'You handle privileged information, like client files, medical records, legal documents, and need to protect it without a dedicated IT team.',
     detail:
       'Password management and email encryption are the highest priority. The computers guide covers full-disk encryption for your devices.'
   },
@@ -31,7 +31,7 @@ const profiles: Profile[] = [
     description:
       "You're not a specific target, but you'd rather not have your location, browsing habits, and private messages feeding an advertising profile.",
     detail:
-      "The Critical-rated settings in each guide are enough to make a real difference. Start with your phone — it's the most personal device you own."
+      "The Critical-rated settings in each guide are enough to make a difference. Start with your phone as it's the most personal device you own."
   }
 ]
 
