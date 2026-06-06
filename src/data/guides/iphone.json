@@ -429,6 +429,12 @@
             {
               "text": "Any apps listed below will automatically be denied - review and confirm all are denied"
             }
+          ],
+          "sources": [
+            {
+              "label": "iPhone User Guide - Apple",
+              "url": "https://support.apple.com/guide/iphone/use-security-keys-iph5acc5b28c/ios"
+            }
           ]
         },
         {
@@ -443,6 +449,12 @@
             },
             {
               "text": "Follow the prompts"
+            }
+          ],
+          "sources": [
+            {
+              "label": "About Lockdown Mode - Apple",
+              "url": "https://support.apple.com/en-us/105120"
             }
           ]
         },
