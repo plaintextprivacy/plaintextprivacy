@@ -206,11 +206,7 @@ export const Topbar = () => {
   return (
     <header className='sticky top-0 z-50 border-b border-default bg-[#09090b]'>
       <div className='mx-auto flex h-12 max-w-7xl items-center gap-3 px-6'>
-        {/* logo */}
         <Link to='/' aria-label='Plaintext Privacy — home' className='flex items-center gap-2'>
-          {/*<div className="flex h-6 w-6 items-center justify-center rounded-md bg-accent" aria-hidden="true">*/}
-          {/*  <Shield size={13} className="text-white" strokeWidth={2.5} />*/}
-          {/*</div>*/}
           <span className='text-label text-title-sm font-medium text-text-primary'>Plaintext</span>
           <span className='text-label text-title-sm font-medium text-text-elevated'>Privacy</span>
         </Link>
