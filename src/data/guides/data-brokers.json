@@ -10,11 +10,11 @@
   },
   "context": {
     "title": "The impact on your privacy",
-    "body": "Data brokers build profiles containing hundreds of data points on all of us, sourced from public records, social media, loyalty programs, app usage, and location data. They sell this data to advertisers, insurers, employers, landlords, and government agencies.",
-    "body2": "US government agencies including ICE have been documented purchasing location data directly from brokers to track individuals - bypassing the need for a warrant. Stalkers, doxxers, and scammers also use people-finder sites to locate targets."
+    "body": "Data brokers build profiles on you by sourcing data from public records, social media, loyalty programs, app usage, and location data. They sell this data to advertisers, insurers, employers, landlords, and government agencies.",
+    "body2": "US government agencies, including ICE, have been documented purchasing location data directly from brokers to track people. This is often done in lieu of obtaining a search warrant, and is considered by many a violation of a person's fourth amendment rights. Stalkers, doxxers, and scammers also use people-finder sites to locate targets."
   },
   "warning": {
-    "body": "Realistic expectations: Data broker removal is not a one-time fix. New data gets added continuously and you'll need to repeat opt-outs periodically - roughly every 3-6 months. Even thorough manual removal won't reach every broker. The goal is meaningful reduction, not perfection."
+    "body": "Removing your information from these websites is not a one time-fix. New data gets added continuously so you'll need to repeat opt-outs periodically. Restricting how much information you share online / with corporations is the other half of this process that will significantly reduce how much of your information gets sent to data brokers. Actions like removing yourself from social media, leaving Google, disabling location services, and limiting app tracking will make a massive difference."
   },
   "sections": [
     {
@@ -25,18 +25,18 @@
         {
           "id": "broker-types",
           "name": "Types of data brokers and what they collect",
-          "path": "Background knowledge - no action required yet",
+          "path": "Background information",
           "risk": "critical",
           "why": "Data broker profiles can include your full name, current and past addresses, phone numbers, email addresses, relatives' names, estimated income, property records, voting registration, criminal records, social media profiles, browsing history, purchase history, and precise location data.",
           "steps": [
             {
-              "text": "`People-finder sites` (Spokeo, BeenVerified, Whitepages) - sell your address, relatives, and phone number to anyone"
+              "text": "`People-finder sites` (Spokeo, BeenVerified, Whitepages) - sell your address, relatives, associates, and phone number to anyone"
             },
             {
               "text": "`Marketing brokers` (Acxiom, Experian Marketing) - sell demographic and behavioral profiles to advertisers"
             },
             {
-              "text": "`Location data brokers` (Gravy Analytics, Venntel) - sell precise GPS movement data collected from apps"
+              "text": "`Location data brokers` (Gravy Analytics, Venntel) - sell precise GPS movement data collected from phone apps"
             },
             {
               "text": "`Background check sites` (Instant Checkmate, TruthFinder) - sell criminal, employment, and address history"
@@ -87,7 +87,7 @@
     },
     {
       "id": "manual-removal",
-      "label": "Manual data removal (free)",
+      "label": "Manual data removal",
       "risk": "high",
       "items": [
         {
@@ -95,7 +95,7 @@
           "name": "Manually opt out of data broker databases",
           "path": "Individual broker websites",
           "risk": "high",
-          "why": "Manual removal is free, thorough, and gives you direct control over what's removed. The downside is that it requires significant initial time and regular follow-up - brokers repopulate their databases continuously.",
+          "why": "Manual removal is free, thorough, and gives you control over what gets removed. The downside is that it requires significant initial time and regular follow-up - brokers repopulate their databases continuously.",
           "steps": [
             {
               "text": "Create a dedicated email address (ProtonMail recommended) solely for data broker opt-out communications - keep it separate from your primary inbox"
@@ -124,7 +124,7 @@
         {
           "id": "paid-removal",
           "name": "Consider a paid data removal service",
-          "path": "Subscription service - ongoing",
+          "path": "Subscription service",
           "risk": "high",
           "why": "Paid services handle re-submissions automatically and provide regular reporting. The tradeoff is an ongoing subscription cost and they typically won't cover every broker. Best for people who want meaningful reduction without significant ongoing effort.",
           "steps": [
@@ -132,7 +132,7 @@
               "text": "`DeleteMe` (~$129/year) - one of the most established services, covers 750+ brokers with quarterly reports"
             },
             {
-              "text": "`Incogni` (~$78/year, from Surfshark) - covers 180+ brokers with automated re-removal and a real-time dashboard"
+              "text": "`Incogni` (~$78/year) - covers 180+ brokers with automated re-removal and a real-time dashboard"
             },
             {
               "text": "`EasyOptOuts` (~$20/year) - budget-friendly, more DIY but walks you through opt-outs systematically"

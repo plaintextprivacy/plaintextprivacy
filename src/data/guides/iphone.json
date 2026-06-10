@@ -480,6 +480,12 @@
             {
               "text": "Tap `Add a Control` → search for `Shortcuts` → `Run Shortcut` → `Choose` → select the shortcut you created → then exit the prompts"
             }
+          ],
+          "sources": [
+            {
+              "label": "iPhone User Guide - Apple",
+              "url": "https://support.apple.com/guide/iphone/use-and-customize-control-center-iph59095ec58/ios"
+            }
           ]
         }
       ]
