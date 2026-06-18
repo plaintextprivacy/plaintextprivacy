@@ -641,6 +641,18 @@
               "text": "TikTok: `Profile` → `Settings` → `Manage account` → `Delete account`"
             }
           ]
+        },
+        {
+          "id": "share-links",
+          "name": "Avoid your account being tied to shared links",
+          "path": "FINISH",
+          "risk": "medium",
+          "why": "When you share a Facebook or Instagram post on a different platform, your account is automatically tied to the shortened link. So if someone you're not connected to on Facebook clicks on that link, they will see a pop up to add you as a friend or to see your profile on Facebook. This is avoiable with a little bit of effort.",
+          "steps": [
+            {
+              "text": "Facebook: `Settings` → `Security and login` → `Two-factor authentication` → use an authenticator app"
+            }
+          ]
         }
       ]
     }
