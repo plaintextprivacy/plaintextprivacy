@@ -14,7 +14,7 @@
     "body2": "Completing the Critical items will significantly reduce your exposure even if you keep your accounts"
   },
   "warning": {
-    "body": "Changing your social media settings isn't going to 100% protect your information from being tracked, sold to data brokers, or used in advertising. These steps aren't a replacement for deleting your social media"
+    "body": "Changing your social media settings isn't going to 100% protect your information from being tracked, sold to data brokers, or used in advertising. These steps aren't a replacement for deleting your social media accounts"
   },
   "sections": [
     {
@@ -29,10 +29,18 @@
           "risk": "critical",
           "why": "This section helps you enhance your account security",
           "steps": [
-            { "text": "Open `Meta Accounts Center` → `Password and security`" },
-            { "text": "Create a strong password: `Change password`" },
-            { "text": "Enable 2FA: `Two-factor authentication`" },
-            { "text": "Create a passkey: `Passkey`" },
+            {
+              "text": "Open `Meta Accounts Center` → `Password and security`"
+            },
+            {
+              "text": "Create a strong password: `Change password`"
+            },
+            {
+              "text": "Enable 2FA: `Two-factor authentication`"
+            },
+            {
+              "text": "Create a passkey: `Passkey`"
+            },
             {
               "text": "If eligible, turn on Advanced Protection: `Advanced Protection`"
             }
@@ -51,9 +59,15 @@
           "risk": "critical",
           "why": "Controls what information is shared between your Meta accounts",
           "steps": [
-            { "text": "Open `Meta Accounts Center` → `Connected experiences`" },
-            { "text": "`Sharing across profiles` → disconnect your accounts" },
-            { "text": "FINISH" }
+            {
+              "text": "Open `Meta Accounts Center` → `Connected experiences`"
+            },
+            {
+              "text": "`Sharing across profiles` → disconnect your accounts"
+            },
+            {
+              "text": "FINISH"
+            }
           ],
           "sources": [
             {
@@ -69,16 +83,24 @@
           "risk": "critical",
           "why": "This section covers information Meta has about you that it shares with third parties, and what third parties have shared with it",
           "steps": [
-            { "text": "Open `Meta Accounts Center`" },
+            {
+              "text": "Open `Meta Accounts Center`"
+            },
             {
               "text": "Go to `Your information and permissions` → `Your activity off Meta technologies`"
             },
-            { "text": "Follow the steps for `Disconnect specific activity`" },
-            { "text": "Next, follow the steps for `Clear previous activity`" },
+            {
+              "text": "Follow the steps for `Disconnect specific activity`"
+            },
+            {
+              "text": "Next, follow the steps for `Clear previous activity`"
+            },
             {
               "text": "Then `Manage future activity` → `Disconnect future activity`"
             },
-            { "text": "Go back to `App connections` → disconnect all apps" },
+            {
+              "text": "Go back to `App connections` → disconnect all apps"
+            },
             {
               "text": "Go back to `Specific ad partners` → disconnect all ad partners"
             }
@@ -146,7 +168,9 @@
             {
               "text": "Delete personal information such as your family members, relationship, and current city"
             },
-            { "text": "Set everything else to `Only me` or `Friends`" }
+            {
+              "text": "Set everything else to `Only me` or `Friends`"
+            }
           ],
           "sources": [
             {
@@ -165,11 +189,21 @@
             {
               "text": "Open `Settings & privacy` → `Privacy Center` → `Common privacy settings` → `Manage audience settings` → `Posts and stories`"
             },
-            { "text": "Change `Who can see future posts` → `Friends`" },
-            { "text": "Next choose `Limit past posts`" },
-            { "text": "Turn off `Allow comment summaries on your posts`" },
-            { "text": "Turn off `Allow visual search on your posts`" },
-            { "text": "Set `Who can see your stories` → `Friends`" }
+            {
+              "text": "Change `Who can see future posts` → `Friends`"
+            },
+            {
+              "text": "Next choose `Limit past posts`"
+            },
+            {
+              "text": "Turn off `Allow comment summaries on your posts`"
+            },
+            {
+              "text": "Turn off `Allow visual search on your posts`"
+            },
+            {
+              "text": "Set `Who can see your stories` → `Friends`"
+            }
           ],
           "sources": [
             {
@@ -191,7 +225,9 @@
             {
               "text": "Set `Who can send you friend requests` → `Friends of friends`"
             },
-            { "text": "Set `Who can see your friends list` → `Friends`" },
+            {
+              "text": "Set `Who can see your friends list` → `Friends`"
+            },
             {
               "text": "Set `Who can Facebook suggest your profile to based on your phone number or email address` → `People with your email address` → `No one`"
             },
@@ -234,8 +270,12 @@
             {
               "text": "Remove connected apps and websites; be sure to change your login info first"
             },
-            { "text": "Set `Apps, websites and games` → `Turn off`" },
-            { "text": "Set `Game and app notifications` → `Turn off`" }
+            {
+              "text": "Set `Apps, websites and games` → `Turn off`"
+            },
+            {
+              "text": "Set `Game and app notifications` → `Turn off`"
+            }
           ],
           "sources": [
             {
@@ -261,8 +301,12 @@
             {
               "text": "Open Instagram → tap your profile icon → tap the hamburger menu → `Settings and privacy`"
             },
-            { "text": "Tap `Account privacy`" },
-            { "text": "Toggle on `Private account`" },
+            {
+              "text": "Tap `Account privacy`"
+            },
+            {
+              "text": "Toggle on `Private account`"
+            },
             {
               "text": "Review your existing followers and remove any you don't recognize: go to your profile → `Followers` → tap the three dots next to a follower → `Remove`"
             }
@@ -278,7 +322,9 @@
             {
               "text": "Go to `Settings and privacy` → `Messages and story replies`"
             },
-            { "text": "Turn off `Show activity status`" },
+            {
+              "text": "Turn off `Show activity status`"
+            },
             {
               "text": "Note: turning this off also means you won't see others' activity status"
             }
@@ -385,7 +431,9 @@
             {
               "text": "Turn off `Allow additional information sharing with business partners`"
             },
-            { "text": "Under `Ads preferences`, turn off `Personalized ads`" },
+            {
+              "text": "Under `Ads preferences`, turn off `Personalized ads`"
+            },
             {
               "text": "Under `Off-X activity`, turn off `Allow use of where you see X content across the web`"
             },
@@ -429,7 +477,9 @@
             {
               "text": "Go to `Profile` → hamburger menu → `Settings and privacy` → `Privacy`"
             },
-            { "text": "Toggle on `Private account`" },
+            {
+              "text": "Toggle on `Private account`"
+            },
             {
               "text": "Under `Discoverability`, turn off `Suggest your account to others`"
             }
@@ -463,8 +513,12 @@
           "risk": "high",
           "why": "TikTok uses your in-app behavior and off-platform data to serve targeted ads and build a behavioral profile. Opting out limits how this data is used for advertising.",
           "steps": [
-            { "text": "Go to `Settings and privacy` → `Privacy` → `Ads`" },
-            { "text": "Turn off `Ad personalization`" },
+            {
+              "text": "Go to `Settings and privacy` → `Privacy` → `Ads`"
+            },
+            {
+              "text": "Turn off `Ad personalization`"
+            },
             {
               "text": "Under `Data from partners`, turn off `Use of off-TikTok activity for ad targeting`"
             }
@@ -496,7 +550,9 @@
             {
               "text": "Turn off `Representing your organization and interests` to stop LinkedIn using your profile in ads"
             },
-            { "text": "Set `Who can see your connections` to `Only you`" }
+            {
+              "text": "Set `Who can see your connections` to `Only you`"
+            }
           ]
         },
         {
@@ -506,7 +562,9 @@
           "risk": "medium",
           "why": "LinkedIn shares profile data and activity with third-party partners including Microsoft's ad ecosystem. It also uses your profile for salary research, audience insight products sold to employers, and recruiter tools.",
           "steps": [
-            { "text": "Go to `Settings & Privacy` → `Data privacy`" },
+            {
+              "text": "Go to `Settings & Privacy` → `Data privacy`"
+            },
             {
               "text": "Turn off `Data sharing with LinkedIn corporate affiliates` (Microsoft, Bing)"
             },
