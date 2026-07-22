@@ -8,7 +8,7 @@
     "timeMinutes": 20
   },
   "context": {
-    "title": "What's actually being collected",
+    "title": "What's really collected",
     "body": "Every search you make on Google is stored, timestamped, and tied to your account or IP address. Chrome sends browsing data back to Google by default, including URLs you visit and keystrokes in the address bar. Your ISP also logs every DNS request your browser makes - essentially a record of every site you've visited.",
     "body2": "Switching browsers and search engines doesn't require technical skill. For most people, Firefox with DuckDuckGo is a straightforward drop-in replacement that eliminates the majority of this surveillance."
   },

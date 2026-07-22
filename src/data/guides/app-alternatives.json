@@ -171,23 +171,23 @@
       "risk": "critical",
       "items": [
         {
-          "id": "dangerous-apps",
+          "id": "apps-to-avoid",
           "name": "High-risk apps",
           "path": "App Library → swipe or long press to delete",
           "risk": "critical",
-          "why": "These apps go beyond typical data collection. They've been documented requesting permissions far beyond what their stated function requires, sending data to servers in jurisdictions with poor user protections, or exhibiting behavior that security researchers have described as malware-adjacent.",
+          "why": "All of these apps have demonstrated behaviors that warrant additional research before downloading to your personal device. Temu, for example, elevates its permissions to grant it unrestricted admin access in such a way that security researchers have likened it to malware. Others, like DeepSeek, were found to be sending unencrypted sensitive user information back to their servers. Health and wellness apps collect a lot of sensitive user information then many of them sell it to data brokers.",
           "steps": [
             {
-              "text": "`Temu` - a lawsuit described it as 'dangerous malware.' Requests access to camera, microphone, location, contacts, and file storage. Sends data to servers in China"
+              "text": "`Temu` - a lawsuit described it as 'dangerous malware.' Requests access to camera, microphone, location, contacts, and file storage. Sends data to servers in China, which some people worry is accessible by the Chinese government"
             },
             {
-              "text": "`DeepSeek` - stores conversation data on servers in China subject to Chinese national security laws. Security researchers found hardcoded encryption keys and poor security practices"
+              "text": "`DeepSeek` - security researchers found hardcoded encryption keys and poor security practices"
             },
             {
               "text": "`TikTok` - ByteDance (parent company) is subject to Chinese national security laws requiring data cooperation with authorities"
             },
             {
-              "text": "`mental health apps` - Mozilla's Privacy Not Included project found the majority failed basic security and privacy standards, sharing therapy session data with third parties"
+              "text": "`mental health apps` - Mozilla's Privacy Not Included project found a majority of apps they checked failed basic security and privacy standards, sharing therapy session data with third parties"
             },
             {
               "text": "`free VPN apps` (except Proton VPN's free tier) - many free VPNs monetize by selling your browsing data. Facebook's Onavo VPN was used to wiretap competitor app usage"

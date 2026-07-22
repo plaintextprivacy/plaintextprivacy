@@ -38,6 +38,12 @@
             {
               "text": "Tap the checkmark to confirm"
             }
+          ],
+          "sources": [
+            {
+              "label": "How to Use Signal - EFF Surveillance Self-Defense",
+              "url": "https://ssd.eff.org/module/how-to-use-signal"
+            }
           ]
         },
         {
@@ -55,6 +61,12 @@
             },
             {
               "text": "Tap the checkmark to confirm"
+            }
+          ],
+          "source": [
+            {
+              "label": "Locking down Signal - Freedom Press",
+              "url": "https://freedom.press/digisec/blog/locking-down-signal/"
             }
           ]
         },
