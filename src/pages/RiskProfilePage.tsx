@@ -51,8 +51,6 @@ const ThreatModelingBlurb = () => {
               A lot of privacy advice is given without considering a person's individual
               situation. You hear 'use a VPN,' 'use Signal,' 'delete your social media'. Threat
               modeling is the practice of answering those questions before reaching for tools.
-              It's a guide to thinking clearly about your situation so that the changes you
-              make are the ones that actually matter for <em>you</em>.
             </p>
 
             <p>
