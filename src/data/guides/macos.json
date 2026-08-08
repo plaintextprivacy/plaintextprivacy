@@ -188,7 +188,7 @@
     {
       "id": "macos-low",
       "label": "Low",
-      "risk": "Low",
+      "risk": "low",
       "items": [
         {
           "id": "admin-account",
