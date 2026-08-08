@@ -135,7 +135,6 @@ export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
             </div>
 
             <ProgressBar completed={checkedIds.size} total={total} />
-
             {context && (
               <ContextBox title={context.title} body={context.body} body2={context.body2} />
             )}
