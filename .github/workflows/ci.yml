@@ -102,6 +102,23 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Start preview server for PDF generation
+        run: npx vite --port 5173 &
+
+      - name: Wait for preview server
+        run: npx wait-on http://localhost:5173
+
+      - name: Generate guide PDFs
+        run: npm run generate-pdfs
+        env:
+          PREVIEW_URL: http://localhost:5173
+
+      - name: Stop preview server
+        run: kill $(lsof -t -i:5173) || true
+
       - name: Build
         run: npm run build
 
