@@ -5,7 +5,7 @@
   "title": "MacOS",
   "subtitle": "MacOS is reasonably private out of the box but has several high-impact settings that are off or misconfigured by default. Check off each setting as you complete it.",
   "meta": {
-    "reviewed": "June 2026",
+    "reviewed": "August 2026",
     "timeMinutes": 20,
     "platforms": ["macOS 13 Ventura+"]
   },
@@ -15,7 +15,7 @@
   },
   "sections": [
     {
-      "id": "file",
+      "id": "macos-critical",
       "label": "Critical",
       "risk": "critical",
       "items": [
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "id": "medium",
+      "id": "macos-medium",
       "label": "Medium",
       "risk": "medium",
       "items": [
@@ -186,7 +186,65 @@
       ]
     },
     {
-      "id": "advanced",
+      "id": "macos-low",
+      "label": "Low",
+      "risk": "Low",
+      "items": [
+        {
+          "id": "admin-account",
+          "name": "Optional - Standard user account",
+          "path": "System Settings → Users & Groups",
+          "risk": "high",
+          "why": "By default, the user account created when setting up a Mac is an Administrator account. Mac's have many mechanisms in place to defend against abusive admin actions but vulnerabilities have cropped up in the past. If you would like an extra layer of security, you can create and use a Standard user account instead. Whenever you must take an admin action, you will be prompted to enter your admin credentials. This guide assumes you already have your Mac set up and need to change your Administrator user to a Standard user. It's essential that you verify you have a second functioning Administrator account that you can log into before demoting your primary user account.",
+          "steps": [
+            {
+              "text": "Go to `System Settings` → `Users & Groups`"
+            },
+            {
+              "text": "Verify you have a separate Administrator account that you can log into"
+            },
+            {
+              "text": "If a second Administrator account doesn't exist, create one"
+            },
+            {
+              "text": "Log out of your user profile that you plan to demote"
+            },
+            {
+              "text": "Log in as the backup Administrator"
+            },
+            {
+              "text": "Go to `System Settings` → `Users & Groups`"
+            },
+            {
+              "text": "Click on the `i` icon next to the user account you wish to demote"
+            },
+            {
+              "text": "Toggle off `Allow this user to administer this computer`"
+            },
+            {
+              "text": "Enter the username and password for the Administrator account you're currently logged into if prompted"
+            },
+            {
+              "text": "If you have FileVault enabled, verify your demoted account can still log in after a reboot - `System Settings` → `Privacy & Security` → `FileVault` → check for an `Enable Users` button. If one doesn't exist, disregard"
+            },
+            {
+              "text": "Reboot your computer to apply changes"
+            },
+            {
+              "text": "Log back in as your newly demoted user account"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Demote a macOS administrator to a standard user - Six Colors",
+              "url": "https://sixcolors.com/post/2025/08/demote-a-macos-administrator-to-a-standard-user/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "macos-advanced",
       "label": "Advanced",
       "risk": "high",
       "items": [
