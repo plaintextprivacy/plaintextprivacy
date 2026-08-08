@@ -8,11 +8,13 @@ import { PrivacyPolicyPage } from '@/pages/PrivacyPolicyPage'
 import { RiskProfilePage } from '@/pages/RiskProfilePage'
 import { GetHelpPage } from '@/pages/GetHelpPage.tsx'
 import { ScrollToTop } from '@/components/ScrollToTop'
+import { PrintGuidePage } from '@/pages/print/PrintGuidePage'
 
 export const App = () => (
   <BrowserRouter>
     <ScrollToTop />
     <Routes>
+      <Route path='/print/guides/:slug' element={<PrintGuidePage />} />
       <Route path='/' element={<HomePage />} />
       <Route path='/guides' element={<GuidesIndexPage />} />
       <Route path='/guides/:slug' element={<GuidePage />} />

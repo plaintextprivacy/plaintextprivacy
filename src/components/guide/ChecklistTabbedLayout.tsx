@@ -42,6 +42,7 @@ const TabPanel = ({
           <h2 className='mb-2 text-heading-lg font-medium text-text-primary'>{tab.title}</h2>
           <p className='mb-3 text-body leading-relaxed text-text-secondary'>{tab.subtitle}</p>
           <div className='flex flex-wrap items-center gap-x-2 gap-y-1 text-micro text-text-primary'>
+            {/* TODO add pdf download */}
             {tab.meta.timeMinutes && <span>{formatDuration(tab.meta.timeMinutes)}</span>}
             {total > 0 && (
               <>

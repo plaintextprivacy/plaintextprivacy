@@ -36,16 +36,12 @@ export const GetHelpPage = () => (
       title='Personal privacy help'
       description={
         <>
-          <p className='pb-2'>
-            Tackling privacy and security for the first time can feel overwhelming. There's a lot of
-            conflicting advice and it's hard to know what actually matters for your situation.
-          </p>
           <p>
             There are many reasons to want to improve your privacy and security. You might be a
             journalist protecting your sources, an organizer trying to keep your group safe, a
-            political protestor, or a stay at home mom who's tired of the surveillance state.
-            Regardless of your reasons, you deserve to have control over your own information and
-            who gets access to it.
+            political protestor, or a stay at home parent who's tired of the surveillance state.
+            Regardless of your reasons, you deserve to have control over your data and who gets to
+            access it.
           </p>
         </>
       }

@@ -8,6 +8,7 @@ import { useActiveSection } from './useActiveSection'
 import { useProgress } from './useProgress'
 import { getCategoryIcon, formatDuration } from '@/lib/iconMap'
 import indexData from '@/data/index.json'
+import { Download } from 'lucide-react'
 
 const { categories } = indexData as GuidesIndex
 
@@ -70,7 +71,7 @@ export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
               ← All guides
             </Link>
 
-            {/* Mobile section nav — hidden on lg+ where sidebar is visible */}
+            {/* mobile nav — hidden on lg+ where sidebar is visible */}
             {sidebarLinks.length > 0 && (
               <div className='lg:hidden mb-6 overflow-x-auto'>
                 <div className='flex gap-2 pb-2'>
@@ -103,6 +104,14 @@ export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
               <h1 className='mb-2.5 text-heading-sm font-medium text-text-primary'>{title}</h1>
               <p className='mb-4 text-label leading-relaxed text-text-secondary'>{subtitle}</p>
               <div className='flex flex-wrap items-center gap-x-2 gap-y-1 text-micro text-text-primary'>
+                <a
+                  href={`/pdfs/${guide.slug}.pdf`}
+                  download
+                  className='inline-flex items-center gap-1.5 rounded-lg border border-border-default px-3 py-1.5 text-caption transition-colors hover:border-accent hover:text-accent'
+                >
+                  <Download size={13} />
+                  Download as PDF
+                </a>
                 {meta.timeMinutes && <span>{formatDuration(meta.timeMinutes)}</span>}
                 {total > 0 && (
                   <>
@@ -126,7 +135,6 @@ export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
             </div>
 
             <ProgressBar completed={checkedIds.size} total={total} />
-
             {context && (
               <ContextBox title={context.title} body={context.body} body2={context.body2} />
             )}

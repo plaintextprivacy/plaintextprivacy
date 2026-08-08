@@ -1,28 +1,12 @@
 # Plaintext Privacy robots.txt
 
-# ─── Search engines ───────────────────────────────────────────────────────────
-# Allow all legitimate search engine crawlers
-
-User-agent: Googlebot
+# Default
+User-agent: *
 Allow: /
+Disallow: /pdfs/
 
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-# ─── AI training crawlers ─────────────────────────────────────────────────────
-# Disallow all known AI training, scraping, and LLM data collection bots
+# AI training crawlers
+# disallow known AI training, scraping, and LLM data collection bots
 
 # OpenAI
 User-agent: GPTBot
@@ -109,6 +93,6 @@ Disallow: /
 User-agent: omgilibot
 Disallow: /
 
-# ─── Crawl hints for search engines ──────────────────────────────────────────
+# crawl hints for search engines
 
-Sitemap: https://plaintextprivacy/sitemap.xml
+Sitemap: https://plaintextprivacy.org/sitemap.xml

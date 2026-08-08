@@ -40,12 +40,12 @@ const config: Config = {
           primary:   'var(--color-text-primary)',
           secondary: 'var(--color-text-secondary)',
           tertiary:  'var(--color-text-tertiary)',
-          accent: 'var(--color-text-accent)',
-          elevated: 'var(--color-text-elevated)'
+          accent:    'var(--color-text-accent)',
+          elevated:  'var(--color-text-elevated)'
         },
         accent: {
           DEFAULT: 'var(--color-accent)',
-          muted: 'var(--color-accent-muted)'
+          muted:   'var(--color-accent-muted)'
         },
         teal: {
           DEFAULT: 'var(--color-teal)',
