@@ -40,7 +40,8 @@ export const GetHelpPage = () => (
             There are many reasons to want to improve your privacy and security. You might be a
             journalist protecting your sources, an organizer trying to keep your group safe, a
             political protestor, or a stay at home parent who's tired of the surveillance state.
-            Regardless of your reasons, you deserve to have control over your data and who gets to access it.
+            Regardless of your reasons, you deserve to have control over your data and who gets to
+            access it.
           </p>
         </>
       }

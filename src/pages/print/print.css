@@ -1,12 +1,180 @@
-/* light mode, ink-friendly, supports printable PDF guides */
+html,
+body {
+  background: #ffffff !important;
+  color-scheme: light !important;
+  margin: 0;
+  padding: 0;
+}
 
 .print-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px;
-    background: #ffffff;
-    color: #1a1a1a;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 11pt;
-    line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #ffffff;
+  color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.print-header {
+  margin-bottom: 24px;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 16px;
+}
+
+.print-brand {
+  font-size: 9pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #555;
+  margin: 0 0 8px 0;
+}
+
+.print-header h1 {
+  font-size: 22pt;
+  margin: 0 0 8px 0;
+}
+
+.print-subtitle {
+  font-size: 10.5pt;
+  color: #444;
+  margin: 0 0 4px 0;
+}
+
+.print-meta {
+  font-size: 9pt;
+  color: #666;
+  margin: 4px 0 0 0;
+}
+
+.print-section {
+  margin-top: 28px;
+  break-inside: avoid-page;
+}
+
+.print-section-title {
+  font-size: 13pt;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+.print-item {
+  margin-bottom: 18px;
+  break-inside: avoid-page;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.print-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.print-item-header h3 {
+  font-size: 12pt;
+  margin: 0;
+}
+
+.print-risk {
+  font-size: 8pt;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.print-risk-critical {
+  background: #fde2e2;
+  color: #a11;
+}
+.print-risk-high {
+  background: #fde8d0;
+  color: #a55700;
+}
+.print-risk-medium {
+  background: #fdf3d0;
+  color: #8a6d00;
+}
+.print-risk-low {
+  background: #dcf5e0;
+  color: #226b33;
+}
+
+.print-path {
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-size: 9pt;
+  color: #666;
+  margin: 2px 0 8px 0;
+}
+
+.print-why {
+  font-size: 10pt;
+  margin: 6px 0;
+}
+
+.print-steps ol {
+  list-style: decimal;
+  list-style-position: outside;
+  margin: 6px 0 0 0;
+  padding-left: 20px;
+}
+
+.print-steps li {
+  margin-bottom: 4px;
+  font-size: 10pt;
+}
+
+.print-steps strong {
+  font-family: 'JetBrains Mono', Consolas, monospace;
+  font-weight: 600;
+  background: #f2f2f2;
+  padding: 0 3px;
+  border-radius: 2px;
+}
+
+.print-note {
+  font-size: 9.5pt;
+  background: #f7f7f7;
+  border-left: 3px solid #999;
+  padding: 6px 10px;
+  margin-top: 8px;
+}
+
+.print-sources {
+  font-size: 8pt;
+  color: #777;
+  margin-top: 6px;
+}
+
+.print-tab {
+  margin-top: 32px;
+  break-before: page;
+}
+
+.print-tab-title {
+  font-size: 16pt;
+  margin-bottom: 4px;
+}
+
+.print-footer {
+  margin-top: 32px;
+  padding-top: 12px;
+  border-top: 1px solid #ccc;
+  font-size: 8pt;
+  color: #888;
+  text-align: center;
+}
+
+@page {
+  size: Letter;
+  margin: 0.6in;
 }
