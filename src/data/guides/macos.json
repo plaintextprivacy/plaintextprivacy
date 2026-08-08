@@ -194,7 +194,7 @@
           "id": "admin-account",
           "name": "Optional - Standard user account",
           "path": "System Settings → Users & Groups",
-          "risk": "high",
+          "risk": "low",
           "why": "By default, the user account created when setting up a Mac is an Administrator account. Mac's have many mechanisms in place to defend against abusive admin actions but vulnerabilities have cropped up in the past. If you would like an extra layer of security, you can create and use a Standard user account instead. Whenever you must take an admin action, you will be prompted to enter your admin credentials. This guide assumes you already have your Mac set up and need to change your Administrator user to a Standard user. It's essential that you verify you have a second functioning Administrator account that you can log into before demoting your primary user account.",
           "steps": [
             {
@@ -251,18 +251,36 @@
         {
           "id": "file-encryption",
           "name": "Encrypt individual folders",
-          "path": "Third-party app - see recommendations",
+          "path": "Spotlight → Disk Utility",
           "risk": "high",
-          "why": "macOS has built-in malware protection (XProtect, Gatekeeper) that handles the most common threats. For most users this is sufficient. If you download files from unofficial sources, an antivirus adds an extra layer.",
+          "why": "FileVault encrypts your entire hard drive, but if you wish to add an extra layer of security to specific folders you can use so using Mac's built-in Disk Utility. There are also third party apps that allow you to encrypt files and folders.",
           "steps": [
             {
-              "text": "`Malwarebytes` - free version scans on demand, paid version adds real-time protection"
+              "text": "Open `Spotlight` (CMD + Space bar) → type in `Disk Utility`"
             },
             {
-              "text": "`Bitdefender` - strong detection rates, lightweight performance impact"
+              "text": "`Make sure you have `Macintosh HD` selected"
             },
             {
-              "text": "`NordVPN Threat Protection Pro` - blocks malicious URLs and ads in addition to malware scanning"
+              "text": "Click `File` → `New Image` → `Image from Folder`"
+            },
+            {
+              "text": "Select the folder you wish to encrypt and click `Choose`"
+            },
+            {
+              "text": "Select the folder you wish to encrypt"
+            },
+            {
+              "text": "Rename and choose where to save the file if you wish to change anything"
+            },
+            {
+              "text": "For `Encryption` choose `256 bit AES`"
+            },
+            {
+              "text": "For `Image Format` choose `Hybrid Image (HFS+/ISO/UDF)` then click `Save`"
+            },
+            {
+              "text": "Create a strong password for this folder when prompted. Be sure to save is somewhere safe as you will permanently lose access if you lose your password"
             }
           ]
         }
