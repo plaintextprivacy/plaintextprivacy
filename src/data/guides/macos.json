@@ -20,84 +20,53 @@
       "risk": "critical",
       "items": [
         {
-          "id": "icloud",
-          "label": "iCloud protection",
+          "id": "icloud-2fa",
+          "name": "Enable 2FA on iCloud",
+          "path": "System Settings → [Your Name] → Sign-In & Security → Two-Factor Authentication",
           "risk": "critical",
-          "items": [
+          "why": "Two-factor authentication can prevent someone from accessing your iCloud account even if they have your password.",
+          "steps": [
             {
-              "id": "2fa",
-              "name": "Enable 2FA",
-              "path": "Settings → [Your Name] → Sign-In & Security → Two-Factor Authentication",
-              "risk": "critical",
-              "why": "Two-factor authentication can prevent someone from accessing your iCloud account even if they have your password.",
-              "steps": [
-                {
-                  "text": "Open `Settings` → `[Your Name]` → `Sign-In & Security` → `Two-Factor Authentication`"
-                },
-                {
-                  "text": "Follow the prompts"
-                }
-              ]
+              "text": "Open `System Settings` → `[Your Name]` → `Sign-In & Security` → `Two-Factor Authentication`"
             },
             {
-              "id": "recovery-key",
-              "name": "Enable Recovery Key",
-              "path": "Settings → [Your Name] → Sign-In & Security → Recovery Key",
-              "risk": "critical",
-              "why": "Allows you to regain access to your account if you lose your login credentials or if your account is taken over. Be sure to save your recovery key somewhere safe like a password manager, and not on your phone or computer.",
-              "steps": [
-                {
-                  "text": "Open `Settings` → `[Your Name]` → `Sign-In & Security` → `Recovery Key`"
-                },
-                {
-                  "text": "Follow the prompts"
-                }
-              ]
+              "text": "Follow the prompts"
+            }
+          ]
+        },
+        {
+          "id": "recovery-key",
+          "name": "Enable Recovery Key",
+          "path": "System Settings → [Your Name] → Sign-In & Security → Recovery Key",
+          "risk": "critical",
+          "why": "Allows you to regain access to your account if you lose your login credentials or if your account is taken over. Be sure to save your recovery key somewhere safe like a password manager, and not on your phone or computer.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `[Your Name]` → `Sign-In & Security` → `Recovery Key`"
             },
             {
-              "id": "advanced-data-protection",
-              "name": "Enable Advanced Data Protection",
-              "path": "Settings → [Your Name] → iCloud → Advanced Data Protection",
-              "risk": "critical",
-              "why": "Advanced Data Protection enables end-to-end encryption for iCloud backups, photos, notes, messages, and more. Only your devices can decrypt the data. Not even Apple can access it. Note that you must have biometrics enabled to turn it on.",
-              "steps": [
-                {
-                  "text": "Open `Settings` → `[your name]` → `iCloud`"
-                },
-                {
-                  "text": "Open `Advanced Data Protection`"
-                },
-                {
-                  "text": "Choose `Turn On Advanced Data Protection` and follow the prompts"
-                },
-                {
-                  "text": "Set up an `Account Recovery Contact` or save your `Recovery Key` so you don't lose access to your iCloud"
-                }
-              ]
+              "text": "Follow the prompts"
+            }
+          ]
+        },
+        {
+          "id": "advanced-data-protection",
+          "name": "Enable Advanced Data Protection",
+          "path": "System Settings → [Your Name] → iCloud → Advanced Data Protection",
+          "risk": "critical",
+          "why": "Advanced Data Protection enables end-to-end encryption for iCloud backups, photos, notes, messages, and more. Only your devices can decrypt the data. Not even Apple can access it. You must have a recovery methods set up to enable this feature",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `[your name]` → `iCloud`"
             },
             {
-              "id": "find-my",
-              "name": "Enable Find My",
-              "path": "Settings → [Your Name] → Find My",
-              "risk": "high",
-              "why": "You can set up Find My to be tracked even if your phone is dead or has been turned off. It will ping the last known location. Setting up Find My also allows you to remotely wipe your iPhone from another device on your account. Note that remote wipe only works if your phone is turned on and connected to cellular or wifi.",
-              "steps": [
-                {
-                  "text": "Open `Settings` → `[your name]` → `Find My` → `Find My iPhone`"
-                },
-                {
-                  "text": "Toggle on `Find My network`"
-                },
-                {
-                  "text": "Toggle on `Send Last Location`"
-                }
-              ],
-              "sources": [
-                {
-                  "label": "Add your iPhone to Find My - Apple",
-                  "url": "https://support.apple.com/guide/iphone/add-your-iphone-iph9a847efc7/26/ios/26"
-                }
-              ]
+              "text": "Open `Advanced Data Protection`"
+            },
+            {
+              "text": "Choose `Turn On Advanced Data Protection` and follow the prompts"
+            },
+            {
+              "text": "Set up an `Account Recovery Contact` or save your `Recovery Key` in a safe location not on your computer so you don't lose access to your iCloud"
             }
           ]
         },
@@ -139,7 +108,7 @@
           ]
         },
         {
-          "id": "firewall",
+          "id": "macos-firewall",
           "name": "Enable Firewall",
           "path": "System Settings → Network → Firewall",
           "risk": "critical",
@@ -262,6 +231,30 @@
             },
             {
               "text": "Check your computer name at the top - avoid using your real name in it"
+            }
+          ]
+        },
+        {
+          "id": "find-my",
+          "name": "Enable Find My",
+          "path": "Settings → [Your Name] → Find My",
+          "risk": "high",
+          "why": "Find My for Mac works the same as it does for your iPhone. The downside of this feature is  you must have Location Services enabled to use it. It's a trade off to allow you to track your computer down if it's ever lost or stolen, so be sure to weigh the pros and cons of enabling this feature based on your own risk tolerance.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `[your name]` → `Find My` → `Find My iPhone`"
+            },
+            {
+              "text": "Toggle on `Find My network`"
+            },
+            {
+              "text": "Toggle on `Send Last Location`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Set Up Find My on Mac - Apple",
+              "url": "https://support.apple.com/guide/findmy-mac/set-up-fmm53101237/mac"
             }
           ]
         }
