@@ -52,7 +52,7 @@ async function generatePdf(browser, slug) {
 
     // strip/overwrite metadata
     const pdfDoc = await PDFDocument.load(pdfBuffer)
-    pdfDoc.setTitle(`Plaintext Privacy — ${slug}`)
+    pdfDoc.setTitle(`Plaintext Privacy - ${slug}`)
     pdfDoc.setAuthor('Plaintext Privacy')
     pdfDoc.setProducer('Plaintext Privacy')
     pdfDoc.setCreator('Plaintext Privacy')

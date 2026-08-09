@@ -148,19 +148,35 @@
       "risk": "high",
       "items": [
         {
-          "id": "siri-spotlight",
-          "name": "Disable Siri & Spotlight data sharing",
-          "path": "System Settings → Siri & Spotlight",
+          "id": "apple-intelligence-siri",
+          "name": "Disable Apple Intelligence & Siri data sharing",
+          "path": "System Settings → Apple Intelligence & Siri",
           "risk": "high",
-          "why": "Siri sends your queries and Spotlight search terms to Apple servers by default to improve suggestions. This includes things you type into Spotlight - file names, app names, search terms - which can reveal a lot about your activity and habits.",
+          "why": "FINISH",
           "steps": [
-            { "text": "Open `System Settings` → `Siri & Spotlight`" },
-            { "text": "Toggle off `Ask Siri` if you don't use it" },
             {
-              "text": "Under `Siri Suggestions`, disable `Suggestions in Search`, `Suggestions in Look Up`, and `Suggestions on Lock Screen`"
+              "text": "Open `System Settings` → `Apple Intelligence & Siri`"
             },
             {
-              "text": "Open `System Settings` → `Privacy & Security` → `Analytics & Improvements` and uncheck `Improve Siri & Dictation` and `Share Mac Analytics`"
+              "text": "FINISHHHHH`"
+            }
+          ]
+        },
+        {
+          "id": "macos-spotlight",
+          "name": "Disable Spotlight data sharing",
+          "path": "System Settings → Spotlight",
+          "risk": "high",
+          "why": "Spotlight is a useful feature for quickly finding apps or files, but by default some usage data is shared with third parties for advertising purposes.",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `Spotlight`"
+            },
+            {
+              "text": "Toggle off `Related Content`"
+            },
+            {
+              "text": "Toggle off `Help Apple Improve Search`"
             }
           ]
         },
@@ -190,6 +206,24 @@
             },
             {
               "text": "Set `Start screen saver when inactive` to 5 minutes or less"
+            }
+          ]
+        },
+        {
+          "id": "macos-location-services",
+          "name": "Disable location services",
+          "path": "System Settings → Privacy & Security",
+          "risk": "high",
+          "why": "Disabling Location Services reduces how much of your location data is shared with third party apps and services. Note that they can still infer your location based on your IP address and other info, so it's not a bullet-proof solution.",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `Location Services` → toggle off"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Control access to the location of your Mac - Apple",
+              "url": "https://support.apple.com/guide/mac-help/allow-apps-to-see-the-location-of-your-mac-mh35873/mac"
             }
           ]
         }
