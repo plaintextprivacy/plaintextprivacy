@@ -20,6 +20,88 @@
       "risk": "critical",
       "items": [
         {
+          "id": "icloud",
+          "label": "iCloud protection",
+          "risk": "critical",
+          "items": [
+            {
+              "id": "2fa",
+              "name": "Enable 2FA",
+              "path": "Settings → [Your Name] → Sign-In & Security → Two-Factor Authentication",
+              "risk": "critical",
+              "why": "Two-factor authentication can prevent someone from accessing your iCloud account even if they have your password.",
+              "steps": [
+                {
+                  "text": "Open `Settings` → `[Your Name]` → `Sign-In & Security` → `Two-Factor Authentication`"
+                },
+                {
+                  "text": "Follow the prompts"
+                }
+              ]
+            },
+            {
+              "id": "recovery-key",
+              "name": "Enable Recovery Key",
+              "path": "Settings → [Your Name] → Sign-In & Security → Recovery Key",
+              "risk": "critical",
+              "why": "Allows you to regain access to your account if you lose your login credentials or if your account is taken over. Be sure to save your recovery key somewhere safe like a password manager, and not on your phone or computer.",
+              "steps": [
+                {
+                  "text": "Open `Settings` → `[Your Name]` → `Sign-In & Security` → `Recovery Key`"
+                },
+                {
+                  "text": "Follow the prompts"
+                }
+              ]
+            },
+            {
+              "id": "advanced-data-protection",
+              "name": "Enable Advanced Data Protection",
+              "path": "Settings → [Your Name] → iCloud → Advanced Data Protection",
+              "risk": "critical",
+              "why": "Advanced Data Protection enables end-to-end encryption for iCloud backups, photos, notes, messages, and more. Only your devices can decrypt the data. Not even Apple can access it. Note that you must have biometrics enabled to turn it on.",
+              "steps": [
+                {
+                  "text": "Open `Settings` → `[your name]` → `iCloud`"
+                },
+                {
+                  "text": "Open `Advanced Data Protection`"
+                },
+                {
+                  "text": "Choose `Turn On Advanced Data Protection` and follow the prompts"
+                },
+                {
+                  "text": "Set up an `Account Recovery Contact` or save your `Recovery Key` so you don't lose access to your iCloud"
+                }
+              ]
+            },
+            {
+              "id": "find-my",
+              "name": "Enable Find My",
+              "path": "Settings → [Your Name] → Find My",
+              "risk": "high",
+              "why": "You can set up Find My to be tracked even if your phone is dead or has been turned off. It will ping the last known location. Setting up Find My also allows you to remotely wipe your iPhone from another device on your account. Note that remote wipe only works if your phone is turned on and connected to cellular or wifi.",
+              "steps": [
+                {
+                  "text": "Open `Settings` → `[your name]` → `Find My` → `Find My iPhone`"
+                },
+                {
+                  "text": "Toggle on `Find My network`"
+                },
+                {
+                  "text": "Toggle on `Send Last Location`"
+                }
+              ],
+              "sources": [
+                {
+                  "label": "Add your iPhone to Find My - Apple",
+                  "url": "https://support.apple.com/guide/iphone/add-your-iphone-iph9a847efc7/26/ios/26"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "filevault",
           "name": "Enable FileVault full-disk encryption",
           "path": "System Settings → Privacy & Security → FileVault",
@@ -36,7 +118,7 @@
               "text": "Save the recovery key in your password manager and somewhere physically secure (not on the computer itself)"
             },
             {
-              "text": "Restart your Mac - encryption runs in the background and may take an hour or more on first run"
+              "text": "Restart your Mac to apply"
             }
           ]
         },

@@ -28,6 +28,17 @@ const slugs = index.categories.flatMap((cat) =>
 async function generatePdf(browser, slug) {
     const page = await browser.newPage()
 
+    await page.route('**/*', (route) => {
+        const url = new URL(route.request().url())
+        const isLocal = url.hostname === 'localhost' || url.hostname === '127.0.0.1'
+        if (isLocal) {
+            route.continue()
+        } else {
+            console.warn(`  ⚠ Blocked unexpected external request: ${url.href}`)
+            route.abort()
+        }
+    })
+
     await page.goto(`${PREVIEW_URL}/print/guides/${slug}`, { waitUntil: 'networkidle' })
     await page.emulateMedia({ media: 'print', colorScheme: 'light' })
 
@@ -41,7 +52,7 @@ async function generatePdf(browser, slug) {
 
     // strip/overwrite metadata
     const pdfDoc = await PDFDocument.load(pdfBuffer)
-    pdfDoc.setTitle(`Plaintext Privacy - ${slug}`)
+    pdfDoc.setTitle(`Plaintext Privacy — ${slug}`)
     pdfDoc.setAuthor('Plaintext Privacy')
     pdfDoc.setProducer('Plaintext Privacy')
     pdfDoc.setCreator('Plaintext Privacy')
