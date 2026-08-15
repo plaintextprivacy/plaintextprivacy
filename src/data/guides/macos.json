@@ -6,8 +6,8 @@
   "subtitle": "MacOS is reasonably private out of the box but has several high-impact settings that are off or misconfigured by default. Check off each setting as you complete it.",
   "meta": {
     "reviewed": "August 2026",
-    "timeMinutes": 20,
-    "platforms": ["macOS 13 Ventura+"]
+    "timeMinutes": 25,
+    "platforms": ["macOS Tahoe"]
   },
   "context": {
     "title": "Before you start",
@@ -158,7 +158,10 @@
               "text": "Open `System Settings` → `Apple Intelligence & Siri`"
             },
             {
-              "text": "FINISHHHHH`"
+              "text": "Under `Apple Intelligence` "
+            },
+            {
+              "text": "Under `Siri` "
             }
           ]
         },
