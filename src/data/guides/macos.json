@@ -5,9 +5,9 @@
   "title": "MacOS",
   "subtitle": "MacOS is reasonably private out of the box but has several high-impact settings that are off or misconfigured by default. Check off each setting as you complete it.",
   "meta": {
-    "reviewed": "June 2026",
-    "timeMinutes": 20,
-    "platforms": ["macOS 13 Ventura+"]
+    "reviewed": "August 2026",
+    "timeMinutes": 25,
+    "platforms": ["macOS Tahoe"]
   },
   "context": {
     "title": "Before you start",
@@ -15,10 +15,61 @@
   },
   "sections": [
     {
-      "id": "file",
+      "id": "macos-critical",
       "label": "Critical",
       "risk": "critical",
       "items": [
+        {
+          "id": "icloud-2fa",
+          "name": "Enable 2FA on iCloud",
+          "path": "System Settings → [Your Name] → Sign-In & Security → Two-Factor Authentication",
+          "risk": "critical",
+          "why": "Two-factor authentication can prevent someone from accessing your iCloud account even if they have your password.",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `[Your Name]` → `Sign-In & Security` → `Two-Factor Authentication`"
+            },
+            {
+              "text": "Follow the prompts"
+            }
+          ]
+        },
+        {
+          "id": "recovery-key",
+          "name": "Enable Recovery Key",
+          "path": "System Settings → [Your Name] → Sign-In & Security → Recovery Key",
+          "risk": "critical",
+          "why": "Allows you to regain access to your account if you lose your login credentials or if your account is taken over. Be sure to save your recovery key somewhere safe like a password manager, and not on your phone or computer.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `[Your Name]` → `Sign-In & Security` → `Recovery Key`"
+            },
+            {
+              "text": "Follow the prompts"
+            }
+          ]
+        },
+        {
+          "id": "advanced-data-protection",
+          "name": "Enable Advanced Data Protection",
+          "path": "System Settings → [Your Name] → iCloud → Advanced Data Protection",
+          "risk": "critical",
+          "why": "Advanced Data Protection enables end-to-end encryption for iCloud backups, photos, notes, messages, and more. Only your devices can decrypt the data. Not even Apple can access it. You must have a recovery methods set up to enable this feature",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `[your name]` → `iCloud`"
+            },
+            {
+              "text": "Open `Advanced Data Protection`"
+            },
+            {
+              "text": "Choose `Turn On Advanced Data Protection` and follow the prompts"
+            },
+            {
+              "text": "Set up an `Account Recovery Contact` or save your `Recovery Key` in a safe location not on your computer so you don't lose access to your iCloud"
+            }
+          ]
+        },
         {
           "id": "filevault",
           "name": "Enable FileVault full-disk encryption",
@@ -36,7 +87,7 @@
               "text": "Save the recovery key in your password manager and somewhere physically secure (not on the computer itself)"
             },
             {
-              "text": "Restart your Mac - encryption runs in the background and may take an hour or more on first run"
+              "text": "Restart your Mac to apply"
             }
           ]
         },
@@ -57,7 +108,7 @@
           ]
         },
         {
-          "id": "firewall",
+          "id": "macos-firewall",
           "name": "Enable Firewall",
           "path": "System Settings → Network → Firewall",
           "risk": "critical",
@@ -97,19 +148,38 @@
       "risk": "high",
       "items": [
         {
-          "id": "siri-spotlight",
-          "name": "Disable Siri & Spotlight data sharing",
-          "path": "System Settings → Siri & Spotlight",
+          "id": "apple-intelligence-siri",
+          "name": "Disable Apple Intelligence & Siri data sharing",
+          "path": "System Settings → Apple Intelligence & Siri",
           "risk": "high",
-          "why": "Siri sends your queries and Spotlight search terms to Apple servers by default to improve suggestions. This includes things you type into Spotlight - file names, app names, search terms - which can reveal a lot about your activity and habits.",
+          "why": "FINISH",
           "steps": [
-            { "text": "Open `System Settings` → `Siri & Spotlight`" },
-            { "text": "Toggle off `Ask Siri` if you don't use it" },
             {
-              "text": "Under `Siri Suggestions`, disable `Suggestions in Search`, `Suggestions in Look Up`, and `Suggestions on Lock Screen`"
+              "text": "Open `System Settings` → `Apple Intelligence & Siri`"
             },
             {
-              "text": "Open `System Settings` → `Privacy & Security` → `Analytics & Improvements` and uncheck `Improve Siri & Dictation` and `Share Mac Analytics`"
+              "text": "Under `Apple Intelligence` "
+            },
+            {
+              "text": "Under `Siri` "
+            }
+          ]
+        },
+        {
+          "id": "macos-spotlight",
+          "name": "Disable Spotlight data sharing",
+          "path": "System Settings → Spotlight",
+          "risk": "high",
+          "why": "Spotlight is a useful feature for quickly finding apps or files, but by default some usage data is shared with third parties for advertising purposes.",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `Spotlight`"
+            },
+            {
+              "text": "Toggle off `Related Content`"
+            },
+            {
+              "text": "Toggle off `Help Apple Improve Search`"
             }
           ]
         },
@@ -141,11 +211,50 @@
               "text": "Set `Start screen saver when inactive` to 5 minutes or less"
             }
           ]
+        },
+        {
+          "id": "macos-location-services",
+          "name": "Disable location services",
+          "path": "System Settings → Privacy & Security",
+          "risk": "high",
+          "why": "Disabling Location Services reduces how much of your location data is shared with third party apps and services. Note that they can still infer your location based on your IP address and other info, so it's not a bullet-proof solution.",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `Location Services` → toggle off"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Control access to the location of your Mac - Apple",
+              "url": "https://support.apple.com/guide/mac-help/allow-apps-to-see-the-location-of-your-mac-mh35873/mac"
+            }
+          ]
+        },
+        {
+          "id": "macos-private-ip",
+          "name": "Set Private IP",
+          "path": "System Settings → Network",
+          "risk": "high",
+          "why": "Setting your IP address to private helps reduce tracking of your personal laptop. Choose a Rotating address if you want your IP address to change regularly, and Fixed for a private IP address that stays static.",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `Network` → choose `Details...` next to the Wifi or LAN network you're connected to"
+            },
+            {
+              "text": "Next to `Private Wi-fi Address` choose `Rotating`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Use Private IP Addresses on Apple Devices - Apple",
+              "url": "https://support.apple.com/en-us/102509"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "medium",
+      "id": "macos-medium",
       "label": "Medium",
       "risk": "medium",
       "items": [
@@ -182,29 +291,129 @@
               "text": "Check your computer name at the top - avoid using your real name in it"
             }
           ]
+        },
+        {
+          "id": "find-my",
+          "name": "Enable Find My",
+          "path": "Settings → [Your Name] → Find My",
+          "risk": "high",
+          "why": "Find My for Mac works the same as it does for your iPhone. The downside of this feature is  you must have Location Services enabled to use it. It's a trade off to allow you to track your computer down if it's ever lost or stolen, so be sure to weigh the pros and cons of enabling this feature based on your own risk tolerance.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `[your name]` → `Find My` → `Find My iPhone`"
+            },
+            {
+              "text": "Toggle on `Find My network`"
+            },
+            {
+              "text": "Toggle on `Send Last Location`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Set Up Find My on Mac - Apple",
+              "url": "https://support.apple.com/guide/findmy-mac/set-up-fmm53101237/mac"
+            }
+          ]
         }
       ]
     },
     {
-      "id": "advanced",
+      "id": "macos-low",
+      "label": "Low",
+      "risk": "low",
+      "items": [
+        {
+          "id": "admin-account",
+          "name": "Optional - Standard user account",
+          "path": "System Settings → Users & Groups",
+          "risk": "low",
+          "why": "By default, the user account created when setting up a Mac is an Administrator account. Mac's have many mechanisms in place to defend against abusive admin actions but vulnerabilities have cropped up in the past. If you would like an extra layer of security, you can create and use a Standard user account instead. Whenever you must take an admin action, you will be prompted to enter your admin credentials. This guide assumes you already have your Mac set up and need to change your Administrator user to a Standard user. It's essential that you verify you have a second functioning Administrator account that you can log into before demoting your primary user account.",
+          "steps": [
+            {
+              "text": "Go to `System Settings` → `Users & Groups`"
+            },
+            {
+              "text": "Verify you have a separate Administrator account that you can log into"
+            },
+            {
+              "text": "If a second Administrator account doesn't exist, create one"
+            },
+            {
+              "text": "Log out of your user profile that you plan to demote"
+            },
+            {
+              "text": "Log in as the backup Administrator"
+            },
+            {
+              "text": "Go to `System Settings` → `Users & Groups`"
+            },
+            {
+              "text": "Click on the `i` icon next to the user account you wish to demote"
+            },
+            {
+              "text": "Toggle off `Allow this user to administer this computer`"
+            },
+            {
+              "text": "Enter the username and password for the Administrator account you're currently logged into if prompted"
+            },
+            {
+              "text": "If you have FileVault enabled, verify your demoted account can still log in after a reboot - `System Settings` → `Privacy & Security` → `FileVault` → check for an `Enable Users` button. If one doesn't exist, disregard"
+            },
+            {
+              "text": "Reboot your computer to apply changes"
+            },
+            {
+              "text": "Log back in as your newly demoted user account"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Demote a macOS administrator to a standard user - Six Colors",
+              "url": "https://sixcolors.com/post/2025/08/demote-a-macos-administrator-to-a-standard-user/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "macos-advanced",
       "label": "Advanced",
       "risk": "high",
       "items": [
         {
           "id": "file-encryption",
           "name": "Encrypt individual folders",
-          "path": "Third-party app - see recommendations",
+          "path": "Spotlight → Disk Utility",
           "risk": "high",
-          "why": "macOS has built-in malware protection (XProtect, Gatekeeper) that handles the most common threats. For most users this is sufficient. If you download files from unofficial sources, an antivirus adds an extra layer.",
+          "why": "FileVault encrypts your entire hard drive, but if you wish to add an extra layer of security to specific folders you can use so using Mac's built-in Disk Utility. There are also third party apps that allow you to encrypt files and folders.",
           "steps": [
             {
-              "text": "`Malwarebytes` - free version scans on demand, paid version adds real-time protection"
+              "text": "Open `Spotlight` (CMD + Space bar) → type in `Disk Utility`"
             },
             {
-              "text": "`Bitdefender` - strong detection rates, lightweight performance impact"
+              "text": "`Make sure you have `Macintosh HD` selected"
             },
             {
-              "text": "`NordVPN Threat Protection Pro` - blocks malicious URLs and ads in addition to malware scanning"
+              "text": "Click `File` → `New Image` → `Image from Folder`"
+            },
+            {
+              "text": "Select the folder you wish to encrypt and click `Choose`"
+            },
+            {
+              "text": "Select the folder you wish to encrypt"
+            },
+            {
+              "text": "Rename and choose where to save the file if you wish to change anything"
+            },
+            {
+              "text": "For `Encryption` choose `256 bit AES`"
+            },
+            {
+              "text": "For `Image Format` choose `Hybrid Image (HFS+/ISO/UDF)` then click `Save`"
+            },
+            {
+              "text": "Create a strong password for this folder when prompted. Be sure to save is somewhere safe as you will permanently lose access if you lose your password"
             }
           ]
         }
