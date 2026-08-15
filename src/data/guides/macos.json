@@ -229,6 +229,27 @@
               "url": "https://support.apple.com/guide/mac-help/allow-apps-to-see-the-location-of-your-mac-mh35873/mac"
             }
           ]
+        },
+        {
+          "id": "macos-private-ip",
+          "name": "Set Private IP",
+          "path": "System Settings → Network",
+          "risk": "high",
+          "why": "Setting your IP address to private helps reduce tracking of your personal laptop. Choose a Rotating address if you want your IP address to change regularly, and Fixed for a private IP address that stays static.",
+          "steps": [
+            {
+              "text": "Open `System Settings` → `Network` → choose `Details...` next to the Wifi or LAN network you're connected to"
+            },
+            {
+              "text": "Next to `Private Wi-fi Address` choose `Rotating`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Use Private IP Addresses on Apple Devices - Apple",
+              "url": "https://support.apple.com/en-us/102509"
+            }
+          ]
         }
       ]
     },
