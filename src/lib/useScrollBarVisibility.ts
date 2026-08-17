@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 const SCROLL_END_DELAY_MS = 700
 
-export const useScrollbarVisibility = () => {
+export const useScrollBarVisibility = () => {
   useEffect(() => {
     let timeoutId: number | undefined
 

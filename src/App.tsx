@@ -9,10 +9,10 @@ import { RiskProfilePage } from '@/pages/RiskProfilePage'
 import { GetHelpPage } from '@/pages/GetHelpPage.tsx'
 import { ScrollToTop } from '@/components/ScrollToTop'
 import { PrintGuidePage } from '@/pages/print/PrintGuidePage'
-import { useScrollbarVisibility } from '@/lib/useScrollbarVisibility'
+import { useScrollBarVisibility } from '@/lib/useScrollBarVisibility'
 
 export const App = () => {
-  useScrollbarVisibility()
+  useScrollBarVisibility()
 
   return (
     <BrowserRouter>
