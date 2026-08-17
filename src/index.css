@@ -76,20 +76,37 @@ body {
   background-color: var(--color-bg-primary);
 }
 
-/* scrollbar */
+/* side scrollbar */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+html.is-scrolling {
+  scrollbar-color: var(--color-border-strong) transparent;
+}
+
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-  background: var(--color-bg-primary);
+  background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: var(--color-border-default);
-  border-radius: 3px;
+  background: transparent;
+  border-radius: 8px;
+  transition: background 0.25s ease;
 }
-::-webkit-scrollbar-thumb:hover {
+
+html.is-scrolling::-webkit-scrollbar-thumb {
   background: var(--color-border-strong);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
 }
 
 /* focus ring */
