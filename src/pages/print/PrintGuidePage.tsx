@@ -84,7 +84,7 @@ export const PrintGuidePage = () => {
           <p className='print-brand'>Plaintext Privacy</p>
           <h1>{guide.title}</h1>
           <p className='print-subtitle'>{guide.subtitle}</p>
-          {guide.meta.reviewed && <p className='print-meta'>Reviewed: {guide.meta.reviewed}</p>}
+          {guide.meta.updated && <p className='print-meta'>Last updated: {guide.meta.updated}</p>}
         </header>
 
         {guide.sections.map((section) => (

@@ -1,16 +1,8 @@
-// ─── Risk level ──────────────────────────────────────────────────────────────
-
 export type RiskLevel = 'critical' | 'high' | 'medium' | 'low'
-
-// ─── Guide layout variants ────────────────────────────────────────────────────
 
 export type GuideLayout = 'checklist' | 'checklist-tabbed'
 
-// ─── Guide status ─────────────────────────────────────────────────────────────
-
 export type GuideStatus = 'published' | 'coming-soon'
-
-// ─── Shared building blocks ───────────────────────────────────────────────────
 
 export interface Step {
   text: string
@@ -19,7 +11,6 @@ export interface Step {
 export interface ContextBox {
   title: string
   body: string
-  /** Optional second paragraph */
   body2?: string
 }
 
@@ -27,28 +18,22 @@ export interface WarningBox {
   body: string
 }
 
-// ─── Guide layout: expandable card ───────────────────────────────────────────
-
 export interface Setting {
   id: string
   name: string
-  /** Formatted as "Settings → Section → Sub" */
   path: string
   risk: RiskLevel
   why: string
   steps: Step[]
-  /** Optional extra note rendered below steps */
   note?: string
 }
 
 export interface GuideMeta {
-  reviewed?: string
+  updated?: string
   timeMinutes?: number
   platforms?: string[]
   topics?: number
 }
-
-// ─── Checklist layout: single tab ─────────────────────────────────────────────
 
 export interface Source {
   label: string
@@ -69,7 +54,6 @@ export interface ChecklistItem {
 export interface ChecklistSection {
   id: string
   label: string
-  /** Risk level used to colour the section dot */
   risk: RiskLevel
   items: ChecklistItem[]
 }
@@ -85,8 +69,6 @@ export interface ChecklistGuide {
   warning?: WarningBox
   sections: ChecklistSection[]
 }
-
-// ─── Checklist layout: tabbed (multiple guides in one) ───────────────────────
 
 export interface ChecklistTab {
   id: string
@@ -106,11 +88,7 @@ export interface ChecklistTabbedGuide {
   tabs: ChecklistTab[]
 }
 
-// ─── Union of all guide types ─────────────────────────────────────────────────
-
 export type AnyGuide = ChecklistGuide | ChecklistTabbedGuide
-
-// ─── Guides index ─────────────────────────────────────────────────────────────
 
 export interface IndexGuideCard {
   slug: string

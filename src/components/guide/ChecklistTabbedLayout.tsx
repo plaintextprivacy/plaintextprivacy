@@ -50,10 +50,10 @@ const TabPanel = ({
                 <span>{total} items</span>
               </>
             )}
-            {tab.meta.reviewed && (
+            {tab.meta.updated && (
               <>
                 <span aria-hidden='true'>·</span>
-                <span>Reviewed: {tab.meta.reviewed}</span>
+                <span>Last updated: {tab.meta.updated}</span>
               </>
             )}
             {tab.meta.platforms?.map((p) => (
