@@ -119,10 +119,10 @@ export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
                     <span>{total} items</span>
                   </>
                 )}
-                {meta.reviewed && (
+                {meta.updated && (
                   <>
                     <span aria-hidden='true'>·</span>
-                    <span>Reviewed: {meta.reviewed}</span>
+                    <span>Last updated: {meta.updated}</span>
                   </>
                 )}
                 {meta.platforms?.map((p) => (

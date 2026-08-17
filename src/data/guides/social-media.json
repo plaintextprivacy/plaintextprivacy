@@ -5,6 +5,7 @@
   "title": "Social media",
   "subtitle": "Social media platforms collect your data to sell to advertisers and other data brokers. Best practice would be to delete your social media accounts, but that's not possible for people for a variety of reasons. This comprehensive guide covers nearly every privacy and security-related setting to help you lock down your accounts.",
   "meta": {
+    "updated": "June 2026",
     "timeMinutes": 120,
     "platforms": ["Facebook", "Instagram", "X", "TikTok", "LinkedIn"]
   },

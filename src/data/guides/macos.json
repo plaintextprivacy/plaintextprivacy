@@ -5,7 +5,7 @@
   "title": "MacOS",
   "subtitle": "MacOS is reasonably private out of the box but has several high-impact settings that are off or misconfigured by default. Check off each setting as you complete it.",
   "meta": {
-    "reviewed": "August 2026",
+    "updated": "August 2026",
     "timeMinutes": 25,
     "platforms": ["macOS Tahoe"]
   },
