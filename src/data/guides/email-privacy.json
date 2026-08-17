@@ -5,6 +5,7 @@
   "title": "Email privacy",
   "subtitle": "Your email inbox is one of the most sensitive data stores in your digital life - it contains years of financial records, medical correspondence, account confirmations, and private conversations. This guide covers switching to a private provider, masking your address, and keeping your inbox clean.",
   "meta": {
+    "updated": "June 2026",
     "timeMinutes": 25,
     "platforms": ["Gmail", "Outlook", "ProtonMail", "iOS", "Android"]
   },
