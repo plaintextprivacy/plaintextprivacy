@@ -68,47 +68,17 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
-}
-
-body {
-  overflow-x: clip;
-  min-height: 100vh;
-  background-color: var(--color-bg-primary);
-}
-
-/* side scrollbar */
-
-html,
-body {
   scrollbar-width: thin;
   scrollbar-color: var(--color-bg-primary) var(--color-bg-primary);
 }
 
-html.is-scrolling,
-html.is-scrolling body {
+html.is-scrolling {
   scrollbar-color: var(--color-border-strong) var(--color-bg-primary);
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: transparent;
-  border-radius: 8px;
-  transition: background 0.25s ease;
-}
-
-html.is-scrolling::-webkit-scrollbar-thumb {
-  background: var(--color-border-strong);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-tertiary);
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg-primary);
 }
 
 /* focus ring */
