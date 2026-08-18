@@ -81,12 +81,12 @@ body {
 html,
 body {
   scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
+  scrollbar-color: var(--color-bg-primary) var(--color-bg-primary);
 }
 
 html.is-scrolling,
 html.is-scrolling body {
-  scrollbar-color: var(--color-border-strong) transparent;
+  scrollbar-color: var(--color-border-strong) var(--color-bg-primary);
 }
 
 ::-webkit-scrollbar {
