@@ -109,6 +109,14 @@
           "displayUrl": "thedigitalstandard.org",
           "blurb": "An open source framework for evaluating the privacy, security, and ethical practices of consumer products and services. Used by researchers and journalists to score apps and devices. Useful if you want to understand how a particular product handles your data before you commit to using it.",
           "tags": ["Reference", "Research", "Open source"]
+        },
+        {
+          "id": "eff-sls",
+          "name": "Street Level Surveillance",
+          "url": "https://sls.eff.org/",
+          "displayUrl": "sls.eff.org",
+          "blurb": "Another tool from EFF that identifies a myriad of surveillance tools and their capabilities used by law enforcement. The first step to resisting surveillance is to understand the tools being used to surveil you.",
+          "tags": ["Reference", "Research", "Open source"]
         }
       ]
     },
