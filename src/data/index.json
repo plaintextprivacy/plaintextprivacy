@@ -148,7 +148,7 @@
         {
           "slug": "email-privacy",
           "title": "Email privacy",
-          "description": "Privacy-focused email providers, masking addresses, and keeping sensitive documents out of your inbox",
+          "description": "Privacy-focused email providers and email masking",
           "icon": "envelope",
           "risk": "high",
           "status": "published",
