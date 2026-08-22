@@ -11,7 +11,7 @@
           "name": "Electronic Frontier Foundation",
           "url": "https://eff.org",
           "displayUrl": "eff.org",
-          "blurb": "The EFF is the leading nonprofit defending digital civil liberties. They litigate against mass surveillance programs, lobby for strong encryption laws, and provide resources for people to improve their digital privacy.",
+          "blurb": "The EFF is the leading nonprofit defending digital civil liberties. They litigate against mass surveillance programs, lobby for strong encryption laws, and provide resources for people to improve their digital privacy",
           "tags": ["Advocacy", "Legal", "Free guides", "News"]
         },
         {
@@ -19,7 +19,7 @@
           "name": "Privacy Rights Clearinghouse",
           "url": "https://privacyrights.org",
           "displayUrl": "privacyrights.org",
-          "blurb": "A nonprofit dedicated to consumer privacy education and advocacy. They publish guides on data rights, breach notifications, and how to respond when your information is compromised.",
+          "blurb": "A nonprofit dedicated to consumer privacy education and advocacy. They publish guides on data rights, breach notifications, and how to respond when your information is compromised",
           "tags": ["Advocacy", "Consumer rights", "Education", "Breach response"]
         },
         {
@@ -27,7 +27,7 @@
           "name": "Electronic Privacy Information Center",
           "url": "https://epic.org",
           "displayUrl": "epic.org",
-          "blurb": "EPIC is a public interest research center focused on emerging privacy and civil liberties issues. They file amicus briefs, submit regulatory comments, and publish in-depth reports on surveillance technology, AI, and data protection law. Particularly strong on policy and legal analysis.",
+          "blurb": "EPIC is a public interest research center focused on emerging privacy and civil liberties issues. They file amicus briefs, submit regulatory comments, and publish in-depth reports on surveillance technology, AI, and data protection law. Particularly strong on policy and legal analysis",
           "tags": ["Advocacy", "Policy", "Research"]
         },
         {
@@ -35,7 +35,7 @@
           "name": "Surveillance Technology Oversight Project",
           "url": "https://www.stopspying.org",
           "displayUrl": "stopspying.org",
-          "blurb": "STOP litigates and advocates against government surveillance at the state and local level - particularly the use of facial recognition, location tracking, and predictive policing tools by law enforcement. Focused on communities most impacted by surveillance overreach.",
+          "blurb": "STOP litigates and advocates against government surveillance at the state and local level - particularly the use of facial recognition, location tracking, and predictive policing tools by law enforcement. Focused on communities most impacted by surveillance overreach",
           "tags": ["Advocacy", "Surveillance", "Local government"]
         }
       ]
@@ -59,7 +59,7 @@
           "name": "Indicator Media",
           "url": "https://indicator.media/",
           "displayUrl": "indicator.media",
-          "blurb": "Indicator offers in-depth investigative reporting on stories related to cybersecurity, tech, and privacy. They also offer tips and tools that empower their readers to critically engage with the digital world.",
+          "blurb": "Indicator offers in-depth investigative reporting on stories related to cybersecurity, tech, and privacy. They also offer tips and tools that empower their readers to critically engage with the digital world",
           "tags": ["Reference", "Tools", "Newsletter"]
         },
         {
@@ -67,7 +67,7 @@
           "name": "Wired - Security",
           "url": "https://www.wired.com/category/security/",
           "displayUrl": "wired.com",
-          "blurb": "Wired covers in-depth stories around security and privacy including long-form video content.",
+          "blurb": "Wired covers in-depth stories around security and privacy including long-form video content",
           "tags": ["Security news", "News", "Longform video"]
         }
       ]
@@ -83,7 +83,7 @@
           "name": "Privacy Guides",
           "url": "https://www.privacyguides.org",
           "displayUrl": "privacyguides.org",
-          "blurb": "A community-maintained, open source reference covering privacy-respecting software alternatives, threat modeling frameworks, and in-depth tool reviews. One of the most thorough and regularly updated independent resources available. If you're looking for a recommendation on any type of software - email, VPN, browser, messaging - start here.",
+          "blurb": "A community-maintained, open source reference covering privacy-respecting software alternatives, threat modeling frameworks, and in-depth tool reviews",
           "tags": ["Reference", "Tools", "Open source"]
         },
         {
@@ -91,7 +91,7 @@
           "name": "Have I Been Pwned",
           "url": "https://haveibeenpwned.com",
           "displayUrl": "haveibeenpwned.com",
-          "blurb": "Enter your email address or phone number to instantly see every known data breach it has appeared in. Built and maintained by security researcher Troy Hunt. Essential for understanding your current exposure and knowing which passwords need to be updated immediately.",
+          "blurb": "Enter your email address or phone number to see every known data breach it has appeared in. Use this to help you clean up your data from the internet",
           "tags": ["Tool", "Breach checking", "Free"]
         },
         {
@@ -99,7 +99,7 @@
           "name": "IntelTechniques",
           "url": "https://inteltechniques.com",
           "displayUrl": "inteltechniques.com",
-          "blurb": "Run by former FBI agent Michael Bazzell, IntelTechniques publishes one of the most comprehensive data broker removal workbooks available. It's a free PDF that walks through opt-out procedures for hundreds of data brokers. IntelTechniques also produces the 'Privacy, Security, & OSINT Show' podcast.",
+          "blurb": "Run by former FBI agent Michael Bazzell, IntelTechniques publishes one of the most comprehensive data broker removal workbooks available. It's a free PDF that walks through opt-out procedures for hundreds of data brokers. IntelTechniques also produces the 'Privacy, Security, & OSINT Show' podcast",
           "tags": ["Data removal", "Podcast", "Workbook"]
         },
         {
@@ -107,7 +107,7 @@
           "name": "Cover Your Tracks (EFF)",
           "url": "https://coveryourtracks.eff.org",
           "displayUrl": "coveryourtracks.eff.org",
-          "blurb": "A free tool from the EFF that analyzes your browser and shows exactly how unique and trackable your fingerprint is to advertisers. Run it before and after making browser privacy changes to see how much your fingerprint has improved. Eye-opening if you've never checked.",
+          "blurb": "A free tool from the EFF that analyzes your browser and shows exactly how unique and trackable your fingerprint is to advertisers. Run it before and after making browser privacy changes to see how much your fingerprint has improved. Eye-opening if you've never checked",
           "tags": ["Tool", "Fingerprinting", "Free"]
         },
         {
@@ -115,7 +115,7 @@
           "name": "The Digital Standard",
           "url": "https://thedigitalstandard.org",
           "displayUrl": "thedigitalstandard.org",
-          "blurb": "An open source framework for evaluating the privacy, security, and ethical practices of consumer products and services. Used by researchers and journalists to score apps and devices. Useful if you want to understand how a particular product handles your data before you commit to using it.",
+          "blurb": "An open source framework for evaluating the privacy, security, and ethical practices of consumer products and services. Used by researchers and journalists to score apps and devices. Useful if you want to understand how a particular product handles your data before you commit to using it",
           "tags": ["Reference", "Research", "Open source"]
         },
         {
@@ -123,7 +123,7 @@
           "name": "Street Level Surveillance",
           "url": "https://sls.eff.org/",
           "displayUrl": "sls.eff.org",
-          "blurb": "Another tool from EFF that identifies a myriad of surveillance tools and their capabilities used by law enforcement. The first step to resisting surveillance is to understand the tools being used to surveil you.",
+          "blurb": "Another tool from EFF that identifies a myriad of surveillance tools and their capabilities used by law enforcement. The first step to resisting surveillance is to understand the tools being used to surveil you",
           "tags": ["Reference", "Research", "Open source"]
         }
       ]
@@ -131,7 +131,7 @@
     {
       "id": "learning",
       "label": "Guides & deep dives",
-      "description": "For those who want to go deeper - comprehensive guides, research, and investigative tools.",
+      "description": "For those who want to go deeper - comprehensive guides, research, and investigative tools",
       "accentColor": "var(--color-warn)",
       "resources": [
         {
@@ -139,7 +139,7 @@
           "name": "Surveillance Self-Defense (EFF)",
           "url": "https://ssd.eff.org",
           "displayUrl": "ssd.eff.org",
-          "blurb": "The EFF's flagship practical security guide, written for people at different risk levels - from curious beginners to journalists operating in hostile environments. Structured around threat modeling: understanding who might want your data, what they can do with it, and how to protect yourself accordingly. Free, regularly updated, and available in multiple languages.",
+          "blurb": "The EFF's free security guide that's designed to help people at various risk levels",
           "tags": ["Guide", "Threat modeling", "Multi-level", "Free"]
         },
         {
@@ -147,7 +147,7 @@
           "name": "Hitchhiker's Guide to Online Anonymity",
           "url": "https://anonymousplanet.org/guide/",
           "displayUrl": "anonymousplanet.org",
-          "blurb": "An exhaustive, community-maintained guide to online anonymity for high-risk users. Covers operational security (opsec), Tor, Tails, anonymous payment methods, and advanced threat modeling in extraordinary depth. More technical than most resources, but unmatched in comprehensiveness. Best suited for users who need strong anonymity guarantees, not just privacy.",
+          "blurb": "An exhaustive, community-maintained guide to online anonymity. This guide is more technical than most resources and is best suited for those with some technical skills who aim for digital anonymity",
           "tags": ["Advanced", "Anonymity", "Opsec", "Free"]
         },
         {
@@ -155,7 +155,7 @@
           "name": "Privacy Not Included",
           "url": "https://foundation.mozilla.org/en/privacynotincluded/",
           "displayUrl": "foundation.mozilla.org",
-          "blurb": "Mozilla's consumer guide that researches and rates the privacy and security practices of popular apps, smart devices, and connected products. Particularly useful around holiday gift-giving season when they publish their notorious 'creepy' product rankings. Before buying any connected device, check here first.",
+          "blurb": "Mozilla's consumer guide that researches and rates the privacy and security practices of popular apps, smart devices, and connected products",
           "tags": ["Tool reviews", "Consumer", "Research"]
         },
         {
@@ -163,7 +163,7 @@
           "name": "Big Ass Data Broker Opt-Out List",
           "url": "https://github.com/yaelwrites/Big-Ass-Data-Broker-Opt-Out-List",
           "displayUrl": "github.com/yaelwrites",
-          "blurb": "A community-maintained GitHub repository with direct links to the opt-out pages of 200+ data brokers, people-finder sites, and background check services. The most comprehensive free resource for manually removing your data. Updated regularly by privacy researchers and journalists.",
+          "blurb": "A community-maintained GitHub repository with direct links to the opt-out pages of 200+ data brokers, people-finder sites, and background check services",
           "tags": ["Data removal", "Free", "Community"]
         }
       ]
