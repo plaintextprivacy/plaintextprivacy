@@ -61,6 +61,14 @@
           "displayUrl": "indicator.media",
           "blurb": "Indicator offers in-depth investigative reporting on stories related to cybersecurity, tech, and privacy. They also offer tips and tools that empower their readers to critically engage with the digital world.",
           "tags": ["Reference", "Tools", "Newsletter"]
+        },
+        {
+          "id": "wired",
+          "name": "Wired - Security",
+          "url": "https://www.wired.com/category/security/",
+          "displayUrl": "wired.com",
+          "blurb": "Wired covers in-depth stories around security and privacy including long-form video content.",
+          "tags": ["Security news", "News", "Longform video"]
         }
       ]
     },
