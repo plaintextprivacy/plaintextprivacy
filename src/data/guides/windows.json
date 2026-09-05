@@ -5,7 +5,6 @@
   "title": "Windows",
   "subtitle": "Windows 11 collects extensive user activity data by default. Check off each security and privacy setting to protect your data.",
   "meta": {
-    "updated": "May 2026",
     "timeMinutes": 30,
     "platforms": ["Windows 11 Pro"]
   },

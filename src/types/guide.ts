@@ -29,7 +29,6 @@ export interface Setting {
 }
 
 export interface GuideMeta {
-  updated?: string
   timeMinutes?: number
   platforms?: string[]
   topics?: number

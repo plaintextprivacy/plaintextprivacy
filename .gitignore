@@ -7,6 +7,7 @@ node_modules/
 dist/
 dist-ssr/
 build/
+src/data/guideMeta.generated.json
 
 # ─── Test & coverage ──────────────────────────────────────────────────────────
 coverage/
@@ -72,7 +73,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # ─── Package manager lock files (keep only one) ───────────────────────────────
-# Uncomment the ones you don't use to avoid committing them
 # yarn.lock
 # pnpm-lock.yaml
 

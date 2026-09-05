@@ -5,7 +5,6 @@
   "title": "Linux",
   "subtitle": "Linux is the most privacy-respecting desktop OS available. This guide helps you choose the right distro and covers the most important post-install steps.",
   "meta": {
-    "updated": "June 2026",
     "platforms": ["Ubuntu", "Linux Mint", "Zorin OS"]
   },
   "context": {

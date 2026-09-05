@@ -5,7 +5,6 @@
   "title": "Android",
   "subtitle": "Android's open ecosystem gives you more control than iOS, but it also creates more opportunities for data collection, particularly from Google. This guide walks through settings to lock down your device.",
   "meta": {
-    "updated": "June 2026",
     "timeMinutes": 20,
     "platforms": ["Android 13+"]
   },
