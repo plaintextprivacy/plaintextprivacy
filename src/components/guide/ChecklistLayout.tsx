@@ -9,6 +9,10 @@ import { useProgress } from './useProgress'
 import { getCategoryIcon, formatDuration } from '@/lib/iconMap'
 import indexData from '@/data/index.json'
 import { Download } from 'lucide-react'
+import { getGuideDates, formatMonthYear } from '@/lib/guideMeta'
+
+const dates = getGuideDates(guide.slug)
+{dates && <span>Updated: {formatMonthYear(dates.updated)}</span>}
 
 const { categories } = indexData as GuidesIndex
 
