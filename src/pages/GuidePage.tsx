@@ -1,7 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom'
 import type { AnyGuide } from '@/types/guide'
 import { ChecklistLayout } from '@/components/guide/ChecklistLayout'
-import { ChecklistTabbedLayout } from '@/components/guide/ChecklistTabbedLayout'
 import { PageLayout } from '@/components/layout/PageLayout'
 
 /**
@@ -30,9 +29,8 @@ export const GuidePage = () => {
   if (!guide) return <Navigate to='/guides' replace />
 
   return (
-    <PageLayout>
-      {guide.layout === 'checklist' && <ChecklistLayout guide={guide} />}
-      {guide.layout === 'checklist-tabbed' && <ChecklistTabbedLayout guide={guide} />}
-    </PageLayout>
+      <PageLayout>
+        <ChecklistLayout guide={guide} />
+      </PageLayout>
   )
 }
