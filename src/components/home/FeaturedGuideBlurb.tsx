@@ -17,8 +17,7 @@ export const FeaturedGuideBlurb = () => {
   if (!card) return null
 
   const Icon = featured.type === 'new' ? Sparkles : RefreshCw
-  const label =
-    featured.type === 'new' ? 'New guide' : `Updated ${formatMonthYear(featured.date)}`
+  const label = featured.type === 'new' ? 'New guide' : `Updated ${formatMonthYear(featured.date)}`
 
   return (
     <Link
