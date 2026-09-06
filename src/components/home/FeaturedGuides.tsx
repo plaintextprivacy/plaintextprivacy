@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { RiskBadge } from '@/components/guide/RiskBadge'
 import { getIcon, formatDuration } from '@/lib/iconMap'
-import { FEATURED_SLUGS } from '@/lib/Featuredslugs'
+import { FEATURED_SLUGS } from '@/lib/featuredSlugs'
 import { getItemCount, getDuration } from '@/lib/guideItemCounts'
 import type { GuidesIndex, IndexGuideCard } from '@/types/guide'
 import indexData from '@/data/index.json'
