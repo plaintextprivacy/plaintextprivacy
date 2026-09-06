@@ -1,7 +1,5 @@
 export type RiskLevel = 'critical' | 'high' | 'medium' | 'low'
 
-export type GuideLayout = 'checklist' | 'checklist-tabbed'
-
 export type GuideStatus = 'published' | 'coming-soon'
 
 export interface Step {
@@ -29,7 +27,6 @@ export interface Setting {
 }
 
 export interface GuideMeta {
-  updated?: string
   timeMinutes?: number
   platforms?: string[]
   topics?: number
@@ -60,7 +57,7 @@ export interface ChecklistSection {
 
 export interface ChecklistGuide {
   slug: string
-  layout: Extract<GuideLayout, 'checklist'>
+  layout: 'checklist'
   category: string
   title: string
   subtitle: string
@@ -70,25 +67,7 @@ export interface ChecklistGuide {
   sections: ChecklistSection[]
 }
 
-export interface ChecklistTab {
-  id: string
-  label: string
-  icon: string
-  title: string
-  subtitle: string
-  meta: GuideMeta
-  context?: ContextBox
-  warning?: WarningBox
-  sections: ChecklistSection[]
-}
-
-export interface ChecklistTabbedGuide {
-  slug: string
-  layout: Extract<GuideLayout, 'checklist-tabbed'>
-  tabs: ChecklistTab[]
-}
-
-export type AnyGuide = ChecklistGuide | ChecklistTabbedGuide
+export type AnyGuide = ChecklistGuide
 
 export interface IndexGuideCard {
   slug: string

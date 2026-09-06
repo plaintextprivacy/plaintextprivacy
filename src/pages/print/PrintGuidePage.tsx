@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom'
 import type { AnyGuide, ChecklistSection, ChecklistItem } from '@/types/guide'
+import { getGuideDates, formatMonthYear } from '@/lib/guideMeta'
 import './print.css'
 
 const guideModules = import.meta.glob<{ default: AnyGuide }>('../../data/guides/*.json', {
@@ -78,13 +79,17 @@ export const PrintGuidePage = () => {
   if (!guide) return <p style={{ padding: 40 }}>Guide not found.</p>
 
   if (guide.layout === 'checklist') {
+    const dates = getGuideDates(guide.slug)
+
     return (
       <div className='print-page'>
         <header className='print-header'>
           <p className='print-brand'>Plaintext Privacy</p>
           <h1>{guide.title}</h1>
           <p className='print-subtitle'>{guide.subtitle}</p>
-          {guide.meta.updated && <p className='print-meta'>Last updated: {guide.meta.updated}</p>}
+          {dates?.updated && (
+            <p className='print-meta'>Last updated: {formatMonthYear(dates.updated)}</p>
+          )}
         </header>
 
         {guide.sections.map((section) => (
@@ -96,25 +101,5 @@ export const PrintGuidePage = () => {
     )
   }
 
-  // tabbed checklist; each tab prints as its own section
-  return (
-    <div className='print-page'>
-      <header className='print-header'>
-        <p className='print-brand'>Plaintext Privacy</p>
-        <h1>{guide.slug}</h1>
-      </header>
-
-      {guide.tabs.map((tab) => (
-        <div key={tab.id} className='print-tab'>
-          <h2 className='print-tab-title'>{tab.title}</h2>
-          <p className='print-subtitle'>{tab.subtitle}</p>
-          {tab.sections.map((section) => (
-            <PrintSection key={section.id} section={section} />
-          ))}
-        </div>
-      ))}
-
-      <footer className='print-footer'>plaintextprivacy.org/guides/{guide.slug}</footer>
-    </div>
-  )
+  return <p style={{ padding: 40 }}>This guide format is not supported for printing.</p>
 }

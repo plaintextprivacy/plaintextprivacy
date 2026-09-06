@@ -18,7 +18,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "format": "prettier --write src",
-    "generate-pdfs": "node scripts/generate-pdfs.mjs"
+    "generate-pdfs": "node scripts/generate-pdfs.mjs",
+    "generate-guide-metadata": "node scripts/generate-guide-metadata.mjs"
   },
   "dependencies": {
     "@fontsource/ubuntu": "^5.1.0",

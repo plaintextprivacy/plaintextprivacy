@@ -54,11 +54,40 @@ jobs:
           path: coverage/
           retention-days: 7
 
+  # ─── Generate guide metadata ──────────────────────────────────────────────────
+  generate-guide-metadata:
+    name: Generate guide metadata
+    runs-on: ubuntu-latest
+    needs: [test]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate guide metadata
+        run: npm run generate-guide-metadata
+
+      - name: Upload metadata artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: guide-metadata
+          path: src/data/guideMeta.generated.json
+          retention-days: 1
+
   # ─── Generate PDFs ────────────────────────────────────────────────────────────
   generate-pdfs:
     name: Generate guide PDFs
     runs-on: ubuntu-latest
-    needs: [test]
+    needs: [test, generate-guide-metadata]
     steps:
       - uses: actions/checkout@v4
 
@@ -70,6 +99,12 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Download guide metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: guide-metadata
+          path: src/data/
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
@@ -123,7 +158,7 @@ jobs:
   deploy:
     name: Deploy to Cloudflare
     runs-on: ubuntu-latest
-    needs: [build, generate-pdfs]
+    needs: [build, generate-pdfs, generate-guide-metadata]
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: production
@@ -145,6 +180,12 @@ jobs:
         with:
           name: guide-pdfs
           path: public/pdfs/
+
+      - name: Download guide metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: guide-metadata
+          path: src/data/
 
       - name: Build
         run: npm run build

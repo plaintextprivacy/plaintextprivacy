@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Shield } from 'lucide-react'
+import { FeaturedGuideBlurb } from '@/components/home/FeaturedGuideBlurb'
 
 export const HeroSection = () => (
   <section className='relative overflow-hidden px-6 py-20 text-center'>
@@ -51,6 +52,7 @@ export const HeroSection = () => (
           Browse all guides
         </Link>
       </div>
+      <FeaturedGuideBlurb />
     </div>
   </section>
 )

@@ -9,6 +9,7 @@ import { useProgress } from './useProgress'
 import { getCategoryIcon, formatDuration } from '@/lib/iconMap'
 import indexData from '@/data/index.json'
 import { Download } from 'lucide-react'
+import { getGuideDates, formatMonthYear } from '@/lib/guideMeta'
 
 const { categories } = indexData as GuidesIndex
 
@@ -33,6 +34,7 @@ const sectionRiskColor: Record<string, string> = {
 
 export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
   const { title, subtitle, meta, context, warning, sections } = guide
+  const dates = getGuideDates(guide.slug)
 
   const allItems = sections.flatMap(({ items }) => items)
   const total = allItems.length
@@ -119,10 +121,10 @@ export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
                     <span>{total} items</span>
                   </>
                 )}
-                {meta.updated && (
+                {dates?.updated && (
                   <>
                     <span aria-hidden='true'>·</span>
-                    <span>Last updated: {meta.updated}</span>
+                    <span>Last updated: {formatMonthYear(dates.updated)}</span>
                   </>
                 )}
                 {meta.platforms?.map((p) => (
@@ -135,6 +137,7 @@ export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
             </div>
 
             <ProgressBar completed={checkedIds.size} total={total} />
+
             {context && (
               <ContextBox title={context.title} body={context.body} body2={context.body2} />
             )}

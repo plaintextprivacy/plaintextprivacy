@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FEATURED_SLUGS } from '@/lib/Featuredslugs.tsx'
+import { FEATURED_SLUGS } from '@/lib/featuredSlugs.tsx'
 import type { GuidesIndex } from '@/types/guide.ts'
 import indexData from '@/data/index.json'
 

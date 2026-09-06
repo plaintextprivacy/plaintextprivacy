@@ -5,7 +5,6 @@
   "title": "Signal",
   "subtitle": "Signal is the gold standard for private messaging, but its default settings leave some privacy gaps. This guide walks through every setting you should configure to make your Signal account as private as possible.",
   "meta": {
-    "updated": "June 2026",
     "timeMinutes": 10,
     "platforms": ["iOS", "Android"]
   },
