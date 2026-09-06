@@ -1,4 +1,61 @@
 {
-  "guides": {},
-  "featured": null
+  "guides": {
+    "android": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "app-alternatives": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "browsers": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "data-brokers": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "email-privacy": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "iphone": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "linux": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "macos": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "passwords-mfa": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "signal": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "social-media": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "vpns": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    },
+    "windows": {
+      "created": "2026-06-05",
+      "updated": "2026-09-05"
+    }
+  },
+  "featured": {
+    "type": "updated",
+    "slug": "android",
+    "date": "2026-09-05"
+  }
 }
