@@ -22,9 +22,9 @@ export const FeaturedGuideBlurb = () => {
   return (
     <Link
       to={`/guides/${card.slug}`}
-      className='mx-auto mt-6 flex items-center justify-center gap-2 text-center text-body text-text-secondary transition-colors hover:text-accent'
+      className='mx-auto mt-6 flex items-start justify-center gap-2 text-center text-body text-text-secondary transition-colors hover:text-accent'
     >
-      <Icon size={13} className='shrink-0 text-accent' />
+      <Icon size={13} className='mt-[3px] shrink-0 text-accent' />
       <span>
         <span className='font-medium text-text-primary'>{label}:</span>{' '}
         <span className='font-medium'>{card.title}</span>

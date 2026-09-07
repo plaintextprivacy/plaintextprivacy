@@ -52,6 +52,8 @@ export const HeroSection = () => (
           Browse all guides
         </Link>
       </div>
+    </div>
+    <div className='relative mx-auto max-w-3xl'>
       <FeaturedGuideBlurb />
     </div>
   </section>
