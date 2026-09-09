@@ -296,16 +296,16 @@
       ]
     },
     {
-      "id": "at-the-checkpoint",
-      "label": "At the checkpoint",
+      "id": "at-security-checkpoints",
+      "label": "At security checkpoints",
       "risk": "critical",
       "items": [
         {
           "id": "power-off-devices",
-          "name": "Power off your devices before the checkpoint",
+          "name": "Power off devices before reaching security checkpoints",
           "path": "Power off completely",
           "risk": "critical",
-          "why": "A device is at its most secure before it's unlocked for the first time after booting. Once a passcode has been entered to unlock your phone, extraction tools have an easier time bypassing encryption.",
+          "why": "A device is at its most secure before it's unlocked for the first time after booting. Powering it off ensures your phone is in this state when it's time turn it back on. Once a passcode has been entered to unlock your phone, extraction tools have an easier time bypassing encryption.",
           "steps": [
             {
               "text": "iPhone: hold the power button and volume-down button together, then slide to power off"
@@ -352,7 +352,7 @@
           ],
           "sources": [
             {
-              "label": "Attending a Protest — Electronic Frontier Foundation, Surveillance Self-Defense",
+              "label": "Attending a Protest — EFF",
               "url": "https://ssd.eff.org/module/attending-protest"
             }
           ]
