@@ -122,7 +122,7 @@ const TopbarSearch = ({ fullWidth = false }: TopbarSearchProps) => {
           placeholder='Search guides...'
           className={[
             'h-9 rounded-md border border-default bg-bg-tertiary pl-7 pr-7',
-            'text-label text-text-primary placeholder:text-text-tertiary',
+            'text-ui sm:text-label text-text-primary placeholder:text-text-tertiary',
             'focus:border-accent focus:outline-none transition-all duration-200',
             fullWidth ? 'w-full' : 'w-44 focus:w-56'
           ].join(' ')}
