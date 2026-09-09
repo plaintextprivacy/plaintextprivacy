@@ -9,12 +9,12 @@
     "platforms": ["Facebook", "Instagram", "X", "TikTok", "LinkedIn"]
   },
   "context": {
-    "title": "What social media platforms actually collect",
-    "body": "Social media companies collect more than just what you post. They track your location, what you look at even when you don't interact with it, who you're connected to, your device hardware, as well as your activity all across the web",
-    "body2": "Completing the Critical items will significantly reduce your exposure even if you keep your accounts"
+    "title": "What social media platforms collect",
+    "body": "Social media companies collect more than just what you post. They track your location, what you look at, who you're connected to, your device hardware, as well as your activity all across the web.",
+    "body2": "Completing the Critical items will significantly reduce how much of your personal information is captured by social media sites."
   },
   "warning": {
-    "body": "Changing your social media settings isn't going to 100% protect your information from being tracked, sold to data brokers, or used in advertising. These steps aren't a replacement for deleting your social media accounts"
+    "body": "Changing your social media settings isn't going to 100% protect your information from being tracked, sold to data brokers, or used in advertising. These steps aren't a replacement for deleting your social media accounts."
   },
   "sections": [
     {
@@ -25,24 +25,21 @@
         {
           "id": "password-security",
           "name": "Password and security",
-          "path": "Meta Accounts Center → Password and security",
+          "path": "Settings → Accounts Center → Password and security",
           "risk": "critical",
           "why": "This section helps you enhance your account security",
           "steps": [
             {
-              "text": "Open `Meta Accounts Center` → `Password and security`"
+              "text": "Click `Account (profile picture)` → `Settings & privacy` → `Settings` → `Accounts Center` → `Password and security` → `Change password` → create a strong password"
             },
             {
-              "text": "Create a strong password: `Change password`"
+              "text": "Next, enable 2FA: choose `Two-factor authentication`"
             },
             {
-              "text": "Enable 2FA: `Two-factor authentication`"
+              "text": "Optional: for additional security, create a passkey: choose `Passkey`"
             },
             {
-              "text": "Create a passkey: `Passkey`"
-            },
-            {
-              "text": "If eligible, turn on Advanced Protection: `Advanced Protection`"
+              "text": "If eligible, turn on Advanced Protection: choose `Advanced Protection`"
             }
           ],
           "sources": [
@@ -55,54 +52,63 @@
         {
           "id": "connected-experiences",
           "name": "Connected experiences",
-          "path": "Meta Accounts Center → Connected experiences",
+          "path": "Settings → Accounts Center → Connected experiences",
           "risk": "critical",
           "why": "Controls what information is shared between your Meta accounts",
           "steps": [
             {
-              "text": "Open `Meta Accounts Center` → `Connected experiences`"
+              "text": "Click `Account (profile picture)` → `Settings & privacy` → `Settings` → `Accounts Center` → `Connected experiences`"
             },
             {
-              "text": "`Sharing across profiles` → disconnect your accounts"
+              "text": "`Sharing across profiles` → toggle off sharing for each of your accounts"
             },
             {
-              "text": "FINISH"
+              "text": "`Facebook Dating across apps` → toggle off sharing"
+            },
+            {
+              "text": "`Memories from Instagram` → toggle off sharing for each account"
+            },
+            {
+              "text": "`Media on Meta devices` → disconnect your Meta Horizon profile to disable"
+            },
+            {
+              "text": "`Syncing profile pictures` → disable"
+            },
+            {
+              "text": "`Showing links for your profiles` → go to each profile and toggle off"
             }
           ],
           "sources": [
             {
-              "label": "Meta Accounts Center → Ad preferences",
-              "url": "https://accountscenter.facebook.com/ads"
+              "label": "Meta Accounts Center → Connected experiences",
+              "url": "https://accountscenter.facebook.com/connected_experiences"
             }
           ]
         },
         {
           "id": "meta-permissions",
           "name": "Your information and permissions",
-          "path": "Meta Accounts Center → Your information and permissions",
+          "path": "Settings → Accounts Center → Your information and permissions",
           "risk": "critical",
           "why": "This section covers information Meta has about you that it shares with third parties, and what third parties have shared with it",
           "steps": [
             {
-              "text": "Open `Meta Accounts Center`"
+              "text": "Click `Account (profile picture)` → `Settings & privacy` → `Settings` → `Accounts Center` → `Your information and permissions`"
             },
             {
-              "text": "Go to `Your information and permissions` → `Your activity off Meta technologies`"
+              "text": "`Search history` → delete your search history for each profile"
             },
             {
-              "text": "Follow the steps for `Disconnect specific activity`"
+              "text": "`Activity from other businesses` → choose `Don't allow us to use this activity to show you relevant content`"
             },
             {
-              "text": "Next, follow the steps for `Clear previous activity`"
+              "text": "`App connections` → disconnect all connected apps"
             },
             {
-              "text": "Then `Manage future activity` → `Disconnect future activity`"
+              "text": "`External accounts` → disconnect all external accounts"
             },
             {
-              "text": "Go back to `App connections` → disconnect all apps"
-            },
-            {
-              "text": "Go back to `Specific ad partners` → disconnect all ad partners"
+              "text": "`Manage contacts` → follow the steps to disconnect synced contacts"
             }
           ],
           "sources": [
@@ -115,30 +121,33 @@
         {
           "id": "ad-preferences",
           "name": "Ad preferences",
-          "path": "Meta Accounts Center → Ad preferences → Manage info",
+          "path": "Settings → Accounts Center → Ad preferences → Manage info",
           "risk": "critical",
           "why": "Controls what information Meta can use to serve personalized ads to you",
           "steps": [
             {
-              "text": "Open `Meta Accounts Center` → `Ad preferences` → `Manage info`"
+              "text": "Click `Account (profile picture)` → `Settings & privacy` → `Settings` → `Accounts Center` → `Ad preferences` → `Manage info`"
             },
             {
-              "text": "Delete and remove items in `Categories used to reach you`"
+              "text": "`Categories used to reach you` → remove everything under `Choose profile information` and `Categories associated with you`"
             },
             {
-              "text": "Then `Activity information from ad partners` → `Review Settings` → choose `No, don't make my ads more relevant by using this information`"
+              "text": "`Activity from other businesses` → choose `Don't allow us to use this activity to show you relevant content`"
             },
             {
-              "text": "Delete and remove all sections in `Categories used to reach you`"
+              "text": "`Audience-based advertising` → click advertiser name → choose the reason listed under `Why are you included in this advertiser's audience?` → click `Don't allow`"
             },
             {
-              "text": "Next, `Ads in other apps` → choose `Don't allow us to show you ads in other apps`"
+              "text": "Repeat the above step for as many advertisers as you wish (it sucks, I know) - this is a step that must be repeated in the future as there's no way to opt out"
             },
             {
-              "text": "Next, `Ads about Meta` → choose `Don't use my activity to show me ads about Meta`"
+              "text": "`Ads in other apps` → choose `Don’t allow us to show you ads in other apps`"
             },
             {
-              "text": "Finally, `Social interactions` → select your account(s) → `Who can see your social interactions alongside ads for this account?` → choose `Only Me`"
+              "text": "`Ads about Meta` → choose `Don't use my activity to show me ads about Meta`"
+            },
+            {
+              "text": "`Social interactions` → choose `Only me` for each account"
             }
           ],
           "sources": [
@@ -158,48 +167,81 @@
         {
           "id": "fb-private-profile",
           "name": "Make your profile private",
-          "path": "Facebook Profile → Settings & privacy → Privacy Center",
+          "path": "Facebook Profile → About",
           "risk": "high",
-          "why": "Making your profile private stops strangers from looking for personal details about you",
+          "why": "Removing personal details from your profile reduces how much of your information is exposed to the internet",
           "steps": [
             {
-              "text": "Open `Profile` → `Settings & privacy` → `Privacy Center` → `Common privacy settings` → `Manage audience settings` → `Profile information`"
+              "text": "Click `Account (profile picture)` → `Your Name` → `About`"
             },
             {
-              "text": "Delete personal information such as your family members, relationship, and current city"
+              "text": "Delete all personally identifying information about yourself, including your workplace, location, sexual orientation, relationship status, linked family members, birthdate, etc"
+            }
+          ]
+        },
+        {
+          "id": "search-discovery",
+          "name": "Restrict who can find and contact you",
+          "path": "Facebook Profile → Settings & privacy → Settings → How people find and contact you",
+          "risk": "high",
+          "why": "By default, anyone can search for your Facebook profile using your phone number or email address. This is one way stalkers and scammers find targets.",
+          "steps": [
+            {
+              "text": "Click `Account (profile picture)` → `Settings & privacy` → `Settings`"
             },
             {
-              "text": "Set everything else to `Only me` or `Friends`"
+              "text": "`Who can send you friend requests` → `Friends of friends`"
+            },
+            {
+              "text": "`Who can see your friends list` → `Friends` or `Only me`"
+            },
+            {
+              "text": "`Who can Facebook suggest your profile to based on your phone number or email address` → `People with your email address` → `No one`"
+            },
+            {
+              "text": "`Who can Facebook suggest your profile to based on your phone number or email address` → `People with your phone number` → `No one`"
+            },
+            {
+              "text": "`Do you want search engines outside of Facebook to link to your profile?` → toggle off"
+            },
+            {
+              "text": "`For people with your phone number, deliver requests to` → `Message requests` or `Don't receive requests`"
+            },
+            {
+              "text": "`For friends of friends on Facebook, deliver requests to` → `Message requests` or `Don't receive requests`"
+            },
+            {
+              "text": "`Deliver requests from people in your Facebook groups to` → `Message requests` or `Don't receive requests`"
+            },
+            {
+              "text": "`For others on Messenger or Facebook, deliver requests to` → `Message requests` or `Don't receive requests`"
             }
           ],
           "sources": [
             {
-              "label": "Facebook Profile → Settings & privacy → Privacy Center",
-              "url": "https://www.facebook.com/privacy/center/"
+              "label": "Facebook Profile → Settings & privacy → Settings → How people find and contact you",
+              "url": "https://www.facebook.com/settings/?tab=how_people_find_and_contact_you"
             }
           ]
         },
         {
           "id": "private-posts",
           "name": "Make past and future posts private",
-          "path": "Facebook Profile → Settings & privacy → Privacy Center",
+          "path": "Facebook Profile → Settings & privacy → Settings → Default audience settings",
           "risk": "high",
           "why": "Making your account private doesn't retroactively make previous posts private",
           "steps": [
             {
-              "text": "Open `Settings & privacy` → `Privacy Center` → `Common privacy settings` → `Manage audience settings` → `Posts and stories`"
+              "text": "Click `Account (profile picture)` → `Settings & privacy` → `Settings`"
             },
             {
-              "text": "Change `Who can see future posts` → `Friends`"
+              "text": "`Default audience settings` → `Choose your default audience` → choose `Friends` or customize to your preferences"
             },
             {
-              "text": "Next choose `Limit past posts`"
+              "text": "Next, choose `Posts` → `Limit who can see past posts` → `Limit past posts` → choose `Limit who can see past posts on your profile` to confirm"
             },
             {
-              "text": "Turn off `Allow comment summaries on your posts`"
-            },
-            {
-              "text": "Turn off `Allow visual search on your posts`"
+              "text": "Under `Posts` toggle off `Allow comment summaries on your posts` and Allow visual search on your posts`"
             },
             {
               "text": "Set `Who can see your stories` → `Friends`"
@@ -213,68 +255,23 @@
           ]
         },
         {
-          "id": "search-discovery",
-          "name": "Restrict who can find and contact you",
-          "path": "Facebook Profile → Settings & privacy → Settings → How people find and contact you",
-          "risk": "high",
-          "why": "By default, anyone can search for your Facebook profile using your phone number or email address. This is one way stalkers and scammers find targets.",
-          "steps": [
-            {
-              "text": "Open `Settings & privacy` → `Settings` → `How people find and contact you`"
-            },
-            {
-              "text": "Set `Who can send you friend requests` → `Friends of friends`"
-            },
-            {
-              "text": "Set `Who can see your friends list` → `Friends`"
-            },
-            {
-              "text": "Set `Who can Facebook suggest your profile to based on your phone number or email address` → `People with your email address` → `No one`"
-            },
-            {
-              "text": "Set `Who can Facebook suggest your profile to based on your phone number or email address` → `People with your phone number` → `No one`"
-            },
-            {
-              "text": "Turn off `Do you want search engines outside of Facebook to link to your profile?`"
-            },
-            {
-              "text": "Set `For people with your phone number, deliver requests to` → `Message requests` or `Don't receive requests`"
-            },
-            {
-              "text": "Set `For friends of friends on Facebook, deliver requests to` → `Message requests` or `Don't receive requests`"
-            },
-            {
-              "text": "Set `Deliver requests from people in your Facebook groups to` → `Message requests` or `Don't receive requests`"
-            },
-            {
-              "text": "Set `For others on Messenger or Facebook, deliver requests to` → `Message requests` or `Don't receive requests`"
-            }
-          ],
-          "sources": [
-            {
-              "label": "Facebook Profile → Settings & privacy → Settings → How people find and contact you",
-              "url": "https://www.facebook.com/settings/?tab=how_people_find_and_contact_you"
-            }
-          ]
-        },
-        {
           "id": "apps-websites",
-          "name": "Disable off-Facebook activity",
+          "name": "Disable login to other apps with Facebook",
           "path": "Facebook Profile → Settings & privacy → Settings → Apps and websites",
           "risk": "critical",
           "why": "Disconnect connections with other apps and websites and disable using Facebook to log into other websites",
           "steps": [
             {
-              "text": "Open `Settings & privacy` → `Settings` → `Apps and websites`"
+              "text": "Click `Account (profile picture)` → `Settings & privacy` → `Settings`"
             },
             {
-              "text": "Remove connected apps and websites; be sure to change your login info first"
+              "text": "Remove connected apps and websites; be sure to change your login on those websites first"
             },
             {
-              "text": "Set `Apps, websites and games` → `Turn off`"
+              "text": "`Apps, websites and games` → `Turn off`"
             },
             {
-              "text": "Set `Game and app notifications` → `Turn off`"
+              "text": "`Game and app notifications` → `Turn off`"
             }
           ],
           "sources": [

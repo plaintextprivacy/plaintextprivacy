@@ -1,0 +1,448 @@
+{
+  "slug": "travel",
+  "layout": "checklist",
+  "category": "advanced",
+  "title": "Travel",
+  "subtitle": "Border crossings and airport security put your devices under a level of scrutiny that doesn't usually apply in most situations. This guide walks through different steps you can take to protect your privacy as much as possible while traveling in and out of the US.",
+  "meta": {
+    "timeMinutes": 35,
+    "platforms": ["iOS", "Android", "macOS", "Windows"]
+  },
+  "context": {
+    "title": "Fourth Amendment rights at the border",
+    "body": "Border agents in the US can search or seize any electronic device without a warrant or probable cause, regardless of your immigration status. What changes based on your status is what happens if you decline to grant access to your devices. US citizens cannot be denied entry for refusing a device search, though the device can be held and you may face a long delay. Green card holders generally cannot be denied entry either, but may face further questioning or deportation proceedings. Visa holders and other visitors can be denied entry outright for refusing to comply.",
+    "body2": "This is not legal advice. If you have reason to believe you'll be a target due to your work, your public profile, or your immigration status, speak with an immigration or civil rights attorney before you travel."
+  },
+  "warning": {
+    "body": "This guide is written for general travel and border-crossing security. If you're undocumented or have an uncertain immigration status, your risk profile is different and this guide might not be right for your situation. We recommend consulting with an immigration attorney or an organization that specializes in immigrant rights before you travel."
+  },
+  "sections": [
+    {
+      "id": "before-you-travel",
+      "label": "Before you travel",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "update-devices",
+          "name": "Update your devices",
+          "path": "Settings → Software Update (varies by device)",
+          "risk": "critical",
+          "why": "An out-of-date operating system is one of the biggest gaps in your device's security. Every update closes off exploits that forensic extraction tools rely on to bypass your PIN / password. Buying a secondary device isn't realistic for most people, so making sure your everyday device is fully up to date is an important step before your trip.",
+          "steps": [
+            {
+              "text": "iPhone: `Settings` → `General` → `Software Update`"
+            },
+            {
+              "text": "Android: `Settings` → `System` → `System update` (path varies slightly by manufacturer; search for `System update` if you can't find it)"
+            },
+            {
+              "text": "MacOS: `System Settings` → `General` → `Software Update`"
+            },
+            {
+              "text": "Windows 11: `Settings` → `Windows Update` → `Check for updates`"
+            }
+          ]
+        },
+        {
+          "id": "enable-device-encryption",
+          "name": "Enable device encryption",
+          "path": "Varies by device",
+          "risk": "critical",
+          "why": "Encryption is the backbone of data security and privacy. Many devices and their backups are not encrypted by default and must be manually configured.",
+          "steps": [
+            {
+              "text": "iPhone: `Settings` → `Your Name` → `iCloud` → `Advanced Data Protection` → follow the prompts"
+            },
+            {
+              "text": "Advanced Data Protection activates end to end encryption (e2ee) for all of your iCloud backups"
+            },
+            {
+              "text": "MacOS: `System Settings` → `Privacy & Security` → scroll to `FileVault` → toggle it on"
+            },
+            {
+              "text": "Save the recovery key somewhere safe like a password manager or fire safe - do NOT store it directly on your laptop"
+            },
+            {
+              "text": "Windows Home: `Settings` → `Privacy & Security` → `Device encryption` → follow the prompts"
+            },
+            {
+              "text": "Windows Pro: search for `BitLocker` in the Start menu → `Manage BitLocker` → `Turn on BitLocker` choose full drive if prompted"
+            },
+            {
+              "text": "Save the recovery key somewhere safe like a password manager or fire safe - do NOT store it directly on your laptop"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Digital Privacy at the U.S. Border - Electronic Frontier Foundation",
+              "url": "https://www.eff.org/wp/digital-privacy-us-border-2017"
+            }
+          ]
+        },
+        {
+          "id": "set-strong-passcode",
+          "name": "Set a strong password",
+          "path": "Settings → Passcode / Screen Lock (varies by device)",
+          "risk": "critical",
+          "why": "A strong password is one of the best defenses against unwanted intrusion into your devices and accounts. Avoid using names, birthdays, social security numbers, or other personal information in your password. At minimum, aim to have passwords that are at least 8-10 characters long, and use a phrase that's difficult to guess. For example, 'WeLooked@TheMoon75.' For extra security, you can use a randomly generated password that you then memorize.",
+          "steps": [
+            {
+              "text": "iPhone: `Settings` → `Face ID & Passcode` → `Change Passcode` → `Passcode Options` → choose `Custom Numeric Code` or `Custom Alphanumeric Code`"
+            },
+            {
+              "text": "Android: `Settings` → `Security` → `Screen Lock` → choose `PIN` or `Password`"
+            },
+            {
+              "text": "MacOS (not iCloud): `System Settings` → `Touch ID & Password` → `Change...`"
+            },
+            {
+              "text": "Windows: `Settings` → `Accounts` → `Sign-in options` → `Password` → `Change`"
+            }
+          ]
+        },
+        {
+          "id": "backup-devices",
+          "name": "Back up your devices before you leave",
+          "path": "iCloud / Google / OneDrive",
+          "risk": "critical",
+          "why": "If a device is seized, damaged, or you factory reset it, a recent backup will allow you to recover everything once you're through.",
+          "steps": [
+            {
+              "text": "iPhone: `Settings` → `Your Name` → `iCloud` → `iCloud Backup` → `Back Up Now`"
+            },
+            {
+              "text": "Samsung Galaxy: `Settings` → `Your Name` → `Samsung Cloud` → `Back up data`"
+            },
+            {
+              "text": "Google Pixel: `Settings` → `System` → `Backup` → `Back up now`"
+            },
+            {
+              "text": "Google Pixel Photos: `Photos` → `Your Profile icon` → `Settings` → `Backup and sync`"
+            },
+            {
+              "text": "MacOS Time Machine: connect an external storage drive to your Mac that has at least twice the storage space → `System Settings` → `General` → `Time Machine` → `Add Backup Disk` → select your storage drive → `Set Up Disk` → follow the prompts"
+            },
+            {
+              "text": "MacOS iCloud: `System Settings` → `Your Name` → `iCloud` → `Manage` → choose the apps to back up"
+            },
+            {
+              "text": "Windows: `Start` → search for backup → `Windows Backup` → choose the `Folders`, `Apps`, `Settings`, and `Credentials` you wish to back up"
+            },
+            {
+              "text": "Optional for laptops: back up to an encrypted external drive or a cloud provider"
+            }
+          ]
+        },
+        {
+          "id": "know-your-rights",
+          "name": "Know your rights",
+          "path": "Applies at any US border crossing",
+          "risk": "critical",
+          "why": "Knowing your rights in advance and practicing them before you need them is the best way to stay cool under pressure. Keep in mind that even for US citizens, refusal to hand over device passwords will likely prompt CBP agents to detain you for an extended period of time.",
+          "steps": [
+            {
+              "text": "US citizens: cannot be denied entry into the US, must answer identity and citizenship questions, can decline device searches, can decline handing over device passwords"
+            },
+            {
+              "text": "Green card holders: generally cannot be denied entry without an immigration judge hearing, can decline device searches, but may face further questioning or deportation proceedings"
+            },
+            {
+              "text": "Visa holders and other visitors: can be denied entry for declining to answer questions or allow a device search"
+            },
+            {
+              "text": "If questioned, tell the truth and do not misrepresent anything"
+            },
+            {
+              "text": "If your device is seized, ask for a receipt so you have a record to follow up on later"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Can Border Agents Search Your Electronic Devices? - ACLU",
+              "url": "https://www.aclu.org/news/privacy-technology/can-border-agents-search-your-electronic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reduce-your-data",
+      "label": "Reduce what's on your devices",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "remove-sensitive-apps",
+          "name": "Remove sensitive apps and data",
+          "path": "Uninstall from phone and laptop",
+          "risk": "high",
+          "why": "Treat any data on your phone as potentially accessible by anyone who has physical access to your phone. Remove anything that contains personal or sensitive information. This mainly protects against someone browsing through your device by hand as it does not fully protect against a forensic tool recovering deleted data.",
+          "steps": [
+            {
+              "text": "Consider uninstalling email, calendar, document, and messaging apps that hold sensitive content on your phone and laptop"
+            },
+            {
+              "text": "Delete individual sensitive text threads, notes, or photos"
+            },
+            {
+              "text": "Be sure to empty the trash or recently-deleted folder afterward. Deleted items are often recoverable for a period of time"
+            },
+            {
+              "text": "Disable location history in map apps"
+            }
+          ]
+        },
+        {
+          "id": "leave-signal-groups",
+          "name": "Leave and delete all Signal groups",
+          "path": "Signal → Group → Leave group, then delete the thread",
+          "risk": "medium",
+          "why": "Even if you uninstall Signal (detailed in the next step), it's good practice to leave Signal groups in advance of your travel for an additional layer of privacy.",
+          "steps": [
+            {
+              "text": "Open the group in Signal → tap the group name → `Leave group`"
+            },
+            {
+              "text": "Then swipe left on the thread from the main screen and delete it to remove its history"
+            },
+            {
+              "text": "Make a note beforehand of which groups you'll need to be re-added to afterward"
+            }
+          ]
+        },
+        {
+          "id": "backup-delete-signal",
+          "name": "Back up and uninstall Signal",
+          "path": "Signal → Settings → Backups",
+          "risk": "high",
+          "why": "Signal conversations are often exactly the kind of content you'd most want protected. Back up and then delete the app before you travel.",
+          "steps": [
+            {
+              "text": "Open Signal → your profile → `Settings` → `Backups` → enable backups"
+            },
+            {
+              "text": "Save the recovery key somewhere safe like a password manager or fire safe - do NOT store it directly on your phone"
+            },
+            {
+              "text": "Confirm the recovery key when prompted, then tap `Back Up Now`"
+            },
+            {
+              "text": "Delete the Signal app from your phone (and desktop if installed) once the backup completes"
+            },
+            {
+              "text": "To restore afterward: reinstall Signal, confirm your number, choose `Restore from Backup`, and enter your recovery key"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Introducing Secure Backups — Signal",
+              "url": "https://signal.org/blog/introducing-secure-backups/"
+            }
+          ]
+        },
+        {
+          "id": "log-out-accounts",
+          "name": "Sign out of your accounts on phone and laptop",
+          "path": "Email, cloud storage, social media, forums",
+          "risk": "high",
+          "why": "Being signed out gives you stronger footing to decline providing a password, since there's no active session sitting open for someone to browse through.",
+          "steps": [
+            {
+              "text": "Sign out of email and calendar apps on both your phone and laptop"
+            },
+            {
+              "text": "Sign out of cloud storage (Google Drive, iCloud, OneDrive, etc)"
+            },
+            {
+              "text": "Sign out of social media apps and any forums you're signed into"
+            }
+          ]
+        },
+        {
+          "id": "lock-down-social-media",
+          "name": "Set social media accounts to private or deactivate them",
+          "path": "Per-platform privacy settings",
+          "risk": "high",
+          "why": "Border agents and visa reviewers can look up your public social media presence without ever touching your device. If you're applying for a visa, this needs to happen well before you apply since there's evidence of prior online activity being reviewed as part of the application itself.",
+          "steps": [
+            {
+              "text": "Set accounts to private, or deactivate them temporarily, on any platform where you have a public presence"
+            },
+            {
+              "text": "You are not required to provide social media handles to border agents. You can decline to answer and don't have to explain why"
+            },
+            {
+              "text": "If applying for a visa, lock down or clean up your profiles as early as possible in the process, not right before travel"
+            }
+          ]
+        },
+        {
+          "id": "secure-password-manager",
+          "name": "Protect your password manager",
+          "path": "Travel mode, or back up and remove entirely",
+          "risk": "high",
+          "why": "Your password manager is a single point of access to nearly every account you have. Some password managers offer a dedicated travel mode (like 1Password) that temporarily hides vaults rather than requiring you to uninstall anything.",
+          "steps": [
+            {
+              "text": "If your password manager supports a travel mode, enable it for all vaults except what you need for the trip itself"
+            },
+            {
+              "text": "Otherwise, make sure your master password is memorized and your account recovery key is safely written down before removing the app from your devices"
+            },
+            {
+              "text": "Do NOT remove authenticator app codes used for two-factor authentication. They are difficult to restore and aren't useful without your password anyway"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "at-the-checkpoint",
+      "label": "At the checkpoint",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "power-off-devices",
+          "name": "Power off your devices before the checkpoint",
+          "path": "Power off completely",
+          "risk": "critical",
+          "why": "A device is at its most secure before it's unlocked for the first time after booting. Once a passcode has been entered to unlock your phone, extraction tools have an easier time bypassing encryption.",
+          "steps": [
+            {
+              "text": "iPhone: hold the power button and volume-down button together, then slide to power off"
+            },
+            {
+              "text": "Highly recommended for iPhone: activate Lockdown Mode first → `Settings` → `Privacy & Security` → `Lockdown Mode`"
+            },
+            {
+              "text": "Android: hold the power button, then select power off"
+            },
+            {
+              "text": "MacOS: `Apple icon` → `Shut down...`"
+            },
+            {
+              "text": "Windows: `Start` → click the power icon → `Shut down`"
+            },
+            {
+              "text": "Do all of these before you reach the security line"
+            }
+          ]
+        },
+        {
+          "id": "disable-biometrics-for-travel",
+          "name": "Disable Face ID or fingerprint",
+          "path": "Settings → Face ID & Passcode (iPhone) / Settings → Security (Android)",
+          "risk": "high",
+          "why": "Some courts have treated biometric unlock differently from a memorized password, and you may legally be compelled to use biometrics to unlock your device. If you plan to have your phone turned off, this step is not as necessary as all phones require your password when you try to unlock them for the first time after rebooting.",
+          "steps": [
+            {
+              "text": "iPhone: `Settings` → `Face ID & Passcode` → turn off `Use Face ID for iPhone Unlock`"
+            },
+            {
+              "text": "Biometrics are required to enable Advanced Data Protection, so this is not an option for users who have that turned on"
+            },
+            {
+              "text": "Android: `Settings` → `Security` (or `Lock Screen`) → `Biometrics` → turn off face and fingerprint unlock"
+            },
+            {
+              "text": "iPhone quick-lock: press the power button 5 times rapidly, or hold the side button with a volume button, to force a passcode prompt on next unlock"
+            },
+            {
+              "text": "Android quick-lock: hold the power button then select Lockdown to temporarily disable biometrics"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Attending a Protest — Electronic Frontier Foundation, Surveillance Self-Defense",
+              "url": "https://ssd.eff.org/module/attending-protest"
+            }
+          ]
+        },
+        {
+          "id": "use-paper-documents",
+          "name": "Print boarding passes and travel documents",
+          "path": "Print at home or at the airport",
+          "risk": "medium",
+          "why": "Keeping paper copies of your boarding pass and other travel documents means you can go through security and customs with your phone powered off.",
+          "steps": [
+            {
+              "text": "Print your boarding pass at home, or at a kiosk when you arrive at the airport"
+            },
+            {
+              "text": "For visas, customs forms, or other travel documents, you may need to plan ahead. Some countries only offer these digitally, so verify before your trip"
+            }
+          ]
+        },
+        {
+          "id": "opt-out-facial-recognition",
+          "name": "Opt out of facial recognition ",
+          "path": "Say it before handing over your ID",
+          "risk": "medium",
+          "why": "US citizens have the right to opt out of facial recognition scans at TSA checkpoints. Declining doesn't slow you down meaningfully and avoids adding your face to another biometric database.",
+          "steps": [
+            {
+              "text": "Say \"I want to opt out of facial recognition\" before handing over your ID"
+            },
+            {
+              "text": "This applies at security, at some boarding gates, and at passport control"
+            },
+            {
+              "text": "You'll still need to show your ID so the agent can visually compare your face to your photo"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Skip the Surveillance By Opting Out of Face Recognition At Airports - EFF",
+              "url": "https://www.eff.org/deeplinks/2019/04/skip-surveillance-opting-out-face-recognition-airports"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "high-risk-travelers",
+      "label": "If you're at higher risk",
+      "risk": "high",
+      "items": [
+        {
+          "id": "consider-secondary-device",
+          "name": "Consider a secondary phone or laptop with minimal data",
+          "path": "A separate, mostly empty device for the trip",
+          "risk": "high",
+          "why": "If you have specific reason to think a border agent might attempt to forensically extract data from your device, consider traveling with secondary devices and leave your phone & laptop at home.",
+          "steps": [
+            {
+              "text": "Use an older device or a cheap secondary one that supports the apps you need"
+            },
+            {
+              "text": "Set it up without your usual Apple or Google account to avoid syncing your data to it"
+            },
+            {
+              "text": "Install only what you need for travel and avoid signing into your main accounts"
+            },
+            {
+              "text": "If a secondary device isn't a realistic option, an alternative is to back up your regular device to a computer, factory reset your device, then restore from backup once you're back home"
+            }
+          ]
+        },
+        {
+          "id": "use-a-vpn",
+          "name": "Use a VPN for airport wifi",
+          "path": "A VPN can prevent snooping",
+          "risk": "high",
+          "why": "It's generally advisable to avoid using airport wifi while you're traveling, but that's often unavoidable. If you must use the airport wifi, first connect to a VPN service and browse the internet only while connected to the VPN.",
+          "steps": [
+            {
+              "text": "Some popular VPN options are Proton, Mullvad, and IVPN"
+            }
+          ],
+          "sources": [
+            {
+              "label": "VPN Services - Privacy Guides",
+              "url": "https://www.privacyguides.org/en/vpn/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

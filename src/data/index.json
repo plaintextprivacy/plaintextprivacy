@@ -224,11 +224,11 @@
         {
           "slug": "travel",
           "title": "Travel",
-          "description": "Prepare your devices for border crossings, know your rights with CBP, protect sensitive data in transit, and run a security check when you return",
+          "description": "Prepare your devices for border crossings, know your rights, and protect your sensitive data while on the road",
           "icon": "plane",
           "risk": "high",
-          "status": "coming-soon",
-          "tags": ["travel", "border", "tsa", "phone", "laptop", "customs", "privacy"]
+          "status": "published",
+          "tags": ["travel", "border", "tsa", "phone", "laptop", "customs", "privacy", "cbp"]
         },
         {
           "slug": "software-alternatives",

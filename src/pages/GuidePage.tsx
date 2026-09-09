@@ -29,8 +29,8 @@ export const GuidePage = () => {
   if (!guide) return <Navigate to='/guides' replace />
 
   return (
-      <PageLayout>
-        <ChecklistLayout guide={guide} />
-      </PageLayout>
+    <PageLayout>
+      <ChecklistLayout guide={guide} />
+    </PageLayout>
   )
 }
