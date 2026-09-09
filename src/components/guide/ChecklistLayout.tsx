@@ -124,7 +124,7 @@ export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
                 {dates?.updated && (
                   <>
                     <span aria-hidden='true'>·</span>
-                    <span>Last updated: {formatMonthYear(dates.updated)}</span>
+                    <span>Updated: {formatMonthYear(dates.updated)}</span>
                   </>
                 )}
                 {meta.platforms?.map((p) => (
