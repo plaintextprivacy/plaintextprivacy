@@ -13,7 +13,7 @@
   {
     "title": "What does a VPN even do?",
     "body": "A VPN encrypts the connection between your device and the VPN provider's server, then sends your traffic out to the internet from there. Two things follow from that: your internet provider can no longer see what sites you're visiting (only that you're connected to a VPN), and the sites you visit see the VPN's IP address instead of your own. That's the entire mechanism, so everything a VPN can or can't do for you follows from those two facts.",
-    "body2": "It does not make you anonymous, it does not stop a website from tracking you once you're logged in, and it does not protect you from malware, phishing, or a weak password. A VPN changes who can see your network traffic — it doesn't change what you do once you're connected."
+    "body2": "It does not make you anonymous, it does not stop a website from tracking you once you're logged in, and it does not protect you from malware, phishing, or a weak password."
   },
   "warning":
   {
@@ -22,7 +22,7 @@
   "comparisonTable":
   {
     "title": "VPN comparison",
-    "note": "Audits, ownership, and policies change. Verify current details directly with the provider before subscribing — this table reflects publicly available information as of mid-2026.",
+    "note": "Audits, ownership, and policies change. Verify current details with the provider before subscribing. This table reflects publicly available information as of September 2026.",
     "columns": [
       {
         "id": "mullvad", "label": "Mullvad", "recommended": true, "url": "https://mullvad.net"
@@ -166,16 +166,16 @@
           "name": "Prioritize independently audited no-logs policies",
           "path": "Check the provider's own published transparency/audit page",
           "risk": "high",
-          "why": "Any company can write a privacy policy that says \"we don't log anything.\" What matters is whether an independent third party has actually verified the technical infrastructure behind that claim, and whether the policy has held up under real legal or physical pressure — a police raid, a court case, a server seizure — rather than just a policy audit on paper.",
+          "why": "Any company can write a privacy policy that says \"we don't log anything.\" Look for VPNs that have had an independent third party verify the technical infrastructure behind their claim, and whether the policy has held up under legal or physical pressure. For example, a police raid, court case, or server seizure.",
           "steps": [
             {
-              "text": "Look for audits from a named, reputable security firm, published in full — not just a summary paragraph on the provider's marketing page"
+              "text": "Look for audits from a named, reputable security firm, published in full"
             },
             {
               "text": "Prefer providers with more than one audit over time, since a single audit is a snapshot, not an ongoing guarantee"
             },
             {
-              "text": "Weight real-world tests (a seizure, a subpoena, a court case) more heavily than a paid audit — those are the closest thing to proof a no-logs policy actually works under pressure"
+              "text": "Weigh real-world tests (a seizure, a subpoena, a court case) more heavily than a paid audit. These are the closest thing to proof that a no-logs policy works under pressure"
             }
           ]
         },
@@ -184,28 +184,13 @@
           "name": "Consider the provider's legal jurisdiction",
           "path": "Check where the company is legally headquartered",
           "risk": "medium",
-          "why": "A provider based in a country with strong privacy law and outside the Five Eyes/Nine Eyes/Fourteen Eyes intelligence-sharing alliances faces less legal pressure to cooperate with foreign government data requests. Jurisdiction matters less if a provider genuinely has no logs to hand over — but it's still a meaningful factor, especially combined with an audited no-logs policy rather than instead of one.",
+          "why": "A provider based in a country with strong privacy law and outside the Five Eyes/Nine Eyes/Fourteen Eyes intelligence-sharing alliances faces less legal pressure to cooperate with foreign government data requests. Jurisdiction matters less if a provider has no logs to hand over.",
           "steps": [
             {
               "text": "Switzerland and Sweden are commonly cited as privacy-favorable jurisdictions outside the major surveillance alliances"
             },
             {
-              "text": "The US, UK, Canada, and Australia are all Five Eyes members — not disqualifying on their own, but worth weighing against the strength of the provider's audit history"
-            }
-          ]
-        },
-        {
-          "id": "open-source",
-          "name": "Prefer open source apps",
-          "path": "Check the provider's GitHub or source repository",
-          "risk": "medium",
-          "why": "An open source VPN app means independent researchers can inspect the actual code running on your device, rather than trusting the provider's description of what it does. This doesn't verify server-side behavior, but it does rule out obvious client-side issues like leaking your real IP or logging locally.",
-          "steps": [
-            {
-              "text": "Check whether the provider publishes their desktop, mobile, and browser extension source code publicly"
-            },
-            {
-              "text": "A closed-source app from a provider with a strong audit history is still reasonable — open source is a meaningful plus, not a strict requirement"
+              "text": "The US, UK, Canada, and Australia are all Five Eyes members, which some may want to take into consideration"
             }
           ]
         },
@@ -251,7 +236,7 @@
           "name": "Keep the VPN connected by default",
           "path": "App settings → Auto-connect / Connect on startup",
           "risk": "medium",
-          "why": "A VPN only protects the traffic that passes through it while it's active. Leaving it off most of the time and turning it on only when you remember defeats the purpose for the exact situations — public wifi, unfamiliar networks — where you'd want it most.",
+          "why": "A VPN only protects the traffic that passes through it while it's active. Leaving it off most of the time and turning it on only when you remember defeats the purpose.",
           "steps": [
             {
               "text": "Enable auto-connect or connect-on-startup in the app's settings so it's on by default"
@@ -269,7 +254,7 @@
           "why": "Running a VPN service costs money for server infrastructure. A free VPN from a provider with no clear business model is very often monetizing your traffic directly. Either through ad injection, data resale, or in some documented cases, selling access to your device's bandwidth as a residential proxy for someone else's traffic. Look into the Onavo VPN and how it was used by Facebook to spy on users.",
           "steps": [
             {
-              "text": "Only use a free tier from a provider that also offers a clear paid product — that's a legible business model"
+              "text": "Only use a free tier from a well-known and trusted provider"
             },
             {
               "text": "Be especially cautious of free VPN apps found only in an app store search, with no public company behind them and no audit history"
@@ -309,19 +294,16 @@
           "name": "A VPN is for network privacy, not digital anonymity",
           "path": "Applies to every VPN",
           "risk": "high",
-          "why": "This is the most common misunderstanding about VPNs, and it matters because believing you're anonymous when you're not can lead to real overconfidence. A VPN hides your traffic from your internet provider and hides your IP address from the websites you visit. It does nothing to stop those websites from identifying you through logins, cookies, browser fingerprinting, or simply the account you're signed into.",
+          "why": "This is the most common misunderstanding about VPNs. They do not provide anonymity. A VPN hides your traffic from your internet provider and hides your IP address from the websites you visit. It does nothing to stop those websites from identifying you through logins, cookies, browser fingerprinting, or the account you're signed into.",
           "steps": [
             {
-              "text": "If you log into an account — email, social media, a shopping site — that site knows exactly who you are, VPN or not"
+              "text": "If you log into an account, email, social media, a shopping site, that site knows exactly who you are, VPN or not"
             },
             {
               "text": "Browser fingerprinting (screen size, fonts, timezone, installed extensions) can re-identify you across sessions even while logged out and connected to a VPN"
             },
             {
-              "text": "The VPN provider itself can see your real IP address and, unless genuinely no-logs, your activity — you're trusting them instead of your ISP, not achieving trustlessness"
-            },
-            {
-              "text": "For genuine anonymity, a VPN needs to be paired with other practices — a hardened browser, no logged-in accounts, and in high-stakes cases, Tor instead of a VPN entirely"
+              "text": "The VPN provider can still see your IP address and likely much of your activity (even if that activity is not stored or is anonymized to some degree)"
             }
           ]
         }
