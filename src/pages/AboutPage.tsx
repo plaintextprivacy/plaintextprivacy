@@ -61,11 +61,11 @@ export const AboutPage = () => (
             already knows what they're doing.
           </p>
           <p className='mb-4 text-body leading-relaxed text-text-secondary'>
-            Plaintext Privacy is a combination of personal interest, professional
-            experience, and an understanding of what's at stake with mass surveillance. Corporations
-            profit from your data, governments purchase your data from those corporations, and then bad
-            actors get their hands on it to exploit it further. The people most harmed are often
-            those with the least resources to protect themselves.
+            Plaintext Privacy is a combination of personal interest, professional experience, and an
+            understanding of what's at stake with mass surveillance. Corporations profit from your
+            data, governments purchase your data from those corporations, and then bad actors get
+            their hands on it to exploit it further. The people most harmed are often those with the
+            least resources to protect themselves.
           </p>
           <p className='text-body leading-relaxed text-text-secondary'>
             It's impossible for everyone to obtain 100% privacy in such a digitally connected world.
@@ -80,36 +80,26 @@ export const AboutPage = () => (
       <section className='mb-12'>
         <SectionHeader title='Our approach' />
         <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
-          <InfoCard
-              icon={BookOpen}
-              title='Audience-focused'
-              accentColor='var(--color-accent)'
-          >
-            Every guide is written with a non-technical audience in mind. We explain what to do and why so you can make
-            informed decisions.
+          <InfoCard icon={BookOpen} title='Audience-focused' accentColor='var(--color-accent)'>
+            Every guide is written with a non-technical audience in mind. We explain what to do and
+            why so you can make informed decisions.
           </InfoCard>
-          <InfoCard
-              icon={Shield}
-              title='Risk-rated for relevance'
-              accentColor='var(--color-teal)'
-          >
-            Every setting is rated based on real-world impact. This is to help you prioritize what to address first.
+          <InfoCard icon={Shield} title='Risk-rated for relevance' accentColor='var(--color-teal)'>
+            Every setting is rated based on real-world impact. This is to help you prioritize what
+            to address first.
           </InfoCard>
           <InfoCard
             icon={Heart}
             title="Meets you where you're at"
             accentColor='var(--color-risk-high)'
           >
-            Start where you're comfortable and do what you can from there. Even completing one or two recommendations
-            can make a huge difference in protecting your data privacy.
+            Start where you're comfortable and do what you can from there. Even completing one or
+            two recommendations can make a huge difference in protecting your data privacy.
           </InfoCard>
-          <InfoCard
-            icon={AlertCircle}
-            title='Clear on limitations'
-            accentColor='var(--color-info)'
-          >
-            Privacy and security often come with trade-offs on convenience, which makes them difficult to commit to
-            in practice. Choosing convenience where you need to will ensure the actions you take stick in the long run.
+          <InfoCard icon={AlertCircle} title='Clear on limitations' accentColor='var(--color-info)'>
+            Privacy and security often come with trade-offs on convenience, which makes them
+            difficult to commit to in practice. Choosing convenience where you need to will ensure
+            the actions you take stick in the long run.
           </InfoCard>
         </div>
       </section>

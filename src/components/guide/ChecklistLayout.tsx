@@ -10,6 +10,7 @@ import { getCategoryIcon, formatDuration } from '@/lib/iconMap'
 import indexData from '@/data/index.json'
 import { Download } from 'lucide-react'
 import { getGuideDates, formatMonthYear } from '@/lib/guideMeta'
+import { ComparisonTable } from './ComparisonTable'
 
 const { categories } = indexData as GuidesIndex
 
@@ -142,6 +143,8 @@ export const ChecklistLayout = ({ guide }: ChecklistLayoutProps) => {
               <ContextBox title={context.title} body={context.body} body2={context.body2} />
             )}
             {warning && <ContextBox title='Important' body={warning.body} variant='warning' />}
+
+            {guide.comparisonTable && <ComparisonTable table={guide.comparisonTable} />}
 
             {sections.map(({ id, label, risk, items }) => (
               <section key={id} id={`section-${id}`} className='mb-7'>

@@ -145,10 +145,10 @@
         {
           "id": "hitchhikers",
           "name": "Hitchhiker's Guide to Online Anonymity",
-          "url": "https://anonymousplanet.org/guide/",
-          "displayUrl": "anonymousplanet.org",
+          "url": "https://anonymousplanet.net/",
+          "displayUrl": "anonymousplanet.net",
           "blurb": "An exhaustive, community-maintained guide to online anonymity. This guide is more technical than most resources and is best suited for those with some technical skills who aim for digital anonymity",
-          "tags": ["Advanced", "Anonymity", "Opsec", "Free"]
+          "tags": ["Advanced", "Anonymity", "OpSec", "Free"]
         },
         {
           "id": "mozilla-pni",
