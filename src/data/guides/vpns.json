@@ -129,7 +129,7 @@
               "text": "`Apparent location` → you want your apparent location to be somewhere other than where you actually are"
             },
             {
-              "text": "You do not need a VPN just to \"be more private\" in general - most day-to-day privacy problems (account tracking, data broker profiles, weak passwords) are better addressed by other actions"
+              "text": "You do not need a VPN just to \"be more private\" in general; most day-to-day privacy problems (account tracking, data broker profiles, weak passwords) are better addressed by other actions"
             }
           ]
         },
@@ -284,7 +284,7 @@
               "text": "For everyday privacy while on the internet, a good VPN is the right tool"
             },
             {
-              "text": "For situations where you specifically cannot afford any single party to link your identity to your activity, use the Tor browser instead of a VPN. See the Hitchhiker's Guide to Anonymity for detailed instructions on how to make yourself anonymous online"
+              "text": "If you require online anonymity, use the Tor browser instead of a VPN. See the Hitchhiker's Guide to Anonymity for detailed instructions on how to make yourself anonymous online"
             },
             {
               "text": "It's generally not recommended to use a VPN while using the Tor browser unless you're an advanced user, as you can accidentally compromise your identity even while using Tor"
