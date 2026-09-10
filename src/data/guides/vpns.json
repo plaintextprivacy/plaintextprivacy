@@ -111,16 +111,16 @@
       "items": [
         {
           "id": "when-a-vpn-helps",
-          "name": "Understand what problems a VPN solves",
+          "name": "Problems a VPN solves",
           "path": "Applies before choosing a VPN",
           "risk": "medium",
-          "why": "A VPN is worth paying for in a specific set of situations. If none of these apply to you, it may not be worth the cost or the mild performance hit.",
+          "why": "A VPN is useful for specific scenarios and might not be useful for everyone. If none of these apply to you, it may not be worth the cost or the mild performance hit.",
           "steps": [
             {
               "text": "You use public wifi regularly - a VPN prevents others on that same network from snooping on your web traffic"
             },
             {
-              "text": "You want to stop your home internet provider from seeing which sites you visit"
+              "text": "You want to stop your internet provider from seeing which sites you visit"
             },
             {
               "text": "You travel to or live somewhere with government censorship and need to reach blocked content"
@@ -135,13 +135,13 @@
         },
         {
           "id": "when-a-vpn-doesnt-help",
-          "name": "Know what a VPN cannot do",
+          "name": "What VPNs cannot do",
           "path": "Applies to every VPN",
           "risk": "medium",
           "why": "VPN marketing frequently implies a level of protection that the technology doesn't provide. Understanding a VPN's limits prevents a false sense of security.",
           "steps": [
             {
-              "text": "A VPN does not stop a website from tracking you from website to website once you're logged into an account. You're still you, VPN or not"
+              "text": "A VPN does not stop a website from tracking you from website to website once you're logged into an account. You're still you, VPN or not. Your account will now just be associated with that IP address"
             },
             {
               "text": "A VPN does not protect against phishing, malware, or a weak or reused password"
@@ -150,7 +150,13 @@
               "text": "A VPN does not make your browser fingerprint disappear. Sites can still identify your device through screen size, fonts, installed extensions, and other signals"
             },
             {
-              "text": "A VPN does not anonymize you. See the dedicated item on anonymity below"
+              "text": "A VPN does not make you anonymous"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Cover Your Tracks: See how trackers view your browser - EFF",
+              "url": "https://coveryourtracks.eff.org/"
             }
           ]
         }
@@ -163,16 +169,16 @@
       "items": [
         {
           "id": "independent-audits",
-          "name": "Prioritize independently audited no-logs policies",
-          "path": "Check the provider's own published transparency/audit page",
+          "name": "Independently audited no-logs policies",
+          "path": "Check on the provider's transparency / audit page",
           "risk": "high",
-          "why": "Any company can write a privacy policy that says \"we don't log anything.\" Look for VPNs that have had an independent third party verify the technical infrastructure behind their claim, and whether the policy has held up under legal or physical pressure. For example, a police raid, court case, or server seizure.",
+          "why": "Any company can write a privacy policy that says \"we don't log anything.\" Look for VPNs that have had an independent third party verify their claims, and whether the policy has held up under legal or physical pressure. For example, a police raid, court case, or server seizure.",
           "steps": [
             {
               "text": "Look for audits from a named, reputable security firm, published in full"
             },
             {
-              "text": "Prefer providers with more than one audit over time, since a single audit is a snapshot, not an ongoing guarantee"
+              "text": "Prefer providers with more than one audit, since a single audit is not an ongoing guarantee"
             },
             {
               "text": "Weigh real-world tests (a seizure, a subpoena, a court case) more heavily than a paid audit. These are the closest thing to proof that a no-logs policy works under pressure"
@@ -184,7 +190,7 @@
           "name": "Consider the provider's legal jurisdiction",
           "path": "Check where the company is legally headquartered",
           "risk": "medium",
-          "why": "A provider based in a country with strong privacy law and outside the Five Eyes/Nine Eyes/Fourteen Eyes intelligence-sharing alliances faces less legal pressure to cooperate with foreign government data requests. Jurisdiction matters less if a provider has no logs to hand over.",
+          "why": "A provider based in a country with strong privacy laws and are outside of the Five Eyes / Nine Eyes / Fourteen Eyes intelligence-sharing alliances are going to be a safer bet for your data. Jurisdiction matters a bit less if the provider has no logs to hand over.",
           "steps": [
             {
               "text": "Switzerland and Sweden are commonly cited as privacy-favorable jurisdictions outside the major surveillance alliances"
@@ -205,16 +211,16 @@
               "text": "Check whether the provider accepts cash, cryptocurrency, or gift cards in addition to standard payment methods"
             },
             {
-              "text": "If you pay by card or a personal email tied to your name, understand that the anonymity of your traffic and the anonymity of your account are two separate things"
+              "text": "If you pay by card or a personal email tied to your name, the account can be tied back to you, regardless of the VPN provider"
             }
           ]
         },
         {
           "id": "kill-switch",
           "name": "Confirm the app has a working kill switch",
-          "path": "Check the provider's app settings once installed",
+          "path": "Check the VPN's app settings",
           "risk": "high",
-          "why": "A kill switch blocks all internet traffic if the VPN connection drops unexpectedly, preventing your real IP address and unencrypted traffic from briefly leaking out while the app reconnects. Without one, a momentary disconnection defeats the purpose of using a VPN in the first place.",
+          "why": "A kill switch blocks all internet traffic if the VPN connection drops unexpectedly, preventing your IP address and unencrypted traffic from leaking out while the app reconnects. Without one, a momentary disconnection from the VPN service will expose your IP address.",
           "steps": [
             {
               "text": "After installing, check the app's settings for a kill switch or \"block traffic if VPN disconnects\" option and enable it"
@@ -247,7 +253,7 @@
           ]
         },
         {
-          "id": "avoid-free-unaudited-vpns",
+          "id": "avoid-free-vpns",
           "name": "Avoid unknown free VPN apps",
           "path": "Applies especially to app store search results",
           "risk": "high",
@@ -262,7 +268,7 @@
           ]
         },
         {
-          "id": "vpn-plus-tor",
+          "id": "vpn-or-tor",
           "name": "When Tor is a better fit than a VPN",
           "path": "Applies to situations needing anonymity",
           "risk": "medium",
@@ -273,6 +279,9 @@
             },
             {
               "text": "For situations where you specifically cannot afford any single party to link your identity to your activity, use the Tor browser instead of a VPN. See the Hitchhiker's Guide to Anonymity for detailed instructions on how to make yourself anonymous online"
+            },
+            {
+              "text": "It's generally not recommended to use a VPN while using the Tor browser unless you're an advanced user, as you can accidentally compromise your identity even while using Tor"
             }
           ],
           "sources": [
