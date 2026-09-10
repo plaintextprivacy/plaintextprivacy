@@ -6,7 +6,7 @@ import { RiskDots } from '@/components/guide/RiskDots'
 import { ChecklistItem } from '@/components/guide/ChecklistItem'
 import { getIcon, hasIcon } from '@/lib/iconMap'
 import type { ChecklistItem as ChecklistItemType, RiskLevel } from '@/types/guide'
-
+// TODO separate some of these into their own tests...one day, maybe
 // RiskBadge
 
 describe('RiskBadge', () => {

@@ -13,7 +13,8 @@ const guideFiles = readdirSync(guidesDir)
   }))
 
 const validRisk = new Set(['critical', 'high', 'medium', 'low'])
-const validLayouts = new Set(['guide', 'checklist', 'checklist-tabbed'])
+
+const validLayouts = new Set(['checklist'])
 
 const validateItem = (item: Record<string, unknown>, path: string) => {
   expect(typeof item.id, `${path}.id`).toBe('string')
@@ -33,6 +34,10 @@ const validateItem = (item: Record<string, unknown>, path: string) => {
       expect(src.url.startsWith('http'), `${path}.sources[${i}].url must be absolute`).toBe(true)
     })
   }
+  if (item.image !== undefined) {
+    expect(typeof item.image, `${path}.image`).toBe('string')
+    expect((item.image as string).length, `${path}.image must not be empty`).toBeGreaterThan(0)
+  }
 }
 
 const validateSection = (section: Record<string, unknown>, path: string) => {
@@ -43,6 +48,43 @@ const validateSection = (section: Record<string, unknown>, path: string) => {
   ;(section.items as Array<Record<string, unknown>>).forEach((item, i) =>
     validateItem(item, `${path}.items[${i}]`)
   )
+}
+
+const validateComparisonTable = (table: Record<string, unknown>, path: string) => {
+  const columns = table.columns as Array<Record<string, unknown>>
+  const rows = table.rows as Array<Record<string, unknown>>
+
+  expect(Array.isArray(columns), `${path}.columns must be array`).toBe(true)
+  expect(columns.length, `${path}.columns must have at least 1 column`).toBeGreaterThan(0)
+  expect(columns.length, `${path}.columns must have at most 4 columns`).toBeLessThanOrEqual(4)
+
+  const columnIds = new Set<string>()
+  columns.forEach((col, i) => {
+    expect(typeof col.id, `${path}.columns[${i}].id`).toBe('string')
+    expect(typeof col.label, `${path}.columns[${i}].label`).toBe('string')
+    if (col.url !== undefined) {
+      expect(typeof col.url, `${path}.columns[${i}].url`).toBe('string')
+      expect(
+        (col.url as string).startsWith('http'),
+        `${path}.columns[${i}].url must be absolute`
+      ).toBe(true)
+    }
+    columnIds.add(col.id as string)
+  })
+  expect(columnIds.size, `${path}.columns must have unique ids`).toBe(columns.length)
+
+  expect(Array.isArray(rows), `${path}.rows must be array`).toBe(true)
+  rows.forEach((row, i) => {
+    expect(typeof row.label, `${path}.rows[${i}].label`).toBe('string')
+    const values = row.values as Record<string, string>
+    expect(typeof values, `${path}.rows[${i}].values must be an object`).toBe('object')
+    Object.keys(values).forEach((key) => {
+      expect(
+        columnIds.has(key),
+        `${path}.rows[${i}].values has key "${key}" with no matching column id`
+      ).toBe(true)
+    })
+  })
 }
 
 describe('Guide JSON schema', () => {
@@ -65,76 +107,48 @@ describe('Guide JSON schema', () => {
     }
   })
 
-  describe.each(guideFiles.filter((g) => g.data.layout === 'checklist'))(
-    'checklist guide: $file',
-    ({ file, data }) => {
-      it('has required top-level fields', () => {
-        expect(typeof data.category, `${file}: category`).toBe('string')
-        expect(typeof data.title, `${file}: title`).toBe('string')
-        expect(typeof data.subtitle, `${file}: subtitle`).toBe('string')
-        expect(typeof data.meta, `${file}: meta`).toBe('object')
-      })
+  describe.each(guideFiles)('checklist guide: $file', ({ file, data }) => {
+    it('has required top-level fields', () => {
+      expect(typeof data.category, `${file}: category`).toBe('string')
+      expect(typeof data.title, `${file}: title`).toBe('string')
+      expect(typeof data.subtitle, `${file}: subtitle`).toBe('string')
+      expect(typeof data.meta, `${file}: meta`).toBe('object')
+    })
 
-      it('has at least one section', () => {
-        expect(Array.isArray(data.sections), `${file}: sections must be array`).toBe(true)
-        expect(data.sections.length, `${file}: must have ≥1 section`).toBeGreaterThan(0)
-      })
+    it('has at least one section', () => {
+      expect(Array.isArray(data.sections), `${file}: sections must be array`).toBe(true)
+      expect(data.sections.length, `${file}: must have ≥1 section`).toBeGreaterThan(0)
+    })
 
-      it('all sections have valid schema', () => {
-        data.sections.forEach((section: Record<string, unknown>, i: number) => {
-          validateSection(section, `${file}.sections[${i}]`)
-        })
+    it('all sections have valid schema', () => {
+      data.sections.forEach((section: Record<string, unknown>, i: number) => {
+        validateSection(section, `${file}.sections[${i}]`)
       })
+    })
 
-      it('no section uses legacy "title" or "settings" fields', () => {
-        data.sections.forEach((section: Record<string, unknown>, i: number) => {
-          expect('title' in section, `${file}.sections[${i}] has legacy "title" field`).toBe(false)
-          expect('settings' in section, `${file}.sections[${i}] has legacy "settings" field`).toBe(
-            false
-          )
-        })
-      })
-
-      it('all item IDs are unique within the guide', () => {
-        const ids: string[] = data.sections.flatMap((s: { items: Array<{ id: string }> }) =>
-          s.items.map((item) => item.id)
-        )
-        const unique = new Set(ids)
-        expect(unique.size, `${file}: duplicate item IDs found`).toBe(ids.length)
-      })
-    }
-  )
-
-  describe.each(guideFiles.filter((g) => g.data.layout === 'checklist-tabbed'))(
-    'checklist-tabbed guide: $file',
-    ({ file, data }) => {
-      it('has a tabs array with at least one tab', () => {
-        expect(Array.isArray(data.tabs), `${file}: tabs must be array`).toBe(true)
-        expect(data.tabs.length, `${file}: must have ≥1 tab`).toBeGreaterThan(0)
-      })
-
-      it('each tab has required fields', () => {
-        data.tabs.forEach((tab: Record<string, unknown>, i: number) => {
-          const path = `${file}.tabs[${i}]`
-          expect(typeof tab.id, `${path}.id`).toBe('string')
-          expect(typeof tab.label, `${path}.label`).toBe('string')
-          expect(typeof tab.title, `${path}.title`).toBe('string')
-          expect(typeof tab.subtitle, `${path}.subtitle`).toBe('string')
-          expect(Array.isArray(tab.sections), `${path}.sections must be array`).toBe(true)
-        })
-      })
-
-      it('all sections and items within tabs have valid schema', () => {
-        data.tabs.forEach(
-          (tab: { id: string; sections: Array<Record<string, unknown>> }, ti: number) => {
-            tab.sections.forEach((section, si) => {
-              validateSection(section, `${file}.tabs[${ti}].sections[${si}]`)
-            })
-          }
+    it('no section uses legacy "title" or "settings" fields', () => {
+      data.sections.forEach((section: Record<string, unknown>, i: number) => {
+        expect('title' in section, `${file}.sections[${i}] has legacy "title" field`).toBe(false)
+        expect('settings' in section, `${file}.sections[${i}] has legacy "settings" field`).toBe(
+          false
         )
       })
-    }
-  )
+    })
+
+    it('all item IDs are unique within the guide', () => {
+      const ids: string[] = data.sections.flatMap((s: { items: Array<{ id: string }> }) =>
+        s.items.map((item) => item.id)
+      )
+      const unique = new Set(ids)
+      expect(unique.size, `${file}: duplicate item IDs found`).toBe(ids.length)
+    })
+
+    it('comparisonTable, if present, has a valid schema', () => {
+      if (data.comparisonTable) {
+        validateComparisonTable(data.comparisonTable, `${file}.comparisonTable`)
+      }
+    })
+  })
 })
 
 // index.json validation

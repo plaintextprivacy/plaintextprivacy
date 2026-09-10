@@ -4,37 +4,42 @@
   "category": "browsing",
   "title": "VPNs",
   "subtitle": "A VPN is one of the most misunderstood tools in privacy. It's useful for some things, irrelevant for others, and marketed as solving problems it doesn't really touch. This guide covers whether you need one, what to consider when picking a provider, how to use one safely, and a comparison of four popular providers.",
-  "meta":
-  {
+  "meta": {
     "timeMinutes": 30,
     "platforms": ["iOS", "Android", "macOS", "Windows", "Linux"]
   },
-  "context":
-  {
+  "context": {
     "title": "What does a VPN even do?",
     "body": "A VPN encrypts the connection between your device and the VPN provider's server, then sends your traffic out to the internet from there. Two things follow from that: your internet provider can no longer see what sites you're visiting (only that you're connected to a VPN), and the sites you visit see the VPN's IP address instead of your own. That's the entire mechanism, so everything a VPN can or can't do for you follows from those two facts.",
     "body2": "It does not make you anonymous, it does not stop a website from tracking you once you're logged in, and it does not protect you from malware, phishing, or a weak password."
   },
-  "warning":
-  {
+  "warning": {
     "body": "Always assume your online activity is being tracked, monitored, and stored to some degree. If you're looking to browse the internet anonymously, refer to more in-depth technical guides like The Hitchhiker's Guide to Anonymity, which you can find linked on our Resources page."
   },
-  "comparisonTable":
-  {
+  "comparisonTable": {
     "title": "Popular VPNs comparison",
     "note": "Audits, ownership, and policies change. Verify current details on the VPN provider's website before subscribing.",
     "columns": [
       {
-        "id": "mullvad", "label": "Mullvad", "recommended": true, "url": "https://mullvad.net"
+        "id": "mullvad",
+        "label": "Mullvad",
+        "recommended": true,
+        "url": "https://mullvad.net"
       },
       {
-        "id": "proton", "label": "Proton VPN", "url": "https://protonvpn.com"
+        "id": "proton",
+        "label": "Proton VPN",
+        "url": "https://protonvpn.com"
       },
       {
-        "id": "windscribe", "label": "Windscribe", "url": "https://windscribe.com"
+        "id": "windscribe",
+        "label": "Windscribe",
+        "url": "https://windscribe.com"
       },
       {
-        "id": "nordvpn", "label": "NordVPN", "url": "https://nordvpn.com"
+        "id": "nordvpn",
+        "label": "NordVPN",
+        "url": "https://nordvpn.com"
       }
     ],
     "rows": [
@@ -78,7 +83,7 @@
         "label": "Anonymous signup possible",
         "values": {
           "mullvad": "Yes; account number only, cash accepted",
-          "proton": "Yes; email only, no ID required",
+          "proton": "Yes; email only, cash accepted",
           "windscribe": "Yes; username/password, crypto accepted",
           "nordvpn": "No; email and payment required"
         }

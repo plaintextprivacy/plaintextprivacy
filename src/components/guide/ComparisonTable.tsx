@@ -21,7 +21,7 @@ export const ComparisonTable = ({ table }: ComparisonTableProps) => {
 
   if (columns.length > 4 && import.meta.env.DEV) {
     console.warn(
-      `ComparisonTable: "${title ?? 'untitled table'}" has ${columns.length} columns — this component is designed for a maximum of 4. Consider splitting into two tables or trimming columns.`
+      `ComparisonTable: "${title ?? 'untitled table'}" has ${columns.length} columns - this component is designed for a maximum of 4. Consider splitting into two tables or trimming columns.`
     )
   }
 
