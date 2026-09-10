@@ -26,6 +26,25 @@ export interface Setting {
   note?: string
 }
 
+export interface ComparisonColumn {
+  id: string
+  label: string
+  recommended?: boolean
+  url?: string
+}
+
+export interface ComparisonRow {
+  label: string
+  values: Record<string, string>
+}
+
+export interface ComparisonTable {
+  title?: string
+  note?: string
+  columns: ComparisonColumn[]
+  rows: ComparisonRow[]
+}
+
 export interface GuideMeta {
   timeMinutes?: number
   platforms?: string[]
@@ -64,6 +83,7 @@ export interface ChecklistGuide {
   meta: GuideMeta
   context?: ContextBox
   warning?: WarningBox
+  comparisonTable?: ComparisonTable
   sections: ChecklistSection[]
 }
 

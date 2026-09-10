@@ -31,14 +31,24 @@ const navColumns = [
   {
     label: 'External resources',
     links: [
-      { label: 'Electronic Frontier Foundation', href: 'https://eff.org' },
-      { label: 'Privacy Guides', href: 'https://privacyguides.org' },
-      { label: 'EFF Security Starter Pack', href: 'https://ssd.eff.org' },
-      { label: 'Have I Been Pwned', href: 'https://haveibeenpwned.com' },
-      { label: 'IntelTechniques', href: 'https://inteltechniques.com' },
+      {
+        label: 'Electronic Frontier Foundation', href: 'https://eff.org'
+      },
+      {
+        label: 'Privacy Guides', href: 'https://privacyguides.org'
+      },
+      {
+        label: 'EFF Security Starter Pack', href: 'https://ssd.eff.org'
+      },
+      {
+        label: 'Have I Been Pwned', href: 'https://haveibeenpwned.com'
+      },
+      {
+        label: 'IntelTechniques', href: 'https://inteltechniques.com'
+      },
       {
         label: "Hitchhiker's Guide to Anonymity",
-        href: 'https://anonymousplanet.org'
+        href: 'https://anonymousplanet.net'
       }
     ]
   }
