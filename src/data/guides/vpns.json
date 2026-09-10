@@ -110,23 +110,23 @@
       "risk": "medium",
       "items": [
         {
-          "id": "when-a-vpn-helps",
-          "name": "Problems a VPN solves",
+          "id": "vpn-use-cases",
+          "name": "Use cases for VPNs",
           "path": "Applies before choosing a VPN",
           "risk": "medium",
           "why": "A VPN is useful for specific scenarios and might not be useful for everyone. If none of these apply to you, it may not be worth the cost or the mild performance hit.",
           "steps": [
             {
-              "text": "You use public wifi regularly - a VPN prevents others on that same network from snooping on your web traffic"
+              "text": "`You use public wifi often` → a VPN prevents others on that same network from snooping on your web traffic"
             },
             {
-              "text": "You want to stop your internet provider from seeing which sites you visit"
+              "text": "`Privacy from ISPs` → you want to stop your internet provider from seeing which sites you visit"
             },
             {
-              "text": "You travel to or live somewhere with government censorship and need to reach blocked content"
+              "text": "`Government censorship` → you travel to or live somewhere with government censorship and need to reach blocked content"
             },
             {
-              "text": "You want your apparent location to be somewhere other than where you actually are"
+              "text": "`Apparent location` → you want your apparent location to be somewhere other than where you actually are"
             },
             {
               "text": "You do not need a VPN just to \"be more private\" in general - most day-to-day privacy problems (account tracking, data broker profiles, weak passwords) are better addressed by other actions"
@@ -141,16 +141,16 @@
           "why": "VPN marketing frequently implies a level of protection that the technology doesn't provide. Understanding a VPN's limits prevents a false sense of security.",
           "steps": [
             {
-              "text": "A VPN does not stop a website from tracking you from website to website once you're logged into an account. You're still you, VPN or not. Your account will now just be associated with that IP address"
+              "text": "`Tracking` → a VPN can't stop a website from tracking you across the web once you've logged into an account. You're still you, VPN or not. Your account will now just be associated with that IP address"
             },
             {
-              "text": "A VPN does not protect against phishing, malware, or a weak or reused password"
+              "text": "`Phishing, malware, weak passwords` → a VPN doesn't protect against phishing, malware, or a weak or reused password"
             },
             {
-              "text": "A VPN does not make your browser fingerprint disappear. Sites can still identify your device through screen size, fonts, installed extensions, and other signals"
+              "text": "`Browser fingerprinting` → a VPN won't make your browser fingerprint disappear. Sites can still identify your device through screen size, fonts, installed extensions, and other signals"
             },
             {
-              "text": "A VPN does not make you anonymous"
+              "text": "`Anonymity` → a VPN does not make you anonymous"
             }
           ],
           "sources": [
