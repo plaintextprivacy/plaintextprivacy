@@ -17,12 +17,12 @@
   },
   "warning":
   {
-    "body": "VPNs on their own do not provide you with anonymity. If you're looking to browse the internet anonymously, refer to our guide on the Tor browser. A VPN provider can see everything your internet provider used to see. You're not eliminating that visibility, you're relocating it to a third party you're trusting to protect your browsing activity better than ISPs usually do. Pick a provider with a track record of protecting that trust."
+    "body": "VPNs on their own do not provide you with anonymity. Always assume your online activity is being tracked, monitored, and stored to some degree. If you're looking to browse the internet anonymously, refer to more in-depth technical guides like The Hitchhiker's Guide to Anonymity, which you can find linked on our Resources page."
   },
   "comparisonTable":
   {
     "title": "VPN comparison",
-    "note": "Audits, ownership, and policies change. Verify current details with the provider before subscribing. This table reflects publicly available information as of September 2026.",
+    "note": "Audits, ownership, and policies change. Verify current details on the VPN provider's website before subscribing.",
     "columns": [
       {
         "id": "mullvad", "label": "Mullvad", "recommended": true, "url": "https://mullvad.net"
@@ -242,7 +242,7 @@
           "name": "Keep the VPN connected by default",
           "path": "App settings → Auto-connect / Connect on startup",
           "risk": "medium",
-          "why": "A VPN only protects the traffic that passes through it while it's active. Leaving it off most of the time and turning it on only when you remember defeats the purpose.",
+          "why": "A VPN only protects the traffic that passes through it while it's active. Leaving it off most of the time and turning it on only when you remember to defeats the purpose.",
           "steps": [
             {
               "text": "Enable auto-connect or connect-on-startup in the app's settings so it's on by default"
@@ -303,7 +303,7 @@
           "name": "A VPN is for network privacy, not digital anonymity",
           "path": "Applies to every VPN",
           "risk": "high",
-          "why": "This is the most common misunderstanding about VPNs. They do not provide anonymity. A VPN hides your traffic from your internet provider and hides your IP address from the websites you visit. It does nothing to stop those websites from identifying you through logins, cookies, browser fingerprinting, or the account you're signed into.",
+          "why": "This is the most common misunderstanding about VPNs. They do not provide anonymity. A VPN hides your traffic from ISPs and hides your IP address from the websites you visit. It does nothing to stop those websites from identifying you through logins, cookies, browser fingerprinting, or the account you're signed into.",
           "steps": [
             {
               "text": "If you log into an account, email, social media, a shopping site, that site knows exactly who you are, VPN or not"
