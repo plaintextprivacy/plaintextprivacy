@@ -45,8 +45,10 @@ export const AboutPage = () => (
     <PageHeader
       eyebrow='About'
       title='About Plaintext Privacy'
-      description='An independent project built out of the belief that everyone deserves to control who
-      has access to their personal information.'
+      description='An independent project built out of the belief that everyone should have the right to control their
+      personal information. You deserve to control access to your data – who gets it, when it’s given, how it’s used,
+      and for how long. These guides focus on data privacy but they often veer into cybersecurity. While security and
+      privacy are not synonomous, good digital hygiene will go a long way in protecting your personal privacy.'
     />
 
     <main className='mx-auto max-w-5xl px-6 py-10'>
@@ -59,9 +61,9 @@ export const AboutPage = () => (
             already knows what they're doing.
           </p>
           <p className='mb-4 text-body leading-relaxed text-text-secondary'>
-            Plaintext Privacy was built from a combination of personal interest, professional
+            Plaintext Privacy is a combination of personal interest, professional
             experience, and an understanding of what's at stake with mass surveillance. Corporations
-            profit from your data, governments purchase it from those corporations, and then bad
+            profit from your data, governments purchase your data from those corporations, and then bad
             actors get their hands on it to exploit it further. The people most harmed are often
             those with the least resources to protect themselves.
           </p>
@@ -78,31 +80,36 @@ export const AboutPage = () => (
       <section className='mb-12'>
         <SectionHeader title='Our approach' />
         <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
-          <InfoCard icon={BookOpen} title='Plain language first' accentColor='var(--color-accent)'>
-            Every guide is written for a non-technical audience. We explain what to do and why so
-            you can make informed decisions.
+          <InfoCard
+              icon={BookOpen}
+              title='Audience-focused'
+              accentColor='var(--color-accent)'
+          >
+            Every guide is written with a non-technical audience in mind. We explain what to do and why so you can make
+            informed decisions.
           </InfoCard>
-          <InfoCard icon={Shield} title='Risk-rated for relevance' accentColor='var(--color-teal)'>
-            Every setting is rated Critical, High, Medium, or Low based on real-world impact. This
-            is to help you prioritize what to address first.
+          <InfoCard
+              icon={Shield}
+              title='Risk-rated for relevance'
+              accentColor='var(--color-teal)'
+          >
+            Every setting is rated based on real-world impact. This is to help you prioritize what to address first.
           </InfoCard>
           <InfoCard
             icon={Heart}
-            title="Meet you where you're at"
+            title="Meets you where you're at"
             accentColor='var(--color-risk-high)'
           >
-            Start where you are and do what you can. Even completing one or two recommendations can
-            make a huge difference in protecting your data privacy.
+            Start where you're comfortable and do what you can from there. Even completing one or two recommendations
+            can make a huge difference in protecting your data privacy.
           </InfoCard>
           <InfoCard
             icon={AlertCircle}
-            title='Honest about limitations'
+            title='Clear on limitations'
             accentColor='var(--color-info)'
           >
-            No guide is perfect, and no privacy measure is absolute. Privacy and security often come
-            with trade-offs on convenience, which makes them difficult to commit to in practice.
-            Choosing convenience where you need to will ensure the actions you do take stick in the
-            long run.
+            Privacy and security often come with trade-offs on convenience, which makes them difficult to commit to
+            in practice. Choosing convenience where you need to will ensure the actions you take stick in the long run.
           </InfoCard>
         </div>
       </section>
@@ -112,7 +119,7 @@ export const AboutPage = () => (
         <div className='rounded-xl border border-default bg-bg-secondary p-6'>
           <p className='mb-4 text-body leading-relaxed text-text-secondary'>
             Plaintext Privacy is a passion project brought to you through hundreds of hours of
-            research and experience. It's maintained by one person in their spare time.
+            research and industry experience. It's maintained by one person in their spare time.
           </p>
           <p className='mb-4 text-body leading-relaxed text-text-secondary'>
             The author chooses to remain (mostly) anonymous.
@@ -183,7 +190,7 @@ export const AboutPage = () => (
           <p className='mb-3 text-body leading-relaxed text-text-secondary'>
             The information on this site is provided for educational purposes only and does not
             constitute legal, security, or professional advice. What's appropriate for one person's
-            threat model may not be appropriate for another's.
+            personal situation may not be appropriate for another's.
           </p>
           <p className='mb-3 text-body leading-relaxed text-text-secondary'>
             We have no financial relationship with any product, service, or organization mentioned

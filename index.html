@@ -12,8 +12,14 @@
     <meta property="og:description" content="Simple and comprehensive privacy and security guides for phones, computers, and the web." />
     <meta property="og:type" content="website" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Default favicon (fallback for unsupported browsers) -->
+    <link rel="icon" href="/favicon-light.png" type="image/x-icon">
+
+    <!-- Light mode favicon -->
+    <link rel="icon" href="/favicon-light.png" type="image/x-icon" media="(prefers-color-scheme: light)">
+
+    <!-- Dark mode favicon -->
+    <link rel="icon" href="/favicon-dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
 
     <!-- no external font requests -->
   </head>
