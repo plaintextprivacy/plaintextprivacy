@@ -165,6 +165,14 @@
           "displayUrl": "github.com/yaelwrites",
           "blurb": "A community-maintained GitHub repository with direct links to the opt-out pages of 200+ data brokers, people-finder sites, and background check services",
           "tags": ["Data removal", "Free", "Community"]
+        },
+        {
+          "id": "reject-convenience",
+          "name": "Reject Convenience YouTube channel",
+          "url": "https://www.youtube.com/@rejectconvenience",
+          "displayUrl": "youtube.com/@rejectconvenience",
+          "blurb": "A popular YouTuber who makes thoughtful, well-researched content on topics related to tech and privacy. He recently released videos covering car surveillance (you read that right) and how privacy is up for sale",
+          "tags": ["YouTube", "Technology", "Reviews"]
         }
       ]
     }
