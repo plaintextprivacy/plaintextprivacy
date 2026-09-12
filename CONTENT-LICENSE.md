@@ -10,6 +10,7 @@ which is MIT-licensed. See [LICENSE](./LICENSE.txt).
 The guide content in this repository is licensed under a
 [**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 License (CC BY-NC-SA 4.0)**](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+See the Creative Commons website for the full license agreement.
 
 Guide content © Plaintext Privacy, licensed under CC BY-NC-SA 4.0
 
