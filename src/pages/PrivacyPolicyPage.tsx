@@ -68,8 +68,8 @@ export const PrivacyPolicyPage = () => (
               <ul className='flex flex-col gap-1.5'>
                 {[
                   'A list of which checklist items you have marked as complete, per guide',
-                  'Keys are prefixed with pg_progress_ followed by the guide name',
-                  'Example: pg_progress_iphone stores your iPhone guide progress',
+                  'Keys are prefixed with ptp_progress_ followed by the guide name',
+                  'Example: ptp_progress_iphone stores your iPhone guide progress',
                   'No personal information is ever included'
                 ].map((item) => (
                   <li key={item} className='flex items-start gap-2 text-label text-text-secondary'>
