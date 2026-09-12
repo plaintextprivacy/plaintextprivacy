@@ -48,7 +48,7 @@ export const AboutPage = () => (
       description='An independent project built out of the belief that everyone should have the right to control their
       personal information. You deserve to control access to your data – who gets it, when it’s given, how it’s used,
       and for how long. These guides focus on data privacy but they often veer into cybersecurity. While security and
-      privacy are not synonomous, good digital hygiene will go a long way in protecting your personal privacy.'
+      privacy are not synonymous, good digital hygiene will go a long way in protecting your personal privacy.'
     />
 
     <main className='mx-auto max-w-5xl px-6 py-10'>
