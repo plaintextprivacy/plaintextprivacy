@@ -205,7 +205,7 @@
               "text": "`Proton` - likely the most popular privacy-focused email service. They offer both free and paid tiers. This is one of the few alternatives that offers an entire suite of products that can be used to replace Google. Sign up at `https://mail.proton.me`"
             },
             {
-              "text": "`Tuta` - an up and coming service that also offers free and paid tiers. Their Drive is currently in beta testing, so expect them to offer that feature in the near future. Sign up at `https://tuta.com/secure-email`"
+              "text": "`Tuta` - an up and coming service that also offers free and paid tiers. Their Drive is currently in beta testing, so expect that to be available in the near future. Sign up at `https://tuta.com/secure-email`"
             }
           ]
         },
@@ -241,16 +241,16 @@
           "why": "Every query you enter in Google Search is linked to your account or a persistent identifier. Over years this builds an extraordinarily detailed picture of your life and personal details.",
           "steps": [
             {
-              "text": "In Firefox: `Settings` → `Search` → `Default Search Engine` → `DuckDuckGo`"
+              "text": "In Firefox: `Settings` → `Search` → `Default Search Engine` → choose your preferred search engine"
             },
             {
-              "text": "In Brave: `Settings` → `Search engine` → `Brave Search` or `DuckDuckGo`"
+              "text": "In Brave: `Settings` → `Search engine` → choose your preferred search engine"
             },
             {
-              "text": "On iPhone: `Settings` → `Apps` → `Safari` → `Search Engine` → `DuckDuckGo`"
+              "text": "On iOS: `Settings` → `Apps` → `Safari` → `Search Engine` → choose your preferred search engine"
             },
             {
-              "text": "On Android: `Settings` → `Apps` → `Safari` → `Search Engine` → `DuckDuckGo`"
+              "text": "On Android: Open your preferred browser → tap on the search engine icon in the search bar → `Search settings` → `Default search engine` → choose your preferred search engine"
             }
           ]
         },
