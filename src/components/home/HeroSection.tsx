@@ -3,7 +3,7 @@ import { ArrowRight, Shield } from 'lucide-react'
 import { FeaturedGuideBlurb } from '@/components/home/FeaturedGuideBlurb'
 
 export const HeroSection = () => (
-  <section className='relative overflow-hidden px-6 py-20 text-center'>
+  <section className='relative overflow-hidden px-6 pt-20 py-[1.5rem] text-center'>
     <div
       className='pointer-events-none absolute inset-0'
       style={{

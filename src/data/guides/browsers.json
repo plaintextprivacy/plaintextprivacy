@@ -177,7 +177,7 @@
         {
           "id": "brave-settings",
           "name": "Brave settings",
-          "path": "TODO",
+          "path": "Brave → Settings → Privacy and security",
           "risk": "critical",
           "why": "TODO",
           "steps": [
