@@ -53,19 +53,19 @@
       {
         "label": "Indexing method",
         "values": {
-          "duckduckgo": "TODO",
-          "startpage": "TODO",
-          "brave": "TODO",
-          "kagi": "TODO"
+          "duckduckgo": "Its own crawler, Bing, crowd-sourced sites",
+          "startpage": "Google and Bing",
+          "brave": "Its own crawler",
+          "kagi": "Its own crawler, crowd-sourced sites"
         }
       },
       {
         "label": "Available on mobile",
         "values": {
           "duckduckgo": "Yes",
-          "startpage": "TODO",
-          "brave": "TODO",
-          "kagi": "TODO"
+          "startpage": "Yes; installed as a browser app",
+          "brave": "Yes; installed as a browser app",
+          "kagi": "Yes; installed as a browser app"
         }
       }
     ]
@@ -81,10 +81,10 @@
           "name": "Update default search engine on iOS",
           "path": "This is an OS-wide setting",
           "risk": "high",
-          "why": "WORDS WORDS WORDS.",
+          "why": "Because of the way browsers work on iOS, this setting can only be changed in your iOS settings and there are limited options for setting the default browser.",
           "steps": [
             {
-              "text": "FINISH"
+              "text": "Open `Settings` → `Apps` → `Safari` → `Search Engine` → choose your preferred search engine"
             }
           ],
           "sources": [
@@ -97,12 +97,15 @@
         {
           "id": "add-to-android",
           "name": "Update default search engine on Android",
-          "path": "This requires multiple changes",
+          "path": "Change for the browser and search widget",
           "risk": "high",
-          "why": "WORDS WORDS WORDS.",
+          "why": "You can update the search engine for the browser as well as the search widget on your homepage.",
           "steps": [
             {
-              "text": "FINISH"
+              "text": "Open your browser → tap on the search engine icon in the search bar → `Search settings` → `Default search engine` → choose your preferred search engine"
+            },
+            {
+              "text": "Install a supported search engine (like DuckDuckgo) → long press the app → tap `Widgets` → save it to your home screen"
             }
           ],
           "sources": [
@@ -115,12 +118,12 @@
         {
           "id": "add-to-firefox",
           "name": "Add to Firefox",
-          "path": "Applies to desktop and mobile",
+          "path": "Applies to desktop",
           "risk": "critical",
-          "why": "WORDS WORDS WORDS.",
+          "why": "Firefox offers good privacy on its own, but installing a good search engine will make it even better.",
           "steps": [
             {
-              "text": "FINISH"
+              "text": "Open `Menu` → `Settings` → `Search` → `Default search engine`"
             }
           ],
           "sources": [
@@ -133,12 +136,12 @@
         {
           "id": "add-to-brave",
           "name": "Add to Brave",
-          "path": "Applies to desktop and mobile",
+          "path": "Applies to desktop",
           "risk": "critical",
-          "why": "WORDS WORDS WORDS.",
+          "why": "Brave offers excellent privacy by default, so be sure to add a quality search engine to go with it.",
           "steps": [
             {
-              "text": "FINISH"
+              "text": "Open `Menu` → `Settings` → `Search Engine` → under Normal Window click `Change` → under Private Window click `Change`"
             }
           ],
           "sources": [
