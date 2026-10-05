@@ -3,7 +3,7 @@
   "layout": "checklist",
   "category": "advanced",
   "title": "De-Googling",
-  "subtitle": "Google's products are deeply embedded in most people's digital lives, but each one collects a significant amount of your personal data. This guide walks through switching off Google's data collection and replacing products with privacy-respecting alternatives.",
+  "subtitle": "Google's products are deeply embedded in most people's digital lives, but each one collects a significant amount of your personal data. This guide walks through switching off Google's data collection and replacing products with privacy-focused alternatives.",
   "meta": {
     "timeMinutes": 55,
     "platforms": ["Google"]
@@ -202,7 +202,7 @@
           "why": "Google scans the content of everyone's Gmail and Drive. Many people keep sensitive documents in their inboxes to refer to later, or they don't consider deleting files after they've been downloaded. There are some popular alternatives making their way into the mainstream that might make good alternatives to Gmail.",
           "steps": [
             {
-              "text": "`Proton` - likely the most popular privacy-focused email service. They offer both free and paid tiers. Sign up at `https://mail.proton.me`"
+              "text": "`Proton` - likely the most popular privacy-focused email service. They offer both free and paid tiers. This is one of the few alternatives that offers an entire suite of products that can be used to replace Google. Sign up at `https://mail.proton.me`"
             },
             {
               "text": "`Tuta` - an up and coming service that also offers free and paid tiers. Their Drive is currently in beta testing, so expect them to offer that feature in the near future. Sign up at `https://tuta.com/secure-email`"
@@ -273,7 +273,7 @@
           ]
         },
         {
-          "id": "replace-google-docs",
+          "id": "replace-google-drive",
           "name": "Replace Google Drive",
           "path": "See options below",
           "risk": "high",
@@ -290,6 +290,51 @@
             },
             {
               "text": "`Grist` - open source spreadsheet service with self-hosting option. Replaces Google Sheets"
+            }
+          ]
+        },
+        {
+          "id": "replace-calendar",
+          "name": "Replace Google Calendar",
+          "path": "See options below",
+          "risk": "high",
+          "why": "A good calendar app is hard to come by, but not impossible to find. The below options are a few that offer features that you come to expect like sync, sharing, and notifications.",
+          "steps": [
+            {
+              "text": "FINISH"
+            },
+            {
+              "text": "FINISH"
+            }
+          ]
+        },
+        {
+          "id": "replace-cloud",
+          "name": "Replace Google Cloud",
+          "path": "See options below",
+          "risk": "high",
+          "why": "FINISH",
+          "steps": [
+            {
+              "text": "FINISH"
+            },
+            {
+              "text": "FINISH"
+            }
+          ]
+        },
+        {
+          "id": "replace-meet",
+          "name": "Replace Google Meet",
+          "path": "See options below",
+          "risk": "high",
+          "why": "FINISH",
+          "steps": [
+            {
+              "text": "`Jitsi` - a free video conferencing tool that you can use directly in the web or self-host. Check it out at `https://jitsi.org/`"
+            },
+            {
+              "text": "FINISH"
             }
           ]
         },
