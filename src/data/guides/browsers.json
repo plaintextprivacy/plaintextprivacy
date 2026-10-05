@@ -123,7 +123,7 @@
           ]
         },
         {
-          "id": "block-cookies",
+          "id": "firefox-block-cookies",
           "name": "Enable third-party cookie blocking",
           "path": "Browser Settings → Privacy & Security → Cookies",
           "risk": "critical",
@@ -187,7 +187,7 @@
           ]
         },
         {
-          "id": "block-cookies",
+          "id": "brave-block-cookies",
           "name": "Enable third-party cookie blocking",
           "path": "Browser Settings → Privacy & Security → Cookies",
           "risk": "critical",
@@ -254,7 +254,7 @@
       "items": [
         {
           "id": "reject-cookies",
-          "name": "Always reject non-essential cookies",
+          "name": "Reject non-essential cookies",
           "path": "Applies on every website you visit",
           "risk": "high",
           "why": "When you click 'Accept all cookies,' you're explicitly consenting to being tracked by that site and often dozens of third-party ad networks. 'Necessary cookies only' limits the site to cookies required for the page to function - no tracking, no advertising profiles.",
