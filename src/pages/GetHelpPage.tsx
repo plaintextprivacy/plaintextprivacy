@@ -86,26 +86,29 @@ export const GetHelpPage = () => (
           <div className='grid grid-cols-1 gap-5 sm:grid-cols-3'>
             {[
               {
+                step: '01',
                 label: 'REACH OUT',
                 detail:
                   "Send a brief email describing your situation and what you're hoping to get out of a session. No need for detail - a few sentences is enough."
               },
               {
+                step: '02',
                 label: 'WE TALK',
                 detail:
                   "We'll have a short introductory conversation to make sure we're a good fit and clarify what you need before committing to anything."
               },
               {
+                step: '03',
                 label: 'GET STARTED',
                 detail:
                   'Sessions are available remotely via video call or in person. Length and format depends on what you need.'
               }
             ].map(({ step, label, detail }) => (
               <div key={step}>
-                <p className='mb-1 text-caption font-medium uppercase tracking-widest text-accent'>
-                  {step}
+                <p className='mb-1 text-body-md font-medium uppercase tracking-widest text-text-elevated'>
+                  {step + ' '}
+                  {label}
                 </p>
-                <p className='mb-1.5 text-body-md font-medium text-text-elevated'>{label}</p>
                 <p className='text-label leading-relaxed text-text-secondary'>{detail}</p>
               </div>
             ))}
