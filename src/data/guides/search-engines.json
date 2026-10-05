@@ -9,10 +9,11 @@
   },
   "context": {
     "title": "Things to consider",
-    "body": "Every search you make on Google is stored, timestamped, and tied to your account or IP address."
+    "body": "Every search you make on Google is stored, timestamped, and tied to your account or IP address. Utilizing additional tools will further improve your digital privacy.",
+    "body2": "There are many other options available than what are listed below. If none of these work for you, check out recommendations on Privacy Guides (https://www.privacyguides.org/en/search-engines/) or Alternative To (https://alternativeto.net/software/google-search/)."
   },
   "warning": {
-    "body": "TODO"
+    "body": "Changing your browser is an important first step, but you must update your search engine as well to get the full benefits of a privacy-focused browser."
   },
   "comparisonTable": {
     "title": "Search engine comparison",
