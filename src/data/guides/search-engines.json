@@ -62,7 +62,7 @@
       {
         "label": "Available on mobile",
         "values": {
-          "duckduckgo": "TODO",
+          "duckduckgo": "Yes",
           "startpage": "TODO",
           "brave": "TODO",
           "kagi": "TODO"
@@ -122,6 +122,12 @@
             {
               "text": "FINISH"
             }
+          ],
+          "sources": [
+            {
+              "label": "Manage Firefox search settings - Mozilla",
+              "url": "https://support.mozilla.org/en-US/kb/change-your-default-search-settings-firefox"
+            }
           ]
         },
         {
@@ -133,6 +139,12 @@
           "steps": [
             {
               "text": "FINISH"
+            }
+          ],
+          "sources": [
+            {
+              "label": "How do I set my default search engine? - Brave",
+              "url": "https://support.brave.app/hc/en-us/articles/360017479752-How-do-I-set-my-default-search-engine"
             }
           ]
         }
