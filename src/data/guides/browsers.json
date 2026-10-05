@@ -123,7 +123,7 @@
           ]
         },
         {
-          "id": "block-third-party-cookies",
+          "id": "block-cookies",
           "name": "Enable third-party cookie blocking",
           "path": "Browser Settings → Privacy & Security → Cookies",
           "risk": "critical",
@@ -144,9 +144,9 @@
           ]
         },
         {
-          "id": "privacy-extensions",
+          "id": "firefox-extensions",
           "name": "Install recommended privacy extensions",
-          "path": "Firefox / Brave → Extensions menu",
+          "path": "Firefox → Extensions menu",
           "risk": "high",
           "why": "Extensions can both protect and compromise your privacy. A malicious or poorly maintained extension has full access to every page you visit and everything you type - including passwords. Stick to well-known, open-source extensions with large user bases.",
           "steps": [
@@ -183,6 +183,27 @@
           "steps": [
             {
               "text": "TODO"
+            }
+          ]
+        },
+        {
+          "id": "block-cookies",
+          "name": "Enable third-party cookie blocking",
+          "path": "Browser Settings → Privacy & Security → Cookies",
+          "risk": "critical",
+          "why": "When you visit a website, it may load invisible elements from third-party ad networks that set cookies in your browser. Those cookies follow you across every other site that loads the same ad network - building a detailed map of your browsing activity even on sites you've never visited directly.",
+          "steps": [
+            {
+              "text": "Firefox with Strict Enhanced Tracking Protection (configured above) blocks third-party cookies automatically"
+            },
+            {
+              "text": "Brave blocks third-party cookies by default - verify at `Settings → Privacy and security → Block third-party cookies`"
+            },
+            {
+              "text": "On Safari (iPhone/Mac): `Settings → Safari → Privacy & Security` → ensure `Prevent Cross-Site Tracking` is enabled"
+            },
+            {
+              "text": "If you must use Chrome: `Settings` → `Privacy and security` → `Cookies` → `Block third-party cookies`"
             }
           ]
         }

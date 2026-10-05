@@ -84,7 +84,15 @@
           "url": "https://www.privacyguides.org",
           "displayUrl": "privacyguides.org",
           "blurb": "A community-maintained, open source reference covering privacy-respecting software alternatives, threat modeling frameworks, and in-depth tool reviews",
-          "tags": ["Reference", "Tools", "Open source"]
+          "tags": ["Reference", "Tools", "Open source", "Crowd sourced"]
+        },
+        {
+          "id": "alternative-to",
+          "name": "AlternativeTo",
+          "url": "https://alternativeto.net/",
+          "displayUrl": "alternativeto.net",
+          "blurb": "A crowd sourced database of recommended software and tools meant to replace mainstream products. Tools are rated by community members and ranked based on user feedback",
+          "tags": ["Reference", "Tools", "Open source", "Crowd sourced"]
         },
         {
           "id": "hibp",
