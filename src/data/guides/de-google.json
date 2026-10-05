@@ -265,7 +265,7 @@
               "text": "`Apple Maps` - a significant privacy improvement over Google Maps. Apple doesn't build a location history profile. Available on iPhone and Mac"
             },
             {
-              "text": "`OsmAnd` - open source, uses OpenStreetMap data, fully offline capable. No account required, no tracking. iOS and Android"
+              "text": "`OsmAnd` - open source, uses OpenStreetMap data, fully offline capable. No account required. Available on iOS and Android"
             },
             {
               "text": "`Organic Maps` - simpler than OsmAnd, excellent for offline use, no ads or tracking"
@@ -294,51 +294,6 @@
           ]
         },
         {
-          "id": "replace-calendar",
-          "name": "Replace Google Calendar",
-          "path": "See options below",
-          "risk": "high",
-          "why": "A good calendar app is hard to come by, but not impossible to find. The below options are a few that offer features that you come to expect like sync, sharing, and notifications.",
-          "steps": [
-            {
-              "text": "FINISH"
-            },
-            {
-              "text": "FINISH"
-            }
-          ]
-        },
-        {
-          "id": "replace-cloud",
-          "name": "Replace Google Cloud",
-          "path": "See options below",
-          "risk": "high",
-          "why": "FINISH",
-          "steps": [
-            {
-              "text": "FINISH"
-            },
-            {
-              "text": "FINISH"
-            }
-          ]
-        },
-        {
-          "id": "replace-meet",
-          "name": "Replace Google Meet",
-          "path": "See options below",
-          "risk": "high",
-          "why": "FINISH",
-          "steps": [
-            {
-              "text": "`Jitsi` - a free video conferencing tool that you can use directly in the web or self-host. Check it out at `https://jitsi.org/`"
-            },
-            {
-              "text": "FINISH"
-            }
-          ]
-        },
-        {
           "id": "stop-google-sso",
           "name": "Stop using 'Sign in with Google' on websites",
           "path": "Applies to all websites and apps",
@@ -346,13 +301,13 @@
           "why": "Every time you use 'Sign in with Google,' you're telling Google which service you're using, when, and how often.",
           "steps": [
             {
-              "text": "Go to `myaccount.google.com` → `Security` → `Third-party apps with account access` and review every connected app"
+              "text": "Go to `myaccount.google.com` → `Security` → `Third-party apps with account access` and review connected apps"
             },
             {
-              "text": "For each app, create a standalone account using an email address instead, then revoke the Google connection"
+              "text": "For each app, create a new account or update your login method to be with an email, then revoke the Google connection"
             },
             {
-              "text": "Going forward: always choose 'Sign up with email' over 'Continue with Google' - use Firefox Relay or Apple Hide My Email to keep your real address private"
+              "text": "Going forward: always choose `Sign up with email` over `Continue with Google` - use Firefox Relay or Apple Hide My Email to keep your email address private"
             }
           ]
         },
