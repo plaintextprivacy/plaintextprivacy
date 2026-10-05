@@ -1,0 +1,308 @@
+{
+  "slug": "search-engines",
+  "layout": "checklist",
+  "category": "browsing",
+  "title": "Search engines",
+  "subtitle": "The search engine that your browser uses is nearly as important as the browser itself. There are a variety of options that you can choose from, and each option utilize different methods of indexing content from the web.",
+  "meta": {
+    "timeMinutes": 20
+  },
+  "context": {
+    "title": "Things to consider",
+    "body": "Every search you make on Google is stored, timestamped, and tied to your account or IP address."
+  },
+  "warning": {
+    "body": "TODO"
+  },
+  "comparisonTable": {
+    "title": "Search engine comparison",
+    "note": "You might want to try different search engines - each of them have weaknesses and strengths.",
+    "columns": [
+      {
+        "id": "duckduckgo",
+        "label": "DuckDuckGo",
+        "recommended": true,
+        "url": "https://duckduckgo.com/"
+      },
+      {
+        "id": "startpage",
+        "label": "StartPage",
+        "url": "https://www.startpage.com/"
+      },
+      {
+        "id": "brave",
+        "label": "Brave Search",
+        "url": "https://search.brave.com/"
+      },
+      {
+        "id": "kagi",
+        "label": "Kagi",
+        "url": "https://kagi.com/"
+      }
+    ],
+    "rows": [
+      {
+        "label": "Free to use",
+        "values": {
+          "duckduckgo": "Yes",
+          "startpage": "Yes",
+          "brave": "Yes",
+          "kagi": "Free tier is very limited"
+        }
+      },
+      {
+        "label": "Indexing method",
+        "values": {
+          "duckduckgo": "TODO",
+          "startpage": "TODO",
+          "brave": "TODO",
+          "kagi": "TODO"
+        }
+      },
+      {
+        "label": "Available on mobile",
+        "values": {
+          "duckduckgo": "TODO",
+          "startpage": "TODO",
+          "brave": "TODO",
+          "kagi": "TODO"
+        }
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "add-to-browser",
+      "label": "Add the search engine to your browser",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "switch-browser",
+          "name": "Switch away from Chrome",
+          "path": "Applies to desktop and mobile",
+          "risk": "critical",
+          "why": "Chrome is Google's primary data collection tool for the web. It sends browsing behavior back to Google servers, syncs your history across devices tied to your Google account, and now limits effective ad blocking via Manifest V3. Every Chrome user is, to some degree, a data product.",
+          "steps": [
+            {
+              "text": "Download Firefox at `mozilla.org/firefox` or Brave at `brave.com`"
+            },
+            {
+              "text": "During setup, import your bookmarks and saved passwords from Chrome: `Menu → Bookmarks → Import bookmarks and settings`"
+            },
+            {
+              "text": "Set your new browser as the system default: on Mac `System Settings → Desktop & Dock → Default web browser`, on Windows `Settings → Apps → Default apps`"
+            },
+            {
+              "text": "On mobile, set it as default in `iPhone Settings → [Browser name] → Default Browser App` or `Android Settings → Apps → Default apps → Browser`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "browser-config",
+      "label": "Configure browser privacy settings",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "firefox-settings",
+          "name": "Tighten Firefox privacy settings",
+          "path": "Firefox → Settings → Privacy & Security",
+          "risk": "critical",
+          "why": "Firefox's default privacy mode is good but not maxed out. A few minutes in settings significantly reduces what Firefox and third parties can collect from your browsing sessions, and turns off Mozilla's own telemetry.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security`. Set Enhanced Tracking Protection to `Strict`"
+            },
+            {
+              "text": "Under Cookies and Site Data, enable `Delete cookies and site data when Firefox is closed`"
+            },
+            {
+              "text": "Under History, set Firefox to `Never remember history` or use custom settings to clear history on close"
+            },
+            {
+              "text": "Scroll to Firefox Data Collection and Use - uncheck all boxes to disable sending telemetry to Mozilla"
+            },
+            {
+              "text": "Under Address Bar - Firefox Suggest, disable `Contextual suggestions` and `Suggestions from the web` to stop keystrokes being sent to Mozilla"
+            },
+            {
+              "text": "For Brave users: defaults are already strict - go to `Settings → Shields` and set trackers and ads blocking to `Aggressive`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search-engine",
+      "label": "Choose a privacy-focused search engine",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "replace-google-search",
+          "name": "Replace Google with a private search engine",
+          "path": "Browser Settings → Search engine",
+          "risk": "critical",
+          "why": "Google stores every search you make and links it to your account or a persistent identifier. Over time this creates an extraordinarily detailed picture of your interests, health concerns, finances, relationships, and beliefs. Private search engines don't store or sell this data.",
+          "steps": [
+            {
+              "text": "In Firefox: `Settings` → `Search` → `Default Search Engine` → select DuckDuckGo or add a custom engine"
+            },
+            {
+              "text": "In Brave: `Settings` → `Search engine` → choose Brave Search or DuckDuckGo"
+            },
+            {
+              "text": "On iPhone Safari: `Settings` → `Apps` → `Safari` → `Search Engine` → DuckDuckGo"
+            },
+            {
+              "text": "Best options: `DuckDuckGo` (no tracking), `Startpage` (Google results without tracking), `Brave Search` (independent index), `Kagi` (paid, best quality)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cookies",
+      "label": "Block third-party cookies",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "block-third-party-cookies",
+          "name": "Enable third-party cookie blocking",
+          "path": "Browser Settings → Privacy & Security → Cookies",
+          "risk": "critical",
+          "why": "When you visit a website, it may load invisible elements from third-party ad networks that set cookies in your browser. Those cookies follow you across every other site that loads the same ad network - building a detailed map of your browsing activity even on sites you've never visited directly.",
+          "steps": [
+            {
+              "text": "Firefox with Strict Enhanced Tracking Protection (configured above) blocks third-party cookies automatically"
+            },
+            {
+              "text": "Brave blocks third-party cookies by default - verify at `Settings → Privacy and security → Block third-party cookies`"
+            },
+            {
+              "text": "On Safari (iPhone/Mac): `Settings → Safari → Privacy & Security` → ensure `Prevent Cross-Site Tracking` is enabled"
+            },
+            {
+              "text": "If you must use Chrome: `Settings → Privacy and security → Cookies → Block third-party cookies`"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "extensions",
+      "label": "Extensions & add-ons",
+      "risk": "high",
+      "items": [
+        {
+          "id": "privacy-extensions",
+          "name": "Install recommended privacy extensions",
+          "path": "Firefox / Brave → Extensions menu",
+          "risk": "high",
+          "why": "Extensions can both protect and compromise your privacy. A malicious or poorly maintained extension has full access to every page you visit and everything you type - including passwords. Stick to well-known, open-source extensions with large user bases.",
+          "steps": [
+            {
+              "text": "`uBlock Origin` - blocks ads, trackers, and malicious scripts. The single most impactful extension for privacy. Firefox and Brave only - not available in full form on Chrome"
+            },
+            {
+              "text": "`ClearURLs` - strips tracking parameters from URLs before they load, preventing click-through tracking"
+            },
+            {
+              "text": "`Privacy Badger` (by EFF) - learns to block third-party trackers based on behavior. Good complement to uBlock Origin"
+            },
+            {
+              "text": "After installing uBlock Origin, open its dashboard and enable the `EasyPrivacy` and `uBlock filters - Privacy` filter lists"
+            },
+            {
+              "text": "Resist installing more extensions than you need - each one adds to your browser fingerprint"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cookie-banners",
+      "label": "Website cookie banners",
+      "risk": "high",
+      "items": [
+        {
+          "id": "reject-cookies",
+          "name": "Always reject non-essential cookies",
+          "path": "Applies on every website you visit",
+          "risk": "high",
+          "why": "When you click 'Accept all cookies,' you're explicitly consenting to being tracked by that site and often dozens of third-party ad networks. 'Necessary cookies only' limits the site to cookies required for the page to function - no tracking, no advertising profiles.",
+          "steps": [
+            {
+              "text": "When a cookie banner appears, look for `Reject all`, `Necessary only`, or `Manage preferences` - never click `Accept all`"
+            },
+            {
+              "text": "If there's no obvious reject option, click `Manage preferences` and manually disable all non-essential categories (marketing, analytics, personalization)"
+            },
+            {
+              "text": "For automatic cookie rejection, uBlock Origin's Annoyances filter list can auto-dismiss many cookie banners - enable it in the uBlock Origin dashboard under filter lists"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "network",
+      "label": "Home network setup",
+      "risk": "high",
+      "items": [
+        {
+          "id": "router-security",
+          "name": "Secure your home router",
+          "path": "Router admin panel (typically 192.168.1.1 or 192.168.0.1)",
+          "risk": "high",
+          "why": "Your router's default admin password is often printed on the device itself or is a known default - making it trivially easy for anyone on your network to access router settings. Your router's default name (SSID) often includes the make and model, which can reveal known vulnerabilities to nearby attackers.",
+          "steps": [
+            {
+              "text": "Log into your router admin panel - the address is usually printed on the router label. Common defaults: `192.168.1.1` or `192.168.0.1`"
+            },
+            {
+              "text": "Change the default admin username and password to something strong and unique. Store it in your password manager"
+            },
+            {
+              "text": "Change the Wi-Fi network name (SSID) to something that doesn't reveal your router's make, model, or your name"
+            },
+            {
+              "text": "Verify your router encryption is set to `WPA3` or at minimum `WPA2` - avoid WEP. Disable `WPS` if you don't use it (it has known vulnerabilities)"
+            },
+            {
+              "text": "Check for and apply any available firmware updates for your router"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vpn",
+      "label": "VPNs",
+      "risk": "medium",
+      "items": [
+        {
+          "id": "vpn-understanding",
+          "name": "Understanding when a VPN helps (and when it doesn't)",
+          "path": "Applies if you choose to use a VPN",
+          "risk": "medium",
+          "why": "A VPN encrypts traffic between your device and the VPN server, masking your IP address from sites you visit and preventing your ISP from seeing which sites you visit. It shifts trust from your ISP to your VPN provider. However, a VPN does not make you anonymous - if you're logged into Google while using a VPN, Google still knows who you are.",
+          "steps": [
+            {
+              "text": "A VPN is most useful on public Wi-Fi (airports, cafes) where your traffic is otherwise visible to the network operator"
+            },
+            {
+              "text": "Choose a provider with a verified no-logs policy confirmed by an independent third-party audit"
+            },
+            {
+              "text": "Never use a free VPN (except Proton VPN's free tier) - free VPNs monetize by selling your data"
+            },
+            {
+              "text": "Reputable audited options: `Proton VPN`, `Mullvad`, `NordVPN`, `Surfshark`, `ExpressVPN`, `Private Internet Access`"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

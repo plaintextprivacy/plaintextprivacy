@@ -44,7 +44,7 @@ const PrintItem = ({ item }: { item: ChecklistItem }) => (
     </div>
     <p className='print-path'>{item.path}</p>
     <p className='print-why'>
-      <strong>Why it matters:</strong> {item.why}
+      <strong>Why it's important:</strong> {item.why}
     </p>
     <div className='print-steps'>
       <strong>Steps:</strong>

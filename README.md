@@ -62,7 +62,7 @@ Use a short, descriptive branch name.
 
 ### 5. Make your changes
 
-If you're editing a guide, open the relevant file under `src/data/guides/`. Each guide follows the schema defined in `src/types/guide.ts`. a guide is a list of sections, each containing checklist items with a `name`, `path` (the settings menu path), `why` (why it matters), `steps` (how to do it), and an optional `sources` list for citations.
+If you're editing a guide, open the relevant file under `src/data/guides/`. Each guide follows the schema defined in `src/types/guide.ts`. a guide is a list of sections, each containing checklist items with a `name`, `path` (the settings menu path), `why` (why it's important), `steps` (how to do it), and an optional `sources` list for citations.
 
 Keep these conventions when editing guide content:
 

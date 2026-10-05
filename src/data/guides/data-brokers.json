@@ -125,7 +125,7 @@
           "name": "Consider a paid data removal service",
           "path": "Subscription service",
           "risk": "high",
-          "why": "Paid services handle re-submissions automatically and provide regular reporting. The tradeoff is an ongoing subscription cost and they typically won't cover every broker. Best for people who want meaningful reduction without significant ongoing effort.",
+          "why": "Paid services handle re-submissions automatically and provide regular reporting. The tradeoff is an ongoing subscription cost and they typically won't cover every broker. Best for people who want to see an improvement in their privacy without significant ongoing effort.",
           "steps": [
             {
               "text": "`DeleteMe` (~$129/year) - one of the most established services, covers 750+ brokers with quarterly reports"

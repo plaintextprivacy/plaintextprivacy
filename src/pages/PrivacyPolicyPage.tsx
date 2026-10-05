@@ -163,10 +163,10 @@ export const PrivacyPolicyPage = () => (
           </h2>
           <div className='rounded-xl border border-default bg-bg-secondary p-6'>
             <p className='text-body leading-relaxed text-text-secondary'>
-              If this policy changes in any meaningful way - for example, if a hosting change
+              If this policy changes in a significant way - for example, if a hosting change
               introduces new data processing - the last updated date at the top of this page will
               reflect that. We will never introduce advertising, analytics, or account systems
-              without making it clearly known.
+              without stating it clearly.
             </p>
           </div>
         </section>

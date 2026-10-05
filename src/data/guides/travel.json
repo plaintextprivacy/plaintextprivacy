@@ -377,7 +377,7 @@
           "name": "Opt out of facial recognition ",
           "path": "Say it before handing over your ID",
           "risk": "medium",
-          "why": "US citizens have the right to opt out of facial recognition scans at TSA checkpoints. Declining doesn't slow you down meaningfully and avoids adding your face to another biometric database.",
+          "why": "US citizens have the right to opt out of facial recognition scans at TSA checkpoints. Declining doesn't usually slow you down much and avoids adding your face to their biometric database.",
           "steps": [
             {
               "text": "Say \"I want to opt out of facial recognition\" before handing over your ID"
