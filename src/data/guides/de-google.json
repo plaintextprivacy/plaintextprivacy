@@ -210,6 +210,18 @@
           ]
         },
         {
+          "id": "replace-google-suite",
+          "name": "Replace Google Suite",
+          "path": "Depends on provider",
+          "risk": "high",
+          "why": "Replacing the entire Google Suite outright with a product that isn't just Microsoft is incredibly difficult. There aren't many competitors out there that offer the large suite of tools under one umbrella. The closest option available is Proton. Proton offers email, calendar, video meetings, its own Drive, and more. The two downsides of Proton are that it offers much less for free than Google does, and it doesn't have feature parity with Google products.",
+          "steps": [
+            {
+              "text": "`Proton` - the most popular privacy-focused suite. They offer both free and paid tiers but the free tiers are very limited. Sign up at `https://mail.proton.me`"
+            },
+          ]
+        },
+        {
           "id": "ditch-chrome",
           "name": "Ditch Chrome",
           "path": "Depends on provider",
@@ -262,13 +274,13 @@
           "why": "Google Maps builds a detailed picture of everywhere you go - your home, workplace, doctor's office, places of worship, political events. This location history can be subpoenaed.",
           "steps": [
             {
-              "text": "`Apple Maps` - a significant privacy improvement over Google Maps. Apple doesn't build a location history profile. Available on iPhone and Mac"
+              "text": "`Apple Maps` - a significant privacy improvement over Google Maps. Apple doesn't build a location history profile. Available on iOS and Mac"
             },
             {
               "text": "`OsmAnd` - open source, uses OpenStreetMap data, fully offline capable. No account required. Available on iOS and Android"
             },
             {
-              "text": "`Organic Maps` - simpler than OsmAnd, excellent for offline use, no ads or tracking"
+              "text": "`Organic Maps` - simpler than OsmAnd, excellent for offline use. Available on iOS and Android"
             }
           ]
         },
@@ -313,7 +325,7 @@
         },
         {
           "id": "replace-google-photos",
-          "name": "Replace Google Photos with a private alternative",
+          "name": "Replace Google Photos",
           "path": "App store",
           "risk": "high",
           "why": "Google Photos uses AI to analyze every photo you upload - identifying faces, locations, objects, and events. This analysis builds an extremely detailed profile of your life, relationships, and whereabouts.",
