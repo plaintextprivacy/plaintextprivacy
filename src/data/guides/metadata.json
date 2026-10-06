@@ -3,22 +3,22 @@
   "layout": "checklist",
   "category": "advanced",
   "title": "File metadata",
-  "subtitle": "TODO",
+  "subtitle": "Metadata is bits of information about documents and photos. This information can include things like the device it was created on, the device's operating system, the time and date it was created (and last modified), the GPS coordinates from when a photo was taken, the author's full name, and much, much more. You might be shocked to know the level of detail some of this information contains. This guide walks through different methods of removing metadata",
   "meta": {
     "timeMinutes": 120,
     "platforms": ["iOS", "Android", "MacOS", "Windows"]
   },
   "context": {
-    "title": "Before you start",
-    "body": "TODO",
-    "body2": "TODO"
+    "title": "Keep in mind",
+    "body": "Removing information from the files you've already created is one part of the process, the additional item is to prevent as much information from being embedded into your files to begin with by changing settings in the devices and software you use day to day. We shall cover some of that here, but there are detailed instructions for reducing how much information you share with third parties on the phone and computer guides.",
+    "body2": "Our recommendation is to start by changing your device settings, then proceed with wiping the metadata from files and photos that you've already created. It's not necessary to wipe the metadata from *every* photo and document, we recommend prioritizing files that you plan to share with other people or upload to social media or some other website."
   },
   "warning": {
-    "body": "TODO"
+    "body": "In our opinion, one of the most egregious metadata collection practices is geolocation data in photos. If you allow location services on your camera app, the GPS coordinates embedded in your photo metadata can be precise enough to give away your exact address. Now, if you just keep your photos to yourself, that isn't a problem. The problem arises when you share those photos on social media. In large part, that metadata stays attached to the photo, so anyone with a little bit of know how could easily download your photo and extract that metadata. Additionally, metadata is gathered by datab rokers (shocking) to gather even more information on you to try to sell you more shit with targeted advertising."
   },
   "comparisonTable": {
     "title": "Tools to wipe metadata",
-    "note": "TODO.",
+    "note": "Many of the metadata wiping tools available online are open source and free to download. You can't go wrong with most of them, so choose whichever you feel most comfortable using.",
     "columns": [
       {
         "id": "exifcleaner",
@@ -69,19 +69,37 @@
           "acrobat": "No",
           "metadatacleaner": "Yes"
         }
+      },
+      {
+        "label": "Works on photos and videos",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "No",
+          "metadatacleaner": "Yes"
+        }
+      },
+      {
+        "label": "Works on PDFs",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "Yes",
+          "metadatacleaner": "Yes"
+        }
       }
     ]
   },
   "sections": [
     {
-      "id": "exifcleaner",
-      "label": "ExifCleaner",
+      "id": "minimize-metadata",
+      "label": "Minimize metadata",
       "risk": "critical",
       "items": [
         {
-          "id": "exifcleaner-installation",
-          "name": "Installation and setup",
-          "path": "Depends on OS",
+          "id": "photo-geolocation",
+          "name": "Disable geolocation on photos",
+          "path": "Depends on device",
           "risk": "critical",
           "why": "TODO",
           "steps": [
@@ -91,8 +109,93 @@
           ],
           "sources": [
             {
-              "label": "ExifCleaner",
-              "url": "https://exifcleaner.com/"
+              "label": "TODO",
+              "url": "https://github.com/jvoisin/mat2"
+            }
+          ]
+        },
+        {
+          "id": "word-docs",
+          "name": "Remove Word Document metadata",
+          "path": "TODO",
+          "risk": "critical",
+          "why": "TODO",
+          "steps": [
+            {
+              "text": "TODO"
+            }
+          ],
+          "sources": [
+            {
+              "label": "TODO",
+              "url": "https://github.com/jvoisin/mat2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exifcleaner",
+      "label": "ExifCleaner",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "exifcleaner-mac-installation",
+          "name": "Installation on MacOS",
+          "path": "Download → Install",
+          "risk": "critical",
+          "why": "ExifCleaner is a simple metadata wiping tool that leaves original files untouched and generates new, 'cleaned' versions that it saves alongside the originals. This prevents any accidental file destruction in case you with to keep the original files. Installing it and setting it up for the first time requires an additional step, so follow the below instructions carefully to avoid issues.",
+          "steps": [
+            {
+              "text": "Visit `https://exifcleaner.com/` → click `Download`"
+            },
+            {
+              "text": "On their `GitHub` releases page, scroll down to `Downloads` and look for `macOS (Apple Silicon)` or `macOS (Intel)` - this tells you which file you should download, e.g. `ExifCleaner-4.5.0-arm64.dmg` for `macOS (Apple Silicon)`"
+            },
+            {
+              "text": "Scroll down to `Assets` → click on the file for your operating system to automatically download it, e.g. `ExifCleaner-4.5.0-arm64.dmg`"
+            },
+            {
+              "text": "Open the file and follow normal steps for installing software. You may see a message about the software being unsigned, accept and allow the installation anyway"
+            },
+            {
+              "text": "`IMPORTANT` - because this is open source software, your Mac will block the app from opening when you first try to use it. To fix this *after* the app has been blocked, go to `System Settings` → `Privacy & Security` → scroll down until you see the message about ExifCleaner being blocked → choose `Open Anyway`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Install Unsigned Software from Developers on a Mac - WikiHow",
+              "url": "https://www.wikihow.com/Install-Software-from-Unsigned-Developers-on-a-Mac"
+            }
+          ]
+        },
+        {
+          "id": "exifcleaner-windows-installation",
+          "name": "Installation on Windows",
+          "path": "Download → Install",
+          "risk": "critical",
+          "why": "ExifCleaner works just as well on Windows as it does Mac, so it's a great tool to use for either operating system.",
+          "steps": [
+            {
+              "text": "Visit `https://exifcleaner.com/` → click `Download`"
+            },
+            {
+              "text": "On their `GitHub` releases page, scroll down to `Downloads` and look for `Windows portable (recommended)` or `Windows installer` - this tells you which file you should download, e.g. `ExifCleaner.4.5.0.portable.exe` for `Windows portable (recommended)`"
+            },
+            {
+              "text": "Scroll down to `Assets` → click on the file for your operating system to automatically download it, e.g. `ExifCleaner.4.5.0.portable.exe`"
+            },
+            {
+              "text": "Open the file and follow normal steps for installing software. You may see the message 'Windows protected your PC' from `Windows Defender Smartscreen` pop up - click `More info` → `Run anyway`"
+            },
+            {
+              "text": "If Windows Defender keeps blocking ExifCleaner every time you try to use it, right-click the app → `Properties` → `General` tab → check the box next to `Unblock` → save and close"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Opening Unsigned Builds - ExifCleaner GitHub",
+              "url": "https://github.com/szTheory/exifcleaner#opening-unsigned-builds"
             }
           ]
         },

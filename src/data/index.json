@@ -230,7 +230,7 @@
           "description": "Metadata in files and images often capture an astonishing amount of details about you, your devices, and the location the file was generated or created",
           "icon": "files",
           "risk": "high",
-          "status": "coming-soon",
+          "status": "published",
           "tags": ["metadata", "documents", "pdf", "geo location", "photos", "exif data"]
         },
         {
