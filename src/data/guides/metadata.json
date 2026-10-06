@@ -144,24 +144,6 @@
             }
           ]
         },
-        {
-          "id": "word-docs",
-          "name": "Remove Word Document metadata",
-          "path": "TODO",
-          "risk": "critical",
-          "why": "TODO",
-          "steps": [
-            {
-              "text": "TODO"
-            }
-          ],
-          "sources": [
-            {
-              "label": "TODO",
-              "url": "https://github.com/jvoisin/mat2"
-            }
-          ]
-        }
       ]
     },
     {
@@ -287,6 +269,34 @@
             {
               "label": "Mat2",
               "url": "https://github.com/jvoisin/mat2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acrobat",
+      "label": "Acrobat Pro",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "acrobat-usage",
+          "name": "Wipe PDF metadata with Acrobat Pro",
+          "path": "All Tools ",
+          "risk": "critical",
+          "why": "If you have Acrobat Pro and largely need to remove metadata from PDFs, then there's no need to install additional software. Just keep in mind that this only works with PDFs, and you'll need to use other tools to remove the metadata from photos, videos, and other file types. This functionality does not exist on Acrobat Reader.",
+          "steps": [
+            {
+              "text": "Open your PDF in `Acrobat Pro` → `All Tools` → `Redact a PDF` → `Sanitize document` → `Remove all`"
+            },
+            {
+              "text": "Save and close"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Sanitize PDFs in Acrobat Pro - Adobe",
+              "url": "https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/sanitize.html"
             }
           ]
         }
