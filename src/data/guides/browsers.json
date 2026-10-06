@@ -177,33 +177,30 @@
         {
           "id": "brave-settings",
           "name": "Brave settings",
-          "path": "Brave → Settings → Privacy and security",
+          "path": "Brave → Settings → Privacy and security → Site and Shields settings",
           "risk": "critical",
-          "why": "TODO",
+          "why": "Brave has some of the strongest privacy and security settings set by default, but there's always room for improvement for those who wish to take their privacy on step further. It's generally not recommended to install browser extensions on Brave as they may impact your security and privacy, so we won't include any recommendations for this browser.",
           "steps": [
             {
-              "text": "TODO"
-            }
-          ]
-        },
-        {
-          "id": "brave-block-cookies",
-          "name": "Enable third-party cookie blocking",
-          "path": "Browser Settings → Privacy & Security → Cookies",
-          "risk": "critical",
-          "why": "When you visit a website, it may load invisible elements from third-party ad networks that set cookies in your browser. Those cookies follow you across every other site that loads the same ad network - building a detailed map of your browsing activity even on sites you've never visited directly.",
-          "steps": [
-            {
-              "text": "Firefox with Strict Enhanced Tracking Protection (configured above) blocks third-party cookies automatically"
+              "text": "Open `Brave Browser`"
             },
             {
-              "text": "Brave blocks third-party cookies by default - verify at `Settings → Privacy and security → Block third-party cookies`"
+              "text": "In the url bar, click on the lion icon on the right-hand side (if it's grayed out, just navigate to a page and it should fill in with color) - Shields settings should pop up"
             },
             {
-              "text": "On Safari (iPhone/Mac): `Settings → Safari → Privacy & Security` → ensure `Prevent Cross-Site Tracking` is enabled"
+              "text": "Choose `Advanced options` → update `Block trackers and ads` to `Aggressively block trackers and ads` - this may sometimes impact your ability to load webpages. The default is sufficient if it negatively impacts your browsing experience too much"
             },
             {
-              "text": "If you must use Chrome: `Settings` → `Privacy and security` → `Cookies` → `Block third-party cookies`"
+              "text": "`Optional` - toggle on `Block scripts` - this is another setting that has the potential to degrade your browsing experience. Leave off if it's too impactful"
+            },
+            {
+              "text": "Verify `Block fingerprinting` is enabled"
+            },
+            {
+              "text": "Optional - update `Block third-party cookies` to `Block all cookies`"
+            },
+            {
+              "text": "`Optional` - toggle on `Forget me when I close this site` - wipes all cache and cookies when you close a browser tab"
             }
           ]
         }
