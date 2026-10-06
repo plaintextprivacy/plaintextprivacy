@@ -97,20 +97,50 @@
       "risk": "critical",
       "items": [
         {
-          "id": "photo-geolocation",
+          "id": "ios-geolocation",
           "name": "Disable geolocation on photos",
-          "path": "Depends on device",
+          "path": "Settings → Privacy & Security → Location Services",
           "risk": "critical",
-          "why": "TODO",
+          "why": "Geolocation data on your iPhone's photos can be precise enough to reveal your exact home address, zip code and all. That information does not get wiped away when you upload those pictures to social media. The first step is to disable location services on your camera app, then you can wipe the metadata for existing photos as you see fit.",
           "steps": [
             {
-              "text": "TODO"
+              "text": "Open `Settings` → `Privacy & Security` → `Location Services`"
+            },
+            {
+              "text": "For apps that don't need your location, including the camera app for this instance, set to `Never`"
+            },
+            {
+              "text": "To delete location metadata from existing photos - open `Photos` →  select the photo you want to edit → tap the 3 dots → `Adjust Location` → tap `No Location`"
             }
           ],
           "sources": [
             {
-              "label": "TODO",
-              "url": "https://github.com/jvoisin/mat2"
+              "label": "Manage location metadata in Photos - Apple",
+              "url": "https://support.apple.com/guide/personal-safety/manage-location-metadata-in-photos-ips0d7a5df82/web"
+            }
+          ]
+        },
+        {
+          "id": "android-geolocation",
+          "name": "Disable geolocation on photos",
+          "path": "TODO",
+          "risk": "critical",
+          "why": "Geolocation data on your Android's photos can be precise enough to reveal your exact home address, zip code and all. That information does not get wiped away when you upload those pictures to social media. The first step is to disable location services on your camera app, then you can wipe the metadata for existing photos as you see fit.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy` → `Permission manager` → `Location`"
+            },
+            {
+              "text": "Update the camera app to `Denied`"
+            },
+            {
+              "text": "To delete location metadata from existing photos - open `Google Photos` →  select the photo(s) you want to edit → tap `More` → `Edit` → tap `Remove location`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Understand, find and edit your photos' locations - Google",
+              "url": "https://support.google.com/photos/answer/6153599?hl=en-GB&co=GENIE.Platform%3DAndroid&oco=2"
             }
           ]
         },

@@ -288,7 +288,7 @@
               "text": "Open `Settings` → `Privacy & Security` → `Location Services`"
             },
             {
-              "text": "For apps that don't need your location (social media, shopping, games), set to `Never`"
+              "text": "For apps that don't need your location (social media, shopping, camera, games), set to `Never`"
             },
             {
               "text": "For apps that occasionally need location (maps, rideshare, food delivery), set to `While Using the App`"
@@ -298,6 +298,12 @@
             },
             {
               "text": "Also disable `iPhone Analytics` and `Routing & Traffic` if you don't use Apple Maps"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Turn Location Services and GPS on or off on your iPhone, iPad, or iPod touch - Apple",
+              "url": "https://support.apple.com/en-us/102647"
             }
           ]
         }
