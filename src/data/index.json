@@ -225,6 +225,15 @@
           "tags": ["google", "gemini", "chrome", "opt out"]
         },
         {
+          "slug": "metadata",
+          "title": "File metadata",
+          "description": "Metadata in files and images often capture an astonishing amount of details about you, your devices, and the location the file was generated or created",
+          "icon": "files",
+          "risk": "high",
+          "status": "coming-soon",
+          "tags": ["metadata", "documents", "pdf", "geo location", "photos", "exif data"]
+        },
+        {
           "slug": "ai-privacy",
           "title": "AI & your data",
           "description": "Opt out of AI training, avoid LLMs, protect sensitive conversations, and run local LLMs to keep your data off corporate servers",

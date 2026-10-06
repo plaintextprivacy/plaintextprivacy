@@ -202,6 +202,12 @@
             {
               "text": "`Optional` - toggle on `Forget me when I close this site` - wipes all cache and cookies when you close a browser tab"
             }
+          ],
+          "sources": [
+            {
+              "label": "Privacy features - Brave",
+              "url": "https://brave.com/privacy-features/"
+            }
           ]
         }
       ]

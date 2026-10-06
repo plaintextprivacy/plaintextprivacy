@@ -1,0 +1,163 @@
+{
+  "slug": "metadata",
+  "layout": "checklist",
+  "category": "advanced",
+  "title": "File metadata",
+  "subtitle": "TODO",
+  "meta": {
+    "timeMinutes": 120,
+    "platforms": ["iOS", "Android", "MacOS", "Windows"]
+  },
+  "context": {
+    "title": "Before you start",
+    "body": "TODO",
+    "body2": "TODO"
+  },
+  "warning": {
+    "body": "TODO"
+  },
+  "comparisonTable": {
+    "title": "Tools to wipe metadata",
+    "note": "TODO.",
+    "columns": [
+      {
+        "id": "exifcleaner",
+        "label": "ExifCleaner",
+        "recommended": true,
+        "url": "https://exifcleaner.com/"
+      },
+      {
+        "id": "mat2",
+        "label": "Mat2",
+        "url": "https://github.com/jvoisin/mat2"
+      },
+      {
+        "id": "acrobat",
+        "label": "Adobe Acrobat Pro",
+        "url": "https://www.adobe.com/acrobat.html"
+      },
+      {
+        "id": "metadatacleaner",
+        "label": "Metadata Cleaner",
+        "url": "https://metadatacleaner.gitlab.io/metadatacleaner/"
+      }
+    ],
+    "rows": [
+      {
+        "label": "Available on MacOS",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "Yes",
+          "metadatacleaner": "No; Linux only"
+        }
+      },
+      {
+        "label": "Available on Windows",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "Yes",
+          "metadatacleaner": "No; Linux only"
+        }
+      },
+      {
+        "label": "Free to use",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "No",
+          "metadatacleaner": "Yes"
+        }
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "exifcleaner",
+      "label": "ExifCleaner",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "exifcleaner-installation",
+          "name": "Installation and setup",
+          "path": "Depends on OS",
+          "risk": "critical",
+          "why": "TODO",
+          "steps": [
+            {
+              "text": "TODO"
+            }
+          ],
+          "sources": [
+            {
+              "label": "ExifCleaner",
+              "url": "https://exifcleaner.com/"
+            }
+          ]
+        },
+        {
+          "id": "exifcleaner-usage",
+          "name": "How to use ExifCleaner",
+          "path": "Depends on OS",
+          "risk": "critical",
+          "why": "TODO",
+          "steps": [
+            {
+              "text": "TODO"
+            }
+          ],
+          "sources": [
+            {
+              "label": "ExifCleaner",
+              "url": "https://exifcleaner.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mat2",
+      "label": "Mat2",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "mat2-installation",
+          "name": "Installation and setup",
+          "path": "Depends on OS",
+          "risk": "critical",
+          "why": "TODO",
+          "steps": [
+            {
+              "text": "TODO"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Mat2",
+              "url": "https://github.com/jvoisin/mat2"
+            }
+          ]
+        },
+        {
+          "id": "mat2-usage",
+          "name": "How to use ExifCleaner",
+          "path": "Depends on OS",
+          "risk": "critical",
+          "why": "TODO",
+          "steps": [
+            {
+              "text": "TODO"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Mat2",
+              "url": "https://github.com/jvoisin/mat2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
