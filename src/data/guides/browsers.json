@@ -126,7 +126,7 @@
           "id": "firefox-block-cookies",
           "name": "Enable third-party cookie blocking",
           "path": "Browser Settings → Privacy & Security → Cookies",
-          "risk": "critical",
+          "risk": "high",
           "why": "When you visit a website, it may load invisible elements from third-party ad networks that set cookies in your browser. Those cookies follow you across every other site that loads the same ad network - building a detailed map of your browsing activity even on sites you've never visited directly.",
           "steps": [
             {
