@@ -352,14 +352,14 @@
               "text": "Next, visit `https://flathub.org/en/apps/io.gitlab.metadatacleaner.metadatacleaner` → `Download` → follow installation steps"
             }
           ],
-          "note": "Make sure to check out the Setup page first to verify you don't need to download Metadata Cleaner.",
+          "note": "Make sure to check out the Set Up page first to verify you don't need to download Metadata Cleaner.",
           "sources": [
             {
               "label": "Metadata Cleaner - Flathub",
               "url": "https://flathub.org/en/apps/io.gitlab.metadatacleaner.metadatacleaner"
             },
             {
-              "label": "Set up Flathub",
+              "label": "Set Up - Flathub",
               "url": "https://flathub.org/en/setup"
             }
           ]
