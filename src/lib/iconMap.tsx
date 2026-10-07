@@ -25,7 +25,8 @@ import {
   faShieldHalved,
   faUserSecret,
   faDatabase,
-  faBan
+  faBan,
+  faFileLines
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -70,6 +71,7 @@ const registry: Record<string, IconDefinition> = {
   plane: faPlane,
   toolbox: faToolbox,
   robot: faRobot,
+  files: faFileLines,
 
   // brands
   apple: faApple,

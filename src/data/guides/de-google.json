@@ -1,0 +1,365 @@
+{
+  "slug": "de-google",
+  "layout": "checklist",
+  "category": "advanced",
+  "title": "De-Googling",
+  "subtitle": "Google's products are deeply embedded in most people's digital lives, but each one collects a significant amount of your personal data. This guide walks through switching off Google's data collection and replacing products with privacy-focused alternatives.",
+  "meta": {
+    "timeMinutes": 55,
+    "platforms": ["Google"]
+  },
+  "context": {
+    "title": "You don't have to do this all at once",
+    "body": "De-Googling your life is a slow and sometimes painful process. It's not reasonable for most people to eliminate Google entirely, so many of these recommendations assume you're keeping your Google account. Partially de-Googling is better than nothing.",
+    "body2": "Check out our guides on web browsers and search engines for detailed comparison tables if you wish to learn more about any of the software we list below."
+  },
+  "warning": {
+    "body": "Removing Google from your life is one of the more difficult tasks because it's in every aspect of our daily lives. From your browser, to your search engine, to services like YouTube, it's basically everywhere. Giving up some of their services will require some adjustment, but with time it'll be easier to erase them from your life."
+  },
+  "sections": [
+    {
+      "id": "google-account",
+      "label": "Google account",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "google-personal-info",
+          "name": "Personal info",
+          "path": "myaccount.google.com → Personal info",
+          "risk": "critical",
+          "why": "Google stores a detailed log of everything you do across its products. This data is used for ad targeting and is stored unless you turn it off.",
+          "steps": [
+            {
+              "text": "Go `myaccount.google.com` → `Personal info`"
+            },
+            {
+              "text": "Change your profile picture to something anonymous"
+            },
+            {
+              "text": "Change your display name"
+            },
+            {
+              "text": "`Gender` → change to `Rather not say` → toggle on `Only me`"
+            },
+            {
+              "text": "`Email` → `Manage About me emails` → make sure `Gender`, `Birthday`, `Email`, and `Mobile` are set to `Only Me`"
+            },
+            {
+              "text": "`Home address` → remove"
+            },
+            {
+              "text": "`Work address` → remove"
+            },
+            {
+              "text": "`Other addresses` → remove any addresses that aren't your legal address"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google Account - Personal info",
+              "url": "https://myaccount.google.com/personal-info"
+            }
+          ]
+        },
+        {
+          "id": "google-security",
+          "name": "Security & sign-in",
+          "path": "myaccount.google.com → Security & sign-in",
+          "risk": "critical",
+          "why": "These settings will help your overall account security.",
+          "steps": [
+            {
+              "text": "Enable `2-Step Verification` → use an authenticator app"
+            },
+            {
+              "text": "Enable `Passkeys and security keys` → use the passkey feature in a password manager or use a physical security key like Yubikey"
+            },
+            {
+              "text": "Ensure you have a recovery phone and email configured"
+            },
+            {
+              "text": "`Your linked apps` → disconnect Google login for all apps - be sure to change how you log in to those apps before disconnecting Google"
+            },
+            {
+              "text": "Toggle off `Enhanced Safe Browsing for your account`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google Account - Security & sign-in",
+              "url": "https://myaccount.google.com/security"
+            }
+          ]
+        },
+        {
+          "id": "google-data-privacy",
+          "name": "Data & privacy",
+          "path": "myaccount.google.com → Data & privacy",
+          "risk": "critical",
+          "why": "Google stores a detailed log of everything you do across its products. This data is used for ad targeting and is stored indefinitely unless you turn it off.",
+          "steps": [
+            {
+              "text": "Go `myaccount.google.com` → `Data & privacy`"
+            },
+            {
+              "text": "Toggle off `Personalize Search`"
+            },
+            {
+              "text": "Toggle off `Personalize Google Play`"
+            },
+            {
+              "text": "Pause `Web & App Activity`"
+            },
+            {
+              "text": "Toggle off `Google Play History`"
+            },
+            {
+              "text": "Toggle off `YouTube History`"
+            },
+            {
+              "text": "Pause `Timeline`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google Account - Data & privacy",
+              "url": "https://myaccount.google.com/data-and-privacy"
+            }
+          ]
+        },
+        {
+          "id": "google-sharing",
+          "name": "People & sharing",
+          "path": "myaccount.google.com → People & sharing",
+          "risk": "critical",
+          "why": "Limit how much information is shared in Google services.",
+          "steps": [
+            {
+              "text": "Go `myaccount.google.com` → `People & sharing`"
+            },
+            {
+              "text": "Toggle off `Contact info from your devices`"
+            },
+            {
+              "text": "Audit items listed in `Location sharing`"
+            },
+            {
+              "text": "Audit items listed in `About me`"
+            },
+            {
+              "text": "Toggle off `Business personalization`"
+            },
+            {
+              "text": "Toggle off `Shared endorsements in ads`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google Account - People & sharing",
+              "url": "https://myaccount.google.com/people-and-sharing"
+            }
+          ]
+        },
+        {
+          "id": "disable-gemini",
+          "name": "Disable Gemini & AI features",
+          "path": "myaccount.google.com → Gemini",
+          "risk": "critical",
+          "why": "Google's Gemini features are integrated across all of their services. By default, your conversations with Gemini are stored and used to train Google's AI models.",
+          "steps": [
+            {
+              "text": "Go to `myaccount.google.com` → `Gemini`"
+            },
+            {
+              "text": "In Gmail: click the Gemini icon → `Settings` → `Turn off Gemini in Gmail`"
+            },
+            {
+              "text": "On Android: `Settings` → `Google` → `All Services` → `Gemini` and disable"
+            },
+            {
+              "text": "Check `myaccount.google.com` → `Data & privacy` → `AI features` for any remaining AI activity controls"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Google Account - Gemini",
+              "url": "https://gemini.google.com/app"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "degoogle-browsing",
+      "label": "Web browsing",
+      "risk": "high",
+      "items": [
+        {
+          "id": "replace-gmail",
+          "name": "Replace Gmail",
+          "path": "Depends on provider",
+          "risk": "high",
+          "why": "Google scans the content of everyone's Gmail and Drive. Many people keep sensitive documents in their inboxes to refer to later, or they don't consider deleting files after they've been downloaded. There are some popular alternatives making their way into the mainstream that might make good alternatives to Gmail.",
+          "steps": [
+            {
+              "text": "`Proton` - likely the most popular privacy-focused email service. They offer both free and paid tiers. This is one of the few alternatives that offers an entire suite of products that can be used to replace Google. Sign up at `https://mail.proton.me`"
+            },
+            {
+              "text": "`Tuta` - an up and coming service that also offers free and paid tiers. Their Drive is currently in beta testing, so expect that to be available in the near future. Sign up at `https://tuta.com/secure-email`"
+            }
+          ]
+        },
+        {
+          "id": "replace-google-suite",
+          "name": "Replace Google Suite",
+          "path": "Depends on provider",
+          "risk": "high",
+          "why": "Replacing the entire Google Suite outright with a product that isn't just Microsoft is incredibly difficult. There aren't many competitors out there that offer the large suite of tools under one umbrella. The closest option available is Proton. Proton offers email, calendar, video meetings, its own Drive, and more. The two downsides of Proton are that it offers much less for free than Google does, and it doesn't have feature parity with Google products.",
+          "steps": [
+            {
+              "text": "`Proton` - the most popular privacy-focused suite. They offer both free and paid tiers but the free tiers are very limited. Sign up at `https://mail.proton.me`"
+            }
+          ]
+        },
+        {
+          "id": "ditch-chrome",
+          "name": "Ditch Chrome",
+          "path": "Depends on provider",
+          "risk": "critical",
+          "why": "Chrome sends your browsing behavior to Google, logs your history if signed into a Google account, and they've disabled full ad-blocking via Manifest V3. Switching to a different browser facilitates the largest reduction in Google's visibility into your web activity. See our Browsers guide for more a detailed comparison.",
+          "steps": [
+            {
+              "text": "Download Firefox (`mozilla.org/firefox`) or Brave (`brave.com`)"
+            },
+            {
+              "text": "Export Chrome bookmarks: `3 dot menu` → `Bookmarks and lists` → `Bookmark manager` → `3 dot menu on pop out` → `Export bookmarks`"
+            },
+            {
+              "text": "Import bookmarks on Firefox: `Menu` → `Bookmarks` → `Manage bookmarks` → `up / down arrows` → `Import bookmarks from HTML`"
+            },
+            {
+              "text": "Import bookmarks on Brave: `Menu` → `Bookmarks and lists` → `Import bookmarks and settings`"
+            },
+            {
+              "text": "Set as your default browser in your computer's system settings"
+            }
+          ]
+        },
+        {
+          "id": "switch-search-engine",
+          "name": "Replace Google Search",
+          "path": "Browser Settings → Default search engine",
+          "risk": "critical",
+          "why": "Every query you enter in Google Search is linked to your account or a persistent identifier. Over years this builds an extraordinarily detailed picture of your life and personal details.",
+          "steps": [
+            {
+              "text": "In Firefox: `Settings` → `Search` → `Default Search Engine` → choose your preferred search engine"
+            },
+            {
+              "text": "In Brave: `Settings` → `Search engine` → choose your preferred search engine"
+            },
+            {
+              "text": "On iOS: `Settings` → `Apps` → `Safari` → `Search Engine` → choose your preferred search engine"
+            },
+            {
+              "text": "On Android: Open your preferred browser → tap on the search engine icon in the search bar → `Search settings` → `Default search engine` → choose your preferred search engine"
+            }
+          ]
+        },
+        {
+          "id": "replace-google-maps",
+          "name": "Replace Google Maps",
+          "path": "App store",
+          "risk": "high",
+          "why": "Google Maps builds a detailed picture of everywhere you go - your home, workplace, doctor's office, places of worship, political events. This location history can be subpoenaed.",
+          "steps": [
+            {
+              "text": "`Apple Maps` - a significant privacy improvement over Google Maps. Apple doesn't build a location history profile. Available on iOS and Mac"
+            },
+            {
+              "text": "`OsmAnd` - open source, uses OpenStreetMap data, fully offline capable. No account required. Available on iOS and Android"
+            },
+            {
+              "text": "`Organic Maps` - simpler than OsmAnd, excellent for offline use. Available on iOS and Android"
+            }
+          ]
+        },
+        {
+          "id": "replace-google-drive",
+          "name": "Replace Google Drive",
+          "path": "See options below",
+          "risk": "high",
+          "why": "Google Drive and Docs store your documents on Google's servers - accessible to Google and subject to legal requests. Every document you write in Google Docs is potentially readable by Google.",
+          "steps": [
+            {
+              "text": "`Proton Drive` - E2EE cloud word processor. Part of the Proton ecosystem. Free tier is available with very limited storage"
+            },
+            {
+              "text": "`CryptPad` - E2EE office suite with free and paid tiers. Open source, no account needed"
+            },
+            {
+              "text": "`LibreOffice` - free, open source desktop office suite with comparable capabilities to Google"
+            },
+            {
+              "text": "`Grist` - open source spreadsheet service with self-hosting option. Replaces Google Sheets"
+            }
+          ]
+        },
+        {
+          "id": "stop-google-sso",
+          "name": "Stop using 'Sign in with Google' on websites",
+          "path": "Applies to all websites and apps",
+          "risk": "high",
+          "why": "Every time you use 'Sign in with Google,' you're telling Google which service you're using, when, and how often.",
+          "steps": [
+            {
+              "text": "Go to `myaccount.google.com` → `Security` → `Third-party apps with account access` and review connected apps"
+            },
+            {
+              "text": "For each app, create a new account or update your login method to be with an email, then revoke the Google connection"
+            },
+            {
+              "text": "Going forward: always choose `Sign up with email` over `Continue with Google` - use Firefox Relay or Apple Hide My Email to keep your email address private"
+            }
+          ]
+        },
+        {
+          "id": "replace-google-photos",
+          "name": "Replace Google Photos",
+          "path": "App store",
+          "risk": "high",
+          "why": "Google Photos uses AI to analyze every photo you upload - identifying faces, locations, objects, and events. This analysis builds an extremely detailed profile of your life, relationships, and whereabouts.",
+          "steps": [
+            {
+              "text": "`Apple Photos with Advanced Data Protection` - end-to-end encrypted. Best for iPhone users"
+            },
+            {
+              "text": "`Ente Photos` - open source, E2EE photo storage with apps for iOS, Android, and desktop. Designed as a Google Photos replacement"
+            },
+            {
+              "text": "`Local storage` - store photos on your device only and back up to an encrypted external drive. Recommended for tech savvy users who know how to set up redundant backups"
+            }
+          ]
+        },
+        {
+          "id": "delete-google-account",
+          "name": "Download your Google data, then request deletion",
+          "path": "takeout.google.com → myaccount.google.com → Delete your Google Account",
+          "risk": "high",
+          "why": "If you're ready to fully leave Google, deleting your account removes Google's ability to retain your historical data.",
+          "steps": [
+            {
+              "text": "Go to `takeout.google.com` - select all products and request a download if you wish to keep a copy. Google will email you when the archive is ready (may take hours or days)"
+            },
+            {
+              "text": "Confirmed you've migrated all important services off Google first like Gmail, Drive, Photos, and any apps that use Google to login"
+            },
+            {
+              "text": "Go to `myaccount.google.com` → `Data & privacy` → `Delete your Google Account`"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

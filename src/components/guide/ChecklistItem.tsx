@@ -95,7 +95,7 @@ export const ChecklistItem = ({ item, initialChecked = false, onChange }: Checkl
         >
           <div className='mt-3'>
             <h5 className='mb-1.5 text-caption font-medium uppercase tracking-widest text-text-primary'>
-              Why it matters
+              Why it's important
             </h5>
             <p className='text-label leading-relaxed text-text-secondary'>{why}</p>
           </div>

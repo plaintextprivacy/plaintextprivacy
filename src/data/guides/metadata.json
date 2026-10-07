@@ -1,0 +1,370 @@
+{
+  "slug": "metadata",
+  "layout": "checklist",
+  "category": "advanced",
+  "title": "File metadata",
+  "subtitle": "Metadata is bits of information about documents and photos. This information can include things like the device it was created on, the device's operating system, the time and date it was created (and last modified), the GPS coordinates from when a photo was taken, the author's full name, and much, much more. You might be shocked to know the level of detail some of this information contains. This guide walks through different methods of removing metadata",
+  "meta": {
+    "timeMinutes": 120,
+    "platforms": ["iOS", "Android", "MacOS", "Windows"]
+  },
+  "context": {
+    "title": "Keep in mind",
+    "body": "Removing information from the files you've already created is one part of the process, the additional item is to prevent as much information from being embedded into your files to begin with by changing settings in the devices and software you use day to day. We shall cover some of that here, but there are detailed instructions for reducing how much information you share with third parties on the phone and computer guides.",
+    "body2": "Our recommendation is to start by changing your device settings, then proceed with wiping the metadata from files and photos that you've already created. It's not necessary to wipe the metadata from *every* photo and document, prioritize files that you plan to share with other people or upload to social media or some other website. Please keep in mind that wiping all metadata from photos can cause some edits to revert, like an image's orientation. If this happens, just change the orientation again."
+  },
+  "warning": {
+    "body": "In our opinion, one of the most egregious metadata collection practices is geolocation data in photos. If you allow location services on your camera app, the GPS coordinates embedded in your photo metadata can be precise enough to give away your exact address. Now, if you just keep your photos to yourself, that isn't a problem. The problem arises when you share those photos on social media. In large part, that metadata stays attached to the photo, so anyone with a little bit of know how could easily download your photo and extract that metadata. Additionally, metadata is gathered by datab rokers (shocking) to gather even more information on you to try to sell you more shit with targeted advertising."
+  },
+  "comparisonTable": {
+    "title": "Tools to wipe metadata",
+    "note": "Many of the metadata wiping tools available online are open source and free to download. You can't go wrong with most of them, so choose whichever you feel most comfortable using.",
+    "columns": [
+      {
+        "id": "exifcleaner",
+        "label": "ExifCleaner",
+        "recommended": true,
+        "url": "https://exifcleaner.com/"
+      },
+      {
+        "id": "mat2",
+        "label": "Mat2",
+        "url": "https://github.com/jvoisin/mat2"
+      },
+      {
+        "id": "acrobat",
+        "label": "Adobe Acrobat Pro",
+        "url": "https://www.adobe.com/acrobat.html"
+      },
+      {
+        "id": "metadatacleaner",
+        "label": "Metadata Cleaner",
+        "url": "https://metadatacleaner.gitlab.io/metadatacleaner/"
+      }
+    ],
+    "rows": [
+      {
+        "label": "Available on MacOS",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "Yes",
+          "metadatacleaner": "No; Linux only"
+        }
+      },
+      {
+        "label": "Available on Windows",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "Yes",
+          "metadatacleaner": "No; Linux only"
+        }
+      },
+      {
+        "label": "Free to use",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "No",
+          "metadatacleaner": "Yes"
+        }
+      },
+      {
+        "label": "Works on photos and videos",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "No",
+          "metadatacleaner": "Yes"
+        }
+      },
+      {
+        "label": "Works on PDFs",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "Yes",
+          "acrobat": "Yes",
+          "metadatacleaner": "Yes"
+        }
+      },
+      {
+        "label": "Provides user interface",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "No; command line tool",
+          "acrobat": "Yes",
+          "metadatacleaner": "Yes"
+        }
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "minimize-metadata",
+      "label": "Minimize metadata",
+      "risk": "high",
+      "items": [
+        {
+          "id": "ios-geolocation",
+          "name": "Disable geolocation on iOS photos",
+          "path": "Settings → Privacy & Security → Location Services",
+          "risk": "high",
+          "why": "Geolocation data on your iPhone's photos can be precise enough to reveal your exact home address, zip code and all. That information does not get wiped away when you upload those pictures to social media. The first step is to disable location services on your camera app, then you can wipe the metadata for existing photos as you see fit.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy & Security` → `Location Services`"
+            },
+            {
+              "text": "For apps that don't need your location, including the camera app for this instance, set to `Never`"
+            },
+            {
+              "text": "To delete location metadata from existing photos - open `Photos` →  select the photo you want to edit → tap the 3 dots → `Adjust Location` → tap `No Location`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Manage location metadata in Photos - Apple",
+              "url": "https://support.apple.com/guide/personal-safety/manage-location-metadata-in-photos-ips0d7a5df82/web"
+            }
+          ]
+        },
+        {
+          "id": "android-geolocation",
+          "name": "Disable geolocation on Android photos",
+          "path": "Settings → Privacy → Permission manager → Location",
+          "risk": "high",
+          "why": "Geolocation data on your Android's photos can be precise enough to reveal your exact home address, zip code and all. That information does not get wiped away when you upload those pictures to social media. The first step is to disable location services on your camera app, then you can wipe the metadata for existing photos as you see fit.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Privacy` → `Permission manager` → `Location`"
+            },
+            {
+              "text": "Update the camera app to `Denied`"
+            },
+            {
+              "text": "To delete location metadata from existing photos - open `Google Photos` →  select the photo(s) you want to edit → tap `More` → `Edit` → tap `Remove location`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Understand, find and edit your photos' locations - Google",
+              "url": "https://support.google.com/photos/answer/6153599?hl=en-GB&co=GENIE.Platform%3DAndroid&oco=2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exifcleaner",
+      "label": "ExifCleaner",
+      "risk": "high",
+      "items": [
+        {
+          "id": "exifcleaner-mac-installation",
+          "name": "Installation on MacOS",
+          "path": "Download → Install",
+          "risk": "high",
+          "why": "ExifCleaner is a simple metadata wiping tool that leaves original files untouched and generates new, 'cleaned' versions that it saves alongside the originals. This prevents any accidental file destruction in case you with to keep the original files. Installing it and setting it up for the first time requires an additional step, so follow the below instructions carefully to avoid issues. Once installed, you can just drag and drop files into it and it'll automatically wipe their metadata.",
+          "steps": [
+            {
+              "text": "Visit `https://exifcleaner.com/` → click `Download`"
+            },
+            {
+              "text": "On their `GitHub` releases page, scroll down to `Downloads` and look for `macOS (Apple Silicon)` or `macOS (Intel)` - this tells you which file you should download, e.g. `ExifCleaner-4.5.0-arm64.dmg` for `macOS (Apple Silicon)`"
+            },
+            {
+              "text": "Scroll down to `Assets` → click on the file for your operating system to automatically download it, e.g. `ExifCleaner-4.5.0-arm64.dmg`"
+            },
+            {
+              "text": "Open the file and follow normal steps for installing software. You may see a message about the software being unsigned, accept and allow the installation anyway"
+            },
+            {
+              "text": "`IMPORTANT` - because this is open source software, your Mac will block the app from opening when you first try to use it. To fix this *after* the app has been blocked, go to `System Settings` → `Privacy & Security` → scroll down until you see the message about ExifCleaner being blocked → choose `Open Anyway`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Install Unsigned Software from Developers on a Mac - WikiHow",
+              "url": "https://www.wikihow.com/Install-Software-from-Unsigned-Developers-on-a-Mac"
+            }
+          ]
+        },
+        {
+          "id": "exifcleaner-windows-installation",
+          "name": "Installation on Windows",
+          "path": "Download → Install",
+          "risk": "high",
+          "why": "ExifCleaner works just as well on Windows as it does Mac, so it's a great tool to use for either operating system.",
+          "steps": [
+            {
+              "text": "Visit `https://exifcleaner.com/` → click `Download`"
+            },
+            {
+              "text": "On their `GitHub` releases page, scroll down to `Downloads` and look for `Windows portable (recommended)` or `Windows installer` - this tells you which file you should download, e.g. `ExifCleaner.4.5.0.portable.exe` for `Windows portable (recommended)`"
+            },
+            {
+              "text": "Scroll down to `Assets` → click on the file for your operating system to automatically download it, e.g. `ExifCleaner.4.5.0.portable.exe`"
+            },
+            {
+              "text": "Open the file and follow normal steps for installing software. You may see the message 'Windows protected your PC' from `Windows Defender Smartscreen` pop up - click `More info` → `Run anyway`"
+            },
+            {
+              "text": "If Windows Defender keeps blocking ExifCleaner every time you try to use it, right-click the app → `Properties` → `General` tab → check the box next to `Unblock` → save and close"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Opening Unsigned Builds - ExifCleaner",
+              "url": "https://github.com/szTheory/exifcleaner#opening-unsigned-builds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mat2",
+      "label": "Mat2",
+      "risk": "high",
+      "items": [
+        {
+          "id": "mat2-mac-installation",
+          "name": "Installation on MacOS",
+          "path": "Download → Install",
+          "risk": "high",
+          "why": "Mat2 is a command line tool - if you're not comfortable using Terminal, then skip this one. ExifCleaner is a better option.",
+          "steps": [
+            {
+              "text": "First, check you have the correct version of `Python` installed - open `Terminal` → type `python3 --version` → hit `Enter`"
+            },
+            {
+              "text": "If you get an error message, download Python and walk through installation - `https://www.python.org/downloads/`"
+            },
+            {
+              "text": "Next, type `brew install exiftool cairo pygobject3 poppler gdk-pixbuf librsvg ffmpeg` → hit `Enter`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Mat2 pip installation",
+              "url": "https://pypi.org/project/mat2/"
+            }
+          ]
+        },
+        {
+          "id": "mat2-windows-installation",
+          "name": "Installation on Windows",
+          "path": "Download → Install",
+          "risk": "high",
+          "why": "Mat2 is a command line tool - if you're not comfortable using Command Prompt, then skip this one. ExifCleaner is a better option.",
+          "steps": [
+            {
+              "text": "First, check you have the correct version of `Python` installed - open `Command Prompt` → type `python --version` → hit `Enter`"
+            },
+            {
+              "text": "If you get an error message, download Python and walk through installation - `https://www.python.org/downloads/`"
+            },
+            {
+              "text": "Next, type `pip install mat2` → hit `Enter`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Mat2 pip installation",
+              "url": "https://pypi.org/project/mat2/"
+            }
+          ]
+        },
+        {
+          "id": "mat2-usage",
+          "name": "How to use Mat2",
+          "path": "Terminal or Command Prompt",
+          "risk": "high",
+          "why": "Photos, PDFs, and Office documents carry hidden metadata like your name, device model, GPS location, software version, and edit history. Sharing them as-is can easily identify you. Mat2 strips a file's metadata from the command line and generates a clean copy so your original is never overwritten.",
+          "steps": [
+            {
+              "text": "Check what metadata is in a file - run `mat2 --show myfile.jpg` to list the metadata mat2 can detect"
+            },
+            {
+              "text": "Clean a file - run `mat2 myfile.jpg`. This creates a new clean file named `myfile.cleaned.jpg`"
+            },
+            {
+              "text": "Clean several files at once - run `mat2 photo1.jpg report.pdf notes.docx`"
+            },
+            {
+              "text": "To overwrite the original instead of making a copy - run `mat2 --inplace myfile.jpg`"
+            }
+          ],
+          "note": "Mat2 removes metadata, not content. It won't remove your name from the body of a document, faces or landmarks in a photo, or identifying details in a file's name. Review the content itself before you share.",
+          "sources": [
+            {
+              "label": "Mat2",
+              "url": "https://github.com/jvoisin/mat2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acrobat",
+      "label": "Acrobat Pro",
+      "risk": "high",
+      "items": [
+        {
+          "id": "acrobat-usage",
+          "name": "Wipe PDF metadata with Acrobat Pro",
+          "path": "All Tools → Redact a PDF → Sanitize document → Remove all",
+          "risk": "high",
+          "why": "If you have Acrobat Pro and largely need to remove metadata from PDFs, then there's no need to install additional software. Just keep in mind that this only works with PDFs, and you'll need to use other tools to remove the metadata from photos, videos, and other file types. This functionality does not exist on Acrobat Reader.",
+          "steps": [
+            {
+              "text": "Open your PDF in `Acrobat Pro` → `All Tools` → `Redact a PDF` → `Sanitize document` → `Remove all`"
+            },
+            {
+              "text": "Save and close"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Sanitize PDFs in Acrobat Pro - Adobe",
+              "url": "https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/sanitize.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metadata-cleaner",
+      "label": "Metadata Cleaner",
+      "risk": "high",
+      "items": [
+        {
+          "id": "metadata-installation",
+          "name": "Install Metadata Cleaner",
+          "path": "Set up → Download → Install",
+          "risk": "high",
+          "why": "Metadata Cleaner is a metadata wiping tool that runs on Linux. It can be used on the major Linux distributions, including popular ones like Mint and Raspberry Pi - it's even installed by default on some distros.",
+          "steps": [
+            {
+              "text": "First, visit `https://flathub.org/en/setup` to see if you need to set anything up in advance"
+            },
+            {
+              "text": "Next, visit `https://flathub.org/en/apps/io.gitlab.metadatacleaner.metadatacleaner` → `Download` → follow installation steps"
+            }
+          ],
+          "note": "Make sure to check out the Set Up page first to verify you don't need to download Metadata Cleaner.",
+          "sources": [
+            {
+              "label": "Metadata Cleaner - Flathub",
+              "url": "https://flathub.org/en/apps/io.gitlab.metadatacleaner.metadatacleaner"
+            },
+            {
+              "label": "Set Up - Flathub",
+              "url": "https://flathub.org/en/setup"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

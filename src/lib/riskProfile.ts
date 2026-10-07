@@ -166,13 +166,13 @@ export const QUESTIONS: ProfileQuestion[] = [
         id: 'minimal',
         label: 'As little as possible',
         score: 0,
-        detail: 'You want meaningful protection without changing your habits much'
+        detail: 'You want a measurable improvement without changing your habits much'
       },
       {
         id: 'moderate',
         label: "Some if it's clearly worth it",
         score: 0,
-        detail: "You'll change tools and settings when you understand why it matters"
+        detail: "You'll change tools and settings when you understand it's important"
       },
       {
         id: 'significant',
@@ -215,7 +215,7 @@ export const PROFILES: Record<ProfileLevel, RiskProfile> = {
     level: 'elevated',
     label: 'Elevated',
     summary:
-      'Your situation involves meaningful risk. Complete all Critical and High-rated settings. The broader protection is worth the extra time.',
+      'Your situation involves measurable risk. Complete all Critical and High-rated settings. The broader protection is worth the extra time.',
     priorityLevels: ['critical', 'high'],
     startWith: ['passwords-mfa', 'iphone', 'android', 'signal', 'browsers', 'email-privacy'],
     color: 'var(--color-risk-high)'

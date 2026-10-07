@@ -111,6 +111,30 @@
           ]
         },
         {
+          "id": "phone-wipe",
+          "name": "Wipe phone after failed passcode attempts",
+          "path": "Settings → Face ID & Passcode → Erase Data",
+          "risk": "critical",
+          "why": "Set your phone to wipe its data and settings after 10 failed passcode attempts. This prevents someone from brute forcing their way into your phone, including many forensics tools.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Face ID & Passcode`"
+            },
+            {
+              "text": "Scroll to `Erase Data` → toggle on"
+            },
+            {
+              "text": "Tap `Enable`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "How to Erase Your iOS Device After Too Many Failed Passcode Attempts - How to Geek",
+              "url": "https://www.howtogeek.com/264369/how-to-erase-your-ios-device-after-too-many-failed-passcode-attempts/"
+            }
+          ]
+        },
+        {
           "id": "biometrics",
           "name": "Restrict biometrics",
           "path": "Settings → Face ID & Passcode",
@@ -264,7 +288,7 @@
               "text": "Open `Settings` → `Privacy & Security` → `Location Services`"
             },
             {
-              "text": "For apps that don't need your location (social media, shopping, games), set to `Never`"
+              "text": "For apps that don't need your location (social media, shopping, camera, games), set to `Never`"
             },
             {
               "text": "For apps that occasionally need location (maps, rideshare, food delivery), set to `While Using the App`"
@@ -274,6 +298,12 @@
             },
             {
               "text": "Also disable `iPhone Analytics` and `Routing & Traffic` if you don't use Apple Maps"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Turn Location Services and GPS on or off on your iPhone, iPad, or iPod touch - Apple",
+              "url": "https://support.apple.com/en-us/102647"
             }
           ]
         }

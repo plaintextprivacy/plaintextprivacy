@@ -128,6 +128,27 @@
           ]
         },
         {
+          "slug": "search-engines",
+          "title": "Search Engines",
+          "description": "Privacy-focused search engines to meet your privacy and security needs",
+          "icon": "magnifying-glass",
+          "risk": "critical",
+          "status": "published",
+          "tags": [
+            "browser",
+            "google",
+            "firefox",
+            "brave",
+            "search engine",
+            "vpn",
+            "search",
+            "kagi",
+            "duckduckgo",
+            "brave",
+            "startpage"
+          ]
+        },
+        {
           "slug": "passwords-mfa",
           "title": "Passwords",
           "description": "Recommendations for password managers, passkeys, hardware security keys, and MFA setup",
@@ -200,8 +221,17 @@
           "description": "Ditch Google's tools and services for privacy-minded alternatives",
           "icon": "google",
           "risk": "critical",
-          "status": "coming-soon",
+          "status": "published",
           "tags": ["google", "gemini", "chrome", "opt out"]
+        },
+        {
+          "slug": "metadata",
+          "title": "File metadata",
+          "description": "Metadata in files and images often capture an astonishing amount of details about you, your devices, and the location the file was generated or created",
+          "icon": "files",
+          "risk": "high",
+          "status": "published",
+          "tags": ["metadata", "documents", "pdf", "geo location", "photos", "exif data"]
         },
         {
           "slug": "ai-privacy",

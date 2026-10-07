@@ -143,13 +143,13 @@
               "text": "Open `Settings` → `Privacy` → `Permission manager` → `Location`"
             },
             {
-              "text": "Review every app under `Allowed all the time` - move all but essential apps (e.g. navigation) to `Only while using` or `Denied`"
+              "text": "Review every app under `Allowed all the time` - move all but essential apps to `Only while using` or `Denied`"
             },
             {
-              "text": "For apps set to `Only while using`, tap the app and switch `Use precise location` off unless the app genuinely needs it"
+              "text": "For apps set to `Only while using`, tap the app and switch `Use precise location` off unless the app needs it"
             },
             {
-              "text": "Go back to `Settings` → `Location` → `Google Location Accuracy` and consider turning it off - this prevents sending Wi-Fi and Bluetooth scan data to Google"
+              "text": "Go back to `Settings` → `Location` → toggle off `Google Location Accuracy`"
             },
             {
               "text": "Under `Location → Location services`, review what system-level services have location access"

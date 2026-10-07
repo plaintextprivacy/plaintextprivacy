@@ -1,0 +1,158 @@
+{
+  "slug": "search-engines",
+  "layout": "checklist",
+  "category": "browsing",
+  "title": "Search engines",
+  "subtitle": "The search engine that your browser uses is nearly as important as the browser itself. There are a variety of options that you can choose from, and each option utilize different methods of indexing content from the web.",
+  "meta": {
+    "timeMinutes": 20
+  },
+  "context": {
+    "title": "Things to consider",
+    "body": "Every search you make on Google is stored, timestamped, and tied to your account or IP address. Utilizing additional tools will further improve your digital privacy.",
+    "body2": "There are many other options available than what are listed below. If none of these work for you, check out recommendations on Privacy Guides (https://www.privacyguides.org/en/search-engines/) or Alternative To (https://alternativeto.net/software/google-search/)."
+  },
+  "warning": {
+    "body": "Changing your browser is an important first step, but you must update your search engine as well to get the full benefits of a privacy-focused browser."
+  },
+  "comparisonTable": {
+    "title": "Search engine comparison",
+    "note": "You might want to try different search engines - each of them have weaknesses and strengths.",
+    "columns": [
+      {
+        "id": "duckduckgo",
+        "label": "DuckDuckGo",
+        "recommended": true,
+        "url": "https://duckduckgo.com/"
+      },
+      {
+        "id": "startpage",
+        "label": "StartPage",
+        "url": "https://www.startpage.com/"
+      },
+      {
+        "id": "brave",
+        "label": "Brave Search",
+        "url": "https://search.brave.com/"
+      },
+      {
+        "id": "kagi",
+        "label": "Kagi",
+        "url": "https://kagi.com/"
+      }
+    ],
+    "rows": [
+      {
+        "label": "Free to use",
+        "values": {
+          "duckduckgo": "Yes",
+          "startpage": "Yes",
+          "brave": "Yes",
+          "kagi": "Free tier is very limited"
+        }
+      },
+      {
+        "label": "Indexing method",
+        "values": {
+          "duckduckgo": "Its own crawler, Bing, crowd-sourced sites",
+          "startpage": "Google and Bing",
+          "brave": "Its own crawler",
+          "kagi": "Its own crawler, crowd-sourced sites"
+        }
+      },
+      {
+        "label": "Available on mobile",
+        "values": {
+          "duckduckgo": "Yes",
+          "startpage": "Yes; installed as a browser app",
+          "brave": "Yes; installed as a browser app",
+          "kagi": "Yes; installed as a browser app"
+        }
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "add-to-browser",
+      "label": "Add the search engine to your browser",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "add-to-ios",
+          "name": "Update default search engine on iOS",
+          "path": "This is an OS-wide setting",
+          "risk": "high",
+          "why": "Because of the way browsers work on iOS, this setting can only be changed in your iOS settings and there are limited options for setting the default browser.",
+          "steps": [
+            {
+              "text": "Open `Settings` → `Apps` → `Safari` → `Search Engine` → choose your preferred search engine"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Change your default search engine on iPhone - Apple",
+              "url": "https://support.apple.com/guide/iphone/change-your-default-search-engine-iphb719b43de/ios"
+            }
+          ]
+        },
+        {
+          "id": "add-to-android",
+          "name": "Update default search engine on Android",
+          "path": "Change for the browser and search widget",
+          "risk": "high",
+          "why": "You can update the search engine for the browser as well as the search widget on your homepage.",
+          "steps": [
+            {
+              "text": "Open your browser → tap on the search engine icon in the search bar → `Search settings` → `Default search engine` → choose your preferred search engine"
+            },
+            {
+              "text": "Install a supported search engine (like DuckDuckgo) → long press the app → tap `Widgets` → save it to your home screen"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Change your default search engine & add or disable apps - Google",
+              "url": "https://support.google.com/android/answer/6389839?hl=en"
+            }
+          ]
+        },
+        {
+          "id": "add-to-firefox",
+          "name": "Add to Firefox",
+          "path": "Applies to desktop",
+          "risk": "critical",
+          "why": "Firefox offers good privacy on its own, but installing a good search engine will make it even better.",
+          "steps": [
+            {
+              "text": "Open `Menu` → `Settings` → `Search` → `Default search engine`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Manage Firefox search settings - Mozilla",
+              "url": "https://support.mozilla.org/en-US/kb/change-your-default-search-settings-firefox"
+            }
+          ]
+        },
+        {
+          "id": "add-to-brave",
+          "name": "Add to Brave",
+          "path": "Applies to desktop",
+          "risk": "critical",
+          "why": "Brave offers excellent privacy by default, so be sure to add a quality search engine to go with it.",
+          "steps": [
+            {
+              "text": "Open `Menu` → `Settings` → `Search Engine` → under Normal Window click `Change` → under Private Window click `Change`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "How do I set my default search engine? - Brave",
+              "url": "https://support.brave.app/hc/en-us/articles/360017479752-How-do-I-set-my-default-search-engine"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
