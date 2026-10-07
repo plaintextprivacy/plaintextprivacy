@@ -219,13 +219,35 @@
       "items": [
         {
           "id": "duckduckgo-settings",
-          "name": "DuckDuckGo settings",
-          "path": "TODO",
-          "risk": "critical",
-          "why": "TODO",
+          "name": "DuckDuckGo browser settings",
+          "path": "DuckDuckGo → Settings → Privacy",
+          "risk": "high",
+          "why": "DuckDuckGo's browser blocks trackers and handles cookies by default, so there is less to configure than in most browsers.",
           "steps": [
             {
-              "text": "TODO"
+              "text": "Open `Settings` → `Privacy` and turn on the option to automatically clear tabs and data. On desktop this runs when the browser restarts, and on mobile you can choose when it runs"
+            },
+            {
+              "text": "Confirm `Global Privacy Control (GPC)` is on. It's on by default and signals to sites that they shouldn't sell or share your personal information"
+            },
+            {
+              "text": "Turn on cookie pop-up protection so DuckDuckGo sets your consent preferences to minimize cookies and closes the pop-up for you"
+            },
+            {
+              "text": "After a sensitive session, use the Fire Button (the flame icon) to erase your tabs, browsing history, cookies, and cached site data in one step"
+            },
+            {
+              "text": "For sensitive browsing like health or banking, use a Fire Window on desktop (or a Fire Tab on mobile) to keep that session separate from everything else"
+            },
+            {
+              "text": "If you watch YouTube, leave `Duck Player` on. It plays videos without tracking cookies or personalized ads"
+            }
+          ],
+          "note": "DuckDuckGo doesn't support extensions, so there aren't recommendations to share.",
+          "sources": [
+            {
+              "label": "Web Tracking Protections - DuckDuckGo",
+              "url": "https://duckduckgo.com/duckduckgo-help-pages/privacy/web-tracking-protections"
             }
           ]
         }
@@ -237,14 +259,64 @@
       "risk": "high",
       "items": [
         {
-          "id": "tor-settings",
-          "name": "Tor settings",
-          "path": "TODO",
+          "id": "tor-browser-settings",
+          "name": "Tor Browser settings",
+          "path": "Tor Browser → Settings → Privacy & Security",
           "risk": "critical",
-          "why": "TODO",
+          "why": "Tor Browser is configured for anonymity out of the box, and most changes you could make would make it easier to identify you. You really only need to change the security level.",
           "steps": [
             {
-              "text": "TODO"
+              "text": "Choose a security level. On desktop, click the shield icon in the toolbar → `Settings` → `Change` → pick a level → `Save and restart`. On Android, open the menu → `Privacy and security` → `Security Level`"
+            },
+            {
+              "text": "`Standard` keeps all features on and is fine for most everyday browsing. `Safer` disables risky website features. `Safest` allows only basic features and will break some sites, so use it when your threat model includes a sophisticated adversary"
+            },
+            {
+              "text": "Don't maximize or resize the browser window. Window size is part of your fingerprint, and the default size helps you blend in with other Tor users"
+            },
+            {
+              "text": "Don't change other privacy settings or fonts, and don't install plugins. Customizing Tor Browser makes you stand out from other users"
+            },
+            {
+              "text": "If Tor is blocked or you're on a network where using it is risky, open `Settings` → `Connection` and set up a bridge"
+            }
+          ],
+          "note": "Reminder: Tor hides your network location, not what you do on a site. Logging in to a personal account or entering identifying details can still link your activity to you.",
+          "sources": [
+            {
+              "label": "Security Levels - Tor",
+              "url": "https://support.torproject.org/tor-browser/features/security-levels/"
+            },
+            {
+              "label": "How to Use Tor - EFF Surveillance Self-Defense",
+              "url": "https://ssd.eff.org/module/how-to-use-tor"
+            }
+          ]
+        },
+        {
+          "id": "tor-browser-cookies",
+          "name": "Cookies and session handling in Tor Browser",
+          "path": "Tor Browser → Menu → New Identity",
+          "risk": "high",
+          "why": "Tor Browser isolates and clears cookies for you, so there is nothing to tune. What undoes that protection is your own behavior: staying signed in to accounts that identify you, or reusing one session for unrelated activities.",
+          "steps": [
+            {
+              "text": "Leave the default cookie behavior alone. Tor Browser clears cookies, history, and cached site data when you close it"
+            },
+            {
+              "text": "Use `New Identity` (in the menu) to end your current session and start fresh. It closes your tabs and clears your cookies and browsing data, so use it between unrelated activities"
+            },
+            {
+              "text": "Don't sign in to accounts tied to your real identity, like personal email or social media, in the same session as sensitive browsing"
+            },
+            {
+              "text": "Don't turn on any setting that saves history, passwords, or logins"
+            }
+          ],
+          "sources": [
+            {
+              "label": "How to Use Tor - EFF Surveillance Self-Defense",
+              "url": "https://ssd.eff.org/module/how-to-use-tor"
             }
           ]
         }

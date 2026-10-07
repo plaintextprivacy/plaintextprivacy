@@ -87,6 +87,15 @@
           "acrobat": "Yes",
           "metadatacleaner": "Yes"
         }
+      },
+      {
+        "label": "Provides user interface",
+        "values": {
+          "exifcleaner": "Yes",
+          "mat2": "No; command line tool",
+          "acrobat": "Yes",
+          "metadatacleaner": "Yes"
+        }
       }
     ]
   },
@@ -123,7 +132,7 @@
         {
           "id": "android-geolocation",
           "name": "Disable geolocation on photos",
-          "path": "TODO",
+          "path": "Settings → Privacy → Permission manager → Location",
           "risk": "critical",
           "why": "Geolocation data on your Android's photos can be precise enough to reveal your exact home address, zip code and all. That information does not get wiped away when you upload those pictures to social media. The first step is to disable location services on your camera app, then you can wipe the metadata for existing photos as you see fit.",
           "steps": [
@@ -156,7 +165,7 @@
           "name": "Installation on MacOS",
           "path": "Download → Install",
           "risk": "critical",
-          "why": "ExifCleaner is a simple metadata wiping tool that leaves original files untouched and generates new, 'cleaned' versions that it saves alongside the originals. This prevents any accidental file destruction in case you with to keep the original files. Installing it and setting it up for the first time requires an additional step, so follow the below instructions carefully to avoid issues.",
+          "why": "ExifCleaner is a simple metadata wiping tool that leaves original files untouched and generates new, 'cleaned' versions that it saves alongside the originals. This prevents any accidental file destruction in case you with to keep the original files. Installing it and setting it up for the first time requires an additional step, so follow the below instructions carefully to avoid issues. Once installed, you can just drag and drop files into it and it'll automatically wipe their metadata.",
           "steps": [
             {
               "text": "Visit `https://exifcleaner.com/` → click `Download`"
@@ -210,24 +219,6 @@
               "url": "https://github.com/szTheory/exifcleaner#opening-unsigned-builds"
             }
           ]
-        },
-        {
-          "id": "exifcleaner-usage",
-          "name": "How to use ExifCleaner",
-          "path": "Depends on OS",
-          "risk": "critical",
-          "why": "TODO",
-          "steps": [
-            {
-              "text": "TODO"
-            }
-          ],
-          "sources": [
-            {
-              "label": "ExifCleaner",
-              "url": "https://exifcleaner.com/"
-            }
-          ]
         }
       ]
     },
@@ -237,34 +228,74 @@
       "risk": "critical",
       "items": [
         {
-          "id": "mat2-installation",
-          "name": "Installation and setup",
-          "path": "Depends on OS",
+          "id": "mat2-mac-installation",
+          "name": "Installation on MacOS",
+          "path": "Download → Install",
           "risk": "critical",
-          "why": "TODO",
+          "why": "Mat2 is a command line tool - if you're not comfortable using Terminal, then skip this one. ExifCleaner is a better option.",
           "steps": [
             {
-              "text": "TODO"
+              "text": "First, check you have the correct version of `Python` installed - open `Terminal` → type `python3 --version` → hit `Enter`"
+            },
+            {
+              "text": "If you get an error message, download Python and walk through installation - `https://www.python.org/downloads/`"
+            },
+            {
+              "text": "Next, type `brew install exiftool cairo pygobject3 poppler gdk-pixbuf librsvg ffmpeg` → hit `Enter`"
             }
           ],
           "sources": [
             {
-              "label": "Mat2",
-              "url": "https://github.com/jvoisin/mat2"
+              "label": "Mat2 pip installation",
+              "url": "https://pypi.org/project/mat2/"
+            }
+          ]
+        },
+        {
+          "id": "mat2-windows-installation",
+          "name": "Installation on Windows",
+          "path": "Download → Install",
+          "risk": "critical",
+          "why": "Mat2 is a command line tool - if you're not comfortable using Command Prompt, then skip this one. ExifCleaner is a better option.",
+          "steps": [
+            {
+              "text": "First, check you have the correct version of `Python` installed - open `Command Prompt` → type `python --version` → hit `Enter`"
+            },
+            {
+              "text": "If you get an error message, download Python and walk through installation - `https://www.python.org/downloads/`"
+            },
+            {
+              "text": "Next, type `pip install mat2` → hit `Enter`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Mat2 pip installation",
+              "url": "https://pypi.org/project/mat2/"
             }
           ]
         },
         {
           "id": "mat2-usage",
-          "name": "How to use ExifCleaner",
-          "path": "Depends on OS",
+          "name": "How to use Mat2",
+          "path": "Terminal or Command Prompt",
           "risk": "critical",
-          "why": "TODO",
+          "why": "Photos, PDFs, and Office documents carry hidden metadata like your name, device model, GPS location, software version, and edit history. Sharing them as-is can easily identify you. Mat2 strips a file's metadata from the command line and generates a clean copy so your original is never overwritten.",
           "steps": [
             {
-              "text": "TODO"
+              "text": "Check what metadata is in a file - run `mat2 --show myfile.jpg` to list the metadata mat2 can detect"
+            },
+            {
+              "text": "Clean a file - run `mat2 myfile.jpg`. This creates a new clean file named `myfile.cleaned.jpg`"
+            },
+            {
+              "text": "Clean several files at once - run `mat2 photo1.jpg report.pdf notes.docx`"
+            },
+            {
+              "text": "To overwrite the original instead of making a copy - run `mat2 --inplace myfile.jpg`"
             }
           ],
+          "note": "Mat2 removes metadata, not content. It won't remove your name from the body of a document, faces or landmarks in a photo, or identifying details in a file's name. Review the content itself before you share.",
           "sources": [
             {
               "label": "Mat2",
