@@ -313,7 +313,7 @@
         {
           "id": "acrobat-usage",
           "name": "Wipe PDF metadata with Acrobat Pro",
-          "path": "All Tools ",
+          "path": "All Tools → Redact a PDF → Sanitize document → Remove all",
           "risk": "high",
           "why": "If you have Acrobat Pro and largely need to remove metadata from PDFs, then there's no need to install additional software. Just keep in mind that this only works with PDFs, and you'll need to use other tools to remove the metadata from photos, videos, and other file types. This functionality does not exist on Acrobat Reader.",
           "steps": [
@@ -340,22 +340,27 @@
       "items": [
         {
           "id": "metadata-installation",
-          "name": "Wipe PDF metadata with Acrobat Pro",
-          "path": "All Tools ",
+          "name": "Install Metadata Cleaner",
+          "path": "Set up → Download → Install",
           "risk": "high",
-          "why": "If you have Acrobat Pro and largely need to remove metadata from PDFs, then there's no need to install additional software. Just keep in mind that this only works with PDFs, and you'll need to use other tools to remove the metadata from photos, videos, and other file types. This functionality does not exist on Acrobat Reader.",
+          "why": "Metadata Cleaner is a metadata wiping tool that runs on Linux. It can be used on the major Linux distributions, including popular ones like Mint and Raspberry Pi - it's even installed by default on some distros.",
           "steps": [
             {
-              "text": "Open your PDF in `Acrobat Pro` → `All Tools` → `Redact a PDF` → `Sanitize document` → `Remove all`"
+              "text": "First, visit `https://flathub.org/en/setup` to see if you need to set anything up in advance"
             },
             {
-              "text": "Save and close"
+              "text": "Next, visit `https://flathub.org/en/apps/io.gitlab.metadatacleaner.metadatacleaner` → `Download` → follow installation steps"
             }
           ],
+          "note": "Make sure to check out the Setup page first to verify you don't need to download Metadata Cleaner.",
           "sources": [
             {
-              "label": "Sanitize PDFs in Acrobat Pro - Adobe",
-              "url": "https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/sanitize.html"
+              "label": "Metadata Cleaner - Flathub",
+              "url": "https://flathub.org/en/apps/io.gitlab.metadatacleaner.metadatacleaner"
+            },
+            {
+              "label": "Set up Flathub",
+              "url": "https://flathub.org/en/setup"
             }
           ]
         }
