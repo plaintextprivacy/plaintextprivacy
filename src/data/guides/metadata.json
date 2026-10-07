@@ -11,7 +11,7 @@
   "context": {
     "title": "Keep in mind",
     "body": "Removing information from the files you've already created is one part of the process, the additional item is to prevent as much information from being embedded into your files to begin with by changing settings in the devices and software you use day to day. We shall cover some of that here, but there are detailed instructions for reducing how much information you share with third parties on the phone and computer guides.",
-    "body2": "Our recommendation is to start by changing your device settings, then proceed with wiping the metadata from files and photos that you've already created. It's not necessary to wipe the metadata from *every* photo and document, we recommend prioritizing files that you plan to share with other people or upload to social media or some other website."
+    "body2": "Our recommendation is to start by changing your device settings, then proceed with wiping the metadata from files and photos that you've already created. It's not necessary to wipe the metadata from *every* photo and document, prioritize files that you plan to share with other people or upload to social media or some other website. Please keep in mind that wiping all metadata from photos can cause some edits to revert, like an image's orientation. If this happens, just change the orientation again."
   },
   "warning": {
     "body": "In our opinion, one of the most egregious metadata collection practices is geolocation data in photos. If you allow location services on your camera app, the GPS coordinates embedded in your photo metadata can be precise enough to give away your exact address. Now, if you just keep your photos to yourself, that isn't a problem. The problem arises when you share those photos on social media. In large part, that metadata stays attached to the photo, so anyone with a little bit of know how could easily download your photo and extract that metadata. Additionally, metadata is gathered by datab rokers (shocking) to gather even more information on you to try to sell you more shit with targeted advertising."
@@ -215,7 +215,7 @@
           ],
           "sources": [
             {
-              "label": "Opening Unsigned Builds - ExifCleaner GitHub",
+              "label": "Opening Unsigned Builds - ExifCleaner",
               "url": "https://github.com/szTheory/exifcleaner#opening-unsigned-builds"
             }
           ]
@@ -312,6 +312,34 @@
       "items": [
         {
           "id": "acrobat-usage",
+          "name": "Wipe PDF metadata with Acrobat Pro",
+          "path": "All Tools ",
+          "risk": "critical",
+          "why": "If you have Acrobat Pro and largely need to remove metadata from PDFs, then there's no need to install additional software. Just keep in mind that this only works with PDFs, and you'll need to use other tools to remove the metadata from photos, videos, and other file types. This functionality does not exist on Acrobat Reader.",
+          "steps": [
+            {
+              "text": "Open your PDF in `Acrobat Pro` → `All Tools` → `Redact a PDF` → `Sanitize document` → `Remove all`"
+            },
+            {
+              "text": "Save and close"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Sanitize PDFs in Acrobat Pro - Adobe",
+              "url": "https://helpx.adobe.com/acrobat/desktop/protect-documents/redact-pdfs/sanitize.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metadata-cleaner",
+      "label": "Metadata Cleaner",
+      "risk": "critical",
+      "items": [
+        {
+          "id": "metadata-installation",
           "name": "Wipe PDF metadata with Acrobat Pro",
           "path": "All Tools ",
           "risk": "critical",
