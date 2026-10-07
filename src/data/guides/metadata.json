@@ -107,7 +107,7 @@
       "items": [
         {
           "id": "ios-geolocation",
-          "name": "Disable geolocation on photos",
+          "name": "Disable geolocation on iOS photos",
           "path": "Settings → Privacy & Security → Location Services",
           "risk": "high",
           "why": "Geolocation data on your iPhone's photos can be precise enough to reveal your exact home address, zip code and all. That information does not get wiped away when you upload those pictures to social media. The first step is to disable location services on your camera app, then you can wipe the metadata for existing photos as you see fit.",
@@ -131,7 +131,7 @@
         },
         {
           "id": "android-geolocation",
-          "name": "Disable geolocation on photos",
+          "name": "Disable geolocation on Android photos",
           "path": "Settings → Privacy → Permission manager → Location",
           "risk": "high",
           "why": "Geolocation data on your Android's photos can be precise enough to reveal your exact home address, zip code and all. That information does not get wiped away when you upload those pictures to social media. The first step is to disable location services on your camera app, then you can wipe the metadata for existing photos as you see fit.",
