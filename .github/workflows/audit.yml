@@ -1,0 +1,29 @@
+name: Dependency audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # Mondays 16:00 UTC
+    - cron: '0 16 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: npm audit (production deps)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # npm audit reads package-lock.json directly
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
