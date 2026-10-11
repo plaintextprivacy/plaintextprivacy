@@ -118,6 +118,15 @@
             },
             {
               "text": "Pause `Timeline`"
+            },
+            {
+              "text": "Toggle off `My Ad Center`"
+            },
+            {
+              "text": "Audit `Third-party apps & services` and remove anything you're not using anymore"
+            },
+            {
+              "text": "Open `Remove data from services you no longer use` and remove anything you don't need"
             }
           ],
           "sources": [
@@ -178,6 +187,9 @@
             },
             {
               "text": "Check `myaccount.google.com` → `Data & privacy` → `AI features` for any remaining AI activity controls"
+            },
+            {
+              "text": "Visit `https://myactivity.google.com/product/gemini` → toggle off `Keep activity`"
             }
           ],
           "sources": [

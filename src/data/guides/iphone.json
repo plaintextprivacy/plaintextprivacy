@@ -327,6 +327,12 @@
             {
               "text": "Toggle off `Allow Apps to Request to Track`"
             }
+          ],
+          "sources": [
+            {
+              "label": "If an app asks to track your activity - Apple",
+              "url": "https://support.apple.com/en-us/102420"
+            }
           ]
         }
       ]
@@ -378,7 +384,13 @@
               "text": "Open `Settings` → `General` → `AirDrop`"
             },
             {
-              "text": "Select `Contacts Only` for everyday use, or `Receiving Off` when in crowded public spaces"
+              "text": "Select `Contacts Only` or `Receiving Off`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "2 Simple Ways to Disable and Turn Off AirDrop - wikiHow",
+              "url": "https://www.wikihow.com/Turn-Off-AirDrop"
             }
           ]
         }
@@ -401,6 +413,12 @@
             },
             {
               "text": "Toggle off `Personalized Ads`"
+            }
+          ],
+          "sources": [
+            {
+              "label": "How to Disable Ad ID Tracking on iOS and Android... - EFF",
+              "url": "https://www.eff.org/deeplinks/2022/05/how-disable-ad-id-tracking-ios-and-android-and-why-you-should-do-it-now"
             }
           ]
         }
@@ -456,6 +474,7 @@
               "text": "Follow the prompts"
             }
           ],
+          "note": "Security keys can be used for many accounts, so once you have a set, be sure to set them up as your 2FA.",
           "sources": [
             {
               "label": "iPhone User Guide - Apple",
