@@ -129,6 +129,12 @@
             {
               "text": "Also disable `Search personalization` at `google.com/search-personalization`"
             }
+          ],
+          "sources": [
+            {
+              "label": "Find & control your Web & App Activity - Google",
+              "url": "https://support.google.com/websearch/answer/54068?hl=en&co=GENIE.Platform%3DAndroid"
+            }
           ]
         }
       ]
@@ -158,7 +164,7 @@
               "text": "Go back to `Settings` → `Location` → toggle off `Google Location Accuracy`"
             },
             {
-              "text": "Under `Location → Location services`, review what system-level services have location access"
+              "text": "Under `Location` → `Location services` review what services have location access"
             }
           ]
         }
@@ -242,7 +248,7 @@
               "text": "Confirm the deletion on the next screen"
             },
             {
-              "text": "Also go to `myaccount.google.com → Data & privacy → Ad settings` and turn off personalization"
+              "text": "Go to `myaccount.google.com` → `Data & privacy` → `Ad settings` and turn off personalization"
             }
           ]
         }

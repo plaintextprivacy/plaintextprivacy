@@ -327,6 +327,12 @@
             {
               "text": "Toggle off `Allow Apps to Request to Track`"
             }
+          ],
+          "sources": [
+            {
+              "label": "If an app asks to track your activity - Apple",
+              "url": "https://support.apple.com/en-us/102420"
+            }
           ]
         }
       ]
