@@ -474,6 +474,7 @@
               "text": "Follow the prompts"
             }
           ],
+          "note": "Security keys can be used for many accounts, so once you have a set, be sure to set them up as your 2FA.",
           "sources": [
             {
               "label": "iPhone User Guide - Apple",
