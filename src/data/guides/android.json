@@ -92,6 +92,12 @@
             {
               "text": "After setting your lock, go to `Lock screen preferences` and disable `Show sensitive content` while the device is locked"
             }
+          ],
+          "sources": [
+            {
+              "label": "How to set Pattern, Pin or Password for your Lock screen - Samsung",
+              "url": "https://www.samsung.com/sg/support/mobile-devices/how-to-set-a-pattern-pin-or-password-for-your-lock-screen/"
+            }
           ]
         }
       ]
